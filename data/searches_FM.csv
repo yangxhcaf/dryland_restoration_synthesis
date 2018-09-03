@@ -1,0 +1,12 @@
+date ,resource,terms,filters,refine,returns,after duplicates
+aug 15th,web of science,restor* desert*,ecology environmental sciences,articles,998,
+aug 15th,web of science,restoration desert* plants,none,none,829,
+aug 29th,scopus,restoration desert* plants,none,Biological Sciences AND Environmental Science,683,681
+aug 29th,scopus,restoration dryland* vegetation ,none,none,149,149
+aug 29th,scopus,restoration dryland* plant*,none,none,176,175
+aug 29th,scopus,restoration aridland* plant*,none,none,9,9
+aug 29th,scopus,restoration semiarid* plant*,none,none,558,557
+aug 30th,scopus,restoration desert* plant*,none,Biological Sciences AND Environmental Science (in press excluded),763,761
+aug 30th,scopus,restoration arid* plant*,none,Biological Sciences AND Environmental Science (in press excluded),985,985
+sept 3th,scopus,restoration* desert* vegetation*,none,none,834,832
+sept 3th,scopus,restoration* desert* vegetation*,none,Biological Sciences AND Environmental Science,732,731
