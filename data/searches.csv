@@ -10,3 +10,16 @@ aug 30th,scopus,restoration desert* plant*,none,Biological Sciences AND Environm
 aug 30th,scopus,restoration arid* plant*,none,Biological Sciences AND Environmental Science (in press excluded),985,985
 sept 3th,scopus,restoration* desert* vegetation*,none,none,834,832
 sept 3th,scopus,restoration* desert* vegetation*,none,Biological Sciences AND Environmental Science,732,731
+sept 5th,scopus,restoration* desert* vegetation*,yes,yes,192,192
+sept 5th,scopus,restoration* grassland* desert*,yes,yes,78,78
+sept 5th,scopus,restoration desert* plant*,yes,yes,285,285
+sept 5th,scopus,"restoration ""agricultural lands""",yes,yes,110,110
+sept 5th,scopus,restoration agricultural desert* plant*,yes,yes,5,5
+sept 5th,scopus,"""restoration techniques"" desert*",yes,yes,5,5
+sept 5th,scopus,"""passive restoration"" desert* plant*",yes,yes,5,5
+sept 5th,scopus,"""active restoration"" desert* plant*",yes,yes,4,4
+sept 5th,scopus,revegetation abandoned desert*,yes,yes,12,11
+sept 5th,scopus,"restoration ""agricult*land*"" desert* plant*",yes,yes,16,16
+sept 5th,scopus,restoration dryland* vegetation ,yes,yes,82,82
+sept 5th,scopus,restoration semiarid* plant*,yes,yes,221,221
+sept 5th,scopus,restoration arid* plant*,yes,yes,489,489
