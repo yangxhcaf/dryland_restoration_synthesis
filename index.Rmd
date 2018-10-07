@@ -1,0 +1,49 @@
+---
+title:
+author: "cjlortie & collaborators"
+date: "2018"
+output:
+  html_document:
+    theme: spacelab
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+  pdf_document:
+    toc: yes
+---
+<br>  
+
+###A synthesis of dryland restoration techniques.  
+
+![](./drylands.jpg)   
+
+####Purpose
+To quantitatively examine the efficacy of vegetation restoration in drylands globally.  
+
+####Questions  
+1. What is the global extent of research that directly examined restoration of drylands?  
+2. What were the common measures?  
+3. Is the restoration of vegetation a common and primary focus?  
+4. How frequently does the restoration measure outcomes beyond the focal species?  
+5. What were the primary restoration goals as reported by primary authors?  
+6. How much variation was there in the techniques tested and how long were experiments monitored and tested?  
+7. How relatively effective were the techniques?  
+
+####Search  
+```{r, studies, warning=FALSE, message=FALSE}
+library(tidyverse)
+studies <- read_csv("data/studies.csv")
+studies
+exclusions <- studies %>%
+  filter(exclude == "yes")
+```
+
+###Study-level viz  
+```{r, study viz, warning=FALSE, message=FALSE}
+ggplot(exclusions, aes(rationale)) +
+  geom_bar() +
+  coord_flip()
+
+```
+
+
