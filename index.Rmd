@@ -34,15 +34,29 @@ To quantitatively examine the efficacy of vegetation restoration in drylands glo
 library(tidyverse)
 studies <- read_csv("data/studies.csv")
 studies
+
+#quick look at rationale needed
 exclusions <- studies %>%
   filter(exclude == "yes")
+
+#quick look at studies with paradigms
+evidence <- studies %>%
+  filter(exclude == "no")
 ```
 
 ###Study-level viz  
 ```{r, study viz, warning=FALSE, message=FALSE}
+#exclusions
 ggplot(exclusions, aes(rationale)) +
   geom_bar() +
+  coord_flip() +
+  labs(x = "rational for exclusion", y = "frequency")
+
+#evidence
+ggplot(evidence, aes(paradigm)) +
+  geom_bar() +
   coord_flip()
+
 
 ```
 
