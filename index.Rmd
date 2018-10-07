@@ -57,6 +57,10 @@ ggplot(evidence, aes(paradigm)) +
   geom_bar() +
   coord_flip()
 
+ggplot(evidence, aes(grazing)) +
+  geom_bar() +
+  coord_flip()
+
 
 ```
 
