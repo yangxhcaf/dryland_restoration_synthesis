@@ -261,13 +261,13 @@ studies</code></pre>
 <pre><code>## # A tibble: 278 x 14
 ##       ID title approach data  region exclude rationale observations
 ##    &lt;int&gt; &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt;   &lt;chr&gt;     &lt;chr&gt;       
-##  1    NA Litt… Litter … App.… China  no      &lt;NA&gt;      &lt;NA&gt;        
-##  2    NA Shru… Shrub n… App.… Nevad… no      &lt;NA&gt;      &lt;NA&gt;        
-##  3    NA Nati… soil tr… App.… Austr… no      &lt;NA&gt;      &lt;NA&gt;        
-##  4    NA Fact… Vegetat… App.… Namib… no      &lt;NA&gt;      &lt;NA&gt;        
-##  5    NA Eval… phytome… expe… Aral … no      &lt;NA&gt;      &lt;NA&gt;        
-##  6    NA Usin… Control… expe… Orego… no      &lt;NA&gt;      &lt;NA&gt;        
-##  7    NA Asse… fertile… expe… China  no      &lt;NA&gt;      &lt;NA&gt;        
+##  1     1 Litt… Litter … App.… China  no      &lt;NA&gt;      &lt;NA&gt;        
+##  2     2 Shru… Shrub n… App.… Nevad… no      &lt;NA&gt;      &lt;NA&gt;        
+##  3     3 Nati… soil tr… App.… Austr… no      &lt;NA&gt;      &lt;NA&gt;        
+##  4     4 Fact… Vegetat… App.… Namib… no      &lt;NA&gt;      &lt;NA&gt;        
+##  5     5 Eval… phytome… expe… Aral … no      &lt;NA&gt;      &lt;NA&gt;        
+##  6     6 Usin… Control… expe… Orego… no      &lt;NA&gt;      &lt;NA&gt;        
+##  7     9 Asse… fertile… expe… China  no      &lt;NA&gt;      &lt;NA&gt;        
 ##  8    11 Resp… plantin… fiel… China  no      &lt;NA&gt;      &lt;NA&gt;        
 ##  9    12 Spat… soil pr… App.… China  no      &lt;NA&gt;      &lt;NA&gt;        
 ## 10    13 Effe… ag land… App.… China  no      &lt;NA&gt;      &lt;NA&gt;        
@@ -279,7 +279,10 @@ exclusions &lt;- studies %&gt;%
 
 #quick look at studies with paradigms
 evidence &lt;- studies %&gt;%
-  filter(exclude == &quot;no&quot;)</code></pre>
+  filter(exclude == &quot;no&quot;)
+
+#library(skimr)
+#skim(evidence)</code></pre>
 </div>
 </div>
 <div id="study-level-viz" class="section level3">

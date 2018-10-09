@@ -42,6 +42,9 @@ exclusions <- studies %>%
 #quick look at studies with paradigms
 evidence <- studies %>%
   filter(exclude == "no")
+
+#library(skimr)
+#skim(evidence)
 ```
 
 ###Study-level viz  
