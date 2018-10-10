@@ -1,0 +1,17 @@
+Disturbance,Var1,Freq,,System,Var1,Freq,,Goal,Var1,Freq,,Paradigm,Var1,Freq,,Intervention,Var1,Freq
+1,agriculture,45,,1,agriculture,37,,1,animal,11,,1,active,120,,1,added vegetation,89
+2,anthropogenic disturbance,21,,2,desert,5,,2,biological soil crusts,1,,2,passive,58,,2,removed veg,10
+3,browsing,1,,3,forest,7,,3,cost,1,,,,,,3,resources,23
+4,canopy removal,1,,4,grassland,42,,4,seed,4,,,,,,4,rotational grazing,1
+5,clearing,3,,5,mediterranean,4,,5,soil,36,,,,,,5,seed,4
+6,deforestation,2,,6,rangeland,23,,6,vegetation,111,,,,,,6,soil,14
+7,desertification,20,,7,roadways,5,,7,"vegetation, soil",14,,,,,,7,vegetation,37
+8,exotics,25,,8,sand dune,8,,,,,,,,,,,,
+9,grazing,35,,9,savannah,4,,,,,,,,,,,,
+10,land-use changes,2,,10,shrubland,24,,,,,,,,,,,,
+11,mining,11,,11,steppe,13,,,,,,,,,,,,
+12,shrub encroachment,2,,12,woodland,5,,,,,,,,,,,,
+13,soil erosion,6,,13,xeroriparian,1,,,,,,,,,,,,
+14,stressful soil,2,,,,,,,,,,,,,,,,
+15,"various, grazing, herbicide, soil disturbance",1,,,,,,,,,,,,,,,,
+16,wildfire,1,,,,,,,,,,,,,,,,
