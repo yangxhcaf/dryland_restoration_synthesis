@@ -61,7 +61,7 @@ ggplot(evidence, aes(paradigm)) +
   coord_flip()
 
 ggplot(evidence, aes(grazing)) +
-  geom_bar() +
+  geom_bar(na.rm = TRUE) +
   coord_flip()
 
 
