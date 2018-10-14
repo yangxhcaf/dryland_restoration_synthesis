@@ -61,8 +61,28 @@ ggplot(evidence, aes(paradigm)) +
   coord_flip()
 
 ggplot(evidence, aes(grazing)) +
-  geom_bar() +
+  geom_bar(na.rm = TRUE) +
   coord_flip()
+
+ggplot(evidence, aes(region, fill = paradigm)) +
+  geom_bar(na.rm = TRUE) +
+  coord_flip() +
+  scale_fill_brewer(palette = "Paired")
+
+ggplot(evidence, aes(data, fill = paradigm)) +
+  geom_bar(na.rm = TRUE) +
+  coord_flip() +
+  scale_fill_brewer(palette = "Paired")
+
+ggplot(evidence, aes(system, fill = paradigm)) +
+  geom_bar(na.rm = TRUE) +
+  coord_flip() +
+  scale_fill_brewer(palette = "Paired")
+
+ggplot(evidence, aes(goal, fill = paradigm)) +
+  geom_bar(na.rm = TRUE) +
+  coord_flip() +
+  scale_fill_brewer(palette = "Paired")
 
 
 ```
