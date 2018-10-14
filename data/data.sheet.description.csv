@@ -1,5 +1,5 @@
 main.data.sections,data.column.name,description
-problem description/technique,ID,article ID
+problem/ technique description,ID,article ID
 problem description/technique,year,publication year
 problem description/technique,disturbance,main/s disturbance factor/s
 problem description/technique,focus,"restoration focus, main goal"
@@ -31,4 +31,4 @@ data,df,degree of freedom of treatment-control comparison
 data,exp.duration,"duration of experiment, monitoring"
 data,grazing,grazing condition of study sites
 data,soil,soil features measured 
-addition information,notes,any relevant additional information
+additional information,notes,any relevant additional information
