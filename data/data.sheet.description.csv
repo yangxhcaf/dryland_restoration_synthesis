@@ -1,0 +1,34 @@
+main.data.sections,data.column.name,description
+problem description/technique,ID,article ID
+problem description/technique,year,publication year
+problem description/technique,disturbance,main/s disturbance factor/s
+problem description/technique,focus,"restoration focus, main goal"
+problem description/technique,technique,restoration technique used
+problem description/technique,paradigm,"restoration paradigm adopted, either active or passive"
+problem description/technique,hypothesis,article hypothesis
+problem description/technique,pathway,ecological pathway measured
+problem description/technique,shrub.species,main shrub species measured/included
+problem description/technique,target.plant,target plant species for restoration
+problem description/technique,measured.factors,factors or variables measured
+problem description/technique,response,main response variable
+problem description/technique,measure.success,measure of success considered by authors
+site description,lat,site latitude in decimal degrees
+site description,long,site longitude in decimal degrees
+site description,continent,continent of study sites
+site description,country,country of study sites
+site description,ecosystem,study site ecosystem
+site description,elevation,study site elevation
+site description,MAP (mean anual precipitation),study site mean anual precipitation
+site description,aridity,study site aridity
+data,Nsites,number of study sites
+data,nsamples,number of samples
+data,mean.treatment,mean value of experimental treatment
+data,mean.control,mean value of experimental control
+data,var.t,measure of variance of experimental treatment
+data,var.c,measure of variance of experimental control
+data,p-value,p value of treatment-control comparison
+data,df,degree of freedom of treatment-control comparison
+data,exp.duration,"duration of experiment, monitoring"
+data,grazing,grazing condition of study sites
+data,soil,soil features measured 
+addition information,notes,any relevant additional information
