@@ -1,281 +1,281 @@
-ID,year,disturbance,focus,technique,paradigm,hypothesis,pathway,shrub.species,target.plant,measured.factors,response,measure.success,lat,long,continent,country,ecosystem,elevation (m),MAP,aridity,Nsites,nsamples,mean.treatment,mean.control,var.t,var.c,p-value,df,exp.duration,grazing,soil,notes
-1,2018,desertification,soil,litter crust ,passive,"surface microhabitats, litter vs bare ground",litter crusts-microhabitats,unreported,multiple herbs,"soil moisture, temperature, light intensity, organic matter",seedling establishment,seedling establishment,38.76667,110.35,Asia,China,sand dune,1270,437,0.56,3,27,16.31,4.61,1,1,<0.05,2,unreported,,physical and chemical factors,potential use
-2.1,2018,"grazing, fire",seed bank,seed bank,passive,seed banks,seed banks-above ground sp,Ericameria nauseosa,multiple species,"shrub cover, ground cover, climate, disturbance history",seed banks,native seed bank,40.66667,115.5,North America,USA,shrubland,unreported,unreported,unreported,17,340,,,,,,,variable 3-20 weeks,livestock,seed bank,not treatment-control
-2.2,2018,"grazing, fire",seed bank,seed bank,passive,seed banks,seed banks-above ground sp,Chrysothamus viscidiflorus,multiple species,"shrub cover, ground cover, climate, disturbance history",seed banks,native seed bank,40.66667,115.5,North America,USA,shrubland,unreported,unreported,unreported,17,340,,,,,,,,livestock,seed bank,not treatment-control
-2.3,2018,"grazing, fire",seed bank,seed bank,passive,seed banks,seed banks-above ground sp,Artemisia tridentata,multiple species,"shrub cover, ground cover, climate, disturbance history",seed banks,native seed bank,40.66667,115.5,North America,USA,shrubland,unreported,unreported,unreported,17,340,,,,,,,,livestock,seed bank,not treatment-control
-3,2018,mining,vegetation,"seeding, soil amendment",active,,,,,,,plant recruitment of key native sp,,,Oceania,Australia,grassland,,,,,,,,,,,,,,"C, N, microbial activity",
-4,2018,mining,vegetation,natural recovery,passive,,,,,,,not clear,,,Africa,Namib,desert,,,,,,,,,,,,,,,natural recovery
-5,2017,grazing,vegetation,planting,active,,,,,,,not plowed site,,,Asia,Aral Sea,grassland,,,,,,,,,,,,,livestock,chemical composition,climax community
-6,2017,exotics,vegetation,"seeding, herbicides, activated carbon",active,,,,,,,perennial native grasses,,,North America,USA,rangeland,,,,,,,,,,,,,,,
-9,2016,desertification,soil,phytogenic mounds (nebkhas),passive,,,,,,,not clear,,,Asia,China,grassland,,,,,,,,,,,,,unreported animal,nutrients,potential use
-11,2015,agriculture,soil,planting,active,,,,,,,healthy ecosystem,,,Asia,China,grassland,,,,,,,,,,,,,unreported animal,nutrients and enzyme,reduce pression on ecosystems
-12,2015,desertification,soil,"planting, soil moisture",active,,,,,,,not clear,,,Asia,China,steppe,,,,,,,,,,,,,,moisture,
-13,2014,agriculture,animal,planting,active,,,,,,,not disturbed natural habitats,,,Asia,China,grassland,,,,,,,,,,,,,,,lizard
-15,2014,grazing,vegetation,grazing treatments,passive,,,,,,,resilient rangelands,,,Africa,Tunisia,rangeland,,,,,,,,,,,,,livestock,,
-16,2013,desertification,soil,planting,active,,,,,,,not clear,,,Asia,China,sand dune,,,,,,,,,,,,,cattle and sheep,"ph,N,C,P",restoration may be accelerated with plantations
-19,2007,desertification,"vegetation, soil",fertile islands,passive,,,,,,,higher productivity systems,,,Asia,China,sand dune,,,,,,,,,,,,,livestock,physicochemical properties,
-20,2007,desertification,soil,planting,active,,,,,,,desert native steppe,,,Asia,China,sand dune,,,,,,,,,,,,,,physicochemical properties,soil conservation
-21,2006,agriculture,vegetation,sand vegetation,active,,,,,,,not clear,,,Asia,Tibetan Plateau,grassland,,,,,,,,,,,,,unreported animal,,
-23,2017,grazing,vegetation,ccc framework,passive,,,,,,,not clear,,,Asia,China,grassland,,,,,,,,,,,,,livestock,,
-28,2016,grazing,soil,soil fungal,passive,,,,,,,natural grassland,,,Asia,China,grassland,,,,,,,,,,,,,unreported animal,physicochemical properties,
-29,2015,desertification,"vegetation, soil",planting,active,,,,,,,natural grassland,,,Asia,China,sand dune,,,,,,,,,,,,,livestock,chemical composition,
-30,2013,shrub encroachment,animal,herbicide,active,,,,,,,not clear,,,North America,USA,shrubland,,,,,,,,,,,,,,,lizard
-31,2012,desertification,seed,seed arrival and retention,passive,,,,,,,not clear,,,Asia,China,grassland,,,,,,,,,,,,,,,arthropods
-32,2012,desertification,soil,planting,active,,,,,,,not clear,,,Asia,China,grassland,,,,,,,,,,,,,unreported animal,physicochemical and biological properties,arthropods
-34,2009,grazing,vegetation,"water, nitrogen and phosphorus",passive,,,,,,,not clear,,,Asia,China,grassland,,,,,,,,,,,,,unreported animal,physicochemical properties,rodents
-35,2008,grazing,vegetation,grazing exclusion,passive,,,,,,,grassland before grazing,,,North America,USA,grassland,,,,,,,,,,,,,livestock,,pollinators
-37,2007,grazing,vegetation,seedling herbivory,passive,,,,,,,grassland ,,,North America,USA,grassland,,,,,,,,,,,,,livestock,,rodents
-39,2017,soil erosion,soil,biological soil crusts,passive,,,,,,,not clear,,,Asia,Israel,desert,,,,,,,,,,,,,,physicochemical properties,reptiles
-40,2018,desertification,soil,nutrients addition,active,,,,,,,forest vegetation,,,Asia,China,grassland,,,,,,,,,,,,,livestock,nutrients,arthropods
-41,2018,desertification,soil,litter crust,passive,,,,,,,not clear,,,Asia,China,sand dune,,,,,,,,,,,,,,"moisture, temperature, pahysicochemical properties",rodents
-42,2018,desertification,vegetation,planting,active,,,,,,,not clear,,,Asia,China,sand dune,,,,,,,,,,,,,livestock,,re-establish natural ecosystem state
-43,2018,canopy removal,vegetation,foundation species,passive,,,,,,,native plant communities,,,North America,USA,shrubland,,,,,,,,,,,,,,,positive interactions
-44,2017,exotics ,vegetation,planting,active,,,,,,,perennial native grasses,,,North America,USA,steppe,,,,,,,,,,,,,,,active planting native seedlings
-45,2017,soil erosion,soil,planting,active,,,,,,,natural vegetation,,,Asia,China,steppe,,,,,,,,,,,,,unreported animal,physicochemical properties,chemical process restoration
-46,2017,anthropogenic disturbance,vegetation,genetics,passive,,,,,,,not clear,,,North America,USA,desert,,,,,,,,,,,,,,,
-48,2017,exotics,vegetation,"chemical, mecanical control",active,,,,,,,native plant communities,,,North America,USA,rangeland,,,,,,,,,,,,,livestock,,adaptive management approaches
-50,2016,mining,vegetation,planting,active,,,,,,,not clear,,,Asia,Kazakhstan,desert,,,,,,,,,,,,,,heavy metals,
-51,2014,grazing,animal,planting,active,,,,,,,diverse arthropod community,,,Asia,China,grassland,,,,,,,,,,,,,fenced ,physicochemical properties,arthropods
-52,2014,exotics,vegetation,planting,active,,,,,,,perennial native grasses,,,North America,USA,grassland,,,,,,,,,,,,,livestock and horses,,rebuild native community
-53,2013,exotics,vegetation,"planting, glyphosate",active,,,,,,,native plant communities,,,North America,USA,steppe,,,,,,,,,,,,,livestock,,
-54,2012,exotics,vegetation,"seeding, planting",active,,,,,,,native plant communities,,,North America,USA,grassland,,,,,,,,,,,,,,nutrients,ecosystems dominated by native species
-55,2011,exotics,vegetation,carbon amendments,active,,,,,,,native plant communities,,,North America,USA,grassland,,,,,,,,,,,,,,"C, N",native plant restoration
-58,2010,grazing,vegetation,facilitation ,passive,,,,,,,diverse plant community,,,Asia,Mongolia,steppe,,,,,,,,,,,,,livestock,,positive interactions
-59,2010,exotics,vegetation,"chemical, mecanical control",active,,,,,,,native plant communities,,,North America,USA,shrubland,,,,,,,,,,,,,,,native plant restoration
-61,2010,exotics,vegetation,"seeding, chemical, burning",active,,,,,,,perennial native grasses,,,North America,USA,rangeland,,,,,,,,,,,,,,,native plant restoration
-63,2008,desertification,soil,micropropagation of mosses,active,,,,,,,moss dominated soil crusts,,,Asia,China,desert,,,,,,,,,,,,,,nutrients,soil restoration
-64,2008,agriculture,vegetation,carbon addition-top soil removal-sowing ,active,,,,,,,rich grasslands,,,Europe,Netherlands,agriculture,,,,,,,,,,,,,,chemical and microbia properties,active restoration
-65,2008,stressful soil,vegetation,fertilization and irrigation,active,,,,,,,native plant communities,,,North America,USA,shrubland,,,,,,,,,,,,,,nutrients,
-66,2005,grazing ,vegetation,"seeding, shrub facilitation",passive,,,,,,,vegetation before grazing,,,North America,USA,rangeland,,,,,,,,,,,,,livestock,,positive interactions
-68,2004,grazing,vegetation,planting,active,,,,,,,native plant communities,,,North America,USA,grassland,,,,,,,,,,,,,cattle,,
-69,2003,grazing,vegetation,grazing exclusion,passive,,,,,,,vegetation before grazing,,,Asia,Kuwait,shrubland,,,,,,,,,,,,,livestock,,
-71,1999,clearing,vegetation,mycorrhizal fungi ,passive,,,,,,,vegetation before disturbance,,,North America,Mexico,shrubland,,,,,,,,,,,,,,physicochemical properties,
-73,1999,"various, grazing, herbicide, soil disturbance",animal,ants as indicators,passive,,,,,,,not clear,,,North America,USA,rangeland,,,,,,,,,,,,,livestock,,arthropods
-74,1997,anthropogenic disturbance,animal,"seeding, planting",active,,,,,,,undegraded natural area,,,North America,USA,shrubland,,,,,,,,,,,,,,,"construction of flood structures, rodents"
-76,2018,grazing,vegetation,"sowing, fencing",active,,,,,,,revegetation,,,South America,Falkland Islands,grassland,,,,,,,,,,,,,cattle and sheep,moisture and temperature,
-77,2018,agriculture,vegetation,mowing and grazing,active,,,,,,,semi-natural grasslands,,,Europe,Belgium,agriculture,,,,,,,,,,,,,ponies and cows,"P, N evaluation",
-78,2017,agriculture,vegetation,germination and survival ,passive,,,,,,,semi-natural grasslands,,,Europe,Belgium,grassland,,,,,,,,,,,,,,biogeochemistry,
-80,2016,agriculture,cost,costs,active,,,,,,,not clear,,,North America,Canada,agriculture,,,,,,,,,,,,, , ,
-82,2017,agriculture,soil,soil carbon and enzyme,passive,,,,,,,restored grassland,,,Asia,China,agriculture,,,,,,,,,,,,,,"C, enzyme activities",productive grasslands
-84,2016,agriculture,animal,planting,active,,,,,,,not clear,,,Oceania,New Zealand,agriculture,,,,,,,,,,,,,,,worms
-85,2016,grazing,vegetation,planting,active,,,,,,,agroecosystems,,,Oceania,Australia,grassland,,,,,,,,,,,,,livestock,,production and biodiversity
-86,2015,agriculture,vegetation,planting,active,,,,,,,native plant communities,,,North America,USA,agriculture,,,,,,,,,,,,,,chemical composition,
-87,2015,agriculture,soil,fertilization,active,,,,,,,semi-natural grasslands,,,Europe,Belgium,agriculture,,,,,,,,,,,,,,chemical composition,soil restoration
-88,2014,agriculture,soil,seeding,passive,,,,,,,native grasslands,,,Asia,China,agriculture,,,,,,,,,,,,,,physicochemical properties,
-89,2014,agriculture,animal,"seeding, pollination",active,,,,,,,not clear,,,North America,USA,agriculture,,,,,,,,,,,,,,,pollinators
-91,2011,agriculture,vegetation,agroecoystems,passive,,,,,,,agroecosystems,,,Oceania,Australia,agriculture,,,,,,,,,,,,,cattle,,biodiversity in agroecosystems
-93,2010,agriculture,vegetation,natural recovery,passive,,,,,,,semi-natural vegetation,,,South America,Argentina,agriculture,,,,,,,,,,,,,livestock,,novel vegetation states
-95,2010,agriculture,vegetation,sowing and planting,active,,,,,,,native vegetation remnants,,,North America,USA,agriculture,,,,,,,,,,,,,,,
-96,2009,agriculture,animal,rodents,passive,,,,,,,native vegetation,,,Asia,Mongolia,agriculture,,,,,,,,,,,,,livestock,,rodents
-98,2002,agriculture,vegetation,"sowing, cutting, grazing treatments",active,,,,,,,semi-natural grasslands,,,Europe,Scotland,agriculture,,,,,,,,,,,,,cattle and sheep,,
-100,2005,exotics,vegetation,"seeding, herbicide, nutrients",active,,,,,,,native grasslands,,,North America,USA,grassland,,,,,,,,,,,,,livestock,chemical,
-101,2013,desertification,vegetation,natural recovery,passive,,,,,,,stabilized sand land,,,Asia,China,sand dune,,,,,,,,,,,,,unreported animal,,
-104,2003,agriculture,vegetation,mycorrhizal inoculation ,active,,,,,,,native vegetation,,,Europe,Spain,agriculture,,,,,,,,,,,,,unreported animal,physicochemical properties,
-105,2002,anthropogenic disturbance,soil,fertile islands,passive,,,,,,,undisturbed desert,,,North America,USA,roadways,,,,,,,,,,,,,,physicochemical properties,abandoned roads
-106,2001,agriculture,vegetation,"seeding, irrigation",active,,,,,,,revegetation,,,North America,USA,agriculture,,,,,,,,,,,,,,water addition,
-107,2001,mining,soil,soil amendments,active,,,,,,,revegetation,,,North America,USA,shrubland,,,,,,,,,,,,,,water and chemical composition,
-108,2000,anthropogenic disturbance,"vegetation, soil",natural recovery,passive,,,,,,,natural community,,,North America,USA,roadways,,,,,,,,,,,,,,physicochemical properties,abandoned roads
-109,1991,agriculture,vegetation,"planting, sowing",active,,,,,,,native vegetation,,,North America,USA,agriculture,,,,,,,,,,,,,,,
-110,2018,agriculture,soil,soil microbial,passive,,,,,,,revegetation,,,Asia,China,agriculture,,,,,,,,,,,,,,chemical composition,microbial
-111,2016,agriculture,"vegetation, soil",planting,active,,,,,,,revegetation,,,Asia,China,agriculture,,,,,,,,,,,,,,chemical composition,
-112,2006,agriculture,vegetation,"seeding, irrigation",active,,,,,,,native vegetation,,,North America,USA,agriculture,,,,,,,,,,,,,,mulch and phosphate addition,
-114,1998,agriculture,vegetation,planting,active,,,,,,,native vegetation,,,North America,USA,agriculture,,,,,,,,,,,,,herbivory,chemical composition,
-115,2018,grazing,vegetation,grazing exclusion,passive,,,,,,,native vegetation,,,Europe,Portugal,savannah,,,,,,,,,,,,,cattle,,
-118,2017,desertification,"vegetation, soil",seeding,active,,,,,,,revegetation,,,Asia,Saudi Arabia,rangeland,,,,,,,,,,,,,unreported animal,physical attributes,
-119,2016,grazing,vegetation,burning and mowing,active,,,,,,,native grasslands,,,Asia,Mongolia,steppe,,,,,,,,,,,,,livestock,chemical composition,
-120,2016,agriculture,animal,habitat for reptiles,passive,,,,,,,not clear,,,Oceania,Australia,woodland,,,,,,,,,,,,,cattle and sheep,,reptiles
-121,2015,agriculture,vegetation,planting,active,,,,,,,native vegetation,,,Asia,China,agriculture,,,,,,,,,,,,,,chemical composition,
-126,2011,grazing,biological soil crusts,grazing exclusion,passive,,,,,,,crusts of little disturbed sites,,,Oceania,Australia,woodland,,,,,,,,,,,,,livestock,nutrients,
-127,2008,mining,vegetation,"seeding, soil amendment",active,,,,,,,not clear,,,Europe,Spain,shrubland,,,,,,,,,,,,,sheep,chemical composition,
-128,2007,agriculture,vegetation,natural recovery,passive,,,,,,,native grasslands,,,Oceania,Australia,agriculture,,,,,,,,,,,,,livestock,,
-129,2005,clearing,vegetation,"seeding, inoculation",active,,,,,,,revegetation,,,Oceania,Australia,woodland,,,,,,,,,,,,,unreported animal,,
-130,2018,desertification,soil ,soil bacterial community,passive,,,,,,,revegetation,,,Asia,China,grassland,,,,,,,,,,,,,unreported animal,physicochemical properties,
-132,2017,clearing,vegetation,seeding,active,,,,,,,plant diversity,,,North America,USA,grassland,,,,,,,,,,,,,,,
-133,2017,land-use changes,soil,soil microbial ,passive,,,,,,,natural vegetation,,,Asia,China,steppe,,,,,,,,,,,,,,microbial and chemical properties,microbial
-134,2016,land-use changes,vegetation,"herbicide, herbivore exclosures, and shelter tubes",active,,,,,,,native vegetation,,,North America,USA,forest,,,,,,,,,,,,,,,
-135,2016,agriculture,vegetation,natural recovery,passive,,,,,,,native vegetation,,,Asia,Mongolia,forest,,,,,,,,,,,,,livestock,physicochemical properties,
-139,2015,agriculture,soil,planting,active,,,,,,,afforestation,,,Asia,China,grassland,,,,,,,,,,,,,,water,
-141,2014,desertification,soil,grazing exclusion,passive,,,,,,,natural recovery,,,Asia,China,grassland,,,,,,,,,,,,,sheep,carbon storage,
-142,2015,agriculture,vegetation,planting ,active,,,,,,,native vegetation,,,North America,USA,agriculture,,,,,,,,,,,,,,,
-143,2014,exotics,vegetation,"seeding, mowing",active,,,,,,,native grasslands,,,North America,USA,grassland,,,,,,,,,,,,,,,
-145,2013,deforestation,vegetation,planting,active,,,,,,,native vegetation,,,North America,Mexico,forest,,,,,,,,,,,,,,,
-146,2013,deforestation,vegetation,planting,active,,,,,,,native vegetation,,,South America,Argentina,forest,,,,,,,,,,,,,unreported animal,temperature and moisture,
-147,2012,agriculture,vegetation,seeding ,active,,,,,,,undisturbed plant community,,,North America,USA,agriculture,,,,,,,,,,,,,unreported animal,,
-148,2012,soil erosion,soil,soil nutrients,active,,,,,,,revegetation,,,Asia,China,grassland,,,,,,,,,,,,,livestock,"C, N",
-149,2012,anthropogenic disturbance,"vegetation, soil","seeding, soil amendment",active,,,,,,,native vegetation,,,North America,USA,shrubland,,,,,,,,,,,,,,chemical composition,natural gas exploration
-151,2011,soil erosion,soil,biostimulants,active,,,,,,,microbial and vegetation recovery,,,Europe,Spain,mediterranean,,,,,,,,,,,,,,biostimulants,
-152,2010,grazing,vegetation,"seeding, soil tilling, fertilization",active,,,,,,,native vegetation,,,Africa,Africa,rangeland,,,,,,,,,,,,,livestock,compactness and infiltration,
-153,2010,anthropogenic disturbance,vegetation,seeding,active,,,,,,,pre-disturbance condition,,,North America,USA,roadways,,,,,,,,,,,,,,,roads
-154,2010,agriculture,vegetation,water addition,active,,,,,,,undisturbed community,,,Asia,China,agriculture,,,,,,,,,,,,,unreported animal,physicochemical properties,
-155,2009,exotics,animal,"seeding, fire",active,,,,,,,undisturbed plant community,,,North America,USA,steppe,,,,,,,,,,,,,,,arthropods
-157,2009,desertification,"vegetation, soil","planting, soil amelioration",active,,,,,,,pre-disturbance condition,,,Europe,Spain,grassland,,,,,,,,,,,,,livestock,chemical composition,
-160,2008,anthropogenic disturbance,vegetation,"seeding, herbicide",active,,,,,,,native vegetation,,,North America,USA,roadways,,,,,,,,,,,,,,physicochemical properties,roadsides
-161,2008,grazing,vegetation,mechanical disturbance and seeding,active,,,,,,,palatable grasses,,,South America,Argentina,rangeland,,,,,,,,,,,,,livestock,,
-162,2007,anthropogenic disturbance,vegetation,natural recovery,passive,,,,,,,revegetation,,,Europe,Spain,roadways,,,,,,,,,,,,,,,road slopes
-164,2006,anthropogenic disturbance,"vegetation, soil",planting,active,,,,,,,native vegetation,,,Europe,Spain,steppe,,,,,,,,,,,,,,physicochemical properties,
-166,2004,mining,vegetation,seeding,active,,,,,,,diverse community,,,Oceania,Australia,shrubland,,,,,,,,,,,,,,no,
-167,2004,agriculture,vegetation,"seeding, mowing and herbicide, mulching (straw and sawdust)",active,,,,,,,native vegetation,,,North America,Canada,agriculture,,,,,,,,,,,,,,chemical composition,
-168,2003,desertification,vegetation,"planting, composted addition, mycorrhizal inoculation",active,,,,,,,revegetation,,,Europe,Spain,mediterranean,,,,,,,,,,,,,,physicochemical properties,
-169,2003,exotics,vegetation,seeding,active,,,,,,,native vegetation,,,North America,USA,grassland,,,,,,,,,,,,,,,
-170,2018,grazing,"vegetation, soil",grazing exclusion,passive,,,,,,,biomass,,,Asia,China,steppe,,,,,,,,,,,,,sheep,physicochemical properties,
-171,2018,anthropogenic disturbance,vegetation,seeding,active,,,,,,,undisturbed vegetation,,,North America,USA,grassland,,,,,,,,,,,,,cattle,,industries
-179,2017,grazing,vegetation,seeding,active,,,,,,,not clear,,,Oceania,Australia,grassland,,,,,,,,,,,,,livestock,no,
-180,2016,shrub encroachment,vegetation,chemical control,active,,,,,,,productive savanna,,,Africa,Africa,savannah,,,,,,,,,,,,,livestock,,
-182,2016,mining,soil,"planting, soil amelioration",active,,,,,,,undisturbed soil,,,Europe,Spain,mediterranean,,,,,,,,,,,,,,chemical and microbia properties,
-188,2016,agriculture,vegetation,natural recovery,passive,,,,,,,not clear,,,South America,Argentina,agriculture,,,,,,,,,,,,,,physicochemical properties,
-193,2015,exotics,"vegetation, soil","seeding, nutrients",active,,,,,,,not clear,,,North America,USA,grassland,,,,,,,,,,,,,cattle,litter and N meassured,
-194,2015,anthropogenic disturbance,vegetation,"seeding, irrigation",active,,,,,,,undisturbed desert,,,North America,USA,shrubland,,,,,,,,,,,,,,topsoil salvage,road construction
-195,2015,mining,soil,"planting, microbial ",active,,,,,,,not clear,,,Asia,China,grassland,,,,,,,,,,,,,,"chemical, enzyme and microbial meassures",
-197,2015,exotics,vegetation,planting,active,,,,,,,not clear,,,North America,Hawai,woodland,,,,,,,,,,,,,,physicochemical properties,
-202,2015,anthropogenic disturbance,vegetation,planting,active,,,,,,,not clear,,,Europe,Spain,forest,,,,,,,,,,,,,,physicochemical properties,human exploitation
-204,2014,anthropogenic disturbance,soil,planting,active,,,,,,,not clear,,,Asia,China,grassland,,,,,,,,,,,,,,moisture,
-206,2014,agriculture,vegetation,"seeding, irrigation",active,,,,,,,native vegetation,,,North America,USA,agriculture,,,,,,,,,,,,,cattle,water addition,
-207,2014,grazing,"vegetation, soil",grazing exclusion,passive,,,,,,,pre-disturbance condition,,,Asia,China,grassland,,,,,,,,,,,,,livestock,chemical composition,
-209,2014,agriculture,"vegetation, soil",natural recovery,passive,,,,,,,not clear,,,South America,Argentina,agriculture,,,,,,,,,,,,,livestock,physicochemical properties,
-210,2014,agriculture,soil,carbon amendment,active,,,,,,,native grasslands,,,Europe,Hungary,agriculture,,,,,,,,,,,,,,chemical and microbia properties,
-211,2014,exotics,vegetation,"seeding, herbicide",active,,,,,,,perennial vegetation,,,North America,USA,rangeland,,,,,,,,,,,,,,,
-212,2014,stressful soil,vegetation,planting,active,,,,,,,not clear,,,Europe,Spain,shrubland,,,,,,,,,,,,,,moisture,
-213,2015,desertification,soil,planting,active,,,,,,,native vegetation and soil retention,,,Asia,India,shrubland,,,,,,,,,,,,,cattle,physiochemical properties,
-214,2014,agriculture,vegetation,"planting, irrigation, mulch",active,,,,,,,not clear,,,North America,USA,agriculture,,,,,,,,,,,,,,mulch and water addition,
-218,2013,soil erosion,soil,planting,active,,,,,,,not clear,,,Asia,China,savannah,,,,,,,,,,,,,,chemical and microbia properties,
-219,2013,grazing,vegetation,grazing exclusion,passive,,,,,,,soil and vegetation recovery,,,Africa,Morocco,rangeland,,,,,,,,,,,,,livestock,chemical composition,
-220,2013,mining,vegetation,nurse plants,passive,,,,,,,vegetation cover,,,South America,Chile,shrubland,,,,,,,,,,,,,unreported animal,physicochemical properties,
-221,2012,exotics,vegetation,seed caching rodents,passive,,,,,,,not clear,,,North America,USA,rangeland,,,,,,,,,,,,,,,
-223,2013,grazing,vegetation,nurse plants,passive,,,,,,,not clear,,,Asia,Iran,rangeland,,,,,,,,,,,,,unreported animal,no,
-229,2012,grazing,seed,soil seed bank,passive,,,,,,,original light grazing situation,,,Africa,Africa,rangeland,,,,,,,,,,,,,livestock,seed bank,
-230,2012,browsing,vegetation,planting,active,,,,,,,intact site,,,Africa,Africa,forest,,,,,,,,,,,,,goat,,costs
-231,2012,grazing,vegetation,grazing exclusion,passive,,,,,,,not clear,,,Asia,Mongolia,grassland,,,,,,,,,,,,,sheep and goats,,
-232,2012,exotics,vegetation,irrigation,active,,,,,,,native vegetation,,,North America,USA,shrubland,,,,,,,,,,,,,,water addition,
-233,2012,exotics,vegetation,"planting, mycorrhiza, hydrogel, wood obstruction",active,,,,,,,not clear,,,North America,USA,shrubland,,,,,,,,,,,,,,,
-235,2012,anthropogenic disturbance,seed,"seeding, tackifier, harrowed",active,,,,,,,pre-disturbance conditions,,,North America,USA,shrubland,,,,,,,,,,,,,,seed bank,military training area
-238,2011,grazing,soil,planting,active,,,,,,,rangeland rehabilitation,,,Africa,Morocco,rangeland,,,,,,,,,,,,,livestock,chemical properties,
-239,2011,agriculture,vegetation,natural recovery,passive,,,,,,,native vegetation recovery,,,South America,Brazil,savannah,,,,,,,,,,,,,cattle,moisture,forestry
-240,2011,exotics,vegetation,"seeding, mechanical control",active,,,,,,,native vegetation,,,North America,USA,grassland,,,,,,,,,,,,,,,
-241,2011,exotics,vegetation,planting,active,,,,,,,not clear,,,South America,Chile,mediterranean,,,,,,,,,,,,,cattle,moisture,
-242,2011,agriculture,soil,planting,active,,,,,,,not clear,,,Asia,China,agriculture,,,,,,,,,,,,,,physicochemical and microbial properties,
-243,2011,exotics,vegetation,seeding,active,,,,,,,not clear,,,North America,USA,steppe,,,,,,,,,,,,,,physicochemical properties,
-244,2011,anthropogenic disturbance,vegetation,"planting, clay and hydrogel ",active,,,,,,,not clear,,,Europe,Spain,woodland,,,,,,,,,,,,,,no,
-245,2011,exotics,vegetation,planting,active,,,,,,,not clear,,,North America,USA,grassland,,,,,,,,,,,,,,water content,
-246,2011,anthropogenic disturbance,vegetation,shelters,active,,,,,,,not clear,,,Europe,Spain,shrubland,,,,,,,,,,,,,unreported animal,,deforestation
-247,2011,agriculture,soil,natural recovery,passive,,,,,,,soil properties of native forests,,,Asia,China,agriculture,,,,,,,,,,,,,unreported animal,physicochemical and microbial properties,
-248,2011,soil erosion,soil,planting,active,,,,,,,not clear,,,Europe,Turkey,forest,,,,,,,,,,,,,,physicochemical properties,
-250,2010,anthropogenic disturbance,vegetation,"planting, irrigation, hydrogels",active,,,,,,,not clear,,,North America,USA,rangeland,,,,,,,,,,,,,,water addition,
-251,2010,grazing,vegetation,"seeding, constructing safe sites, retaining seed movement",active,,,,,,,not clear,,,Asia,China,grassland,,,,,,,,,,,,,unreported animal,seed bank,
-252,2010,grazing,vegetation,seeding,active,,,,,,,not clear,,,Asia,Jordan,rangeland,,,,,,,,,,,,,livestock,,
-253,2010,wildfire,vegetation,"seeding, irrigation",active,,,,,,,not clear,,,North America,USA,rangeland,,,,,,,,,,,,,,texture and microtopography,
-254,2009,exotics,vegetation,"planting, fungal inoculation",active,,,,,,,not clear,,,North America,USA,xeroriparian,,,,,,,,,,,,,,mycorrhizal inoculation,
-255,2009,grazing,vegetation,grazing exclusion,passive,,,,,,,not clear,,,Africa,Africa,rangeland,,,,,,,,,,,,,livestock,,
-256,2007,agriculture,soil,mycorrhizal fungi,passive,,,,,,,fungi of non-cultivated fields,,,Asia,China,agriculture,,,,,,,,,,,,,unreported animal,physicochemical properties,
-259,2005,grazing,vegetation,grazing exclusion,passive,,,,,,,not clear,,,Asia,China,rangeland,,,,,,,,,,,,,unreported animal,,
-262,2003,grazing,"vegetation, soil"," seeding, hollows-dyker plough, furrows-ripper/sub-soiler and walking-stick planter",active,,,,,,,stable vegetation to deliver animal production.,,,Africa,Africa,rangeland,,,,,,,,,,,,,unreported animal,,
-263,2003,grazing,vegetation,phytogenic mounds (nebkhas),passive,,,,,,,not clear,,,Africa,Africa,rangeland,,,,,,,,,,,,,unreported animal,temperature and moisture,
-264,2003,grazing,"vegetation, soil","seeding, gypsum (CaSO4) and organic mulch",active,,,,,,,not clear,,,Africa,Africa,rangeland,,,,,,,,,,,,,livestock,gypsum and mulching addition,
-267,2001,anthropogenic disturbance,vegetation,facilitation ,passive,,,,,,,not clear,,,Europe,Spain,steppe,,,,,,,,,,,,,,"temperature, moisture, chemical properties",
-268,2000,anthropogenic disturbance,vegetation,irrigation,active,,,,,,,not clear,,,North America,USA,shrubland,,,,,,,,,,,,,,water addition,
-269,2000,mining,vegetation,"seeding, planting",active,,,,,,,not clear,,,North America,USA,steppe,,,,,,,,,,,,,livestock,no,
-271,1999,mining,animal,natural recovery,passive,,,,,,,not clear,,,Africa,Africa,shrubland,,,,,,,,,,,,,sheep,"ph, electrical conductivity, microbial",rodents
-274,2010,agriculture,vegetation,"seeding, micro-topographic relief, fire, grazing",active,,,,,,,native vegetation,,,North America,USA,agriculture,,,,,,,,,,,,,livestock,"fallowing, disking, micro-topography",
-275,2007,agriculture,vegetation,"irrigation, planting, weed control",active,,,,,,,native vegetation,,,North America,USA,agriculture,,,,,,,,,,,,,,"salt-remediation products, seed coatings, and mycorrhizal inoculation",
-276,1999,anthropogenic disturbance,vegetation,"seeding, ripped, disked, fertilization",active,,,,,,,undisturbed sites,,,North America,USA,grassland,,,,,,,,,,,,,,"ripped, disked",oil and gas fields
-277,2017,exotics,vegetation,"seeding, grazing",active,,,,,,,not clear,,,North America,USA,shrubland,,,,,,,,,,,,,sheep,,solar power plant installation
-278,2014,anthropogenic disturbance,vegetation,"seeding, tillage, weed suppression",active,,,,,,,valley saltbush scrub community,,,North America,USA,shrubland,,,,,,,,,,,,,livestock,tillage,solar power plant installation
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,, , ,
+ID,year,disturbance,focus,technique,paradigm,hypothesis,pathway,shrub.species,target.plant,measured.factors,response,measure.success,lat,long,continent,country,ecosystem,elevation (m),MAP,aridity,Nsites,nsamples,mean.treatment,mean.control,var.t,var.c,p-value,df,exp.duration,treatment.listed,grazing,soil,notes
+1,2018,desertification,soil,litter crust ,passive,"surface microhabitats, litter vs bare ground",litter crusts-microhabitats,unreported,multiple herbs,"soil moisture, temperature, light intensity, organic matter",seedling establishment,seedling establishment,38.76667,110.35,Asia,China,sand dune,1270,437,0.56,3,27,16.31,4.61,1,1,<0.05,2,unreported,1,,physical and chemical factors,potential use
+2.1,2018,"grazing, fire",seed bank,seed bank,passive,seed banks,seed banks-above ground sp,Ericameria nauseosa,multiple species,"shrub cover, ground cover, climate, disturbance history",seed banks,native seed bank,40.66667,115.5,North America,USA,shrubland,unreported,unreported,unreported,17,340,,,,,,,variable 3-20 weeks,0,livestock,seed bank,not treatment-control
+2.2,2018,"grazing, fire",seed bank,seed bank,passive,seed banks,seed banks-above ground sp,Chrysothamus viscidiflorus,multiple species,"shrub cover, ground cover, climate, disturbance history",seed banks,native seed bank,40.66667,115.5,North America,USA,shrubland,unreported,unreported,unreported,17,340,,,,,,,variable 3-20 weeks,0,livestock,seed bank,not treatment-control
+2.3,2018,"grazing, fire",seed bank,seed bank,passive,seed banks,seed banks-above ground sp,Artemisia tridentata,multiple species,"shrub cover, ground cover, climate, disturbance history",seed banks,native seed bank,40.66667,115.5,North America,USA,shrubland,unreported,unreported,unreported,17,340,,,,,,,variable 3-20 weeks,0,livestock,seed bank,not treatment-control
+3,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,multiple grasses and shrubs,Triodia wiseana,"seedling growth parameters, soil characteristics",seedling survival %,Triodia wiseana establishment,22.05,118.1167,Oceania,Australia,grassland,unreported,325,unreported,1,150,16.57,18.81,3.34,4.9,>0.05,,12 months,1,,"C, N, microbial activity",glasshouse
+4,2018,mining,vegetation,natural recovery,passive,,,,,,,not clear,,,Africa,Namib,desert,,,,,,,,,,,,,,,,natural recovery
+5,2017,grazing,vegetation,planting,active,,,,,,,not plowed site,,,Asia,Aral Sea,grassland,,,,,,,,,,,,,,livestock,chemical composition,climax community
+6,2017,exotics,vegetation,"seeding, herbicides, activated carbon",active,,,,,,,perennial native grasses,,,North America,USA,rangeland,,,,,,,,,,,,,,,,
+9,2016,desertification,soil,phytogenic mounds (nebkhas),passive,,,,,,,not clear,,,Asia,China,grassland,,,,,,,,,,,,,,unreported animal,nutrients,potential use
+11,2015,agriculture,soil,planting,active,,,,,,,healthy ecosystem,,,Asia,China,grassland,,,,,,,,,,,,,,unreported animal,nutrients and enzyme,reduce pression on ecosystems
+12,2015,desertification,soil,"planting, soil moisture",active,,,,,,,not clear,,,Asia,China,steppe,,,,,,,,,,,,,,,moisture,
+13,2014,agriculture,animal,planting,active,,,,,,,not disturbed natural habitats,,,Asia,China,grassland,,,,,,,,,,,,,,,,lizard
+15,2014,grazing,vegetation,grazing treatments,passive,,,,,,,resilient rangelands,,,Africa,Tunisia,rangeland,,,,,,,,,,,,,,livestock,,
+16,2013,desertification,soil,planting,active,,,,,,,not clear,,,Asia,China,sand dune,,,,,,,,,,,,,,cattle and sheep,"ph,N,C,P",restoration may be accelerated with plantations
+19,2007,desertification,"vegetation, soil",fertile islands,passive,,,,,,,higher productivity systems,,,Asia,China,sand dune,,,,,,,,,,,,,,livestock,physicochemical properties,
+20,2007,desertification,soil,planting,active,,,,,,,desert native steppe,,,Asia,China,sand dune,,,,,,,,,,,,,,,physicochemical properties,soil conservation
+21,2006,agriculture,vegetation,sand vegetation,active,,,,,,,not clear,,,Asia,Tibetan Plateau,grassland,,,,,,,,,,,,,,unreported animal,,
+23,2017,grazing,vegetation,ccc framework,passive,,,,,,,not clear,,,Asia,China,grassland,,,,,,,,,,,,,,livestock,,
+28,2016,grazing,soil,soil fungal,passive,,,,,,,natural grassland,,,Asia,China,grassland,,,,,,,,,,,,,,unreported animal,physicochemical properties,
+29,2015,desertification,"vegetation, soil",planting,active,,,,,,,natural grassland,,,Asia,China,sand dune,,,,,,,,,,,,,,livestock,chemical composition,
+30,2013,shrub encroachment,animal,herbicide,active,,,,,,,not clear,,,North America,USA,shrubland,,,,,,,,,,,,,,,,lizard
+31,2012,desertification,seed,seed arrival and retention,passive,,,,,,,not clear,,,Asia,China,grassland,,,,,,,,,,,,,,,,arthropods
+32,2012,desertification,soil,planting,active,,,,,,,not clear,,,Asia,China,grassland,,,,,,,,,,,,,,unreported animal,physicochemical and biological properties,arthropods
+34,2009,grazing,vegetation,"water, nitrogen and phosphorus",passive,,,,,,,not clear,,,Asia,China,grassland,,,,,,,,,,,,,,unreported animal,physicochemical properties,rodents
+35,2008,grazing,vegetation,grazing exclusion,passive,,,,,,,grassland before grazing,,,North America,USA,grassland,,,,,,,,,,,,,,livestock,,pollinators
+37,2007,grazing,vegetation,seedling herbivory,passive,,,,,,,grassland ,,,North America,USA,grassland,,,,,,,,,,,,,,livestock,,rodents
+39,2017,soil erosion,soil,biological soil crusts,passive,,,,,,,not clear,,,Asia,Israel,desert,,,,,,,,,,,,,,,physicochemical properties,reptiles
+40,2018,desertification,soil,nutrients addition,active,,,,,,,forest vegetation,,,Asia,China,grassland,,,,,,,,,,,,,,livestock,nutrients,arthropods
+41,2018,desertification,soil,litter crust,passive,,,,,,,not clear,,,Asia,China,sand dune,,,,,,,,,,,,,,,"moisture, temperature, pahysicochemical properties",rodents
+42,2018,desertification,vegetation,planting,active,,,,,,,not clear,,,Asia,China,sand dune,,,,,,,,,,,,,,livestock,,re-establish natural ecosystem state
+43,2018,canopy removal,vegetation,foundation species,passive,,,,,,,native plant communities,,,North America,USA,shrubland,,,,,,,,,,,,,,,,positive interactions
+44,2017,exotics ,vegetation,planting,active,,,,,,,perennial native grasses,,,North America,USA,steppe,,,,,,,,,,,,,,,,active planting native seedlings
+45,2017,soil erosion,soil,planting,active,,,,,,,natural vegetation,,,Asia,China,steppe,,,,,,,,,,,,,,unreported animal,physicochemical properties,chemical process restoration
+46,2017,anthropogenic disturbance,vegetation,genetics,passive,,,,,,,not clear,,,North America,USA,desert,,,,,,,,,,,,,,,,
+48,2017,exotics,vegetation,"chemical, mecanical control",active,,,,,,,native plant communities,,,North America,USA,rangeland,,,,,,,,,,,,,,livestock,,adaptive management approaches
+50,2016,mining,vegetation,planting,active,,,,,,,not clear,,,Asia,Kazakhstan,desert,,,,,,,,,,,,,,,heavy metals,
+51,2014,grazing,animal,planting,active,,,,,,,diverse arthropod community,,,Asia,China,grassland,,,,,,,,,,,,,,fenced ,physicochemical properties,arthropods
+52,2014,exotics,vegetation,planting,active,,,,,,,perennial native grasses,,,North America,USA,grassland,,,,,,,,,,,,,,livestock and horses,,rebuild native community
+53,2013,exotics,vegetation,"planting, glyphosate",active,,,,,,,native plant communities,,,North America,USA,steppe,,,,,,,,,,,,,,livestock,,
+54,2012,exotics,vegetation,"seeding, planting",active,,,,,,,native plant communities,,,North America,USA,grassland,,,,,,,,,,,,,,,nutrients,ecosystems dominated by native species
+55,2011,exotics,vegetation,carbon amendments,active,,,,,,,native plant communities,,,North America,USA,grassland,,,,,,,,,,,,,,,"C, N",native plant restoration
+58,2010,grazing,vegetation,facilitation ,passive,,,,,,,diverse plant community,,,Asia,Mongolia,steppe,,,,,,,,,,,,,,livestock,,positive interactions
+59,2010,exotics,vegetation,"chemical, mecanical control",active,,,,,,,native plant communities,,,North America,USA,shrubland,,,,,,,,,,,,,,,,native plant restoration
+61,2010,exotics,vegetation,"seeding, chemical, burning",active,,,,,,,perennial native grasses,,,North America,USA,rangeland,,,,,,,,,,,,,,,,native plant restoration
+63,2008,desertification,soil,micropropagation of mosses,active,,,,,,,moss dominated soil crusts,,,Asia,China,desert,,,,,,,,,,,,,,,nutrients,soil restoration
+64,2008,agriculture,vegetation,carbon addition-top soil removal-sowing ,active,,,,,,,rich grasslands,,,Europe,Netherlands,agriculture,,,,,,,,,,,,,,,chemical and microbia properties,active restoration
+65,2008,stressful soil,vegetation,fertilization and irrigation,active,,,,,,,native plant communities,,,North America,USA,shrubland,,,,,,,,,,,,,,,nutrients,
+66,2005,grazing ,vegetation,"seeding, shrub facilitation",passive,,,,,,,vegetation before grazing,,,North America,USA,rangeland,,,,,,,,,,,,,,livestock,,positive interactions
+68,2004,grazing,vegetation,planting,active,,,,,,,native plant communities,,,North America,USA,grassland,,,,,,,,,,,,,,cattle,,
+69,2003,grazing,vegetation,grazing exclusion,passive,,,,,,,vegetation before grazing,,,Asia,Kuwait,shrubland,,,,,,,,,,,,,,livestock,,
+71,1999,clearing,vegetation,mycorrhizal fungi ,passive,,,,,,,vegetation before disturbance,,,North America,Mexico,shrubland,,,,,,,,,,,,,,,physicochemical properties,
+73,1999,"various, grazing, herbicide, soil disturbance",animal,ants as indicators,passive,,,,,,,not clear,,,North America,USA,rangeland,,,,,,,,,,,,,,livestock,,arthropods
+74,1997,anthropogenic disturbance,animal,"seeding, planting",active,,,,,,,undegraded natural area,,,North America,USA,shrubland,,,,,,,,,,,,,,,,"construction of flood structures, rodents"
+76,2018,grazing,vegetation,"sowing, fencing",active,,,,,,,revegetation,,,South America,Falkland Islands,grassland,,,,,,,,,,,,,,cattle and sheep,moisture and temperature,
+77,2018,agriculture,vegetation,mowing and grazing,active,,,,,,,semi-natural grasslands,,,Europe,Belgium,agriculture,,,,,,,,,,,,,,ponies and cows,"P, N evaluation",
+78,2017,agriculture,vegetation,germination and survival ,passive,,,,,,,semi-natural grasslands,,,Europe,Belgium,grassland,,,,,,,,,,,,,,,biogeochemistry,
+80,2016,agriculture,cost,costs,active,,,,,,,not clear,,,North America,Canada,agriculture,,,,,,,,,,,,,, , ,
+82,2017,agriculture,soil,soil carbon and enzyme,passive,,,,,,,restored grassland,,,Asia,China,agriculture,,,,,,,,,,,,,,,"C, enzyme activities",productive grasslands
+84,2016,agriculture,animal,planting,active,,,,,,,not clear,,,Oceania,New Zealand,agriculture,,,,,,,,,,,,,,,,worms
+85,2016,grazing,vegetation,planting,active,,,,,,,agroecosystems,,,Oceania,Australia,grassland,,,,,,,,,,,,,,livestock,,production and biodiversity
+86,2015,agriculture,vegetation,planting,active,,,,,,,native plant communities,,,North America,USA,agriculture,,,,,,,,,,,,,,,chemical composition,
+87,2015,agriculture,soil,fertilization,active,,,,,,,semi-natural grasslands,,,Europe,Belgium,agriculture,,,,,,,,,,,,,,,chemical composition,soil restoration
+88,2014,agriculture,soil,seeding,passive,,,,,,,native grasslands,,,Asia,China,agriculture,,,,,,,,,,,,,,,physicochemical properties,
+89,2014,agriculture,animal,"seeding, pollination",active,,,,,,,not clear,,,North America,USA,agriculture,,,,,,,,,,,,,,,,pollinators
+91,2011,agriculture,vegetation,agroecoystems,passive,,,,,,,agroecosystems,,,Oceania,Australia,agriculture,,,,,,,,,,,,,,cattle,,biodiversity in agroecosystems
+93,2010,agriculture,vegetation,natural recovery,passive,,,,,,,semi-natural vegetation,,,South America,Argentina,agriculture,,,,,,,,,,,,,,livestock,,novel vegetation states
+95,2010,agriculture,vegetation,sowing and planting,active,,,,,,,native vegetation remnants,,,North America,USA,agriculture,,,,,,,,,,,,,,,,
+96,2009,agriculture,animal,rodents,passive,,,,,,,native vegetation,,,Asia,Mongolia,agriculture,,,,,,,,,,,,,,livestock,,rodents
+98,2002,agriculture,vegetation,"sowing, cutting, grazing treatments",active,,,,,,,semi-natural grasslands,,,Europe,Scotland,agriculture,,,,,,,,,,,,,,cattle and sheep,,
+100,2005,exotics,vegetation,"seeding, herbicide, nutrients",active,,,,,,,native grasslands,,,North America,USA,grassland,,,,,,,,,,,,,,livestock,chemical,
+101,2013,desertification,vegetation,natural recovery,passive,,,,,,,stabilized sand land,,,Asia,China,sand dune,,,,,,,,,,,,,,unreported animal,,
+104,2003,agriculture,vegetation,mycorrhizal inoculation ,active,,,,,,,native vegetation,,,Europe,Spain,agriculture,,,,,,,,,,,,,,unreported animal,physicochemical properties,
+105,2002,anthropogenic disturbance,soil,fertile islands,passive,,,,,,,undisturbed desert,,,North America,USA,roadways,,,,,,,,,,,,,,,physicochemical properties,abandoned roads
+106,2001,agriculture,vegetation,"seeding, irrigation",active,,,,,,,revegetation,,,North America,USA,agriculture,,,,,,,,,,,,,,,water addition,
+107,2001,mining,soil,soil amendments,active,,,,,,,revegetation,,,North America,USA,shrubland,,,,,,,,,,,,,,,water and chemical composition,
+108,2000,anthropogenic disturbance,"vegetation, soil",natural recovery,passive,,,,,,,natural community,,,North America,USA,roadways,,,,,,,,,,,,,,,physicochemical properties,abandoned roads
+109,1991,agriculture,vegetation,"planting, sowing",active,,,,,,,native vegetation,,,North America,USA,agriculture,,,,,,,,,,,,,,,,
+110,2018,agriculture,soil,soil microbial,passive,,,,,,,revegetation,,,Asia,China,agriculture,,,,,,,,,,,,,,,chemical composition,microbial
+111,2016,agriculture,"vegetation, soil",planting,active,,,,,,,revegetation,,,Asia,China,agriculture,,,,,,,,,,,,,,,chemical composition,
+112,2006,agriculture,vegetation,"seeding, irrigation",active,,,,,,,native vegetation,,,North America,USA,agriculture,,,,,,,,,,,,,,,mulch and phosphate addition,
+114,1998,agriculture,vegetation,planting,active,,,,,,,native vegetation,,,North America,USA,agriculture,,,,,,,,,,,,,,herbivory,chemical composition,
+115,2018,grazing,vegetation,grazing exclusion,passive,,,,,,,native vegetation,,,Europe,Portugal,savannah,,,,,,,,,,,,,,cattle,,
+118,2017,desertification,"vegetation, soil",seeding,active,,,,,,,revegetation,,,Asia,Saudi Arabia,rangeland,,,,,,,,,,,,,,unreported animal,physical attributes,
+119,2016,grazing,vegetation,burning and mowing,active,,,,,,,native grasslands,,,Asia,Mongolia,steppe,,,,,,,,,,,,,,livestock,chemical composition,
+120,2016,agriculture,animal,habitat for reptiles,passive,,,,,,,not clear,,,Oceania,Australia,woodland,,,,,,,,,,,,,,cattle and sheep,,reptiles
+121,2015,agriculture,vegetation,planting,active,,,,,,,native vegetation,,,Asia,China,agriculture,,,,,,,,,,,,,,,chemical composition,
+126,2011,grazing,biological soil crusts,grazing exclusion,passive,,,,,,,crusts of little disturbed sites,,,Oceania,Australia,woodland,,,,,,,,,,,,,,livestock,nutrients,
+127,2008,mining,vegetation,"seeding, soil amendment",active,,,,,,,not clear,,,Europe,Spain,shrubland,,,,,,,,,,,,,,sheep,chemical composition,
+128,2007,agriculture,vegetation,natural recovery,passive,,,,,,,native grasslands,,,Oceania,Australia,agriculture,,,,,,,,,,,,,,livestock,,
+129,2005,clearing,vegetation,"seeding, inoculation",active,,,,,,,revegetation,,,Oceania,Australia,woodland,,,,,,,,,,,,,,unreported animal,,
+130,2018,desertification,soil ,soil bacterial community,passive,,,,,,,revegetation,,,Asia,China,grassland,,,,,,,,,,,,,,unreported animal,physicochemical properties,
+132,2017,clearing,vegetation,seeding,active,,,,,,,plant diversity,,,North America,USA,grassland,,,,,,,,,,,,,,,,
+133,2017,land-use changes,soil,soil microbial ,passive,,,,,,,natural vegetation,,,Asia,China,steppe,,,,,,,,,,,,,,,microbial and chemical properties,microbial
+134,2016,land-use changes,vegetation,"herbicide, herbivore exclosures, and shelter tubes",active,,,,,,,native vegetation,,,North America,USA,forest,,,,,,,,,,,,,,,,
+135,2016,agriculture,vegetation,natural recovery,passive,,,,,,,native vegetation,,,Asia,Mongolia,forest,,,,,,,,,,,,,,livestock,physicochemical properties,
+139,2015,agriculture,soil,planting,active,,,,,,,afforestation,,,Asia,China,grassland,,,,,,,,,,,,,,,water,
+141,2014,desertification,soil,grazing exclusion,passive,,,,,,,natural recovery,,,Asia,China,grassland,,,,,,,,,,,,,,sheep,carbon storage,
+142,2015,agriculture,vegetation,planting ,active,,,,,,,native vegetation,,,North America,USA,agriculture,,,,,,,,,,,,,,,,
+143,2014,exotics,vegetation,"seeding, mowing",active,,,,,,,native grasslands,,,North America,USA,grassland,,,,,,,,,,,,,,,,
+145,2013,deforestation,vegetation,planting,active,,,,,,,native vegetation,,,North America,Mexico,forest,,,,,,,,,,,,,,,,
+146,2013,deforestation,vegetation,planting,active,,,,,,,native vegetation,,,South America,Argentina,forest,,,,,,,,,,,,,,unreported animal,temperature and moisture,
+147,2012,agriculture,vegetation,seeding ,active,,,,,,,undisturbed plant community,,,North America,USA,agriculture,,,,,,,,,,,,,,unreported animal,,
+148,2012,soil erosion,soil,soil nutrients,active,,,,,,,revegetation,,,Asia,China,grassland,,,,,,,,,,,,,,livestock,"C, N",
+149,2012,anthropogenic disturbance,"vegetation, soil","seeding, soil amendment",active,,,,,,,native vegetation,,,North America,USA,shrubland,,,,,,,,,,,,,,,chemical composition,natural gas exploration
+151,2011,soil erosion,soil,biostimulants,active,,,,,,,microbial and vegetation recovery,,,Europe,Spain,mediterranean,,,,,,,,,,,,,,,biostimulants,
+152,2010,grazing,vegetation,"seeding, soil tilling, fertilization",active,,,,,,,native vegetation,,,Africa,Africa,rangeland,,,,,,,,,,,,,,livestock,compactness and infiltration,
+153,2010,anthropogenic disturbance,vegetation,seeding,active,,,,,,,pre-disturbance condition,,,North America,USA,roadways,,,,,,,,,,,,,,,,roads
+154,2010,agriculture,vegetation,water addition,active,,,,,,,undisturbed community,,,Asia,China,agriculture,,,,,,,,,,,,,,unreported animal,physicochemical properties,
+155,2009,exotics,animal,"seeding, fire",active,,,,,,,undisturbed plant community,,,North America,USA,steppe,,,,,,,,,,,,,,,,arthropods
+157,2009,desertification,"vegetation, soil","planting, soil amelioration",active,,,,,,,pre-disturbance condition,,,Europe,Spain,grassland,,,,,,,,,,,,,,livestock,chemical composition,
+160,2008,anthropogenic disturbance,vegetation,"seeding, herbicide",active,,,,,,,native vegetation,,,North America,USA,roadways,,,,,,,,,,,,,,,physicochemical properties,roadsides
+161,2008,grazing,vegetation,mechanical disturbance and seeding,active,,,,,,,palatable grasses,,,South America,Argentina,rangeland,,,,,,,,,,,,,,livestock,,
+162,2007,anthropogenic disturbance,vegetation,natural recovery,passive,,,,,,,revegetation,,,Europe,Spain,roadways,,,,,,,,,,,,,,,,road slopes
+164,2006,anthropogenic disturbance,"vegetation, soil",planting,active,,,,,,,native vegetation,,,Europe,Spain,steppe,,,,,,,,,,,,,,,physicochemical properties,
+166,2004,mining,vegetation,seeding,active,,,,,,,diverse community,,,Oceania,Australia,shrubland,,,,,,,,,,,,,,,no,
+167,2004,agriculture,vegetation,"seeding, mowing and herbicide, mulching (straw and sawdust)",active,,,,,,,native vegetation,,,North America,Canada,agriculture,,,,,,,,,,,,,,,chemical composition,
+168,2003,desertification,vegetation,"planting, composted addition, mycorrhizal inoculation",active,,,,,,,revegetation,,,Europe,Spain,mediterranean,,,,,,,,,,,,,,,physicochemical properties,
+169,2003,exotics,vegetation,seeding,active,,,,,,,native vegetation,,,North America,USA,grassland,,,,,,,,,,,,,,,,
+170,2018,grazing,"vegetation, soil",grazing exclusion,passive,,,,,,,biomass,,,Asia,China,steppe,,,,,,,,,,,,,,sheep,physicochemical properties,
+171,2018,anthropogenic disturbance,vegetation,seeding,active,,,,,,,undisturbed vegetation,,,North America,USA,grassland,,,,,,,,,,,,,,cattle,,industries
+179,2017,grazing,vegetation,seeding,active,,,,,,,not clear,,,Oceania,Australia,grassland,,,,,,,,,,,,,,livestock,no,
+180,2016,shrub encroachment,vegetation,chemical control,active,,,,,,,productive savanna,,,Africa,Africa,savannah,,,,,,,,,,,,,,livestock,,
+182,2016,mining,soil,"planting, soil amelioration",active,,,,,,,undisturbed soil,,,Europe,Spain,mediterranean,,,,,,,,,,,,,,,chemical and microbia properties,
+188,2016,agriculture,vegetation,natural recovery,passive,,,,,,,not clear,,,South America,Argentina,agriculture,,,,,,,,,,,,,,,physicochemical properties,
+193,2015,exotics,"vegetation, soil","seeding, nutrients",active,,,,,,,not clear,,,North America,USA,grassland,,,,,,,,,,,,,,cattle,litter and N meassured,
+194,2015,anthropogenic disturbance,vegetation,"seeding, irrigation",active,,,,,,,undisturbed desert,,,North America,USA,shrubland,,,,,,,,,,,,,,,topsoil salvage,road construction
+195,2015,mining,soil,"planting, microbial ",active,,,,,,,not clear,,,Asia,China,grassland,,,,,,,,,,,,,,,"chemical, enzyme and microbial meassures",
+197,2015,exotics,vegetation,planting,active,,,,,,,not clear,,,North America,Hawai,woodland,,,,,,,,,,,,,,,physicochemical properties,
+202,2015,anthropogenic disturbance,vegetation,planting,active,,,,,,,not clear,,,Europe,Spain,forest,,,,,,,,,,,,,,,physicochemical properties,human exploitation
+204,2014,anthropogenic disturbance,soil,planting,active,,,,,,,not clear,,,Asia,China,grassland,,,,,,,,,,,,,,,moisture,
+206,2014,agriculture,vegetation,"seeding, irrigation",active,,,,,,,native vegetation,,,North America,USA,agriculture,,,,,,,,,,,,,,cattle,water addition,
+207,2014,grazing,"vegetation, soil",grazing exclusion,passive,,,,,,,pre-disturbance condition,,,Asia,China,grassland,,,,,,,,,,,,,,livestock,chemical composition,
+209,2014,agriculture,"vegetation, soil",natural recovery,passive,,,,,,,not clear,,,South America,Argentina,agriculture,,,,,,,,,,,,,,livestock,physicochemical properties,
+210,2014,agriculture,soil,carbon amendment,active,,,,,,,native grasslands,,,Europe,Hungary,agriculture,,,,,,,,,,,,,,,chemical and microbia properties,
+211,2014,exotics,vegetation,"seeding, herbicide",active,,,,,,,perennial vegetation,,,North America,USA,rangeland,,,,,,,,,,,,,,,,
+212,2014,stressful soil,vegetation,planting,active,,,,,,,not clear,,,Europe,Spain,shrubland,,,,,,,,,,,,,,,moisture,
+213,2015,desertification,soil,planting,active,,,,,,,native vegetation and soil retention,,,Asia,India,shrubland,,,,,,,,,,,,,,cattle,physiochemical properties,
+214,2014,agriculture,vegetation,"planting, irrigation, mulch",active,,,,,,,not clear,,,North America,USA,agriculture,,,,,,,,,,,,,,,mulch and water addition,
+218,2013,soil erosion,soil,planting,active,,,,,,,not clear,,,Asia,China,savannah,,,,,,,,,,,,,,,chemical and microbia properties,
+219,2013,grazing,vegetation,grazing exclusion,passive,,,,,,,soil and vegetation recovery,,,Africa,Morocco,rangeland,,,,,,,,,,,,,,livestock,chemical composition,
+220,2013,mining,vegetation,nurse plants,passive,,,,,,,vegetation cover,,,South America,Chile,shrubland,,,,,,,,,,,,,,unreported animal,physicochemical properties,
+221,2012,exotics,vegetation,seed caching rodents,passive,,,,,,,not clear,,,North America,USA,rangeland,,,,,,,,,,,,,,,,
+223,2013,grazing,vegetation,nurse plants,passive,,,,,,,not clear,,,Asia,Iran,rangeland,,,,,,,,,,,,,,unreported animal,no,
+229,2012,grazing,seed,soil seed bank,passive,,,,,,,original light grazing situation,,,Africa,Africa,rangeland,,,,,,,,,,,,,,livestock,seed bank,
+230,2012,browsing,vegetation,planting,active,,,,,,,intact site,,,Africa,Africa,forest,,,,,,,,,,,,,,goat,,costs
+231,2012,grazing,vegetation,grazing exclusion,passive,,,,,,,not clear,,,Asia,Mongolia,grassland,,,,,,,,,,,,,,sheep and goats,,
+232,2012,exotics,vegetation,irrigation,active,,,,,,,native vegetation,,,North America,USA,shrubland,,,,,,,,,,,,,,,water addition,
+233,2012,exotics,vegetation,"planting, mycorrhiza, hydrogel, wood obstruction",active,,,,,,,not clear,,,North America,USA,shrubland,,,,,,,,,,,,,,,,
+235,2012,anthropogenic disturbance,seed,"seeding, tackifier, harrowed",active,,,,,,,pre-disturbance conditions,,,North America,USA,shrubland,,,,,,,,,,,,,,,seed bank,military training area
+238,2011,grazing,soil,planting,active,,,,,,,rangeland rehabilitation,,,Africa,Morocco,rangeland,,,,,,,,,,,,,,livestock,chemical properties,
+239,2011,agriculture,vegetation,natural recovery,passive,,,,,,,native vegetation recovery,,,South America,Brazil,savannah,,,,,,,,,,,,,,cattle,moisture,forestry
+240,2011,exotics,vegetation,"seeding, mechanical control",active,,,,,,,native vegetation,,,North America,USA,grassland,,,,,,,,,,,,,,,,
+241,2011,exotics,vegetation,planting,active,,,,,,,not clear,,,South America,Chile,mediterranean,,,,,,,,,,,,,,cattle,moisture,
+242,2011,agriculture,soil,planting,active,,,,,,,not clear,,,Asia,China,agriculture,,,,,,,,,,,,,,,physicochemical and microbial properties,
+243,2011,exotics,vegetation,seeding,active,,,,,,,not clear,,,North America,USA,steppe,,,,,,,,,,,,,,,physicochemical properties,
+244,2011,anthropogenic disturbance,vegetation,"planting, clay and hydrogel ",active,,,,,,,not clear,,,Europe,Spain,woodland,,,,,,,,,,,,,,,no,
+245,2011,exotics,vegetation,planting,active,,,,,,,not clear,,,North America,USA,grassland,,,,,,,,,,,,,,,water content,
+246,2011,anthropogenic disturbance,vegetation,shelters,active,,,,,,,not clear,,,Europe,Spain,shrubland,,,,,,,,,,,,,,unreported animal,,deforestation
+247,2011,agriculture,soil,natural recovery,passive,,,,,,,soil properties of native forests,,,Asia,China,agriculture,,,,,,,,,,,,,,unreported animal,physicochemical and microbial properties,
+248,2011,soil erosion,soil,planting,active,,,,,,,not clear,,,Europe,Turkey,forest,,,,,,,,,,,,,,,physicochemical properties,
+250,2010,anthropogenic disturbance,vegetation,"planting, irrigation, hydrogels",active,,,,,,,not clear,,,North America,USA,rangeland,,,,,,,,,,,,,,,water addition,
+251,2010,grazing,vegetation,"seeding, constructing safe sites, retaining seed movement",active,,,,,,,not clear,,,Asia,China,grassland,,,,,,,,,,,,,,unreported animal,seed bank,
+252,2010,grazing,vegetation,seeding,active,,,,,,,not clear,,,Asia,Jordan,rangeland,,,,,,,,,,,,,,livestock,,
+253,2010,wildfire,vegetation,"seeding, irrigation",active,,,,,,,not clear,,,North America,USA,rangeland,,,,,,,,,,,,,,,texture and microtopography,
+254,2009,exotics,vegetation,"planting, fungal inoculation",active,,,,,,,not clear,,,North America,USA,xeroriparian,,,,,,,,,,,,,,,mycorrhizal inoculation,
+255,2009,grazing,vegetation,grazing exclusion,passive,,,,,,,not clear,,,Africa,Africa,rangeland,,,,,,,,,,,,,,livestock,,
+256,2007,agriculture,soil,mycorrhizal fungi,passive,,,,,,,fungi of non-cultivated fields,,,Asia,China,agriculture,,,,,,,,,,,,,,unreported animal,physicochemical properties,
+259,2005,grazing,vegetation,grazing exclusion,passive,,,,,,,not clear,,,Asia,China,rangeland,,,,,,,,,,,,,,unreported animal,,
+262,2003,grazing,"vegetation, soil"," seeding, hollows-dyker plough, furrows-ripper/sub-soiler and walking-stick planter",active,,,,,,,stable vegetation to deliver animal production.,,,Africa,Africa,rangeland,,,,,,,,,,,,,,unreported animal,,
+263,2003,grazing,vegetation,phytogenic mounds (nebkhas),passive,,,,,,,not clear,,,Africa,Africa,rangeland,,,,,,,,,,,,,,unreported animal,temperature and moisture,
+264,2003,grazing,"vegetation, soil","seeding, gypsum (CaSO4) and organic mulch",active,,,,,,,not clear,,,Africa,Africa,rangeland,,,,,,,,,,,,,,livestock,gypsum and mulching addition,
+267,2001,anthropogenic disturbance,vegetation,facilitation ,passive,,,,,,,not clear,,,Europe,Spain,steppe,,,,,,,,,,,,,,,"temperature, moisture, chemical properties",
+268,2000,anthropogenic disturbance,vegetation,irrigation,active,,,,,,,not clear,,,North America,USA,shrubland,,,,,,,,,,,,,,,water addition,
+269,2000,mining,vegetation,"seeding, planting",active,,,,,,,not clear,,,North America,USA,steppe,,,,,,,,,,,,,,livestock,no,
+271,1999,mining,animal,natural recovery,passive,,,,,,,not clear,,,Africa,Africa,shrubland,,,,,,,,,,,,,,sheep,"ph, electrical conductivity, microbial",rodents
+274,2010,agriculture,vegetation,"seeding, micro-topographic relief, fire, grazing",active,,,,,,,native vegetation,,,North America,USA,agriculture,,,,,,,,,,,,,,livestock,"fallowing, disking, micro-topography",
+275,2007,agriculture,vegetation,"irrigation, planting, weed control",active,,,,,,,native vegetation,,,North America,USA,agriculture,,,,,,,,,,,,,,,"salt-remediation products, seed coatings, and mycorrhizal inoculation",
+276,1999,anthropogenic disturbance,vegetation,"seeding, ripped, disked, fertilization",active,,,,,,,undisturbed sites,,,North America,USA,grassland,,,,,,,,,,,,,,,"ripped, disked",oil and gas fields
+277,2017,exotics,vegetation,"seeding, grazing",active,,,,,,,not clear,,,North America,USA,shrubland,,,,,,,,,,,,,,sheep,,solar power plant installation
+278,2014,anthropogenic disturbance,vegetation,"seeding, tillage, weed suppression",active,,,,,,,valley saltbush scrub community,,,North America,USA,shrubland,,,,,,,,,,,,,,livestock,tillage,solar power plant installation
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,, , ,
