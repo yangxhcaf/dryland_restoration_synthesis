@@ -29,6 +29,7 @@ data,var.c,measure of variance of experimental control
 data,p-value,p value of treatment-control comparison
 data,df,degree of freedom of treatment-control comparison
 data,exp.duration,"duration of experiment, monitoring"
+data,treatment.listed,"control-treatment included, 0-1 "
 data,grazing,grazing condition of study sites
 data,soil,soil features measured 
 additional information,notes,any relevant additional information

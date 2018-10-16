@@ -1,283 +1,418 @@
-ID,year,disturbance,focus,technique,paradigm,hypothesis,pathway,plant.species,target.plant,measured.factors,response,measure.success,lat,long,continent,country,ecosystem,elevation (m),MAP (mm),aridity,Nsites,nsamples,mean.treatment,mean.control,var.t,var.c,p-value,df,exp.duration (months),treatment.listed,,grazing,soil,notes
-1,2018,desertification,soil,litter crust ,passive,"surface microhabitats, litter vs bare ground",litter crusts-microhabitats,unreported shrubs,multiple herbs,"soil moisture, temperature, light intensity, organic matter",seedling establishment,seedling establishment,38.76667,110.35,Asia,China,sand dune,1270,437,0.56,3,27,16.31,4.61,1,1,<0.05,2,unreported,1,std.error,,physical and chemical factors,potential use
-2.1,2018,"grazing, fire",seed bank,seed bank,passive,seed banks,seed banks-above ground sp,Ericameria nauseosa,multiple species,"shrub cover, ground cover, climate, disturbance history",seed banks,native seed bank,40.66667,-115.5,North America,USA,shrubland,unreported,unreported,unreported,17,340,,,,,,unreported,variable 3-20 weeks,0,,livestock,seed bank,not treatment-control
-2.2,2018,"grazing, fire",seed bank,seed bank,passive,seed banks,seed banks-above ground sp,Chrysothamus viscidiflorus,multiple species,"shrub cover, ground cover, climate, disturbance history",seed banks,native seed bank,40.66667,-115.5,North America,USA,shrubland,unreported,unreported,unreported,17,340,,,,,,unreported,variable 3-20 weeks,0,,livestock,seed bank,not treatment-control
-2.3,2018,"grazing, fire",seed bank,seed bank,passive,seed banks,seed banks-above ground sp,Artemisia tridentata,multiple species,"shrub cover, ground cover, climate, disturbance history",seed banks,native seed bank,40.66667,-115.5,North America,USA,shrubland,unreported,unreported,unreported,17,340,,,,,,unreported,variable 3-20 weeks,0,,livestock,seed bank,not treatment-control
-3,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,multiple grasses and shrubs,Triodia wiseana,"seedling growth parameters, soil characteristics",seedling survival %,Triodia wiseana establishment,-22.05,118.12,Oceania,Australia,grassland,unreported,325,unreported,1,150,16.57,18.81,3.34,4.9,>0.05,unreported,12,1,std.error,,"C, N, microbial activity",glasshouse
-4,2018,mining,vegetation,natural recovery,passive,natural recovery,environmental variables-canopy cover,unreported shrubs,multiple unlisted,"distance to seed source, disturbance, canopy cover",canopy cover,nearby or landscape level vegetation,unreported,unreported,Africa,Namib,desert,unreported,30,unreported,2,132,,,,,,unreported,unreported,0,,,,
-5,2017,grazing,vegetation,planting,active,planting vs natural sites,planting-plant succession,Agropyron desertorum,Artemisia terrae-albae,canopy cover,Artemisia projective cover %,Artemisia terrae-albae communities,unreported,unreported,Asia,Kazakhstan,grassland,unreported,125,unreported,2,6,49.5,43,0.71,4.24,unreported,unreported,456,1,std.desv,livestock,chemical composition,not stats
-6,2017,exotics,vegetation,"seeding, herbicides, activated carbon",active,activated carbon addition vs control,activated carbon addition-seedlings,Agropyron desertorum,multiple grasses,seedlings densities,density of Agropyron seedlings,Agropyron desertorum seedlings,unreported,unreported,North America,USA,rangeland,1160,280,unreported,2,unclear,21.82,0,6.3,0,<0.001,unreported,9,1,std.error,,,
-9.1,2016,desertification,soil,fertile islands,passive,fertile islands vs open areas,shrubs-nutrients accumulation,Caragana mirophylla,unreported,"soil nutrients, enzymatic activities",soil organic matter %,fertile islands,43.03,119.65,Asia,China,grassland,480,340.5,unreported,4,108,0.423,0.137,,,0.037,unreported,1,1,std.error,unreported animal,nutrients,potential use for conservation
-9.2,2016,desertification,soil,fertile islands,passive,fertile islands vs open areas,shrubs-nutrients accumulation,Atraphaxis manshurica,unreported,"soil nutrients, enzymatic activities",soil organic matter %,fertile islands,43.03,119.65,Asia,China,grassland,480,340.5,unreported,4,108,1.294,0.322,,,0.024,unreported,2,1,std.error,,,
-9.3,2016,desertification,soil,fertile islands,passive,fertile islands vs open areas,shrubs-nutrients accumulation,Salix gordejevii,unreported,"soil nutrients, enzymatic activities",soil organic matter %,fertile islands,43.03,119.65,Asia,China,grassland,480,340.5,unreported,4,108,0.394,0.394,,,0.246,unreported,3,1,std.error,,,
-11,2015,agriculture,soil,planting,active,soil conditions over years,planting-soil condition,unreported shrubs,multiple unlisted,"soil nutrients, enzymatic activities",organic carbon mg/g,increase in soil nutrients and enzyme activity,37.53,105.03,Asia,China,grassland,1300,186,unreported,5,80,15.21,1.8,0.34,0.17,<0.05,unreported,600,1,std.desv,unreported animal,nutrients and enzyme,reduce pression on ecosystems
-12,2015,desertification,soil,"planting, soil moisture",active,,,multiple shrubs,,soil moisture,,,37.53,105.03,Asia,China,steppe,1288,193,unreported,8,36,,,,,,,36,1,,,moisture,
-13,2014,agriculture,animal,planting,active,,,,,,,not disturbed natural habitats,,,Asia,China,grassland,,,,,,,,,,,,,,,,,lizard
-15,2014,grazing,vegetation,grazing treatments,passive,,,,,,,resilient rangelands,,,Africa,Tunisia,rangeland,,,,,,,,,,,,,,,livestock,,
-16,2013,desertification,soil,planting,active,,,,,,,not clear,,,Asia,China,sand dune,,,,,,,,,,,,,,,cattle and sheep,"ph,N,C,P",restoration may be accelerated with plantations
-19,2007,desertification,"vegetation, soil",fertile islands,passive,,,,,,,higher productivity systems,,,Asia,China,sand dune,,,,,,,,,,,,,,,livestock,physicochemical properties,
-20,2007,desertification,soil,planting,active,,,,,,,desert native steppe,,,Asia,China,sand dune,,,,,,,,,,,,,,,,physicochemical properties,soil conservation
-21,2006,agriculture,vegetation,sand vegetation,active,,,,,,,not clear,,,Asia,Tibetan Plateau,grassland,,,,,,,,,,,,,,,unreported animal,,
-23,2017,grazing,vegetation,ccc framework,passive,,,,,,,not clear,,,Asia,China,grassland,,,,,,,,,,,,,,,livestock,,
-28,2016,grazing,soil,soil fungal,passive,,,,,,,natural grassland,,,Asia,China,grassland,,,,,,,,,,,,,,,unreported animal,physicochemical properties,
-29,2015,desertification,"vegetation, soil",planting,active,,,,,,,natural grassland,,,Asia,China,sand dune,,,,,,,,,,,,,,,livestock,chemical composition,
-30,2013,shrub encroachment,animal,herbicide,active,,,,,,,not clear,,,North America,USA,shrubland,,,,,,,,,,,,,,,,,lizard
-31,2012,desertification,seed,seed arrival and retention,passive,,,,,,,not clear,,,Asia,China,grassland,,,,,,,,,,,,,,,,,arthropods
-32,2012,desertification,soil,planting,active,,,,,,,not clear,,,Asia,China,grassland,,,,,,,,,,,,,,,unreported animal,physicochemical and biological properties,arthropods
-34,2009,grazing,vegetation,"water, nitrogen and phosphorus",passive,,,,,,,not clear,,,Asia,China,grassland,,,,,,,,,,,,,,,unreported animal,physicochemical properties,rodents
-35,2008,grazing,vegetation,grazing exclusion,passive,,,,,,,grassland before grazing,,,North America,USA,grassland,,,,,,,,,,,,,,,livestock,,pollinators
-37,2007,grazing,vegetation,seedling herbivory,passive,,,,,,,grassland ,,,North America,USA,grassland,,,,,,,,,,,,,,,livestock,,rodents
-39,2017,soil erosion,soil,biological soil crusts,passive,,,,,,,not clear,,,Asia,Israel,desert,,,,,,,,,,,,,,,,physicochemical properties,reptiles
-40,2018,desertification,soil,nutrients addition,active,,,,,,,forest vegetation,,,Asia,China,grassland,,,,,,,,,,,,,,,livestock,nutrients,arthropods
-41,2018,desertification,soil,litter crust,passive,,,,,,,not clear,,,Asia,China,sand dune,,,,,,,,,,,,,,,,"moisture, temperature, pahysicochemical properties",rodents
-42,2018,desertification,vegetation,planting,active,,,,,,,not clear,,,Asia,China,sand dune,,,,,,,,,,,,,,,livestock,,re-establish natural ecosystem state
-43,2018,canopy removal,vegetation,foundation species,passive,,,,,,,native plant communities,,,North America,USA,shrubland,,,,,,,,,,,,,,,,,positive interactions
-44,2017,exotics ,vegetation,planting,active,,,,,,,perennial native grasses,,,North America,USA,steppe,,,,,,,,,,,,,,,,,active planting native seedlings
-45,2017,soil erosion,soil,planting,active,,,,,,,natural vegetation,,,Asia,China,steppe,,,,,,,,,,,,,,,unreported animal,physicochemical properties,chemical process restoration
-46,2017,anthropogenic disturbance,vegetation,genetics,passive,,,,,,,not clear,,,North America,USA,desert,,,,,,,,,,,,,,,,,
-48,2017,exotics,vegetation,"chemical, mecanical control",active,,,,,,,native plant communities,,,North America,USA,rangeland,,,,,,,,,,,,,,,livestock,,adaptive management approaches
-50,2016,mining,vegetation,planting,active,,,,,,,not clear,,,Asia,Kazakhstan,desert,,,,,,,,,,,,,,,,heavy metals,
-51,2014,grazing,animal,planting,active,,,,,,,diverse arthropod community,,,Asia,China,grassland,,,,,,,,,,,,,,,fenced ,physicochemical properties,arthropods
-52,2014,exotics,vegetation,planting,active,,,,,,,perennial native grasses,,,North America,USA,grassland,,,,,,,,,,,,,,,livestock and horses,,rebuild native community
-53,2013,exotics,vegetation,"planting, glyphosate",active,,,,,,,native plant communities,,,North America,USA,steppe,,,,,,,,,,,,,,,livestock,,
-54,2012,exotics,vegetation,"seeding, planting",active,,,,,,,native plant communities,,,North America,USA,grassland,,,,,,,,,,,,,,,,nutrients,ecosystems dominated by native species
-55,2011,exotics,vegetation,carbon amendments,active,,,,,,,native plant communities,,,North America,USA,grassland,,,,,,,,,,,,,,,,"C, N",native plant restoration
-58,2010,grazing,vegetation,facilitation ,passive,,,,,,,diverse plant community,,,Asia,Mongolia,steppe,,,,,,,,,,,,,,,livestock,,positive interactions
-59,2010,exotics,vegetation,"chemical, mecanical control",active,,,,,,,native plant communities,,,North America,USA,shrubland,,,,,,,,,,,,,,,,,native plant restoration
-61,2010,exotics,vegetation,"seeding, chemical, burning",active,,,,,,,perennial native grasses,,,North America,USA,rangeland,,,,,,,,,,,,,,,,,native plant restoration
-63,2008,desertification,soil,micropropagation of mosses,active,,,,,,,moss dominated soil crusts,,,Asia,China,desert,,,,,,,,,,,,,,,,nutrients,soil restoration
-64,2008,agriculture,vegetation,carbon addition-top soil removal-sowing ,active,,,,,,,rich grasslands,,,Europe,Netherlands,agriculture,,,,,,,,,,,,,,,,chemical and microbia properties,active restoration
-65,2008,stressful soil,vegetation,fertilization and irrigation,active,,,,,,,native plant communities,,,North America,USA,shrubland,,,,,,,,,,,,,,,,nutrients,
-66,2005,grazing ,vegetation,"seeding, shrub facilitation",passive,,,,,,,vegetation before grazing,,,North America,USA,rangeland,,,,,,,,,,,,,,,livestock,,positive interactions
-68,2004,grazing,vegetation,planting,active,,,,,,,native plant communities,,,North America,USA,grassland,,,,,,,,,,,,,,,cattle,,
-69,2003,grazing,vegetation,grazing exclusion,passive,,,,,,,vegetation before grazing,,,Asia,Kuwait,shrubland,,,,,,,,,,,,,,,livestock,,
-71,1999,clearing,vegetation,mycorrhizal fungi ,passive,,,,,,,vegetation before disturbance,,,North America,Mexico,shrubland,,,,,,,,,,,,,,,,physicochemical properties,
-73,1999,"various, grazing, herbicide, soil disturbance",animal,ants as indicators,passive,,,,,,,not clear,,,North America,USA,rangeland,,,,,,,,,,,,,,,livestock,,arthropods
-74,1997,anthropogenic disturbance,animal,"seeding, planting",active,,,,,,,undegraded natural area,,,North America,USA,shrubland,,,,,,,,,,,,,,,,,"construction of flood structures, rodents"
-76,2018,grazing,vegetation,"sowing, fencing",active,,,,,,,revegetation,,,South America,Falkland Islands,grassland,,,,,,,,,,,,,,,cattle and sheep,moisture and temperature,
-77,2018,agriculture,vegetation,mowing and grazing,active,,,,,,,semi-natural grasslands,,,Europe,Belgium,agriculture,,,,,,,,,,,,,,,ponies and cows,"P, N evaluation",
-78,2017,agriculture,vegetation,germination and survival ,passive,,,,,,,semi-natural grasslands,,,Europe,Belgium,grassland,,,,,,,,,,,,,,,,biogeochemistry,
-80,2016,agriculture,cost,costs,active,,,,,,,not clear,,,North America,Canada,agriculture,,,,,,,,,,,,,,, , ,
-82,2017,agriculture,soil,soil carbon and enzyme,passive,,,,,,,restored grassland,,,Asia,China,agriculture,,,,,,,,,,,,,,,,"C, enzyme activities",productive grasslands
-84,2016,agriculture,animal,planting,active,,,,,,,not clear,,,Oceania,New Zealand,agriculture,,,,,,,,,,,,,,,,,worms
-85,2016,grazing,vegetation,planting,active,,,,,,,agroecosystems,,,Oceania,Australia,grassland,,,,,,,,,,,,,,,livestock,,production and biodiversity
-86,2015,agriculture,vegetation,planting,active,,,,,,,native plant communities,,,North America,USA,agriculture,,,,,,,,,,,,,,,,chemical composition,
-87,2015,agriculture,soil,fertilization,active,,,,,,,semi-natural grasslands,,,Europe,Belgium,agriculture,,,,,,,,,,,,,,,,chemical composition,soil restoration
-88,2014,agriculture,soil,seeding,passive,,,,,,,native grasslands,,,Asia,China,agriculture,,,,,,,,,,,,,,,,physicochemical properties,
-89,2014,agriculture,animal,"seeding, pollination",active,,,,,,,not clear,,,North America,USA,agriculture,,,,,,,,,,,,,,,,,pollinators
-91,2011,agriculture,vegetation,agroecoystems,passive,,,,,,,agroecosystems,,,Oceania,Australia,agriculture,,,,,,,,,,,,,,,cattle,,biodiversity in agroecosystems
-93,2010,agriculture,vegetation,natural recovery,passive,,,,,,,semi-natural vegetation,,,South America,Argentina,agriculture,,,,,,,,,,,,,,,livestock,,novel vegetation states
-95,2010,agriculture,vegetation,sowing and planting,active,,,,,,,native vegetation remnants,,,North America,USA,agriculture,,,,,,,,,,,,,,,,,
-96,2009,agriculture,animal,rodents,passive,,,,,,,native vegetation,,,Asia,Mongolia,agriculture,,,,,,,,,,,,,,,livestock,,rodents
-98,2002,agriculture,vegetation,"sowing, cutting, grazing treatments",active,,,,,,,semi-natural grasslands,,,Europe,Scotland,agriculture,,,,,,,,,,,,,,,cattle and sheep,,
-100,2005,exotics,vegetation,"seeding, herbicide, nutrients",active,,,,,,,native grasslands,,,North America,USA,grassland,,,,,,,,,,,,,,,livestock,chemical,
-101,2013,desertification,vegetation,natural recovery,passive,,,,,,,stabilized sand land,,,Asia,China,sand dune,,,,,,,,,,,,,,,unreported animal,,
-104,2003,agriculture,vegetation,mycorrhizal inoculation ,active,,,,,,,native vegetation,,,Europe,Spain,agriculture,,,,,,,,,,,,,,,unreported animal,physicochemical properties,
-105,2002,anthropogenic disturbance,soil,fertile islands,passive,,,,,,,undisturbed desert,,,North America,USA,roadways,,,,,,,,,,,,,,,,physicochemical properties,abandoned roads
-106,2001,agriculture,vegetation,"seeding, irrigation",active,,,,,,,revegetation,,,North America,USA,agriculture,,,,,,,,,,,,,,,,water addition,
-107,2001,mining,soil,soil amendments,active,,,,,,,revegetation,,,North America,USA,shrubland,,,,,,,,,,,,,,,,water and chemical composition,
-108,2000,anthropogenic disturbance,"vegetation, soil",natural recovery,passive,,,,,,,natural community,,,North America,USA,roadways,,,,,,,,,,,,,,,,physicochemical properties,abandoned roads
-109,1991,agriculture,vegetation,"planting, sowing",active,,,,,,,native vegetation,,,North America,USA,agriculture,,,,,,,,,,,,,,,,,
-110,2018,agriculture,soil,soil microbial,passive,,,,,,,revegetation,,,Asia,China,agriculture,,,,,,,,,,,,,,,,chemical composition,microbial
-111,2016,agriculture,"vegetation, soil",planting,active,,,,,,,revegetation,,,Asia,China,agriculture,,,,,,,,,,,,,,,,chemical composition,
-112,2006,agriculture,vegetation,"seeding, irrigation",active,,,,,,,native vegetation,,,North America,USA,agriculture,,,,,,,,,,,,,,,,mulch and phosphate addition,
-114,1998,agriculture,vegetation,planting,active,,,,,,,native vegetation,,,North America,USA,agriculture,,,,,,,,,,,,,,,herbivory,chemical composition,
-115,2018,grazing,vegetation,grazing exclusion,passive,,,,,,,native vegetation,,,Europe,Portugal,savannah,,,,,,,,,,,,,,,cattle,,
-118,2017,desertification,"vegetation, soil",seeding,active,,,,,,,revegetation,,,Asia,Saudi Arabia,rangeland,,,,,,,,,,,,,,,unreported animal,physical attributes,
-119,2016,grazing,vegetation,burning and mowing,active,,,,,,,native grasslands,,,Asia,Mongolia,steppe,,,,,,,,,,,,,,,livestock,chemical composition,
-120,2016,agriculture,animal,habitat for reptiles,passive,,,,,,,not clear,,,Oceania,Australia,woodland,,,,,,,,,,,,,,,cattle and sheep,,reptiles
-121,2015,agriculture,vegetation,planting,active,,,,,,,native vegetation,,,Asia,China,agriculture,,,,,,,,,,,,,,,,chemical composition,
-126,2011,grazing,biological soil crusts,grazing exclusion,passive,,,,,,,crusts of little disturbed sites,,,Oceania,Australia,woodland,,,,,,,,,,,,,,,livestock,nutrients,
-127,2008,mining,vegetation,"seeding, soil amendment",active,,,,,,,not clear,,,Europe,Spain,shrubland,,,,,,,,,,,,,,,sheep,chemical composition,
-128,2007,agriculture,vegetation,natural recovery,passive,,,,,,,native grasslands,,,Oceania,Australia,agriculture,,,,,,,,,,,,,,,livestock,,
-129,2005,clearing,vegetation,"seeding, inoculation",active,,,,,,,revegetation,,,Oceania,Australia,woodland,,,,,,,,,,,,,,,unreported animal,,
-130,2018,desertification,soil ,soil bacterial community,passive,,,,,,,revegetation,,,Asia,China,grassland,,,,,,,,,,,,,,,unreported animal,physicochemical properties,
-132,2017,clearing,vegetation,seeding,active,,,,,,,plant diversity,,,North America,USA,grassland,,,,,,,,,,,,,,,,,
-133,2017,land-use changes,soil,soil microbial ,passive,,,,,,,natural vegetation,,,Asia,China,steppe,,,,,,,,,,,,,,,,microbial and chemical properties,microbial
-134,2016,land-use changes,vegetation,"herbicide, herbivore exclosures, and shelter tubes",active,,,,,,,native vegetation,,,North America,USA,forest,,,,,,,,,,,,,,,,,
-135,2016,agriculture,vegetation,natural recovery,passive,,,,,,,native vegetation,,,Asia,Mongolia,forest,,,,,,,,,,,,,,,livestock,physicochemical properties,
-139,2015,agriculture,soil,planting,active,,,,,,,afforestation,,,Asia,China,grassland,,,,,,,,,,,,,,,,water,
-141,2014,desertification,soil,grazing exclusion,passive,,,,,,,natural recovery,,,Asia,China,grassland,,,,,,,,,,,,,,,sheep,carbon storage,
-142,2015,agriculture,vegetation,planting ,active,,,,,,,native vegetation,,,North America,USA,agriculture,,,,,,,,,,,,,,,,,
-143,2014,exotics,vegetation,"seeding, mowing",active,,,,,,,native grasslands,,,North America,USA,grassland,,,,,,,,,,,,,,,,,
-145,2013,deforestation,vegetation,planting,active,,,,,,,native vegetation,,,North America,Mexico,forest,,,,,,,,,,,,,,,,,
-146,2013,deforestation,vegetation,planting,active,,,,,,,native vegetation,,,South America,Argentina,forest,,,,,,,,,,,,,,,unreported animal,temperature and moisture,
-147,2012,agriculture,vegetation,seeding ,active,,,,,,,undisturbed plant community,,,North America,USA,agriculture,,,,,,,,,,,,,,,unreported animal,,
-148,2012,soil erosion,soil,soil nutrients,active,,,,,,,revegetation,,,Asia,China,grassland,,,,,,,,,,,,,,,livestock,"C, N",
-149,2012,anthropogenic disturbance,"vegetation, soil","seeding, soil amendment",active,,,,,,,native vegetation,,,North America,USA,shrubland,,,,,,,,,,,,,,,,chemical composition,natural gas exploration
-151,2011,soil erosion,soil,biostimulants,active,,,,,,,microbial and vegetation recovery,,,Europe,Spain,mediterranean,,,,,,,,,,,,,,,,biostimulants,
-152,2010,grazing,vegetation,"seeding, soil tilling, fertilization",active,,,,,,,native vegetation,,,Africa,Africa,rangeland,,,,,,,,,,,,,,,livestock,compactness and infiltration,
-153,2010,anthropogenic disturbance,vegetation,seeding,active,,,,,,,pre-disturbance condition,,,North America,USA,roadways,,,,,,,,,,,,,,,,,roads
-154,2010,agriculture,vegetation,water addition,active,,,,,,,undisturbed community,,,Asia,China,agriculture,,,,,,,,,,,,,,,unreported animal,physicochemical properties,
-155,2009,exotics,animal,"seeding, fire",active,,,,,,,undisturbed plant community,,,North America,USA,steppe,,,,,,,,,,,,,,,,,arthropods
-157,2009,desertification,"vegetation, soil","planting, soil amelioration",active,,,,,,,pre-disturbance condition,,,Europe,Spain,grassland,,,,,,,,,,,,,,,livestock,chemical composition,
-160,2008,anthropogenic disturbance,vegetation,"seeding, herbicide",active,,,,,,,native vegetation,,,North America,USA,roadways,,,,,,,,,,,,,,,,physicochemical properties,roadsides
-161,2008,grazing,vegetation,mechanical disturbance and seeding,active,,,,,,,palatable grasses,,,South America,Argentina,rangeland,,,,,,,,,,,,,,,livestock,,
-162,2007,anthropogenic disturbance,vegetation,natural recovery,passive,,,,,,,revegetation,,,Europe,Spain,roadways,,,,,,,,,,,,,,,,,road slopes
-164,2006,anthropogenic disturbance,"vegetation, soil",planting,active,,,,,,,native vegetation,,,Europe,Spain,steppe,,,,,,,,,,,,,,,,physicochemical properties,
-166,2004,mining,vegetation,seeding,active,,,,,,,diverse community,,,Oceania,Australia,shrubland,,,,,,,,,,,,,,,,no,
-167,2004,agriculture,vegetation,"seeding, mowing and herbicide, mulching (straw and sawdust)",active,,,,,,,native vegetation,,,North America,Canada,agriculture,,,,,,,,,,,,,,,,chemical composition,
-168,2003,desertification,vegetation,"planting, composted addition, mycorrhizal inoculation",active,,,,,,,revegetation,,,Europe,Spain,mediterranean,,,,,,,,,,,,,,,,physicochemical properties,
-169,2003,exotics,vegetation,seeding,active,,,,,,,native vegetation,,,North America,USA,grassland,,,,,,,,,,,,,,,,,
-170,2018,grazing,"vegetation, soil",grazing exclusion,passive,,,,,,,biomass,,,Asia,China,steppe,,,,,,,,,,,,,,,sheep,physicochemical properties,
-171,2018,anthropogenic disturbance,vegetation,seeding,active,,,,,,,undisturbed vegetation,,,North America,USA,grassland,,,,,,,,,,,,,,,cattle,,industries
-179,2017,grazing,vegetation,seeding,active,,,,,,,not clear,,,Oceania,Australia,grassland,,,,,,,,,,,,,,,livestock,no,
-180,2016,shrub encroachment,vegetation,chemical control,active,,,,,,,productive savanna,,,Africa,Africa,savannah,,,,,,,,,,,,,,,livestock,,
-182,2016,mining,soil,"planting, soil amelioration",active,,,,,,,undisturbed soil,,,Europe,Spain,mediterranean,,,,,,,,,,,,,,,,chemical and microbia properties,
-188,2016,agriculture,vegetation,natural recovery,passive,,,,,,,not clear,,,South America,Argentina,agriculture,,,,,,,,,,,,,,,,physicochemical properties,
-193,2015,exotics,"vegetation, soil","seeding, nutrients",active,,,,,,,not clear,,,North America,USA,grassland,,,,,,,,,,,,,,,cattle,litter and N meassured,
-194,2015,anthropogenic disturbance,vegetation,"seeding, irrigation",active,,,,,,,undisturbed desert,,,North America,USA,shrubland,,,,,,,,,,,,,,,,topsoil salvage,road construction
-195,2015,mining,soil,"planting, microbial ",active,,,,,,,not clear,,,Asia,China,grassland,,,,,,,,,,,,,,,,"chemical, enzyme and microbial meassures",
-197,2015,exotics,vegetation,planting,active,,,,,,,not clear,,,North America,Hawai,woodland,,,,,,,,,,,,,,,,physicochemical properties,
-202,2015,anthropogenic disturbance,vegetation,planting,active,,,,,,,not clear,,,Europe,Spain,forest,,,,,,,,,,,,,,,,physicochemical properties,human exploitation
-204,2014,anthropogenic disturbance,soil,planting,active,,,,,,,not clear,,,Asia,China,grassland,,,,,,,,,,,,,,,,moisture,
-206,2014,agriculture,vegetation,"seeding, irrigation",active,,,,,,,native vegetation,,,North America,USA,agriculture,,,,,,,,,,,,,,,cattle,water addition,
-207,2014,grazing,"vegetation, soil",grazing exclusion,passive,,,,,,,pre-disturbance condition,,,Asia,China,grassland,,,,,,,,,,,,,,,livestock,chemical composition,
-209,2014,agriculture,"vegetation, soil",natural recovery,passive,,,,,,,not clear,,,South America,Argentina,agriculture,,,,,,,,,,,,,,,livestock,physicochemical properties,
-210,2014,agriculture,soil,carbon amendment,active,,,,,,,native grasslands,,,Europe,Hungary,agriculture,,,,,,,,,,,,,,,,chemical and microbia properties,
-211,2014,exotics,vegetation,"seeding, herbicide",active,,,,,,,perennial vegetation,,,North America,USA,rangeland,,,,,,,,,,,,,,,,,
-212,2014,stressful soil,vegetation,planting,active,,,,,,,not clear,,,Europe,Spain,shrubland,,,,,,,,,,,,,,,,moisture,
-213,2015,desertification,soil,planting,active,,,,,,,native vegetation and soil retention,,,Asia,India,shrubland,,,,,,,,,,,,,,,cattle,physiochemical properties,
-214,2014,agriculture,vegetation,"planting, irrigation, mulch",active,,,,,,,not clear,,,North America,USA,agriculture,,,,,,,,,,,,,,,,mulch and water addition,
-218,2013,soil erosion,soil,planting,active,,,,,,,not clear,,,Asia,China,savannah,,,,,,,,,,,,,,,,chemical and microbia properties,
-219,2013,grazing,vegetation,grazing exclusion,passive,,,,,,,soil and vegetation recovery,,,Africa,Morocco,rangeland,,,,,,,,,,,,,,,livestock,chemical composition,
-220,2013,mining,vegetation,nurse plants,passive,,,,,,,vegetation cover,,,South America,Chile,shrubland,,,,,,,,,,,,,,,unreported animal,physicochemical properties,
-221,2012,exotics,vegetation,seed caching rodents,passive,,,,,,,not clear,,,North America,USA,rangeland,,,,,,,,,,,,,,,,,
-223,2013,grazing,vegetation,nurse plants,passive,,,,,,,not clear,,,Asia,Iran,rangeland,,,,,,,,,,,,,,,unreported animal,no,
-229,2012,grazing,seed,soil seed bank,passive,,,,,,,original light grazing situation,,,Africa,Africa,rangeland,,,,,,,,,,,,,,,livestock,seed bank,
-230,2012,browsing,vegetation,planting,active,,,,,,,intact site,,,Africa,Africa,forest,,,,,,,,,,,,,,,goat,,costs
-231,2012,grazing,vegetation,grazing exclusion,passive,,,,,,,not clear,,,Asia,Mongolia,grassland,,,,,,,,,,,,,,,sheep and goats,,
-232,2012,exotics,vegetation,irrigation,active,,,,,,,native vegetation,,,North America,USA,shrubland,,,,,,,,,,,,,,,,water addition,
-233,2012,exotics,vegetation,"planting, mycorrhiza, hydrogel, wood obstruction",active,,,,,,,not clear,,,North America,USA,shrubland,,,,,,,,,,,,,,,,,
-235,2012,anthropogenic disturbance,seed,"seeding, tackifier, harrowed",active,,,,,,,pre-disturbance conditions,,,North America,USA,shrubland,,,,,,,,,,,,,,,,seed bank,military training area
-238,2011,grazing,soil,planting,active,,,,,,,rangeland rehabilitation,,,Africa,Morocco,rangeland,,,,,,,,,,,,,,,livestock,chemical properties,
-239,2011,agriculture,vegetation,natural recovery,passive,,,,,,,native vegetation recovery,,,South America,Brazil,savannah,,,,,,,,,,,,,,,cattle,moisture,forestry
-240,2011,exotics,vegetation,"seeding, mechanical control",active,,,,,,,native vegetation,,,North America,USA,grassland,,,,,,,,,,,,,,,,,
-241,2011,exotics,vegetation,planting,active,,,,,,,not clear,,,South America,Chile,mediterranean,,,,,,,,,,,,,,,cattle,moisture,
-242,2011,agriculture,soil,planting,active,,,,,,,not clear,,,Asia,China,agriculture,,,,,,,,,,,,,,,,physicochemical and microbial properties,
-243,2011,exotics,vegetation,seeding,active,,,,,,,not clear,,,North America,USA,steppe,,,,,,,,,,,,,,,,physicochemical properties,
-244,2011,anthropogenic disturbance,vegetation,"planting, clay and hydrogel ",active,,,,,,,not clear,,,Europe,Spain,woodland,,,,,,,,,,,,,,,,no,
-245,2011,exotics,vegetation,planting,active,,,,,,,not clear,,,North America,USA,grassland,,,,,,,,,,,,,,,,water content,
-246,2011,anthropogenic disturbance,vegetation,shelters,active,,,,,,,not clear,,,Europe,Spain,shrubland,,,,,,,,,,,,,,,unreported animal,,deforestation
-247,2011,agriculture,soil,natural recovery,passive,,,,,,,soil properties of native forests,,,Asia,China,agriculture,,,,,,,,,,,,,,,unreported animal,physicochemical and microbial properties,
-248,2011,soil erosion,soil,planting,active,,,,,,,not clear,,,Europe,Turkey,forest,,,,,,,,,,,,,,,,physicochemical properties,
-250,2010,anthropogenic disturbance,vegetation,"planting, irrigation, hydrogels",active,,,,,,,not clear,,,North America,USA,rangeland,,,,,,,,,,,,,,,,water addition,
-251,2010,grazing,vegetation,"seeding, constructing safe sites, retaining seed movement",active,,,,,,,not clear,,,Asia,China,grassland,,,,,,,,,,,,,,,unreported animal,seed bank,
-252,2010,grazing,vegetation,seeding,active,,,,,,,not clear,,,Asia,Jordan,rangeland,,,,,,,,,,,,,,,livestock,,
-253,2010,wildfire,vegetation,"seeding, irrigation",active,,,,,,,not clear,,,North America,USA,rangeland,,,,,,,,,,,,,,,,texture and microtopography,
-254,2009,exotics,vegetation,"planting, fungal inoculation",active,,,,,,,not clear,,,North America,USA,xeroriparian,,,,,,,,,,,,,,,,mycorrhizal inoculation,
-255,2009,grazing,vegetation,grazing exclusion,passive,,,,,,,not clear,,,Africa,Africa,rangeland,,,,,,,,,,,,,,,livestock,,
-256,2007,agriculture,soil,mycorrhizal fungi,passive,,,,,,,fungi of non-cultivated fields,,,Asia,China,agriculture,,,,,,,,,,,,,,,unreported animal,physicochemical properties,
-259,2005,grazing,vegetation,grazing exclusion,passive,,,,,,,not clear,,,Asia,China,rangeland,,,,,,,,,,,,,,,unreported animal,,
-262,2003,grazing,"vegetation, soil"," seeding, hollows-dyker plough, furrows-ripper/sub-soiler and walking-stick planter",active,,,,,,,stable vegetation to deliver animal production.,,,Africa,Africa,rangeland,,,,,,,,,,,,,,,unreported animal,,
-263,2003,grazing,vegetation,phytogenic mounds (nebkhas),passive,,,,,,,not clear,,,Africa,Africa,rangeland,,,,,,,,,,,,,,,unreported animal,temperature and moisture,
-264,2003,grazing,"vegetation, soil","seeding, gypsum (CaSO4) and organic mulch",active,,,,,,,not clear,,,Africa,Africa,rangeland,,,,,,,,,,,,,,,livestock,gypsum and mulching addition,
-267,2001,anthropogenic disturbance,vegetation,facilitation ,passive,,,,,,,not clear,,,Europe,Spain,steppe,,,,,,,,,,,,,,,,"temperature, moisture, chemical properties",
-268,2000,anthropogenic disturbance,vegetation,irrigation,active,,,,,,,not clear,,,North America,USA,shrubland,,,,,,,,,,,,,,,,water addition,
-269,2000,mining,vegetation,"seeding, planting",active,,,,,,,not clear,,,North America,USA,steppe,,,,,,,,,,,,,,,livestock,no,
-271,1999,mining,animal,natural recovery,passive,,,,,,,not clear,,,Africa,Africa,shrubland,,,,,,,,,,,,,,,sheep,"ph, electrical conductivity, microbial",rodents
-274,2010,agriculture,vegetation,"seeding, micro-topographic relief, fire, grazing",active,,,,,,,native vegetation,,,North America,USA,agriculture,,,,,,,,,,,,,,,livestock,"fallowing, disking, micro-topography",
-275,2007,agriculture,vegetation,"irrigation, planting, weed control",active,,,,,,,native vegetation,,,North America,USA,agriculture,,,,,,,,,,,,,,,,"salt-remediation products, seed coatings, and mycorrhizal inoculation",
-276,1999,anthropogenic disturbance,vegetation,"seeding, ripped, disked, fertilization",active,,,,,,,undisturbed sites,,,North America,USA,grassland,,,,,,,,,,,,,,,,"ripped, disked",oil and gas fields
-277,2017,exotics,vegetation,"seeding, grazing",active,,,,,,,not clear,,,North America,USA,shrubland,,,,,,,,,,,,,,,sheep,,solar power plant installation
-278,2014,anthropogenic disturbance,vegetation,"seeding, tillage, weed suppression",active,,,,,,,valley saltbush scrub community,,,North America,USA,shrubland,,,,,,,,,,,,,,,livestock,tillage,solar power plant installation
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
-,,,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,, , ,
+ID,year,disturbance,focus,technique,paradigm,hypothesis,pathway,plant.species,target.plant,measure.success,measured.factor,treatment,control,unit,Nsites,nsamples,mean.treatment,mean.control,var.t,var.c,p-value,df,exp.duration (months),error,lat,long,continent,country,ecosystem,elevation (m),MAP (mm),aridity.index,potential.evaporation (mm),grazing,soil,notes
+1.1,2018,desertification,soil,litter crust ,passive,"surface microhabitats, litter vs bare ground",litter crusts-microhabitats,unreported shrubs,multiple herbs,seedling establishment,soil moisture,litter center,bare sand,%,3,27,13.72,11.97,0.3,0.15,<0.05,2,unreported,std.error,38.76667,110.35,Asia,China,sand dune,1270,437,0.56,785,,physical and chemical factors,potential use
+1.1,2018,desertification,soil,litter crust ,passive,"surface microhabitats, litter vs bare ground",litter crusts-microhabitats,unreported shrubs,multiple herbs,seedling establishment,soil moisture,litter middle,bare sand,%,3,27,13.81,11.97,0.14,0.15,<0.05,2,unreported,std.error,38.76667,110.35,Asia,China,sand dune,1270,437,0.56,785,,physical and chemical factors,potential use
+1.1,2018,desertification,soil,litter crust ,passive,"surface microhabitats, litter vs bare ground",litter crusts-microhabitats,unreported shrubs,multiple herbs,seedling establishment,soil moisture,litter edge,bare sand,%,3,27,14.22,11.97,0.12,0.15,<0.05,2,unreported,std.error,38.76667,110.35,Asia,China,sand dune,1270,437,0.56,785,,physical and chemical factors,potential use
+1.2,2018,desertification,soil,litter crust ,passive,"surface microhabitats, litter vs bare ground",litter crusts-microhabitats,unreported shrubs,multiple herbs,seedling establishment,temperature,litter center,bare sand,C,3,27,22.03,26.62,0.83,0.19,<0.05,2,unreported,std.error,38.76667,110.35,Asia,China,sand dune,1270,437,0.56,785,,physical and chemical factors,potential use
+1.2,2018,desertification,soil,litter crust ,passive,"surface microhabitats, litter vs bare ground",litter crusts-microhabitats,unreported shrubs,multiple herbs,seedling establishment,temperature,litter middle,bare sand,C,3,27,21.9,26.62,0.53,0.19,<0.05,2,unreported,std.error,38.76667,110.35,Asia,China,sand dune,1270,437,0.56,785,,physical and chemical factors,potential use
+1.2,2018,desertification,soil,litter crust ,passive,"surface microhabitats, litter vs bare ground",litter crusts-microhabitats,unreported shrubs,multiple herbs,seedling establishment,temperature,litter edge,bare sand,C,3,27,22.49,26.62,0.47,0.19,<0.05,2,unreported,std.error,38.76667,110.35,Asia,China,sand dune,1270,437,0.56,785,,physical and chemical factors,potential use
+1.3,2018,desertification,soil,litter crust ,passive,"surface microhabitats, litter vs bare ground",litter crusts-microhabitats,unreported shrubs,multiple herbs,seedling establishment,light intensity,litter center,bare sand,Klux,3,27,64.8,88.89,6.63,2.8,<0.05,2,unreported,std.error,38.76667,110.35,Asia,China,sand dune,1270,437,0.56,785,,physical and chemical factors,potential use
+1.3,2018,desertification,soil,litter crust ,passive,"surface microhabitats, litter vs bare ground",litter crusts-microhabitats,unreported shrubs,multiple herbs,seedling establishment,light intensity,litter middle,bare sand,Klux,3,27,51.46,88.89,4.4,2.8,<0.05,2,unreported,std.error,38.76667,110.35,Asia,China,sand dune,1270,437,0.56,785,,physical and chemical factors,potential use
+1.3,2018,desertification,soil,litter crust ,passive,"surface microhabitats, litter vs bare ground",litter crusts-microhabitats,unreported shrubs,multiple herbs,seedling establishment,light intensity,litter edge,bare sand,Klux,3,27,66.85,88.89,3.3,2.8,<0.05,2,unreported,std.error,38.76667,110.35,Asia,China,sand dune,1270,437,0.56,785,,physical and chemical factors,potential use
+1.4,2018,desertification,soil,litter crust ,passive,"surface microhabitats, litter vs bare ground",litter crusts-microhabitats,unreported shrubs,multiple herbs,seedling establishment,soil organic matter,litter center,bare sand,g/Kg,3,27,9.32,5.47,0.35,0.22,<0.05,2,unreported,std.error,38.76667,110.35,Asia,China,sand dune,1270,437,0.56,785,,physical and chemical factors,potential use
+1.4,2018,desertification,soil,litter crust ,passive,"surface microhabitats, litter vs bare ground",litter crusts-microhabitats,unreported shrubs,multiple herbs,seedling establishment,soil organic matter,litter middle,bare sand,g/Kg,3,27,11.05,5.47,0.49,0.22,<0.05,2,unreported,std.error,38.76667,110.35,Asia,China,sand dune,1270,437,0.56,785,,physical and chemical factors,potential use
+1.4,2018,desertification,soil,litter crust ,passive,"surface microhabitats, litter vs bare ground",litter crusts-microhabitats,unreported shrubs,multiple herbs,seedling establishment,soil organic matter,litter edge,bare sand,g/Kg,3,27,9.01,5.47,0.37,0.22,<0.05,2,unreported,std.error,38.76667,110.35,Asia,China,sand dune,1270,437,0.56,785,,physical and chemical factors,potential use
+1.5,2018,desertification,soil,litter crust ,passive,"surface microhabitats, litter vs bare ground",litter crusts-microhabitats,unreported shrubs,multiple herbs,seedling establishment,seedling richness,litter,bare sand,number of species,3,27,5.44,1.28,0.38,0.6,<0.05,2,unreported,std.error,38.76667,110.35,Asia,China,sand dune,1270,437,0.56,785,,physical and chemical factors,potential use
+1.6,2018,desertification,soil,litter crust ,passive,"surface microhabitats, litter vs bare ground",litter crusts-microhabitats,unreported shrubs,multiple herbs,seedling establishment,seedling number,litter,bare sand,number of seedlings,3,27,16.31,4.61,1.14,0.39,<0.05,2,unreported,std.error,38.76667,110.35,Asia,China,sand dune,1270,437,0.56,785,,physical and chemical factors,potential use
+2.1,2018,"grazing, fire",seed bank,seed bank,passive,seed banks,seed banks-above ground sp,Artemisia tridentata,multiple species,native seed bank,native annual seed bank density,NA,NA,seeds per m2,17,340,-63.09,,812.5,,0.93929,,16,std.error,40.66667,-115.5,North America,USA,shrubland,unreported,unreported,unreported,,livestock,seed bank,not treatment-control
+2.1,2018,"grazing, fire",seed bank,seed bank,passive,seed banks,seed banks-above ground sp,Artemisia tridentata,multiple species,native seed bank,native perennial seed bank density,NA,NA,seeds per m2,17,340,172.14,,6345.79,,0.9788,,16,std.error,40.66667,-115.5,North America,USA,shrubland,unreported,unreported,unreported,,livestock,seed bank,not treatment-control
+2.1,2018,"grazing, fire",seed bank,seed bank,passive,seed banks,seed banks-above ground sp,Artemisia tridentata,multiple species,native seed bank,introduced species seed bank density,NA,NA,seeds per m2,17,340,-4910,,9007,,0.59488,,16,std.error,40.66667,-115.5,North America,USA,shrubland,unreported,unreported,unreported,,livestock,seed bank,not treatment-control
+2.1,2018,"grazing, fire",seed bank,seed bank,passive,seed banks,seed banks-above ground sp,Artemisia tridentata,multiple species,native seed bank,number of rare species in the above-ground community,NA,NA,number of species per site,17,340,7.5762,,4.949,,0.1498,,16,std.error,40.66667,-115.5,North America,USA,shrubland,unreported,unreported,unreported,,livestock,seed bank,not treatment-control
+2.1,2018,"grazing, fire",seed bank,seed bank,passive,seed banks,seed banks-above ground sp,Artemisia tridentata,multiple species,native seed bank,number of rare species in the below-ground community,NA,NA,number of species per site,17,340,5.6625,,1.7776,,0.00717,,16,std.error,40.66667,-115.5,North America,USA,shrubland,unreported,unreported,unreported,,livestock,seed bank,not treatment-control
+2.2,2018,"grazing, fire",seed bank,seed bank,passive,seed banks,seed banks-above ground sp,Chrysothamus viscidiflorus,multiple species,native seed bank,native annual seed bank density,NA,NA,seeds per m2,17,340,4716.96,,1335.69,,0.00368,,16,std.error,40.66667,-115.5,North America,USA,shrubland,unreported,unreported,unreported,,livestock,seed bank,not treatment-control
+2.2,2018,"grazing, fire",seed bank,seed bank,passive,seed banks,seed banks-above ground sp,Chrysothamus viscidiflorus,multiple species,native seed bank,native perennial seed bank density,NA,NA,seeds per m2,17,340,8153.16,,10432.07,,0.4485,,16,std.error,40.66667,-115.5,North America,USA,shrubland,unreported,unreported,unreported,,livestock,seed bank,not treatment-control
+2.2,2018,"grazing, fire",seed bank,seed bank,passive,seed banks,seed banks-above ground sp,Chrysothamus viscidiflorus,multiple species,native seed bank,introduced species seed bank density,NA,NA,seeds per m2,17,340,6442,,14808,,0.67068,,16,std.error,40.66667,-115.5,North America,USA,shrubland,unreported,unreported,unreported,,livestock,seed bank,not treatment-control
+2.2,2018,"grazing, fire",seed bank,seed bank,passive,seed banks,seed banks-above ground sp,Chrysothamus viscidiflorus,multiple species,native seed bank,number of rare species in the above-ground community,NA,NA,number of species per site,17,340,19.6534,,8.1358,,0.0312,,16,std.error,40.66667,-115.5,North America,USA,shrubland,unreported,unreported,unreported,,livestock,seed bank,not treatment-control
+2.2,2018,"grazing, fire",seed bank,seed bank,passive,seed banks,seed banks-above ground sp,Chrysothamus viscidiflorus,multiple species,native seed bank,number of rare species in the below-ground community,NA,NA,number of species per site,17,340,-0.1508,,2.9223,,0.95964,,16,std.error,40.66667,-115.5,North America,USA,shrubland,unreported,unreported,unreported,,livestock,seed bank,not treatment-control
+2.3,2018,"grazing, fire",seed bank,seed bank,passive,seed banks,seed banks-above ground sp,Ericameria nauseosa,multiple species,native seed bank,native annual seed bank density,NA,NA,seeds per m2,17,340,7251.29,,4172.44,,0.10584,,16,std.error,40.66667,-115.5,North America,USA,shrubland,unreported,unreported,unreported,,livestock,seed bank,not treatment-control
+2.3,2018,"grazing, fire",seed bank,seed bank,passive,seed banks,seed banks-above ground sp,Ericameria nauseosa,multiple species,native seed bank,native perennial seed bank density,NA,NA,seeds per m2,17,340,60347.4,,32587.73,,0.0869,,16,std.error,40.66667,-115.5,North America,USA,shrubland,unreported,unreported,unreported,,livestock,seed bank,not treatment-control
+2.3,2018,"grazing, fire",seed bank,seed bank,passive,seed banks,seed banks-above ground sp,Ericameria nauseosa,multiple species,native seed bank,introduced species seed bank density,NA,NA,seeds per m2,17,340,143795,,46256,,0.00831,,16,std.error,40.66667,-115.5,North America,USA,shrubland,unreported,unreported,unreported,,livestock,seed bank,not treatment-control
+2.3,2018,"grazing, fire",seed bank,seed bank,passive,seed banks,seed banks-above ground sp,Ericameria nauseosa,multiple species,native seed bank,number of rare species in the above-ground community,NA,NA,number of species per site,17,340,23.3165,,25.4146,,0.3756,,16,std.error,40.66667,-115.5,North America,USA,shrubland,unreported,unreported,unreported,,livestock,seed bank,not treatment-control
+2.3,2018,"grazing, fire",seed bank,seed bank,passive,seed banks,seed banks-above ground sp,Ericameria nauseosa,multiple species,native seed bank,number of rare species in the below-ground community,NA,NA,number of species per site,17,340,-9.0091,,9.1288,,0.34171,,16,std.error,40.66667,-115.5,North America,USA,shrubland,unreported,unreported,unreported,,livestock,seed bank,not treatment-control
+3.1,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,C mineralisation quotient,mine waste + T. wiseana,top soil + T. wiseana,%,1,150,2.06,0.27,0.07,0.015,,,12,std.error,,,,,,,,,,,,
+3.1,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,C mineralisation quotient,mine waste + T. wiseana and A. ancistrocarpa,top soil + T. wiseana and A. ancistrocarpa,%,1,150,1.36,0.43,0.01,0.035,,,12,std.error,,,,,,,,,,,,
+3.1,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,C mineralisation quotient,"mine waste + T. wiseana, A. ancistrocarpa and G. wickhamii","top soil + T. wiseana, A. ancistrocarpa and G. wickhamii",%,1,150,2.03,0.43,0.15,0.05,,,12,std.error,,,,,,,,,,,,
+3.1,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,C mineralisation quotient,top soil and waste + T. wiseana,top soil + T. wiseana,%,1,150,0.45,0.27,0.03,0.015,,,12,std.error,,,,,,,,,,,,
+3.1,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,C mineralisation quotient,top soil and waste + T. wiseana and A. ancistrocarpa,top soil + T. wiseana and A. ancistrocarpa,%,1,150,0.32,0.43,0.02,0.035,,,12,std.error,,,,,,,,,,,,
+3.1,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,C mineralisation quotient,"top soil and waste + T. wiseana, A. ancistrocarpa and G. wickhamii","top soil + T. wiseana, A. ancistrocarpa and G. wickhamii",%,1,150,0.32,0.43,0.02,0.05,,,12,std.error,,,,,,,,,,,,
+3.1,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,C mineralisation quotient,amended waste + T. wiseana,top soil + T. wiseana,%,1,150,2.18,0.27,0.09,0.015,,,12,std.error,,,,,,,,,,,,
+3.1,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,C mineralisation quotient,amended waste + T. wiseana and A. ancistrocarpa,top soil + T. wiseana and A. ancistrocarpa,%,1,150,0.68,0.43,0.07,0.035,,,12,std.error,,,,,,,,,,,,
+3.1,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,C mineralisation quotient,"amended waste + T. wiseana, A. ancistrocarpa and G. wickhamii","top soil + T. wiseana, A. ancistrocarpa and G. wickhamii",%,1,150,0.53,0.43,0.02,0.05,,,12,std.error,,,,,,,,,,,,
+3.1,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,C mineralisation quotient,amended blend + T. wiseana,top soil + T. wiseana,%,1,150,0.48,0.27,0.08,0.015,,,12,std.error,,,,,,,,,,,,
+3.1,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,C mineralisation quotient,amended blend + T. wiseana and A. ancistrocarpa,top soil + T. wiseana and A. ancistrocarpa,%,1,150,0.56,0.43,0.04,0.035,,,12,std.error,,,,,,,,,,,,
+3.1,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,C mineralisation quotient,"amended blend + T. wiseana, A. ancistrocarpa and G. wickhamii","top soil + T. wiseana, A. ancistrocarpa and G. wickhamii",%,1,150,0.41,0.43,0.03,0.05,,,12,std.error,,,,,,,,,,,,
+3.2,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,N mineralisation ,mine waste + T. wiseana,top soil + T. wiseana,mg/kg NH3-N,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.2,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,N mineralisation ,mine waste + T. wiseana and A. ancistrocarpa,top soil + T. wiseana and A. ancistrocarpa,mg/kg NH3-N,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.2,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,N mineralisation ,"mine waste + T. wiseana, A. ancistrocarpa and G. wickhamii","top soil + T. wiseana, A. ancistrocarpa and G. wickhamii",mg/kg NH3-N,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.2,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,N mineralisation ,top soil and waste + T. wiseana,top soil + T. wiseana,mg/kg NH3-N,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.2,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,N mineralisation ,top soil and waste + T. wiseana and A. ancistrocarpa,top soil + T. wiseana and A. ancistrocarpa,mg/kg NH3-N,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.2,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,N mineralisation ,"top soil and waste + T. wiseana, A. ancistrocarpa and G. wickhamii","top soil + T. wiseana, A. ancistrocarpa and G. wickhamii",mg/kg NH3-N,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.2,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,N mineralisation ,amended waste + T. wiseana,top soil + T. wiseana,mg/kg NH3-N,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.2,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,N mineralisation ,amended waste + T. wiseana and A. ancistrocarpa,top soil + T. wiseana and A. ancistrocarpa,mg/kg NH3-N,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.2,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,N mineralisation ,"amended waste + T. wiseana, A. ancistrocarpa and G. wickhamii","top soil + T. wiseana, A. ancistrocarpa and G. wickhamii",mg/kg NH3-N,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.2,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,N mineralisation ,amended blend + T. wiseana,top soil + T. wiseana,mg/kg NH3-N,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.2,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,N mineralisation ,amended blend + T. wiseana and A. ancistrocarpa,top soil + T. wiseana and A. ancistrocarpa,mg/kg NH3-N,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.2,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,N mineralisation ,"amended blend + T. wiseana, A. ancistrocarpa and G. wickhamii","top soil + T. wiseana, A. ancistrocarpa and G. wickhamii",mg/kg NH3-N,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.3,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Microbial activity,mine waste + T. wiseana,top soil + T. wiseana,,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.3,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Microbial activity,mine waste + T. wiseana and A. ancistrocarpa,top soil + T. wiseana and A. ancistrocarpa,,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.3,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Microbial activity,"mine waste + T. wiseana, A. ancistrocarpa and G. wickhamii","top soil + T. wiseana, A. ancistrocarpa and G. wickhamii",,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.3,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Microbial activity,top soil and waste + T. wiseana,top soil + T. wiseana,,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.3,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Microbial activity,top soil and waste + T. wiseana and A. ancistrocarpa,top soil + T. wiseana and A. ancistrocarpa,,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.3,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Microbial activity,"top soil and waste + T. wiseana, A. ancistrocarpa and G. wickhamii","top soil + T. wiseana, A. ancistrocarpa and G. wickhamii",,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.3,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Microbial activity,amended waste + T. wiseana,top soil + T. wiseana,,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.3,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Microbial activity,amended waste + T. wiseana and A. ancistrocarpa,top soil + T. wiseana and A. ancistrocarpa,,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.3,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Microbial activity,"amended waste + T. wiseana, A. ancistrocarpa and G. wickhamii","top soil + T. wiseana, A. ancistrocarpa and G. wickhamii",,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.3,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Microbial activity,amended blend + T. wiseana,top soil + T. wiseana,,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.3,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Microbial activity,amended blend + T. wiseana and A. ancistrocarpa,top soil + T. wiseana and A. ancistrocarpa,,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.3,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Microbial activity,"amended blend + T. wiseana, A. ancistrocarpa and G. wickhamii","top soil + T. wiseana, A. ancistrocarpa and G. wickhamii",,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.4,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,C/N,top soil + T. wiseana,,,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.4,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,C/N,top soil + T. wiseana and A. ancistrocarpa,,,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.4,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,C/N,"top soil + T. wiseana, A. ancistrocarpa and G. wickhamii",,,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.4,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,C/N,mine waste + T. wiseana,top soil + T. wiseana,,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.4,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,C/N,mine waste + T. wiseana and A. ancistrocarpa,top soil + T. wiseana and A. ancistrocarpa,,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.4,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,C/N,"mine waste + T. wiseana, A. ancistrocarpa and G. wickhamii","top soil + T. wiseana, A. ancistrocarpa and G. wickhamii",,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.4,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,C/N,top soil and waste + T. wiseana,top soil + T. wiseana,,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.4,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,C/N,top soil and waste + T. wiseana and A. ancistrocarpa,top soil + T. wiseana and A. ancistrocarpa,,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.4,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,C/N,"top soil and waste + T. wiseana, A. ancistrocarpa and G. wickhamii","top soil + T. wiseana, A. ancistrocarpa and G. wickhamii",,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.4,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,C/N,amended waste + T. wiseana,top soil + T. wiseana,,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.4,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,C/N,amended waste + T. wiseana and A. ancistrocarpa,top soil + T. wiseana and A. ancistrocarpa,,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.4,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,C/N,"amended waste + T. wiseana, A. ancistrocarpa and G. wickhamii","top soil + T. wiseana, A. ancistrocarpa and G. wickhamii",,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.4,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,C/N,amended blend + T. wiseana,top soil + T. wiseana,,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.4,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,C/N,amended blend + T. wiseana and A. ancistrocarpa,top soil + T. wiseana and A. ancistrocarpa,,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.4,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,C/N,"amended blend + T. wiseana, A. ancistrocarpa and G. wickhamii","top soil + T. wiseana, A. ancistrocarpa and G. wickhamii",,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.5,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Total N,top soil + T. wiseana,,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.5,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Total N,top soil + T. wiseana and A. ancistrocarpa,,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.5,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Total N,"top soil + T. wiseana, A. ancistrocarpa and G. wickhamii",,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.5,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Total N,mine waste + T. wiseana,top soil + T. wiseana,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.5,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Total N,mine waste + T. wiseana and A. ancistrocarpa,top soil + T. wiseana and A. ancistrocarpa,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.5,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Total N,"mine waste + T. wiseana, A. ancistrocarpa and G. wickhamii","top soil + T. wiseana, A. ancistrocarpa and G. wickhamii",%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.5,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Total N,top soil and waste + T. wiseana,top soil + T. wiseana,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.5,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Total N,top soil and waste + T. wiseana and A. ancistrocarpa,top soil + T. wiseana and A. ancistrocarpa,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.5,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Total N,"top soil and waste + T. wiseana, A. ancistrocarpa and G. wickhamii","top soil + T. wiseana, A. ancistrocarpa and G. wickhamii",%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.5,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Total N,amended waste + T. wiseana,top soil + T. wiseana,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.5,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Total N,amended waste + T. wiseana and A. ancistrocarpa,top soil + T. wiseana and A. ancistrocarpa,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.5,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Total N,"amended waste + T. wiseana, A. ancistrocarpa and G. wickhamii","top soil + T. wiseana, A. ancistrocarpa and G. wickhamii",%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.5,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Total N,amended blend + T. wiseana,top soil + T. wiseana,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.5,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Total N,amended blend + T. wiseana and A. ancistrocarpa,top soil + T. wiseana and A. ancistrocarpa,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.5,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Total N,"amended blend + T. wiseana, A. ancistrocarpa and G. wickhamii","top soil + T. wiseana, A. ancistrocarpa and G. wickhamii",%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.6,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Total organic carbon,top soil + T. wiseana,,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.6,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Total organic carbon,top soil + T. wiseana and A. ancistrocarpa,,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.6,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Total organic carbon,"top soil + T. wiseana, A. ancistrocarpa and G. wickhamii",,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.6,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Total organic carbon,mine waste + T. wiseana,top soil + T. wiseana,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.6,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Total organic carbon,mine waste + T. wiseana and A. ancistrocarpa,top soil + T. wiseana and A. ancistrocarpa,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.6,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Total organic carbon,"mine waste + T. wiseana, A. ancistrocarpa and G. wickhamii","top soil + T. wiseana, A. ancistrocarpa and G. wickhamii",%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.6,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Total organic carbon,top soil and waste + T. wiseana,top soil + T. wiseana,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.6,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Total organic carbon,top soil and waste + T. wiseana and A. ancistrocarpa,top soil + T. wiseana and A. ancistrocarpa,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.6,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Total organic carbon,"top soil and waste + T. wiseana, A. ancistrocarpa and G. wickhamii","top soil + T. wiseana, A. ancistrocarpa and G. wickhamii",%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.6,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Total organic carbon,amended waste + T. wiseana,top soil + T. wiseana,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.6,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Total organic carbon,amended waste + T. wiseana and A. ancistrocarpa,top soil + T. wiseana and A. ancistrocarpa,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.6,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Total organic carbon,"amended waste + T. wiseana, A. ancistrocarpa and G. wickhamii","top soil + T. wiseana, A. ancistrocarpa and G. wickhamii",%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.6,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Total organic carbon,amended blend + T. wiseana,top soil + T. wiseana,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.6,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Total organic carbon,amended blend + T. wiseana and A. ancistrocarpa,top soil + T. wiseana and A. ancistrocarpa,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.6,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,Total organic carbon,"amended blend + T. wiseana, A. ancistrocarpa and G. wickhamii","top soil + T. wiseana, A. ancistrocarpa and G. wickhamii",%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.7,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,seedling emergence,top soil + T. wiseana,,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.7,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,seedling emergence,top soil + T. wiseana and A. ancistrocarpa,,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.7,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,seedling emergence,"top soil + T. wiseana, A. ancistrocarpa and G. wickhamii",,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.7,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,seedling emergence,mine waste + T. wiseana,top soil + T. wiseana,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.7,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,seedling emergence,mine waste + T. wiseana and A. ancistrocarpa,top soil + T. wiseana and A. ancistrocarpa,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.7,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,seedling emergence,"mine waste + T. wiseana, A. ancistrocarpa and G. wickhamii","top soil + T. wiseana, A. ancistrocarpa and G. wickhamii",%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.7,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,seedling emergence,top soil and waste + T. wiseana,top soil + T. wiseana,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.7,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,seedling emergence,top soil and waste + T. wiseana and A. ancistrocarpa,top soil + T. wiseana and A. ancistrocarpa,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.7,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,seedling emergence,"top soil and waste + T. wiseana, A. ancistrocarpa and G. wickhamii","top soil + T. wiseana, A. ancistrocarpa and G. wickhamii",%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.7,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,seedling emergence,amended waste + T. wiseana,top soil + T. wiseana,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.7,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,seedling emergence,amended waste + T. wiseana and A. ancistrocarpa,top soil + T. wiseana and A. ancistrocarpa,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.7,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,seedling emergence,"amended waste + T. wiseana, A. ancistrocarpa and G. wickhamii","top soil + T. wiseana, A. ancistrocarpa and G. wickhamii",%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.7,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,seedling emergence,amended blend + T. wiseana,top soil + T. wiseana,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.7,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,seedling emergence,amended blend + T. wiseana and A. ancistrocarpa,top soil + T. wiseana and A. ancistrocarpa,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.7,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,seedling emergence,"amended blend + T. wiseana, A. ancistrocarpa and G. wickhamii","top soil + T. wiseana, A. ancistrocarpa and G. wickhamii",%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.8,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,seedling survival,top soil + T. wiseana,,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.8,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,seedling survival,top soil + T. wiseana and A. ancistrocarpa,,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.8,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,seedling survival,"top soil + T. wiseana, A. ancistrocarpa and G. wickhamii",,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.8,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,seedling survival,mine waste + T. wiseana,top soil + T. wiseana,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.8,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,seedling survival,mine waste + T. wiseana and A. ancistrocarpa,top soil + T. wiseana and A. ancistrocarpa,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.8,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,seedling survival,"mine waste + T. wiseana, A. ancistrocarpa and G. wickhamii","top soil + T. wiseana, A. ancistrocarpa and G. wickhamii",%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.8,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,seedling survival,top soil and waste + T. wiseana,top soil + T. wiseana,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.8,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,seedling survival,top soil and waste + T. wiseana and A. ancistrocarpa,top soil + T. wiseana and A. ancistrocarpa,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.8,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,seedling survival,"top soil and waste + T. wiseana, A. ancistrocarpa and G. wickhamii","top soil + T. wiseana, A. ancistrocarpa and G. wickhamii",%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.8,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,seedling survival,amended waste + T. wiseana,top soil + T. wiseana,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.8,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,seedling survival,amended waste + T. wiseana and A. ancistrocarpa,top soil + T. wiseana and A. ancistrocarpa,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.8,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,seedling survival,"amended waste + T. wiseana, A. ancistrocarpa and G. wickhamii","top soil + T. wiseana, A. ancistrocarpa and G. wickhamii",%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.8,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,seedling survival,amended blend + T. wiseana,top soil + T. wiseana,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.8,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,seedling survival,amended blend + T. wiseana and A. ancistrocarpa,top soil + T. wiseana and A. ancistrocarpa,%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+3.8,2018,mining,vegetation,"seeding, soil amendment",active,"seedlings, top soil vs blended soil",soil organic amendment-seedling establishment,"Triodia wiseana, Acacia ancistrocarpa, Grevillea wickhamii",Triodia wiseana,Triodia wiseana establishment,seedling survival,"amended blend + T. wiseana, A. ancistrocarpa and G. wickhamii","top soil + T. wiseana, A. ancistrocarpa and G. wickhamii",%,1,150,,,,,,,12,std.error,,,,,,,,,,,,
+4,2018,mining,vegetation,natural recovery,passive,natural recovery,environmental variables-canopy cover,unreported shrubs,multiple unlisted,nearby or landscape level vegetation,"distance to seed source, disturbance, canopy cover",canopy cover,,,2,132,,,,,,,unreported,,unreported,unreported,Africa,Namib,desert,unreported,30,unreported,,,,
+5,2017,grazing,vegetation,planting,active,planting vs natural sites,planting-plant succession,Agropyron desertorum,Artemisia terrae-albae,Artemisia terrae-albae communities,canopy cover,Artemisia projective cover %,,,2,6,49.5,43,0.71,4.24,unreported,,456,std.desv,unreported,unreported,Asia,Kazakhstan,grassland,unreported,125,unreported,,livestock,chemical composition,not stats
+6,2017,exotics,vegetation,"seeding, herbicides, activated carbon",active,activated carbon addition vs control,activated carbon addition-seedlings,Agropyron desertorum,multiple grasses,Agropyron desertorum seedlings,seedlings densities,density of Agropyron seedlings,,,2,unclear,21.82,0,6.3,0,<0.001,,9,std.error,unreported,unreported,North America,USA,rangeland,1160,280,unreported,,,,
+9.1,2016,desertification,soil,fertile islands,passive,fertile islands vs open areas,shrubs-nutrients accumulation,Caragana mirophylla,unreported,fertile islands,"soil nutrients, enzymatic activities",soil organic matter %,,,4,108,0.423,0.137,,,0.037,,1,std.error,43.03,119.65,Asia,China,grassland,480,340.5,unreported,,unreported animal,nutrients,potential use for conservation
+9.2,2016,desertification,soil,fertile islands,passive,fertile islands vs open areas,shrubs-nutrients accumulation,Atraphaxis manshurica,unreported,fertile islands,"soil nutrients, enzymatic activities",soil organic matter %,,,4,108,1.294,0.322,,,0.024,,2,std.error,43.03,119.65,Asia,China,grassland,480,340.5,unreported,,,,
+9.3,2016,desertification,soil,fertile islands,passive,fertile islands vs open areas,shrubs-nutrients accumulation,Salix gordejevii,unreported,fertile islands,"soil nutrients, enzymatic activities",soil organic matter %,,,4,108,0.394,0.394,,,0.246,,3,std.error,43.03,119.65,Asia,China,grassland,480,340.5,unreported,,,,
+11,2015,agriculture,soil,planting,active,soil conditions over years,planting-soil condition,unreported shrubs,multiple unlisted,increase in soil nutrients and enzyme activity,"soil nutrients, enzymatic activities",organic carbon mg/g,,,5,80,15.21,1.8,0.34,0.17,<0.05,,600,std.desv,37.53,105.03,Asia,China,grassland,1300,186,unreported,,unreported animal,nutrients and enzyme,reduce pression on ecosystems
+12,2015,desertification,soil,"planting, soil moisture",active,,,multiple shrubs,unreported,not clear,soil moisture,soil moisture,,,8,288,,,,,,,36,,37.53,105.03,Asia,China,steppe,1288,193,unreported,,,moisture,
+13,2014,agriculture,animal,planting,active,planting vs natural sites,habitat-lizard changes,"Hedysarum leave, H. scoparium, Caragana korshinskii, Astragalus adsurgens",,natural undisturbed habitats,,lizard diversity,,,30,630,0.656,0.862,0.049,0.052,0.004,,3,std.error,40.205,111.13,Asia,China,grassland,1036,340,unreported,,,,lizard
+15,2014,grazing,vegetation,grazing treatments,passive,,,,,resilient rangelands,,,,,,,,,,,,,,,,,Africa,Tunisia,rangeland,,,,,livestock,,
+16,2013,desertification,soil,planting,active,,,,,not clear,,,,,,,,,,,,,,,,,Asia,China,sand dune,,,,,cattle and sheep,"ph,N,C,P",restoration may be accelerated with plantations
+19,2007,desertification,"vegetation, soil",fertile islands,passive,,,,,higher productivity systems,,,,,,,,,,,,,,,,,Asia,China,sand dune,,,,,livestock,physicochemical properties,
+20,2007,desertification,soil,planting,active,,,,,desert native steppe,,,,,,,,,,,,,,,,,Asia,China,sand dune,,,,,,physicochemical properties,soil conservation
+21,2006,agriculture,vegetation,sand vegetation,active,,,,,not clear,,,,,,,,,,,,,,,,,Asia,Tibetan Plateau,grassland,,,,,unreported animal,,
+23,2017,grazing,vegetation,ccc framework,passive,,,,,not clear,,,,,,,,,,,,,,,,,Asia,China,grassland,,,,,livestock,,
+28,2016,grazing,soil,soil fungal,passive,,,,,natural grassland,,,,,,,,,,,,,,,,,Asia,China,grassland,,,,,unreported animal,physicochemical properties,
+29,2015,desertification,"vegetation, soil",planting,active,,,,,natural grassland,,,,,,,,,,,,,,,,,Asia,China,sand dune,,,,,livestock,chemical composition,
+30,2013,shrub encroachment,animal,herbicide,active,,,,,not clear,,,,,,,,,,,,,,,,,North America,USA,shrubland,,,,,,,lizard
+31,2012,desertification,seed,seed arrival and retention,passive,,,,,not clear,,,,,,,,,,,,,,,,,Asia,China,grassland,,,,,,,arthropods
+32,2012,desertification,soil,planting,active,,,,,not clear,,,,,,,,,,,,,,,,,Asia,China,grassland,,,,,unreported animal,physicochemical and biological properties,arthropods
+34,2009,grazing,vegetation,"water, nitrogen and phosphorus",passive,,,,,not clear,,,,,,,,,,,,,,,,,Asia,China,grassland,,,,,unreported animal,physicochemical properties,rodents
+35,2008,grazing,vegetation,grazing exclusion,passive,,,,,grassland before grazing,,,,,,,,,,,,,,,,,North America,USA,grassland,,,,,livestock,,pollinators
+37,2007,grazing,vegetation,seedling herbivory,passive,,,,,grassland ,,,,,,,,,,,,,,,,,North America,USA,grassland,,,,,livestock,,rodents
+39,2017,soil erosion,soil,biological soil crusts,passive,,,,,not clear,,,,,,,,,,,,,,,,,Asia,Israel,desert,,,,,,physicochemical properties,reptiles
+40,2018,desertification,soil,nutrients addition,active,,,,,forest vegetation,,,,,,,,,,,,,,,,,Asia,China,grassland,,,,,livestock,nutrients,arthropods
+41,2018,desertification,soil,litter crust,passive,,,,,not clear,,,,,,,,,,,,,,,,,Asia,China,sand dune,,,,,,"moisture, temperature, pahysicochemical properties",rodents
+42,2018,desertification,vegetation,planting,active,,,,,not clear,,,,,,,,,,,,,,,,,Asia,China,sand dune,,,,,livestock,,re-establish natural ecosystem state
+43,2018,canopy removal,vegetation,foundation species,passive,,,,,native plant communities,,,,,,,,,,,,,,,,,North America,USA,shrubland,,,,,,,positive interactions
+44,2017,exotics ,vegetation,planting,active,,,,,perennial native grasses,,,,,,,,,,,,,,,,,North America,USA,steppe,,,,,,,active planting native seedlings
+45,2017,soil erosion,soil,planting,active,,,,,natural vegetation,,,,,,,,,,,,,,,,,Asia,China,steppe,,,,,unreported animal,physicochemical properties,chemical process restoration
+46,2017,anthropogenic disturbance,vegetation,genetics,passive,,,,,not clear,,,,,,,,,,,,,,,,,North America,USA,desert,,,,,,,
+48,2017,exotics,vegetation,"chemical, mecanical control",active,,,,,native plant communities,,,,,,,,,,,,,,,,,North America,USA,rangeland,,,,,livestock,,adaptive management approaches
+50,2016,mining,vegetation,planting,active,,,,,not clear,,,,,,,,,,,,,,,,,Asia,Kazakhstan,desert,,,,,,heavy metals,
+51,2014,grazing,animal,planting,active,,,,,diverse arthropod community,,,,,,,,,,,,,,,,,Asia,China,grassland,,,,,fenced ,physicochemical properties,arthropods
+52,2014,exotics,vegetation,planting,active,,,,,perennial native grasses,,,,,,,,,,,,,,,,,North America,USA,grassland,,,,,livestock and horses,,rebuild native community
+53,2013,exotics,vegetation,"planting, glyphosate",active,,,,,native plant communities,,,,,,,,,,,,,,,,,North America,USA,steppe,,,,,livestock,,
+54,2012,exotics,vegetation,"seeding, planting",active,,,,,native plant communities,,,,,,,,,,,,,,,,,North America,USA,grassland,,,,,,nutrients,ecosystems dominated by native species
+55,2011,exotics,vegetation,carbon amendments,active,,,,,native plant communities,,,,,,,,,,,,,,,,,North America,USA,grassland,,,,,,"C, N",native plant restoration
+58,2010,grazing,vegetation,facilitation ,passive,,,,,diverse plant community,,,,,,,,,,,,,,,,,Asia,Mongolia,steppe,,,,,livestock,,positive interactions
+59,2010,exotics,vegetation,"chemical, mecanical control",active,,,,,native plant communities,,,,,,,,,,,,,,,,,North America,USA,shrubland,,,,,,,native plant restoration
+61,2010,exotics,vegetation,"seeding, chemical, burning",active,,,,,perennial native grasses,,,,,,,,,,,,,,,,,North America,USA,rangeland,,,,,,,native plant restoration
+63,2008,desertification,soil,micropropagation of mosses,active,,,,,moss dominated soil crusts,,,,,,,,,,,,,,,,,Asia,China,desert,,,,,,nutrients,soil restoration
+64,2008,agriculture,vegetation,carbon addition-top soil removal-sowing ,active,,,,,rich grasslands,,,,,,,,,,,,,,,,,Europe,Netherlands,agriculture,,,,,,chemical and microbia properties,active restoration
+65,2008,stressful soil,vegetation,fertilization and irrigation,active,,,,,native plant communities,,,,,,,,,,,,,,,,,North America,USA,shrubland,,,,,,nutrients,
+66,2005,grazing ,vegetation,"seeding, shrub facilitation",passive,,,,,vegetation before grazing,,,,,,,,,,,,,,,,,North America,USA,rangeland,,,,,livestock,,positive interactions
+68,2004,grazing,vegetation,planting,active,,,,,native plant communities,,,,,,,,,,,,,,,,,North America,USA,grassland,,,,,cattle,,
+69,2003,grazing,vegetation,grazing exclusion,passive,,,,,vegetation before grazing,,,,,,,,,,,,,,,,,Asia,Kuwait,shrubland,,,,,livestock,,
+71,1999,clearing,vegetation,mycorrhizal fungi ,passive,,,,,vegetation before disturbance,,,,,,,,,,,,,,,,,North America,Mexico,shrubland,,,,,,physicochemical properties,
+73,1999,"various, grazing, herbicide, soil disturbance",animal,ants as indicators,passive,,,,,not clear,,,,,,,,,,,,,,,,,North America,USA,rangeland,,,,,livestock,,arthropods
+74,1997,anthropogenic disturbance,animal,"seeding, planting",active,,,,,undegraded natural area,,,,,,,,,,,,,,,,,North America,USA,shrubland,,,,,,,"construction of flood structures, rodents"
+76,2018,grazing,vegetation,"sowing, fencing",active,,,,,revegetation,,,,,,,,,,,,,,,,,South America,Falkland Islands,grassland,,,,,cattle and sheep,moisture and temperature,
+77,2018,agriculture,vegetation,mowing and grazing,active,,,,,semi-natural grasslands,,,,,,,,,,,,,,,,,Europe,Belgium,agriculture,,,,,ponies and cows,"P, N evaluation",
+78,2017,agriculture,vegetation,germination and survival ,passive,,,,,semi-natural grasslands,,,,,,,,,,,,,,,,,Europe,Belgium,grassland,,,,,,biogeochemistry,
+80,2016,agriculture,cost,costs,active,,,,,not clear,,,,,,,,,,,,,,,,,North America,Canada,agriculture,,,,, , ,
+82,2017,agriculture,soil,soil carbon and enzyme,passive,,,,,restored grassland,,,,,,,,,,,,,,,,,Asia,China,agriculture,,,,,,"C, enzyme activities",productive grasslands
+84,2016,agriculture,animal,planting,active,,,,,not clear,,,,,,,,,,,,,,,,,Oceania,New Zealand,agriculture,,,,,,,worms
+85,2016,grazing,vegetation,planting,active,,,,,agroecosystems,,,,,,,,,,,,,,,,,Oceania,Australia,grassland,,,,,livestock,,production and biodiversity
+86,2015,agriculture,vegetation,planting,active,,,,,native plant communities,,,,,,,,,,,,,,,,,North America,USA,agriculture,,,,,,chemical composition,
+87,2015,agriculture,soil,fertilization,active,,,,,semi-natural grasslands,,,,,,,,,,,,,,,,,Europe,Belgium,agriculture,,,,,,chemical composition,soil restoration
+88,2014,agriculture,soil,seeding,passive,,,,,native grasslands,,,,,,,,,,,,,,,,,Asia,China,agriculture,,,,,,physicochemical properties,
+89,2014,agriculture,animal,"seeding, pollination",active,,,,,not clear,,,,,,,,,,,,,,,,,North America,USA,agriculture,,,,,,,pollinators
+91,2011,agriculture,vegetation,agroecoystems,passive,,,,,agroecosystems,,,,,,,,,,,,,,,,,Oceania,Australia,agriculture,,,,,cattle,,biodiversity in agroecosystems
+93,2010,agriculture,vegetation,natural recovery,passive,,,,,semi-natural vegetation,,,,,,,,,,,,,,,,,South America,Argentina,agriculture,,,,,livestock,,novel vegetation states
+95,2010,agriculture,vegetation,sowing and planting,active,,,,,native vegetation remnants,,,,,,,,,,,,,,,,,North America,USA,agriculture,,,,,,,
+96,2009,agriculture,animal,rodents,passive,,,,,native vegetation,,,,,,,,,,,,,,,,,Asia,Mongolia,agriculture,,,,,livestock,,rodents
+98,2002,agriculture,vegetation,"sowing, cutting, grazing treatments",active,,,,,semi-natural grasslands,,,,,,,,,,,,,,,,,Europe,Scotland,agriculture,,,,,cattle and sheep,,
+100,2005,exotics,vegetation,"seeding, herbicide, nutrients",active,,,,,native grasslands,,,,,,,,,,,,,,,,,North America,USA,grassland,,,,,livestock,chemical,
+101,2013,desertification,vegetation,natural recovery,passive,,,,,stabilized sand land,,,,,,,,,,,,,,,,,Asia,China,sand dune,,,,,unreported animal,,
+104,2003,agriculture,vegetation,mycorrhizal inoculation ,active,,,,,native vegetation,,,,,,,,,,,,,,,,,Europe,Spain,agriculture,,,,,unreported animal,physicochemical properties,
+105,2002,anthropogenic disturbance,soil,fertile islands,passive,,,,,undisturbed desert,,,,,,,,,,,,,,,,,North America,USA,roadways,,,,,,physicochemical properties,abandoned roads
+106,2001,agriculture,vegetation,"seeding, irrigation",active,,,,,revegetation,,,,,,,,,,,,,,,,,North America,USA,agriculture,,,,,,water addition,
+107,2001,mining,soil,soil amendments,active,,,,,revegetation,,,,,,,,,,,,,,,,,North America,USA,shrubland,,,,,,water and chemical composition,
+108,2000,anthropogenic disturbance,"vegetation, soil",natural recovery,passive,,,,,natural community,,,,,,,,,,,,,,,,,North America,USA,roadways,,,,,,physicochemical properties,abandoned roads
+109,1991,agriculture,vegetation,"planting, sowing",active,,,,,native vegetation,,,,,,,,,,,,,,,,,North America,USA,agriculture,,,,,,,
+110,2018,agriculture,soil,soil microbial,passive,,,,,revegetation,,,,,,,,,,,,,,,,,Asia,China,agriculture,,,,,,chemical composition,microbial
+111,2016,agriculture,"vegetation, soil",planting,active,,,,,revegetation,,,,,,,,,,,,,,,,,Asia,China,agriculture,,,,,,chemical composition,
+112,2006,agriculture,vegetation,"seeding, irrigation",active,,,,,native vegetation,,,,,,,,,,,,,,,,,North America,USA,agriculture,,,,,,mulch and phosphate addition,
+114,1998,agriculture,vegetation,planting,active,,,,,native vegetation,,,,,,,,,,,,,,,,,North America,USA,agriculture,,,,,herbivory,chemical composition,
+115,2018,grazing,vegetation,grazing exclusion,passive,,,,,native vegetation,,,,,,,,,,,,,,,,,Europe,Portugal,savannah,,,,,cattle,,
+118,2017,desertification,"vegetation, soil",seeding,active,,,,,revegetation,,,,,,,,,,,,,,,,,Asia,Saudi Arabia,rangeland,,,,,unreported animal,physical attributes,
+119,2016,grazing,vegetation,burning and mowing,active,,,,,native grasslands,,,,,,,,,,,,,,,,,Asia,Mongolia,steppe,,,,,livestock,chemical composition,
+120,2016,agriculture,animal,habitat for reptiles,passive,,,,,not clear,,,,,,,,,,,,,,,,,Oceania,Australia,woodland,,,,,cattle and sheep,,reptiles
+121,2015,agriculture,vegetation,planting,active,,,,,native vegetation,,,,,,,,,,,,,,,,,Asia,China,agriculture,,,,,,chemical composition,
+126,2011,grazing,biological soil crusts,grazing exclusion,passive,,,,,crusts of little disturbed sites,,,,,,,,,,,,,,,,,Oceania,Australia,woodland,,,,,livestock,nutrients,
+127,2008,mining,vegetation,"seeding, soil amendment",active,,,,,not clear,,,,,,,,,,,,,,,,,Europe,Spain,shrubland,,,,,sheep,chemical composition,
+128,2007,agriculture,vegetation,natural recovery,passive,,,,,native grasslands,,,,,,,,,,,,,,,,,Oceania,Australia,agriculture,,,,,livestock,,
+129,2005,clearing,vegetation,"seeding, inoculation",active,,,,,revegetation,,,,,,,,,,,,,,,,,Oceania,Australia,woodland,,,,,unreported animal,,
+130,2018,desertification,soil ,soil bacterial community,passive,,,,,revegetation,,,,,,,,,,,,,,,,,Asia,China,grassland,,,,,unreported animal,physicochemical properties,
+132,2017,clearing,vegetation,seeding,active,,,,,plant diversity,,,,,,,,,,,,,,,,,North America,USA,grassland,,,,,,,
+133,2017,land-use changes,soil,soil microbial ,passive,,,,,natural vegetation,,,,,,,,,,,,,,,,,Asia,China,steppe,,,,,,microbial and chemical properties,microbial
+134,2016,land-use changes,vegetation,"herbicide, herbivore exclosures, and shelter tubes",active,,,,,native vegetation,,,,,,,,,,,,,,,,,North America,USA,forest,,,,,,,
+135,2016,agriculture,vegetation,natural recovery,passive,,,,,native vegetation,,,,,,,,,,,,,,,,,Asia,Mongolia,forest,,,,,livestock,physicochemical properties,
+139,2015,agriculture,soil,planting,active,,,,,afforestation,,,,,,,,,,,,,,,,,Asia,China,grassland,,,,,,water,
+141,2014,desertification,soil,grazing exclusion,passive,,,,,natural recovery,,,,,,,,,,,,,,,,,Asia,China,grassland,,,,,sheep,carbon storage,
+142,2015,agriculture,vegetation,planting ,active,,,,,native vegetation,,,,,,,,,,,,,,,,,North America,USA,agriculture,,,,,,,
+143,2014,exotics,vegetation,"seeding, mowing",active,,,,,native grasslands,,,,,,,,,,,,,,,,,North America,USA,grassland,,,,,,,
+145,2013,deforestation,vegetation,planting,active,,,,,native vegetation,,,,,,,,,,,,,,,,,North America,Mexico,forest,,,,,,,
+146,2013,deforestation,vegetation,planting,active,,,,,native vegetation,,,,,,,,,,,,,,,,,South America,Argentina,forest,,,,,unreported animal,temperature and moisture,
+147,2012,agriculture,vegetation,seeding ,active,,,,,undisturbed plant community,,,,,,,,,,,,,,,,,North America,USA,agriculture,,,,,unreported animal,,
+148,2012,soil erosion,soil,soil nutrients,active,,,,,revegetation,,,,,,,,,,,,,,,,,Asia,China,grassland,,,,,livestock,"C, N",
+149,2012,anthropogenic disturbance,"vegetation, soil","seeding, soil amendment",active,,,,,native vegetation,,,,,,,,,,,,,,,,,North America,USA,shrubland,,,,,,chemical composition,natural gas exploration
+151,2011,soil erosion,soil,biostimulants,active,,,,,microbial and vegetation recovery,,,,,,,,,,,,,,,,,Europe,Spain,mediterranean,,,,,,biostimulants,
+152,2010,grazing,vegetation,"seeding, soil tilling, fertilization",active,,,,,native vegetation,,,,,,,,,,,,,,,,,Africa,Africa,rangeland,,,,,livestock,compactness and infiltration,
+153,2010,anthropogenic disturbance,vegetation,seeding,active,,,,,pre-disturbance condition,,,,,,,,,,,,,,,,,North America,USA,roadways,,,,,,,roads
+154,2010,agriculture,vegetation,water addition,active,,,,,undisturbed community,,,,,,,,,,,,,,,,,Asia,China,agriculture,,,,,unreported animal,physicochemical properties,
+155,2009,exotics,animal,"seeding, fire",active,,,,,undisturbed plant community,,,,,,,,,,,,,,,,,North America,USA,steppe,,,,,,,arthropods
+157,2009,desertification,"vegetation, soil","planting, soil amelioration",active,,,,,pre-disturbance condition,,,,,,,,,,,,,,,,,Europe,Spain,grassland,,,,,livestock,chemical composition,
+160,2008,anthropogenic disturbance,vegetation,"seeding, herbicide",active,,,,,native vegetation,,,,,,,,,,,,,,,,,North America,USA,roadways,,,,,,physicochemical properties,roadsides
+161,2008,grazing,vegetation,mechanical disturbance and seeding,active,,,,,palatable grasses,,,,,,,,,,,,,,,,,South America,Argentina,rangeland,,,,,livestock,,
+162,2007,anthropogenic disturbance,vegetation,natural recovery,passive,,,,,revegetation,,,,,,,,,,,,,,,,,Europe,Spain,roadways,,,,,,,road slopes
+164,2006,anthropogenic disturbance,"vegetation, soil",planting,active,,,,,native vegetation,,,,,,,,,,,,,,,,,Europe,Spain,steppe,,,,,,physicochemical properties,
+166,2004,mining,vegetation,seeding,active,,,,,diverse community,,,,,,,,,,,,,,,,,Oceania,Australia,shrubland,,,,,,no,
+167,2004,agriculture,vegetation,"seeding, mowing and herbicide, mulching (straw and sawdust)",active,,,,,native vegetation,,,,,,,,,,,,,,,,,North America,Canada,agriculture,,,,,,chemical composition,
+168,2003,desertification,vegetation,"planting, composted addition, mycorrhizal inoculation",active,,,,,revegetation,,,,,,,,,,,,,,,,,Europe,Spain,mediterranean,,,,,,physicochemical properties,
+169,2003,exotics,vegetation,seeding,active,,,,,native vegetation,,,,,,,,,,,,,,,,,North America,USA,grassland,,,,,,,
+170,2018,grazing,"vegetation, soil",grazing exclusion,passive,,,,,biomass,,,,,,,,,,,,,,,,,Asia,China,steppe,,,,,sheep,physicochemical properties,
+171,2018,anthropogenic disturbance,vegetation,seeding,active,,,,,undisturbed vegetation,,,,,,,,,,,,,,,,,North America,USA,grassland,,,,,cattle,,industries
+179,2017,grazing,vegetation,seeding,active,,,,,not clear,,,,,,,,,,,,,,,,,Oceania,Australia,grassland,,,,,livestock,no,
+180,2016,shrub encroachment,vegetation,chemical control,active,,,,,productive savanna,,,,,,,,,,,,,,,,,Africa,Africa,savannah,,,,,livestock,,
+182,2016,mining,soil,"planting, soil amelioration",active,,,,,undisturbed soil,,,,,,,,,,,,,,,,,Europe,Spain,mediterranean,,,,,,chemical and microbia properties,
+188,2016,agriculture,vegetation,natural recovery,passive,,,,,not clear,,,,,,,,,,,,,,,,,South America,Argentina,agriculture,,,,,,physicochemical properties,
+193,2015,exotics,"vegetation, soil","seeding, nutrients",active,,,,,not clear,,,,,,,,,,,,,,,,,North America,USA,grassland,,,,,cattle,litter and N meassured,
+194,2015,anthropogenic disturbance,vegetation,"seeding, irrigation",active,,,,,undisturbed desert,,,,,,,,,,,,,,,,,North America,USA,shrubland,,,,,,topsoil salvage,road construction
+195,2015,mining,soil,"planting, microbial ",active,,,,,not clear,,,,,,,,,,,,,,,,,Asia,China,grassland,,,,,,"chemical, enzyme and microbial meassures",
+197,2015,exotics,vegetation,planting,active,,,,,not clear,,,,,,,,,,,,,,,,,North America,Hawai,woodland,,,,,,physicochemical properties,
+202,2015,anthropogenic disturbance,vegetation,planting,active,,,,,not clear,,,,,,,,,,,,,,,,,Europe,Spain,forest,,,,,,physicochemical properties,human exploitation
+204,2014,anthropogenic disturbance,soil,planting,active,,,,,not clear,,,,,,,,,,,,,,,,,Asia,China,grassland,,,,,,moisture,
+206,2014,agriculture,vegetation,"seeding, irrigation",active,,,,,native vegetation,,,,,,,,,,,,,,,,,North America,USA,agriculture,,,,,cattle,water addition,
+207,2014,grazing,"vegetation, soil",grazing exclusion,passive,,,,,pre-disturbance condition,,,,,,,,,,,,,,,,,Asia,China,grassland,,,,,livestock,chemical composition,
+209,2014,agriculture,"vegetation, soil",natural recovery,passive,,,,,not clear,,,,,,,,,,,,,,,,,South America,Argentina,agriculture,,,,,livestock,physicochemical properties,
+210,2014,agriculture,soil,carbon amendment,active,,,,,native grasslands,,,,,,,,,,,,,,,,,Europe,Hungary,agriculture,,,,,,chemical and microbia properties,
+211,2014,exotics,vegetation,"seeding, herbicide",active,,,,,perennial vegetation,,,,,,,,,,,,,,,,,North America,USA,rangeland,,,,,,,
+212,2014,stressful soil,vegetation,planting,active,,,,,not clear,,,,,,,,,,,,,,,,,Europe,Spain,shrubland,,,,,,moisture,
+213,2015,desertification,soil,planting,active,,,,,native vegetation and soil retention,,,,,,,,,,,,,,,,,Asia,India,shrubland,,,,,cattle,physiochemical properties,
+214,2014,agriculture,vegetation,"planting, irrigation, mulch",active,,,,,not clear,,,,,,,,,,,,,,,,,North America,USA,agriculture,,,,,,mulch and water addition,
+218,2013,soil erosion,soil,planting,active,,,,,not clear,,,,,,,,,,,,,,,,,Asia,China,savannah,,,,,,chemical and microbia properties,
+219,2013,grazing,vegetation,grazing exclusion,passive,,,,,soil and vegetation recovery,,,,,,,,,,,,,,,,,Africa,Morocco,rangeland,,,,,livestock,chemical composition,
+220,2013,mining,vegetation,nurse plants,passive,,,,,vegetation cover,,,,,,,,,,,,,,,,,South America,Chile,shrubland,,,,,unreported animal,physicochemical properties,
+221,2012,exotics,vegetation,seed caching rodents,passive,,,,,not clear,,,,,,,,,,,,,,,,,North America,USA,rangeland,,,,,,,
+223,2013,grazing,vegetation,nurse plants,passive,,,,,not clear,,,,,,,,,,,,,,,,,Asia,Iran,rangeland,,,,,unreported animal,no,
+229,2012,grazing,seed,soil seed bank,passive,,,,,original light grazing situation,,,,,,,,,,,,,,,,,Africa,Africa,rangeland,,,,,livestock,seed bank,
+230,2012,browsing,vegetation,planting,active,,,,,intact site,,,,,,,,,,,,,,,,,Africa,Africa,forest,,,,,goat,,costs
+231,2012,grazing,vegetation,grazing exclusion,passive,,,,,not clear,,,,,,,,,,,,,,,,,Asia,Mongolia,grassland,,,,,sheep and goats,,
+232,2012,exotics,vegetation,irrigation,active,,,,,native vegetation,,,,,,,,,,,,,,,,,North America,USA,shrubland,,,,,,water addition,
+233,2012,exotics,vegetation,"planting, mycorrhiza, hydrogel, wood obstruction",active,,,,,not clear,,,,,,,,,,,,,,,,,North America,USA,shrubland,,,,,,,
+235,2012,anthropogenic disturbance,seed,"seeding, tackifier, harrowed",active,,,,,pre-disturbance conditions,,,,,,,,,,,,,,,,,North America,USA,shrubland,,,,,,seed bank,military training area
+238,2011,grazing,soil,planting,active,,,,,rangeland rehabilitation,,,,,,,,,,,,,,,,,Africa,Morocco,rangeland,,,,,livestock,chemical properties,
+239,2011,agriculture,vegetation,natural recovery,passive,,,,,native vegetation recovery,,,,,,,,,,,,,,,,,South America,Brazil,savannah,,,,,cattle,moisture,forestry
+240,2011,exotics,vegetation,"seeding, mechanical control",active,,,,,native vegetation,,,,,,,,,,,,,,,,,North America,USA,grassland,,,,,,,
+241,2011,exotics,vegetation,planting,active,,,,,not clear,,,,,,,,,,,,,,,,,South America,Chile,mediterranean,,,,,cattle,moisture,
+242,2011,agriculture,soil,planting,active,,,,,not clear,,,,,,,,,,,,,,,,,Asia,China,agriculture,,,,,,physicochemical and microbial properties,
+243,2011,exotics,vegetation,seeding,active,,,,,not clear,,,,,,,,,,,,,,,,,North America,USA,steppe,,,,,,physicochemical properties,
+244,2011,anthropogenic disturbance,vegetation,"planting, clay and hydrogel ",active,,,,,not clear,,,,,,,,,,,,,,,,,Europe,Spain,woodland,,,,,,no,
+245,2011,exotics,vegetation,planting,active,,,,,not clear,,,,,,,,,,,,,,,,,North America,USA,grassland,,,,,,water content,
+246,2011,anthropogenic disturbance,vegetation,shelters,active,,,,,not clear,,,,,,,,,,,,,,,,,Europe,Spain,shrubland,,,,,unreported animal,,deforestation
+247,2011,agriculture,soil,natural recovery,passive,,,,,soil properties of native forests,,,,,,,,,,,,,,,,,Asia,China,agriculture,,,,,unreported animal,physicochemical and microbial properties,
+248,2011,soil erosion,soil,planting,active,,,,,not clear,,,,,,,,,,,,,,,,,Europe,Turkey,forest,,,,,,physicochemical properties,
+250,2010,anthropogenic disturbance,vegetation,"planting, irrigation, hydrogels",active,,,,,not clear,,,,,,,,,,,,,,,,,North America,USA,rangeland,,,,,,water addition,
+251,2010,grazing,vegetation,"seeding, constructing safe sites, retaining seed movement",active,,,,,not clear,,,,,,,,,,,,,,,,,Asia,China,grassland,,,,,unreported animal,seed bank,
+252,2010,grazing,vegetation,seeding,active,,,,,not clear,,,,,,,,,,,,,,,,,Asia,Jordan,rangeland,,,,,livestock,,
+253,2010,wildfire,vegetation,"seeding, irrigation",active,,,,,not clear,,,,,,,,,,,,,,,,,North America,USA,rangeland,,,,,,texture and microtopography,
+254,2009,exotics,vegetation,"planting, fungal inoculation",active,,,,,not clear,,,,,,,,,,,,,,,,,North America,USA,xeroriparian,,,,,,mycorrhizal inoculation,
+255,2009,grazing,vegetation,grazing exclusion,passive,,,,,not clear,,,,,,,,,,,,,,,,,Africa,Africa,rangeland,,,,,livestock,,
+256,2007,agriculture,soil,mycorrhizal fungi,passive,,,,,fungi of non-cultivated fields,,,,,,,,,,,,,,,,,Asia,China,agriculture,,,,,unreported animal,physicochemical properties,
+259,2005,grazing,vegetation,grazing exclusion,passive,,,,,not clear,,,,,,,,,,,,,,,,,Asia,China,rangeland,,,,,unreported animal,,
+262,2003,grazing,"vegetation, soil"," seeding, hollows-dyker plough, furrows-ripper/sub-soiler and walking-stick planter",active,,,,,stable vegetation to deliver animal production.,,,,,,,,,,,,,,,,,Africa,Africa,rangeland,,,,,unreported animal,,
+263,2003,grazing,vegetation,phytogenic mounds (nebkhas),passive,,,,,not clear,,,,,,,,,,,,,,,,,Africa,Africa,rangeland,,,,,unreported animal,temperature and moisture,
+264,2003,grazing,"vegetation, soil","seeding, gypsum (CaSO4) and organic mulch",active,,,,,not clear,,,,,,,,,,,,,,,,,Africa,Africa,rangeland,,,,,livestock,gypsum and mulching addition,
+267,2001,anthropogenic disturbance,vegetation,facilitation ,passive,,,,,not clear,,,,,,,,,,,,,,,,,Europe,Spain,steppe,,,,,,"temperature, moisture, chemical properties",
+268,2000,anthropogenic disturbance,vegetation,irrigation,active,,,,,not clear,,,,,,,,,,,,,,,,,North America,USA,shrubland,,,,,,water addition,
+269,2000,mining,vegetation,"seeding, planting",active,,,,,not clear,,,,,,,,,,,,,,,,,North America,USA,steppe,,,,,livestock,no,
+271,1999,mining,animal,natural recovery,passive,,,,,not clear,,,,,,,,,,,,,,,,,Africa,Africa,shrubland,,,,,sheep,"ph, electrical conductivity, microbial",rodents
+274,2010,agriculture,vegetation,"seeding, micro-topographic relief, fire, grazing",active,,,,,native vegetation,,,,,,,,,,,,,,,,,North America,USA,agriculture,,,,,livestock,"fallowing, disking, micro-topography",
+275,2007,agriculture,vegetation,"irrigation, planting, weed control",active,,,,,native vegetation,,,,,,,,,,,,,,,,,North America,USA,agriculture,,,,,,"salt-remediation products, seed coatings, and mycorrhizal inoculation",
+276,1999,anthropogenic disturbance,vegetation,"seeding, ripped, disked, fertilization",active,,,,,undisturbed sites,,,,,,,,,,,,,,,,,North America,USA,grassland,,,,,,"ripped, disked",oil and gas fields
+277,2017,exotics,vegetation,"seeding, grazing",active,,,,,not clear,,,,,,,,,,,,,,,,,North America,USA,shrubland,,,,,sheep,,solar power plant installation
+278,2014,anthropogenic disturbance,vegetation,"seeding, tillage, weed suppression",active,,,,,valley saltbush scrub community,,,,,,,,,,,,,,,,,North America,USA,shrubland,,,,,livestock,tillage,solar power plant installation
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
+,,,,,,,,,, ,,,,,,,,,,,,,,,,,,,,,,,, , ,
