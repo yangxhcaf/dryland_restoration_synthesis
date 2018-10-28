@@ -1,6 +1,10 @@
 main.data.sections,data.column.name,description
-problem/ technique description,ID,article ID
-problem description/technique,year,publication year
+article info,study.ID,article ID
+article info,ID,article ID and categories
+article info,publication.year,publication year
+article info,data.year,year when data collection started
+article info,exp.year,year when restoration technique or experiment started
+article info,exp.length,"duration of experiment, monitoring"
 problem description/technique,disturbance,main/s disturbance factor/s
 problem description/technique,focus,"restoration focus, main goal"
 problem description/technique,technique,restoration technique used
@@ -24,7 +28,6 @@ data,var.t,measure of variance of experimental treatment
 data,var.c,measure of variance of experimental control
 data,p-value,p value of treatment-control comparison
 data,df,degrees of freedom 
-data,exp.length,"duration of experiment, monitoring"
 data,measure.dispersion,"measure of dispersion used in each study, standard deviation, std error "
 site description,lat,site latitude in decimal degrees
 site description,long,site longitude in decimal degrees
