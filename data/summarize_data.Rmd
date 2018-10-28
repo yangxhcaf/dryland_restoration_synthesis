@@ -25,6 +25,7 @@ library(tidyverse)
 data<- read.csv("~/GitHub/dryland_restoration_synthesis/data/data.csv", header= T, sep= ",",
                 dec = ".", na.strings = "NA")
 str(data)
+
 ```
 
 ```{r select 20 articles}
