@@ -39,20 +39,12 @@ mydata<- data %>%
 #%>%  
  # dplyr::select(1:13,31:35) 
 
-mydata
+#mydata
 
-mydata$study.ID
+#mydata$study.ID
 
-class(data$study.ID)
+#class(data$study.ID)
 ```
-```{r}
-
-#mydata["disturbance"]
-#table(mydata["disturbance"])
-
-```
-
-
 
 ```{r}
 
