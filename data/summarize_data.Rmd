@@ -15,6 +15,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r initialize, echo= T, message= FALSE, warning= F}
 
 library(tidyverse)
+library(RColorBrewer)
 
 ```
 
@@ -28,13 +29,15 @@ str(data)
 
 ```
 
-```{r select 22 articles}
+```{r select 26 articles}
 
-#ID: 1,2,3,4,5,6,9,11,12,13,15,16,19,20,21,64,77,86,87,88,89, 91 articles with data extracted
+#ID: 1,2,3,4,5,6,9,11,12,13,15,16,19,20,21,64,77,78,86,87,88,89,91,95,98,104 articles with data extracted
 
 mydata<- data %>% 
-  dplyr::filter(study.ID %in% c(1,2,3,4,5,6,9,11,12,13,15,16,19,20,21,64,77,86,87,88,89,91))%>%  
-  dplyr::select(1:13,31:35) 
+  dplyr::filter(study.ID %in% c(1,2,3,4,5,6,9,11,12,13,15,16,19,20,21,64,77,78,86,87,88,89,91,95,98,104))
+
+#%>%  
+ # dplyr::select(1:13,31:35) 
 
 mydata
 
@@ -42,6 +45,14 @@ mydata$study.ID
 
 class(data$study.ID)
 ```
+```{r}
+
+#mydata["disturbance"]
+#table(mydata["disturbance"])
+
+```
+
+
 
 ```{r}
 
@@ -55,9 +66,11 @@ map<-ggplot() + geom_polygon(data=world, fill="gray50", aes(x=long, y=lat, group
 map + geom_point(data=mydata, aes(x=long, y=lat)) 
 
 
+
 mydata.simple1 <- mydata %>% group_by(continent, country, study.ID) %>% count()
 mydata.simple2 <- mydata.simple1 %>% group_by(continent, country) %>% count()
-ggplot(na.omit(mydata.simple2), aes(continent,nn, fill=country)) + geom_bar(stat = "identity") + coord_flip(ylim=0:25) + scale_fill_brewer(palette = "Blues")
+ggplot(na.omit(mydata.simple2), aes(continent,nn, fill=country))+ geom_bar(stat = "identity") + coord_flip(ylim=0:25) +scale_fill_brewer(palette ="Spectral")
+
 
 #mydata.simple1
 #mydata.simple2
@@ -88,6 +101,27 @@ ggplot(na.omit(mydata.simple8), aes(continent,nn, fill=paradigm)) + geom_bar(sta
 
 #mydata.simple7
 #mydata.simple8
+
+mydata.simple9 <- mydata %>% group_by(publication.year,study.ID) %>% count()
+mydata.simple10 <- mydata.simple9 %>% group_by(publication.year) %>% count()
+ggplot(mydata.simple10, aes(x=publication.year, y=nn)) + geom_point() + xlim (2002, 2018)
+
+
+#mydata.simple9
+#mydata.simple10
+
+mydata.simple11 <- mydata %>% group_by(disturbance, technique, study.ID) %>% count()
+mydata.simple12 <- mydata.simple11 %>% group_by(disturbance, technique) %>% count()
+
+mycolors = c(brewer.pal(name="Set3", n = 12), brewer.pal(name="Paired", n = 12))
+
+ggplot(na.omit(mydata.simple12), aes(disturbance,nn, fill=technique)) + geom_bar(stat = "identity") + coord_flip(ylim=0:25) + scale_fill_manual(values = mycolors)
+
+
+mydata.simple13 <- mydata %>% group_by(disturbance, focus, study.ID) %>% count()
+mydata.simple14 <- mydata.simple13 %>% group_by(disturbance, focus) %>% count()
+ggplot(na.omit(mydata.simple14), aes(disturbance,nn, fill=focus)) + geom_bar(stat = "identity") + coord_flip(ylim=0:25) + scale_fill_brewer(palette = "Blues")
+
 ```
 
 
