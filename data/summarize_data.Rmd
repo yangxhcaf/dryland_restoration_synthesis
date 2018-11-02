@@ -114,6 +114,19 @@ mydata.simple13 <- mydata %>% group_by(disturbance, focus, study.ID) %>% count()
 mydata.simple14 <- mydata.simple13 %>% group_by(disturbance, focus) %>% count()
 ggplot(na.omit(mydata.simple14), aes(disturbance,nn, fill=focus)) + geom_bar(stat = "identity") + coord_flip(ylim=0:25) + scale_fill_brewer(palette = "Blues")
 
+mydata.simple15 <- mydata %>% group_by(control, study.ID) %>% count()
+mydata.simple16<- mydata.simple15 %>% group_by(control) %>% count()
+ggplot(na.omit(mydata.simple16), aes(control,nn)) + geom_bar(stat = "identity") + coord_flip(ylim=0:25) 
+
+
+#mydata.simple15
+#mydata.simple16
+
+mydata.simple17 <- mydata %>% group_by(measure.success, study.ID) %>% count()
+mydata.simple18<- mydata.simple17 %>% group_by(measure.success) %>% count()
+ggplot(na.omit(mydata.simple18), aes(measure.success,nn)) + geom_bar(stat = "identity") + coord_flip(ylim=0:25) 
+
+
 ```
 
 
