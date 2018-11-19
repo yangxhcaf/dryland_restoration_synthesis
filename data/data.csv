@@ -781,9 +781,9 @@ study.ID,ID,publication.year,data.year,exp.year,exp.length (months),disturbance,
 30,30,2013,,,,shrub encroachment,animal,herbicide,active,,,,,not clear,,,,,,,,,,,,,,,,,,,North America,USA,shrubland,,,,,,,lizard
 31,31,2012,,,,desertification,seed,seed arrival and retention,passive,,,,,not clear,,,,,,,,,,,,,,,,,,,Asia,China,grassland,,,,,,,arthropods
 32,32,2012,,,,desertification,soil,planting,active,,,,,not clear,,,,,,,,,,,,,,,,,,,Asia,China,grassland,,,,,unreported animal,physicochemical and biological properties,arthropods
-34,34,2009,,,,grazing,vegetation,"water, nitrogen and phosphorus",passive,,,,,not clear,,,,,,,,,,,,,,,,,,,Asia,China,grassland,,,,,unreported animal,physicochemical properties,rodents
+34,34,2009,2005,2004,12,not disturbance reported,vegetation,"water, nitrogen and phosphorus",passive,resource addition,resource addition,,,not clear,,,,,,1,6,6,48,,,,,,,,42.96,122.35,Asia,China,grassland,260,450,,1780,unreported animal,physicochemical properties,not disturbance reported
 35,35,2008,,,,grazing,vegetation,grazing exclusion,passive,,,,,grassland before grazing,,,,,,,,,,,,,,,,,,,North America,USA,grassland,,,,,livestock,,pollinators
-37,37,2007,,,,grazing,vegetation,seedling herbivory,passive,,,,,grassland ,,,,,,,,,,,,,,,,,,,North America,USA,grassland,,,,,livestock,,rodents
+37,37,2007,,,,shrub encroachment,vegetation,seedling herbivory,passive,,,,,grassland ,,,,,,,,,,,,,,,,,,,North America,USA,grassland,,,,,livestock,,rodents
 39,39,2017,,,,soil erosion,soil,biological soil crusts,passive,,,,,not clear,,,,,,,,,,,,,,,,,,,Asia,Israel,desert,,,,,,physicochemical properties,reptiles
 40,40,2018,,,,desertification,soil,nutrients addition,active,,,,,forest vegetation,,,,,,,,,,,,,,,,,,,Asia,China,grassland,,,,,livestock,nutrients,arthropods
 41,41,2018,,,,desertification,soil,litter crust,passive,,,,,not clear,,,,,,,,,,,,,,,,,,,Asia,China,sand dune,,,,,,"moisture, temperature, pahysicochemical properties",rodents
