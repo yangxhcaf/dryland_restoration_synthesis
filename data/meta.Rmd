@@ -6,7 +6,8 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+#knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(root.dir = '~/dryland_restoration_synthesis')
 ```
 
 ```{r initialize, echo= T, message= FALSE, warning= F}
@@ -18,10 +19,11 @@ library(meta)
 ```
 
 ```{r input}
+#data<- read.csv("~/GitHub/dryland_restoration_synthesis/data/data.csv", header= T, sep= ",",dec = ".", na.strings = "NA")
+#str(data)
 
-data<- read.csv("~/GitHub/dryland_restoration_synthesis/data/data.csv", header= T, sep= ",",
-                dec = ".", na.strings = "NA")
-str(data)
+data <- read_csv("data/data.csv")
+data
 ```
 
 ```{r }
