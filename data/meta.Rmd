@@ -7,7 +7,7 @@ output: html_document
 
 ```{r setup, include=FALSE}
 #knitr::opts_chunk$set(echo = TRUE)
-knitr::opts_chunk$set(root.dir = '~/dryland_restoration_synthesis')
+#knitr::opts_chunk$set(root.dir = '~/dryland_restoration_synthesis')
 ```
 
 ```{r initialize, echo= T, message= FALSE, warning= F}
