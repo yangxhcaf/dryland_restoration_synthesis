@@ -19,22 +19,23 @@ library(meta)
 ```
 
 ```{r input}
-#data<- read.csv("~/GitHub/dryland_restoration_synthesis/data/data.csv", header= T, sep= ",",dec = ".", na.strings = "NA")
-#str(data)
+data<- read.csv("~/GitHub/dryland_restoration_synthesis/data/data.csv", header= T, sep= ",",dec = ".", na.strings = "NA")
+str(data)
 
-data <- read_csv("data/data.csv")
-data
+#data <- read_csv("data/data.csv")
+#data
 ```
 
 ```{r }
 
-#ID: 1,2,3,4,5,6,9,11,12,13,15,16,19,20,21,64,77,78,86,87,88,89,91,93,95,98,104,106,109,111,112,114,121,128,135,142,147,154,167,188,206,209,214,239 articles with data extracted
+#ID: 1,2,3,4,5,6,9,11,12,13,15,16,19,20,21,28,51,58,64,66,68,69,77,78,82,86,87,88,89,91,93,95,98,104,106,109,111,112,114,120,121,128,135,139,142,147,154,167,188,206,209,210,214,239,242,247,256,276,277,278 articles with data extracted
 
 mymetadata<- data %>% 
-  dplyr::filter(study.ID %in% c(11,12,19,87,88))  
+  dplyr::filter(study.ID %in% c(11,12,19,87,88,167,247,276,277))  
   
-#2,4,12,15,16,21,86,89,91 no control
-#1,3,5,6,9, 13, 20,64,77 std error
+#2,4,12,15,16,21,28,58,78,82,86,89,91,93,98,106,112,114,120,128,139,142,154,167,188,209,214,242,no control
+#1,2,3,6,9,13,15,16,20,28,51,58,64,66,68,77,78,82,86,87,88,89,91,93,95,98,104,112,114,128,135,142,147,154,206,210,214,256 std error
+#5 no variance reported
 
 mymetadata
 
@@ -42,6 +43,8 @@ mymetadata$study.ID
 
 class(data$study.ID)
 ```
+
+
 ```{r}
 
 #assign model
