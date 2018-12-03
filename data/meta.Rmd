@@ -18,7 +18,7 @@ library(meta)
 
 ```
 
-```{r input}
+```{r input,  results='hide'}
 data<- read.csv("~/GitHub/dryland_restoration_synthesis/data/data.csv", header= T, sep= ",",dec = ".", na.strings = "NA")
 str(data)
 
@@ -46,6 +46,9 @@ class(data$study.ID)
 
 
 ```{r}
+
+
+print(metacont(n.t, mean.t, var.t, n.c, mean.c, var.c, data=mymetadata), digits=2)
 
 #assign model
 m <- metacont(n.treatment, mean.treatment, var.t, n.control, mean.control, var.c, studlab = ID, data=mymetadata)

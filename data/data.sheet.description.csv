@@ -20,12 +20,15 @@ problem description/technique,treatment,different treatments evaluated
 problem description/technique,control,control
 problem description/technique,unit,unit of measured factors
 data,Nsites,number of study sites
-data,nsamples,number of samples per site/treatment
-data ,ntotalsamples,total number of samples in the study
-data,mean.treatment,mean value of experimental treatment
-data,mean.control,mean value of experimental control
-data,var.t,measure of variance of experimental treatment
-data,var.c,measure of variance of experimental control
+data,n.t,Number of observations in treatment group
+data,n.c,Number of observations in control group
+data,ntotalsamples,number of samples per site/treatment
+data,mean.t,mean value of treatment group
+data,mean.c,mean value of experimental control
+data,sd.t,Standard deviation in treatment group
+data,sd.c,Standard deviation in control group
+data,se.t,Standard error in treatment group
+data,se.c,Standard error in control group
 data,p-value,p value of treatment-control comparison
 data,df,degrees of freedom 
 data,measure.dispersion,"measure of dispersion used in each study, standard deviation, std error "
