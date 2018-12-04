@@ -88,6 +88,7 @@ mydata.simple4 <- mydata.simple3 %>% group_by(disturbance, ecosystem) %>% count(
 ggplot(na.omit(mydata.simple4), aes(disturbance,nn, fill=ecosystem)) + geom_bar(stat = "identity") + coord_flip(ylim=0:60) + scale_fill_brewer(palette = "Blues")
 
 
+
 #mydata.simple3
 #mydata.simple4
 
@@ -144,6 +145,16 @@ mydata.simple17 <- mydata %>% group_by(measure.success, study.ID) %>% count()
 mydata.simple18<- mydata.simple17 %>% group_by(measure.success) %>% count()
 ggplot(na.omit(mydata.simple18), aes(measure.success,nn)) + geom_bar(stat = "identity") + coord_flip(ylim=0:60) 
 
+
+mydata.simple19 <- mydata %>% group_by(disturbance, study.ID) %>% count()
+mydata.simple19
+mydata.simple20 <- mydata.simple19 %>% group_by(disturbance) %>% count()
+mydata.simple20
+
+data.simple <- data %>% group_by(disturbance, study.ID) %>% count()
+data.simple
+data.simple1 <- data.simple %>% group_by(disturbance) %>% count()
+data.simple1
 
 
 ```
