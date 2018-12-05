@@ -1,35 +1,35 @@
-date ,resource,terms,filters,refine,returns,after duplicates
-aug 15th,web of science,restor* desert*,ecology environmental sciences,articles,998,
-aug 15th,web of science,restoration desert* plants,none,none,829,
-aug 29th,scopus,restoration desert* plants,none,Biological Sciences AND Environmental Science,683,681
-aug 29th,scopus,restoration dryland* vegetation ,none,none,149,149
-aug 29th,scopus,restoration dryland* plant*,none,none,176,175
-aug 29th,scopus,restoration aridland* plant*,none,none,9,9
-aug 29th,scopus,restoration semiarid* plant*,none,none,558,557
-aug 30th,scopus,restoration desert* plant*,none,Biological Sciences AND Environmental Science (in press excluded),763,761
-aug 30th,scopus,restoration arid* plant*,none,Biological Sciences AND Environmental Science (in press excluded),985,985
-sept 3th,scopus,restoration* desert* vegetation*,none,none,834,832
-sept 3th,scopus,restoration* desert* vegetation*,none,Biological Sciences AND Environmental Science,732,731
-sept 5th,scopus,restoration* desert* vegetation*,yes,yes,192,192
-sept 5th,scopus,restoration* grassland* desert*,yes,yes,78,78
-sept 5th,scopus,restoration desert* plant*,yes,yes,285,285
-sept 5th,scopus,"restoration ""agricultural lands""",yes,yes,110,110
-sept 5th,scopus,restoration agricultural desert* plant*,yes,yes,5,5
-sept 5th,scopus,"""restoration techniques"" desert*",yes,yes,5,5
-sept 5th,scopus,"""passive restoration"" desert* plant*",yes,yes,5,5
-sept 5th,scopus,"""active restoration"" desert* plant*",yes,yes,4,4
-sept 5th,scopus,revegetation abandoned desert*,yes,yes,12,11
-sept 5th,scopus,"restoration ""agricult*land*"" desert* plant*",yes,yes,16,16
-sept 5th,scopus,restoration dryland* vegetation ,yes,yes,82,82
-sept 5th,scopus,restoration semiarid* plant*,yes,yes,221,221
-sept 5th,scopus,restoration arid* plant*,yes,yes,489,489
-sept 6th,scopus,ecological restoration project* desert*,yes,yes,49,49
-sept 9th,scopus,restor* success desert,yes,yes,46,46
-sept 9th,scopus,"""vegetation restoration"" desert",yes,yes,73,73
-sept 9th,scopus,rehabilitation vegetation desert,yes,yes,80,80
-sept 10th,scopus,restoration desert plant,yes,yes,315,315
-sept 10th,scopus,restoration desert vegetation,yes,yes,318,317
-sept 10th,scopus,restor* desert vegetation,yes,yes,354,353
-sept 10th,scopus,restor* desert plant,yes,yes,370,370
-sept 10th,scopus,restoration success desert vegetation,yes,yes,20,20
-sept 10th,scopus,restoration success desert plant,yes,yes,26,26
+date ,resource,terms,filters,refine,returns,after duplicates,
+aug 15th,web of science,restor* desert*,ecology environmental sciences,articles,998,,
+aug 15th,web of science,restoration desert* plants,none,none,829,,
+aug 29th,scopus,restoration desert* plants,none,Biological Sciences AND Environmental Science,683,681,
+aug 29th,scopus,restoration dryland* vegetation ,none,none,149,149,
+aug 29th,scopus,restoration dryland* plant*,none,none,176,175,
+aug 29th,scopus,restoration aridland* plant*,none,none,9,9,
+aug 29th,scopus,restoration semiarid* plant*,none,none,558,557,
+aug 30th,scopus,restoration desert* plant*,none,Biological Sciences AND Environmental Science (in press excluded),763,761,
+aug 30th,scopus,restoration arid* plant*,none,Biological Sciences AND Environmental Science (in press excluded),985,985,
+sept 3th,scopus,restoration* desert* vegetation*,none,none,834,832,
+sept 3th,scopus,restoration* desert* vegetation*,none,Biological Sciences AND Environmental Science,732,731,
+sept 5th,scopus,restoration* desert* vegetation*,yes,yes,192,192,records evaluated and considered
+sept 5th,scopus,restoration* grassland* desert*,yes,yes,78,78,records evaluated and considered
+sept 5th,scopus,restoration desert* plant*,yes,yes,285,285,records evaluated and considered
+sept 5th,scopus,"restoration ""agricultural lands""",yes,yes,110,110,records evaluated and considered
+sept 5th,scopus,restoration agricultural desert* plant*,yes,yes,5,5,records evaluated and considered
+sept 5th,scopus,"""restoration techniques"" desert*",yes,yes,5,5,records evaluated and considered
+sept 5th,scopus,"""passive restoration"" desert* plant*",yes,yes,5,5,records evaluated and considered
+sept 5th,scopus,"""active restoration"" desert* plant*",yes,yes,4,4,records evaluated and considered
+sept 5th,scopus,revegetation abandoned desert*,yes,yes,12,11,records evaluated and considered
+sept 5th,scopus,"restoration ""agricult*land*"" desert* plant*",yes,yes,16,16,records evaluated and considered
+sept 5th,scopus,restoration dryland* vegetation ,yes,yes,82,82,records evaluated and considered
+sept 5th,scopus,restoration semiarid* plant*,yes,yes,221,221,records evaluated and considered
+sept 5th,scopus,restoration arid* plant*,yes,yes,489,489,records evaluated and considered
+sept 6th,scopus,ecological restoration project* desert*,yes,yes,49,49,
+sept 9th,scopus,restor* success desert,yes,yes,46,46,
+sept 9th,scopus,"""vegetation restoration"" desert",yes,yes,73,73,
+sept 9th,scopus,rehabilitation vegetation desert,yes,yes,80,80,
+sept 10th,scopus,restoration desert plant,yes,yes,315,315,
+sept 10th,scopus,restoration desert vegetation,yes,yes,318,317,
+sept 10th,scopus,restor* desert vegetation,yes,yes,354,353,
+sept 10th,scopus,restor* desert plant,yes,yes,370,370,
+sept 10th,scopus,restoration success desert vegetation,yes,yes,20,20,
+sept 10th,scopus,restoration success desert plant,yes,yes,26,26,
