@@ -57,12 +57,7 @@ ggplot(exclusions, aes(rationale, fill = region)) +
   labs(x = "rational for exclusion", y = "frequency") +
   scale_fill_brewer(palette = "Paired")
 
-#evidence
-#ggplot(evidence, aes(paradigm)) +
-  #geom_bar() +
-  #coord_flip()
-
-ggplot(evidence, aes(grazing, fill = paradigm)) +
+ggplot(evidence, aes(disturbance, fill = paradigm)) +
   geom_bar(na.rm = TRUE) +
   coord_flip() +
   scale_fill_brewer(palette = "Paired") +
@@ -92,6 +87,28 @@ ggplot(evidence, aes(goal, fill = paradigm)) +
   scale_fill_brewer(palette = "Paired") +
   labs(x = "outcome", y = "frequency")
 
+#step 1 models####
+#paradigm
+derived.evidence <- evidence %>%
+  group_by(technique, data, region, disturbance, goal, paradigm) %>% summarise(n = n())
+
+#active-passive split
+m <- glm(n~paradigm, family = poisson, derived.evidence)
+anova(m, test="Chisq")
+
+#region
+m1 <- glm(n~paradigm*region, family = poisson, derived.evidence)
+#m1
+#summary(m1)
+anova(m1, test="Chisq")
+
+#outcome
+m2 <- glm(n~paradigm*goal, family = poisson, derived.evidence)
+#m1
+#summary(m1)
+anova(m2, test="Chisq")
+
+#even split between active and passive evidence by all key categories
 ```
 
 
