@@ -111,4 +111,21 @@ anova(m2, test="Chisq")
 #even split between active and passive evidence by all key categories
 ```
 
+###Step 2. sort  
+A summary using PRISMA.  
 
+```{r, step 2, warning=FALSE, message=FALSE}
+library(PRISMAstatement)
+prisma(found = 1504,
+       found_other = 5,
+       no_dupes = 1039, 
+       screened = 1039, 
+       screen_exclusions = 861, 
+       full_text = 178,
+       full_text_exclusions = 100, 
+       qualitative = 100, 
+       quantitative = 78,
+       width = 800, height = 800)
+
+
+```
