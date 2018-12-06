@@ -134,6 +134,7 @@ Check data and calculate necessary measures.
 data <- read_csv("data/data.csv")
 data <- data %>%
   mutate(lrr = log(mean.t/mean.c), rii = ((mean.t-mean.c)/(mean.t + mean.c)), var.es = ((sd.t^2/n.t*mean.t^2) + (sd.c^2/n.c*mean.c^2)))
+data
 
 ```
 
