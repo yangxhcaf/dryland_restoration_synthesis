@@ -151,9 +151,13 @@ map + geom_point(data=data, aes(x=long, y=lat)) #render a literal map, i.e. evid
 
 #aggregation####
 data.simple <- data %>%
-  group_by(paradigm, technique, measure.success) %>%
+  group_by(study.ID, paradigm, technique, measure.success) %>%
   summarise(n = n(), mean.lrr = mean(lrr), mean.rii = mean(rii), mean.var = mean(var.es))
 
+simple.data <- data %>% group_by(study.ID) %>% summarise(mean.rii = mean(rii), error = std.error(rii))
+
+
+#viz for aggregation####
 ggplot(na.omit(data.simple), aes(technique, n, fill = paradigm)) + 
   geom_bar(stat = "identity") + 
   coord_flip() + 
@@ -169,10 +173,13 @@ ggplot(na.omit(data.simple), aes(measure.success, n, fill = paradigm)) +
 ###Step 5. Statistics  
 Meta and conventional statistical models to explore relative efficacy.  
 
-```{r, step 5, warning=FALSE, message=FALSE}
+```{r, step 5, warning=FALSE, message=FALSE, fig.width=12, fig.height=12}
 library(plotrix) #for quick s.e. calculations sometimes needed for data tidy step
 library(meta) #nice package for most meta-statistics
 
+#assign model (typically a nice meta. function from one of several packages such as meta, metafor, or netmeta)
+m <- metagen(mean.rii, error, studlab = study.ID, data = simple.data) #fit generic meta-analysis to an object
+forest(m)
 
 
 ```
