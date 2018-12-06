@@ -29,7 +29,7 @@ To quantitatively examine the efficacy of vegetation restoration in drylands glo
 6. How much variation was there in the techniques tested and how long were experiments monitored and tested?  
 7. How relatively effective were the techniques?  
 
-####Search  
+####Step 1. search  
 ```{r, studies, warning=FALSE, message=FALSE}
 library(tidyverse)
 studies <- read_csv("data/studies.csv")
@@ -50,7 +50,7 @@ evidence <- studies %>%
 ###Study-level viz  
 ```{r, study viz, warning=FALSE, message=FALSE}
 #exclusions
-ggplot(exclusions, aes(rationale)) +
+ggplot(exclusions, aes(rationale, fill = region)) +
   geom_bar() +
   coord_flip() +
   labs(x = "rational for exclusion", y = "frequency")
