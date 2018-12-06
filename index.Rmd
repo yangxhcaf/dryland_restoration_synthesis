@@ -112,7 +112,7 @@ anova(m2, test="Chisq")
 ```
 
 ###Step 2. sort  
-A summary using PRISMA.  
+A summary of sort process using PRISMA.  
 
 ```{r, step 2, warning=FALSE, message=FALSE}
 library(PRISMAstatement)
@@ -126,6 +126,14 @@ prisma(found = 1504,
        qualitative = 100, 
        quantitative = 78,
        width = 800, height = 800)
+```
 
+###Step 3. Synthesize  
+Check data and calculate necessary measures.
+```{r, step 3, warning=FALSE, message=FALSE}
+data <- read_csv("data/data.csv")
+data <- data %>%
+  mutate(lrr = log(mean.t/mean.c), rii = ((mean.t-mean.c)/(mean.t + mean.c)), var.es = ((sd.t^2/n.t*mean.t^2) + (sd.c^2/n.c*mean.c^2)))
 
 ```
+
