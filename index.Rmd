@@ -29,7 +29,7 @@ To quantitatively examine the efficacy of vegetation restoration in drylands glo
 6. How much variation was there in the techniques tested and how long were experiments monitored and tested?  
 7. How relatively effective were the techniques?  
 
-###Step 1. search  
+###Step 1. Search  
 Study-level viz to document patterns in exclusions primarily and the relatie frequenices, at the study level, of major categories of evidence.  
 
 ```{r, studies, warning=FALSE, message=FALSE}
@@ -111,7 +111,7 @@ anova(m2, test="Chisq")
 #even split between active and passive evidence by all key categories
 ```
 
-###Step 2. sort  
+###Step 2. Sort  
 A summary of sort process using PRISMA.  
 
 ```{r, step 2, warning=FALSE, message=FALSE}
@@ -136,5 +136,43 @@ data <- data %>%
   mutate(lrr = log(mean.t/mean.c), rii = ((mean.t-mean.c)/(mean.t + mean.c)), var.es = ((sd.t^2/n.t*mean.t^2) + (sd.c^2/n.c*mean.c^2)))
 data
 
+#consider adding some other effect size measures and/or study-level data too
 ```
 
+###Step 4. Summarize  
+Explore summary level data of all data. Explore aggregation levels that support the most reasonable data structure and minimize non-independence issues.  
+
+```{r, step 4, warning=FALSE, message=FALSE}
+#evidence map####
+require(maps)
+world<-map_data("world")
+map<-ggplot() + geom_polygon(data=world, fill="gray50", aes(x=long, y=lat, group=group))
+map + geom_point(data=data, aes(x=long, y=lat)) #render a literal map, i.e. evidence map, of where we study the niche in deserts globally
+
+#aggregation####
+data.simple <- data %>%
+  group_by(paradigm, technique, measure.success) %>%
+  summarise(n = n(), mean.lrr = mean(lrr), mean.rii = mean(rii), mean.var = mean(var.es))
+
+ggplot(na.omit(data.simple), aes(technique, n, fill = paradigm)) + 
+  geom_bar(stat = "identity") + 
+  coord_flip() + 
+  scale_fill_brewer(palette = "Paired")
+
+ggplot(na.omit(data.simple), aes(measure.success, n, fill = paradigm)) + 
+  geom_bar(stat = "identity") + 
+  coord_flip() + 
+  scale_fill_brewer(palette = "Paired")
+
+```
+
+###Step 5. Statistics  
+Meta and conventional statistical models to explore relative efficacy.  
+
+```{r, step 5, warning=FALSE, message=FALSE}
+library(plotrix) #for quick s.e. calculations sometimes needed for data tidy step
+library(meta) #nice package for most meta-statistics
+
+
+
+```
