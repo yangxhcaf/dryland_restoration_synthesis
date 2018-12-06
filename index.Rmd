@@ -17,10 +17,10 @@ output:
 
 ![](./drylands.jpg)   
 
-####Purpose
+###Purpose
 To quantitatively examine the efficacy of vegetation restoration in drylands globally.  
 
-####Questions  
+###Questions  
 1. What is the global extent of research that directly examined restoration of drylands?  
 2. What were the common measures?  
 3. Is the restoration of vegetation a common and primary focus?  
@@ -29,8 +29,11 @@ To quantitatively examine the efficacy of vegetation restoration in drylands glo
 6. How much variation was there in the techniques tested and how long were experiments monitored and tested?  
 7. How relatively effective were the techniques?  
 
-####Step 1. search  
+###Step 1. search  
+Study-level viz to document patterns in exclusions primarily and the relatie frequenices, at the study level, of major categories of evidence.  
+
 ```{r, studies, warning=FALSE, message=FALSE}
+#study data####
 library(tidyverse)
 studies <- read_csv("data/studies.csv")
 studies
@@ -45,45 +48,49 @@ evidence <- studies %>%
 
 #library(skimr)
 #skim(evidence)
-```
 
-###Study-level viz  
-```{r, study viz, warning=FALSE, message=FALSE}
+#study-level viz#####
 #exclusions
 ggplot(exclusions, aes(rationale, fill = region)) +
   geom_bar() +
   coord_flip() +
-  labs(x = "rational for exclusion", y = "frequency")
+  labs(x = "rational for exclusion", y = "frequency") +
+  scale_fill_brewer(palette = "Paired")
 
 #evidence
-ggplot(evidence, aes(paradigm)) +
-  geom_bar() +
-  coord_flip()
+#ggplot(evidence, aes(paradigm)) +
+  #geom_bar() +
+  #coord_flip()
 
-ggplot(evidence, aes(grazing)) +
+ggplot(evidence, aes(grazing, fill = paradigm)) +
   geom_bar(na.rm = TRUE) +
-  coord_flip()
+  coord_flip() +
+  scale_fill_brewer(palette = "Paired") +
+  labs(y = "frequency")
 
 ggplot(evidence, aes(region, fill = paradigm)) +
   geom_bar(na.rm = TRUE) +
   coord_flip() +
-  scale_fill_brewer(palette = "Paired")
+  scale_fill_brewer(palette = "Paired") +
+  labs(y = "frequency")
 
 ggplot(evidence, aes(data, fill = paradigm)) +
   geom_bar(na.rm = TRUE) +
   coord_flip() +
-  scale_fill_brewer(palette = "Paired")
+  scale_fill_brewer(palette = "Paired") +
+  labs(y = "frequency")
 
 ggplot(evidence, aes(system, fill = paradigm)) +
   geom_bar(na.rm = TRUE) +
   coord_flip() +
-  scale_fill_brewer(palette = "Paired")
+  scale_fill_brewer(palette = "Paired") +
+  labs(y = "frequency")
 
 ggplot(evidence, aes(goal, fill = paradigm)) +
   geom_bar(na.rm = TRUE) +
   coord_flip() +
-  scale_fill_brewer(palette = "Paired")
-
+  scale_fill_brewer(palette = "Paired") +
+  labs(x = "outcome", y = "frequency")
 
 ```
 
