@@ -161,14 +161,17 @@ se <- function(x){
   sd(x)/sqrt(length(x))
 }
 
-simple.data <- data %>% group_by(study.ID, paradigm) %>% summarise(mean.rii = mean(rii), error = se(rii))
+simple.data <- data %>% group_by(study.ID, paradigm, technique, measure.success) %>% summarise(mean.rii = mean(rii), error = se(rii))
 simple.data <- na.omit(simple.data)
+
+parad.data <- data %>% group_by(study.ID, paradigm) %>% summarise(mean.rii = mean(rii), error = se(rii))
+parad.data <- na.omit(parad.data)
 
 tech.data <- data %>% group_by(study.ID, technique) %>% summarise(mean.rii = mean(rii), error = se(rii))
 tech.data <- na.omit(tech.data)
 
 success.data <- data %>% group_by(study.ID, measure.success) %>% summarise(mean.rii = mean(rii), error = se(rii))
-sucsess.data <- na.omit(success.data)
+sucess.data <- na.omit(success.data)
 
 #viz for aggregation####
 ggplot(na.omit(data.simple), aes(technique, n, fill = paradigm)) + 
