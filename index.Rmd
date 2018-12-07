@@ -161,6 +161,11 @@ se <- function(x){
 simple.data <- data %>% group_by(study.ID, paradigm) %>% summarise(mean.rii = mean(rii), error = se(rii))
 simple.data <- na.omit(simple.data)
 
+tech.data <- data %>% group_by(study.ID, technique) %>% summarise(mean.rii = mean(rii), error = se(rii))
+tech.data <- na.omit(tech.data)
+
+success.data <- data %>% group_by(study.ID, measure.success) %>% summarise(mean.rii = mean(rii), error = se(rii))
+sucsess.data <- na.omit(success.data)
 
 #viz for aggregation####
 ggplot(na.omit(data.simple), aes(technique, n, fill = paradigm)) + 
@@ -183,11 +188,40 @@ library(plotrix) #for quick s.e. calculations sometimes needed for data tidy ste
 library(meta) #nice package for most meta-statistics
 
 #assign model (typically a nice meta. function from one of several packages such as meta, metafor, or netmeta)
+
+#need to write a quick function here to iterate and/or up split-map from broom
+
+#rii####
+#paradigm
 m <- metagen(mean.rii, error, studlab = study.ID, byvar = paradigm, data = simple.data) #fit generic meta-analysis to an object
 m
 #no difference in random effects model by paradigm but fixed yes. Hetereogeneity is significantly different so a. fixed not representative and b. need a better model
 #forest(m,  xlim="symmetric", plotwidth=unit(1, "cm"))
-forest(m)
+forest(m, sortvar = paradigm)
 radial(m)
+metabias(m, method = "linreg")
+
+#technique
+m <- metagen(mean.rii, error, studlab = study.ID, byvar = technique, data = tech.data) #fit generic meta-analysis to an object
+m
+#no difference in random effects model by paradigm but fixed yes. Hetereogeneity is significantly different so a. fixed not representative and b. need a better model
+#forest(m,  xlim="symmetric", plotwidth=unit(1, "cm"))
+forest(m, sortvar = technique)
+radial(m)
+metabias(m, method = "linreg")
+
+#measure
+m <- metagen(mean.rii, error, studlab = study.ID, byvar = measure.success, data = success.data) #fit generic meta-analysis to an object
+m
+#no difference in random effects model by paradigm but fixed yes. Hetereogeneity is significantly different so a. fixed not representative and b. need a better model
+#forest(m,  xlim="symmetric", plotwidth=unit(1, "cm"))
+forest(m, sortvar = measure.success)
+radial(m)
+metabias(m, method = "linreg")
+
+#lrr####
+
+
+
 
 ```
