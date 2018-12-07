@@ -159,6 +159,7 @@ se <- function(x){
 }
 
 simple.data <- data %>% group_by(study.ID, paradigm) %>% summarise(mean.rii = mean(rii), error = se(rii))
+simple.data <- na.omit(simple.data)
 
 
 #viz for aggregation####
@@ -177,14 +178,16 @@ ggplot(na.omit(data.simple), aes(measure.success, n, fill = paradigm)) +
 ###Step 5. Statistics  
 Meta and conventional statistical models to explore relative efficacy.  
 
-```{r, step 5, warning=FALSE, message=FALSE, fig.width=30, fig.height=30}
+```{r, step 5, warning=FALSE, message=FALSE, fig.width=12, fig.height=12}
 library(plotrix) #for quick s.e. calculations sometimes needed for data tidy step
 library(meta) #nice package for most meta-statistics
 
 #assign model (typically a nice meta. function from one of several packages such as meta, metafor, or netmeta)
-m <- metagen(mean.rii, error, studlab = study.ID, byvar = paradigm,data = simple.data) #fit generic meta-analysis to an object
+m <- metagen(mean.rii, error, studlab = study.ID, byvar = paradigm, data = simple.data) #fit generic meta-analysis to an object
 m
 #no difference in random effects model by paradigm but fixed yes. Hetereogeneity is significantly different so a. fixed not representative and b. need a better model
-forest(m,  xlim="symmetric", plotwidth=unit(1, "cm"))
+#forest(m,  xlim="symmetric", plotwidth=unit(1, "cm"))
+forest(m)
+radial(m)
 
 ```
