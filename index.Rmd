@@ -149,6 +149,9 @@ world<-map_data("world")
 map<-ggplot() + geom_polygon(data=world, fill="gray50", aes(x=long, y=lat, group=group))
 map + geom_point(data=data, aes(x=long, y=lat)) #render a literal map, i.e. evidence map, of where we study the niche in deserts globally
 
+#add in levels and color code points on map####
+
+
 #aggregation####
 data.simple <- data %>%
   group_by(study.ID, paradigm, technique, measure.success) %>%
