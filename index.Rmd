@@ -123,7 +123,7 @@ prisma(found = 1504,
        screen_exclusions = 861, 
        full_text = 178,
        full_text_exclusions = 100, 
-       qualitative = 100, 
+       qualitative = 78, 
        quantitative = 78,
        width = 800, height = 800)
 ```
@@ -134,7 +134,7 @@ Check data and calculate necessary measures.
 data <- read_csv("data/data.csv")
 data <- data %>%
   mutate(lrr = log(mean.t/mean.c), rii = ((mean.t-mean.c)/(mean.t + mean.c)), var.es = ((sd.t^2/n.t*mean.t^2) + (sd.c^2/n.c*mean.c^2)))
-data
+#data
 
 #consider adding some other effect size measures and/or study-level data too
 ```
@@ -147,37 +147,45 @@ Explore summary level data of all data. Explore aggregation levels that support 
 require(maps)
 world<-map_data("world")
 map<-ggplot() + geom_polygon(data=world, fill="gray50", aes(x=long, y=lat, group=group))
-map + geom_point(data=data, aes(x=long, y=lat)) #render a literal map, i.e. evidence map, of where we study the niche in deserts globally
+map + geom_point(data=data, aes(x=long, y=lat)) +
+  labs(x = "longitude", y = "latitude") #render a literal map, i.e. evidence map, of where we study the niche in deserts globally
 
 #add in levels and color code points on map####
 map + geom_point(data=data, aes(x=long, y=lat, color = paradigm)) + 
-  scale_color_brewer(palette = "Paired")
+  scale_color_brewer(palette = "Paired") +
+  labs(x = "longitude", y = "latitude", color = "")
 
 #aggregation####
-#nice to have se handy
+data.simple <- data %>%
+  group_by(study.ID, paradigm, technique, measure.success) %>%
+  summarise(n = n(), mean.lrr = mean(lrr), mean.rii = mean(rii), mean.var = mean(var.es))
+
 se <- function(x){
   sd(x)/sqrt(length(x))
 }
 
-simple <- data %>%
-  group_by(study.ID, paradigm, technique, measure.success) %>%
-  summarise(n = n(), mean.lrr = mean(lrr), mean.rii = mean(rii), var.mean = mean(var.es))
+simple.data <- data %>% group_by(study.ID, paradigm, technique, measure.success) %>% summarise(mean.rii = mean(rii), error = se(rii))
+simple.data <- na.omit(simple.data)
 
-simple.data <- data %>%
-  group_by(study.ID, paradigm, intervention, outcome) %>%
-  summarise(n = n(), mean.lrr = mean(lrr), mean.rii = mean(rii), var.mean = mean(var.es)) %>% filter(paradigm != "passive")
+parad.data <- data %>% group_by(study.ID, paradigm) %>% summarise(mean.rii = mean(rii), error = se(rii))
+parad.data <- na.omit(parad.data)
+
+tech.data <- data %>% group_by(study.ID, technique) %>% summarise(mean.rii = mean(rii), error = se(rii))
+tech.data <- na.omit(tech.data)
+
+success.data <- data %>% group_by(study.ID, measure.success) %>% summarise(mean.rii = mean(rii), error = se(rii))
+sucess.data <- na.omit(success.data)
 
 #viz for aggregation####
-ggplot(na.omit(simple), aes(technique, n, fill = paradigm)) + 
+ggplot(na.omit(data.simple), aes(technique, n, fill = paradigm)) + 
   geom_bar(stat = "identity") + 
   coord_flip() + 
   scale_fill_brewer(palette = "Paired")
 
-ggplot(na.omit(simple.data), aes(intervention, n)) +   geom_bar(stat = "identity", fill = "lightskyblue2") + 
-  coord_flip()
-
-ggplot(na.omit(simple.data), aes(outcome, n)) +   geom_bar(stat = "identity", fill = "lightskyblue2") + 
-  coord_flip()
+ggplot(na.omit(data.simple), aes(measure.success, n, fill = paradigm)) + 
+  geom_bar(stat = "identity") + 
+  coord_flip() + 
+  scale_fill_brewer(palette = "Paired")
 
 ```
 
@@ -193,42 +201,33 @@ library(meta) #nice package for most meta-statistics
 #need to write a quick function here to iterate and/or up split-map from broom
 
 #rii####
-#need to decide if using mean var.mean appropriate
 #paradigm
-m <- metagen(mean.rii, var.mean, studlab = study.ID, byvar = paradigm, data = simple) #fit generic meta-analysis to an object
-summary(m)
+m <- metagen(mean.rii, error, studlab = study.ID, byvar = paradigm, data = simple.data) #fit generic meta-analysis to an object
+m
 #no difference in random effects model by paradigm but fixed yes. Hetereogeneity is significantly different so a. fixed not representative and b. need a better model
 #forest(m,  xlim="symmetric", plotwidth=unit(1, "cm"))
-#forest(m, sortvar = paradigm)
-forest(m)
+forest(m, sortvar = paradigm)
 radial(m)
 metabias(m, method = "linreg")
 
 #technique
-m <- metagen(mean.rii, var.mean, studlab = study.ID, byvar = intervention, data = simple.data) #fit generic meta-analysis to an object
+m <- metagen(mean.rii, error, studlab = study.ID, byvar = technique, data = tech.data) #fit generic meta-analysis to an object
 m
-#no difference in random effects model by paradigm but fixed yes. Hetereogeneity is significantly different so a. fixed not representative and b. need a better model
-#forest(m,  xlim="symmetric", plotwidth=unit(1, "cm"))
-#forest(m, sortvar = intervention)
-forest(m)
+forest(m, sortvar = technique)
 radial(m)
 metabias(m, method = "linreg")
 
 #measure
-m <- metagen(mean.rii, var.mean, studlab = study.ID, byvar = outcome, data = simple.data) #fit generic meta-analysis to an object
+m <- metagen(mean.rii, error, studlab = study.ID, byvar = measure.success, data = success.data) #fit generic meta-analysis to an object
 m
-#no difference in random effects model by paradigm but fixed yes. Hetereogeneity is significantly different so a. fixed not representative and b. need a better model
-#forest(m,  xlim="symmetric", plotwidth=unit(1, "cm"))
-#forest(m, sortvar = outcome)
-forest(m)
+forest(m, sortvar = measure.success)
 radial(m)
 metabias(m, method = "linreg")
 
-#repeat with ID not study ID
-
-#lrr####
-
-
+#check data coding for passive intervention and outcome vectors too - not just active?
+#explore above with intervention and outcome vectors
+#do with ID as level not study.ID
+#lrr
 
 
 ```
