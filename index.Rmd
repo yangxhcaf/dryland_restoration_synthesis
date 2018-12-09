@@ -279,6 +279,57 @@ Meta and conventional statistical models to explore relative efficacy.
 
 ```{r, step 5b, warning=FALSE, message=FALSE}
 #effect sizes plots
+ggplot(main.data, aes(paradigm, mean.rii, color = intervention)) +
+  geom_point(position = position_dodge(width = 0.5)) + 
+  ylim(c(-1,1)) +
+  labs(x = "", y = "mean rii", color = "") +
+  coord_flip() +
+  geom_errorbar(aes(ymin=mean.rii-mean.var, ymax=mean.rii+mean.var), width=.05, position = position_dodge(width = 0.5)) +
+  geom_hline(yintercept = 0, colour="grey", linetype = "longdash")
+
+ggplot(simple.data, aes(paradigm, mean.rii, color = technique)) +
+  geom_point(position = position_dodge(width = 0.5)) + 
+  ylim(c(-1,1)) +
+  labs(x = "", y = "mean rii", color = "") +
+  coord_flip() +
+  geom_errorbar(aes(ymin=mean.rii-error, ymax=mean.rii+error), width=.05, position = position_dodge(width = 0.5)) +
+  geom_hline(yintercept = 0, colour="grey", linetype = "longdash")
+
+ggplot(main.data, aes(paradigm, mean.rii, color = outcome)) +
+  geom_point(position = position_dodge(width = 0.5)) + 
+  ylim(c(-1,1)) +
+  labs(x = "", y = "mean rii") +
+  coord_flip() +
+  geom_errorbar(aes(ymin=mean.rii-mean.var, ymax=mean.rii+mean.var), width=.05, position = position_dodge(width = 0.5)) +
+  geom_hline(yintercept = 0, colour="grey", linetype = "longdash")
+
+#ggplot(simple.data, aes(paradigm, mean.rii, color = measure.success)) +
+  #geom_point(position = position_dodge(width = 0.5)) + 
+  #ylim(c(-1,1)) +
+  #labs(x = "", y = "mean rii") +
+  #coord_flip() +
+  #geom_errorbar(aes(ymin=mean.rii-error, ymax=mean.rii+error), width=.05, position = position_dodge(width = 0.5)) +
+  #geom_hline(yintercept = 0, colour="grey", linetype = "longdash")
+
+ggplot(active, aes(intervention, rii, color = outcome)) +
+  geom_point(position = position_dodge(width = 0.5)) + 
+  ylim(c(-1,1)) +
+  labs(x = "", y = "rii") +
+  coord_flip() +
+  geom_errorbar(aes(ymin=rii-var.es, ymax=rii+var.es), width=.05, position = position_dodge(width = 0.5)) +
+  geom_hline(yintercept = 0, colour="grey", linetype = "longdash")
+
+ggplot(active, aes(intervention, rii, color = outcome)) +
+  geom_boxplot() + 
+  ylim(c(-1,1)) +
+  labs(x = "", y = "rii") +
+  coord_flip() +
+  geom_errorbar(aes(ymin=rii-var.es, ymax=rii+var.es), width=.05, position = position_dodge(width = 0.5)) +
+  geom_hline(yintercept = 0, colour="grey", linetype = "longdash")
+
+#simple.active <- active %>%
+  #group_by(study.ID, outcome) %>%
+  #summarise(n = n(), mean.rii = mean(rii), mean.var = #mean(var.es))
 
 #t-tests if different from 0
 #t-tests if mean rii different from mu = 0
@@ -288,6 +339,14 @@ tmu <- function(x)
 
 data %>%
   split(.$paradigm) %>%
+  purrr::map(~tmu(.$rii))
+
+active %>%
+  split(.$intervention) %>%
+  purrr::map(~tmu(.$rii))
+
+active %>%
+  split(.$outcome) %>%
   purrr::map(~tmu(.$rii))
 
 #meta-stats for active versus passive
