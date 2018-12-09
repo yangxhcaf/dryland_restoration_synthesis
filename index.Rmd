@@ -174,7 +174,7 @@ tech.data <- data %>% group_by(study.ID, technique) %>% summarise(mean.rii = mea
 tech.data <- na.omit(tech.data)
 
 success.data <- data %>% group_by(study.ID, measure.success) %>% summarise(mean.rii = mean(rii), error = se(rii))
-sucess.data <- na.omit(success.data)
+success.data <- na.omit(success.data)
 
 #viz for aggregation####
 ggplot(na.omit(data.simple), aes(technique, n, fill = paradigm)) + 
@@ -193,12 +193,14 @@ ggplot(na.omit(data.simple), aes(measure.success, n, fill = paradigm)) +
 Meta and conventional statistical models to explore relative efficacy.  
 
 ```{r, step 5, warning=FALSE, message=FALSE, fig.width=12, fig.height=12}
-library(plotrix) #for quick s.e. calculations sometimes needed for data tidy step
+#library(plotrix) #for quick s.e. calculations sometimes needed for data tidy step
 library(meta) #nice package for most meta-statistics
 
 #assign model (typically a nice meta. function from one of several packages such as meta, metafor, or netmeta)
 
 #need to write a quick function here to iterate and/or up split-map from broom
+
+#EDA####
 
 #rii####
 #paradigm
@@ -208,26 +210,42 @@ m
 #forest(m,  xlim="symmetric", plotwidth=unit(1, "cm"))
 forest(m, sortvar = paradigm)
 radial(m)
-metabias(m, method = "linreg")
+#metabias(m, method = "linreg")
 
 #technique
 m <- metagen(mean.rii, error, studlab = study.ID, byvar = technique, data = tech.data) #fit generic meta-analysis to an object
 m
 forest(m, sortvar = technique)
 radial(m)
-metabias(m, method = "linreg")
+#metabias(m, method = "linreg")
 
 #measure
 m <- metagen(mean.rii, error, studlab = study.ID, byvar = measure.success, data = success.data) #fit generic meta-analysis to an object
 m
 forest(m, sortvar = measure.success)
 radial(m)
-metabias(m, method = "linreg")
+#metabias(m, method = "linreg")
 
 #check data coding for passive intervention and outcome vectors too - not just active?
 #explore above with intervention and outcome vectors
 #do with ID as level not study.ID
 #lrr
+
+#rii anew with all data?
+m <- metagen(rii, var.es, studlab = ID, byvar = paradigm, data = data)
+summary(m)
+#forest(m, sortvar = paradigm)
+#radial(m)
+#metabias(m, method = "linreg")
+
+#m <- metagen(rii, var.es, studlab = ID, byvar = intervention, data = na.omit(data))
+#summary(m)
+#forest(m, sortvar = paradigm)
+
+#m <- metagen(rii, var.es, studlab = ID, byvar = outcome, data = na.exclude(data))
+#summary(m)
+
+#however repeat above for active only - for intervention and outcome - makes more sense
 
 
 ```
