@@ -29,12 +29,12 @@ str(data)
 
 ```
 
-```{r select 60 articles, results='hide'}
+```{r select 68 articles, results='hide'}
 
-#ID: 1,2,3,4,5,6,9,11,12,13,15,16,19,20,21,28,51,58,64,66,68,69,77,78,82,86,87,88,89,91,93,95,98,104,106,109,111,112,114,120,121,128,135,139,142,147,154,167,188,206,209,210,214,239,242,247,256,276,277,278 articles with data extracted
+#ID: 1,2,3,4,5,6,9,11,12,13,15,16,19,20,21,28,29,30,31,32,37,39,40,41,51,58,64,66,68,69,77,78,82,86,87,88,89,91,93,95,98,104,106,109,111,112,114,120,121,128,135,139,142,147,154,167,188,206,209,210,214,239,242,247,256,276,277,278 articles with data extracted. + 12 
 
 mydata<- data %>% 
-  dplyr::filter(study.ID %in% c(1,2,3,4,5,6,9,11,12,13,15,16,19,20,21,28,51,58,64,66,68,69,77,78,82,86,87,88,89,91,93,95,98,104,106,109,111,112,114,120,121,128,135,139,142,147,154,167,188,206,209,210,214,239,242,247,256,276,277,278))
+  dplyr::filter(study.ID %in% c(1,2,3,4,5,6,9,11,12,13,15,16,19,20,21,28,29,30,31,32,37,39,40,41,51,58,64,66,68,69,77,78,82,86,87,88,89,91,93,95,98,104,106,109,111,112,114,120,121,128,135,139,142,147,154,167,188,206,209,210,214,239,242,247,256,276,277,278))
 
 #%>%  
  # dplyr::select(1:13,31:35) 
@@ -72,6 +72,22 @@ mydata.simple2 <- mydata.simple1 %>% group_by(continent, country) %>% count()
 mycolors = c(brewer.pal(name="Set3", n = 12), brewer.pal(name="Paired", n = 12))
 ggplot(na.omit(mydata.simple2), aes(continent,nn, fill=country))+ geom_bar(stat = "identity") + coord_flip(ylim=0:44) +scale_fill_manual(values = mycolors)
 
+
+
+map<-ggplot() + geom_polygon(data=world, fill="gray50", aes(x=long, y=lat, group=group))
+map + geom_point(data=data, aes(x=long, y=lat)) 
+
+
+
+data.simple1 <- data %>% group_by(continent, country, study.ID) %>% count()
+data.simple2 <- data.simple1 %>% group_by(continent, country) %>% count()
+mycolors = c(brewer.pal(name="Set3", n = 12), brewer.pal(name="Paired", n = 12))
+ggplot(na.omit(data.simple2), aes(continent,nn, fill=country))+ geom_bar(stat = "identity") + coord_flip(ylim=0:44) +scale_fill_manual(values = mycolors)
+
+#add in levels and color code points on map####
+map + geom_point(data=data, aes(x=long, y=lat, color = paradigm)) + 
+  scale_color_brewer(palette = "Paired") +
+  labs(x = "longitude", y = "latitude", color = "")
 
 #mydata.simple1
 #mydata.simple2
