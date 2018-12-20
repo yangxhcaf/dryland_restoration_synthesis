@@ -1,0 +1,81 @@
+ID,intervention,paradigm,outcome,success,response,technique
+1,soil crusts,passive,vegetation and habitat,yes,positive,soil crusts
+2,vegetation,passive,native species,yes,positive,natural recovery
+3,seeding ,active,native species,yes,positive,resource addition
+4,vegetation,passive,vegetation and habitat,no,negative,natural recovery
+5,seeding ,active,vegetation and habitat,yes,positive,grasses
+6,seeding ,active,native species,yes,positive,resource addition
+9,nutrients,passive,soil quality,yes,positive,natural recovery
+11,planting,active,soil quality,yes,positive,shrub
+12,planting,active,soil quality,yes,positive,shrub
+13,planting,active,native species,yes,positive,grasses
+15,vegetation,passive,vegetation,yes,positive,natural recovery
+16,planting,active,vegetation and habitat,yes,positive,legume species
+19,planting,active,vegetation and habitat,yes,positive,facilitation
+20,planting,active,soil quality,yes,positive,shrub
+21,planting,active,vegetation and habitat,yes,positive,shrub
+28,vegetation,passive,soil quality,yes,positive,fencing
+29,planting,active,vegetation and habitat,yes,positive,shrub
+30,vegetation,active,vertebrate community,yes,positive,herbicide
+31,vegetation,passive,native species,no,negative,seed availability
+32,planting,active,soil quality,yes,positive,trees
+37,vegetation,passive,native species,no,negative,herbivory
+39,soil crusts,passive,soil quality,yes,positive,soil crusts
+40,nutrients,active,vegetation,yes,positive,resource addition
+41,soil crusts,passive,soil quality,yes,positive,soil crusts
+51,planting,active,invertebrate community,yes,positive,shrub
+58,facilitation,passive,vegetation and habitat,yes,positive,shrub
+64,carbon amendment,active,vegetation and habitat,no,negative,carbon and seeding
+66,facilitation,passive,vegetation and habitat,yes,positive,facilitation
+68,planting,active,vegetation and habitat,yes,positive,competence
+69,vegetation,passive,vegetation,yes,positive,fencing
+77,vegetation,active,vegetation and habitat,no,positive,mowing and grazing
+78,vegetation,passive,vegetation and habitat,no,negative,germination
+82,nutrients,passive,soil quality,yes,positive,natural recovery
+86,planting,active,vegetation and habitat,yes,positive,grasses
+87,nutrients,active,soil quality,yes,positive,phosphorus mining
+88,seeding ,active,soil quality,yes,positive,grasses
+89,seeding ,active,vegetation and habitat,yes,positive,forbs
+91,vegetation,passive,vegetation and habitat,yes,positive,natural recovery
+93,vegetation,passive,native species,no,negative,exotics
+95,seeding ,active,vegetation and habitat,yes,positive,exotics
+98,seeding ,active,vegetation and habitat,yes,positive,grasses
+104,mycorrhizal inoculation ,active,native species,yes,positive,shrub
+106,water addition,active,vegetation and habitat,yes,positive,resource addition
+109,seeding ,active,native species,yes,positive,grasses
+111,planting,active,vegetation and habitat,yes,positive,legume species
+112,seeding ,active,native species,no,negative,resource addition
+114,planting,active,native species,no,negative,resource addition
+120,vegetation,passive,vertebrate community,yes,positive,vertebrate
+121,planting,active,vegetation and habitat,yes,positive,legume species
+128,vegetation,passive,native species,no,negative,natural recovery
+135,vegetation,passive,vegetation and habitat,no,negative,natural recovery
+139,planting,active,soil quality,yes,negative,shrub
+142,seeding ,active,native species,yes,positive,grasses
+147,seeding ,active,native species,yes,positive,grasses
+154,water addition,active,vegetation and habitat,yes,positive,resource addition
+166,seeding ,active,vegetation,yes,positive,competence
+167,seeding ,active,vegetation and habitat,yes,positive,grasses
+188,vegetation,passive,vegetation and habitat,yes,positive,natural recovery
+206,water addition,active,native species,yes,positive,resource addition
+209,vegetation,passive,vegetation and habitat,no,negative,natural recovery
+210,carbon amendment,active,vegetation and habitat,no,negative,resource addition
+214,water addition,active,vegetation and habitat,yes,positive,resource addition
+239,vegetation,passive,native species,yes,positive,natural recovery
+242,planting,active,soil quality,no,negative,grasses
+247,soil,passive,soil quality,no,negative,natural recovery
+256,soil,passive,soil quality,yes,positive,natural recovery
+276,seeding ,active,native species,no,negative,shrub
+277,seeding ,active,vegetation and habitat,yes,positive,shrub
+278,seeding ,active,vegetation and habitat,no results,no results,shrub
+23,vegetation,passive,vegetation,"interviews, not stats reported",no results,
+34,vegetation,passive,soil quality,not disturbance reported,no results,
+35,vegetation,passive,vegetation,could not extract data,no results,
+73,vegetation,passive,invertebrate community,could not extract data,no results,
+76,vegetation,active,vegetation and habitat,could not extract data,no results,
+80,costs,active,unreported,no data,no results,
+84,planting,active,invertebrate community,could not extract data,no results,
+85,planting,active,native species,no data,no results,
+110,soil,passive,soil quality,could not extract data,no results,
+274,seeding ,active,vegetation and habitat,no significance values reported,no results,
+275,water addition,active,native species,no results,no results,
