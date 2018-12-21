@@ -389,5 +389,35 @@ funnel(m)
 #metabias(m)
 #forest(m, sortvar = intervention)
 
+simple.mdata <- mdata %>%
+  group_by(intervention) %>%
+  summarise(lrr = mean(lrr), var.es = mean(var.es), n = mean(n.t))
+
+m1 <- metagen(lrr, var.es, studlab = intervention, data = simple.mdata)
+summary(m1)
+#funnel(m)
+metabias(m1)
+#forest(m, sortvar = intervention)
+
+simple.mdata <- mdata %>%
+  group_by(intervention, outcome) %>%
+  summarise(lrr = mean(lrr), var.es = mean(var.es), n = mean(n.t))  
+
+
+m2 <- metagen(lrr, var.es, studlab = intervention, byvar = outcome, data = simple.mdata)
+summary(m2)
+#funnel(m)
+radial(m)
+#metabias(m2)
+#forest(m, sortvar = intervention)
 
 ```
+
+```{r, metaplot, warning=FALSE, message=FALSE,fig.width=10, fig.height=14}
+
+forest(m1, sortvar = intervention, fontsize = 10, xlim = c(-2, 2))
+
+forest(m2, sortvar = intervention, fontsize = 10, xlim = c(-2, 2))
+
+```
+
