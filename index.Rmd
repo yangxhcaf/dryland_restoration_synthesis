@@ -371,7 +371,8 @@ mdata <- data %>%
   filter(!is.na(var.es)) %>%
   filter(!is.na(n.t)) %>%
   filter(!is.na(p)) %>%
-  filter(!is.na(intervention))
+  filter(!is.na(intervention)) %>%
+  filter(is.finite(lrr))
 
 schweder(mdata$p)
 sumz(p, data = mdata)
@@ -382,9 +383,11 @@ sumlog(mdata$p)
 
 #effect-size meta
 library(meta)
-m <- metagen(lrr, var.es, studlab = ID, byvar = intervention, data = mdata)
+m <- metagen(lrr, var.es, studlab = intervention, byvar = outcome, data = mdata)
 summary(m)
-
+funnel(m)
+#metabias(m)
+#forest(m, sortvar = intervention)
 
 
 ```
