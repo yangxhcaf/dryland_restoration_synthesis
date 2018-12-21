@@ -1,0 +1,143 @@
+---
+title: "Meeting"
+author: "MFMiguel, Lortie, Butterfield"
+date: "2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+###Meeting presentation
+
+
+```{r initialize, warning=FALSE, message=FALSE}
+
+library(tidyverse)
+library(RColorBrewer)
+
+```
+
+```{r, warning=FALSE, message=FALSE}
+studies<- read.csv("~/GitHub/dryland_restoration_synthesis/data/studies.csv", header= T, sep= ",",
+                dec = ".", na.strings = "NA")
+
+data<- read.csv("~/GitHub/dryland_restoration_synthesis/data/data.csv", header= T, sep= ",",
+                dec = ".", na.strings = "NA")
+
+success<- read.csv("~/GitHub/dryland_restoration_synthesis/data/success_data.csv", header= T, sep= ",",
+                dec = ".", na.strings = "NA")
+```
+
+
+####PRISMA report
+
+```{r, warning=FALSE, message=FALSE}
+library(PRISMAstatement)
+
+prisma(found = 1504,
+       found_other = 5,
+       no_dupes = 1039, 
+       screened = 1039, 
+       screen_exclusions = 861, 
+       full_text = 178,
+       full_text_exclusions = 100, 
+       qualitative = 78, 
+       quantitative = 78,
+       width = 800, height = 800)
+```
+
+####PLOTS
+
+```{r, warning=FALSE, message=FALSE}
+
+#map showing global studies distribution####
+require(maps)
+world<-map_data("world")
+map<-ggplot() + geom_polygon(data=world, fill="gray50", aes(x=long, y=lat, group=group))
+map + geom_point(data=data, aes(x=long, y=lat)) +
+  labs(x = "longitude", y = "latitude") 
+
+
+#add in levels and color code points on map####
+map + geom_point(data=data, aes(x=long, y=lat, color = paradigm)) + 
+  scale_color_brewer(palette = "Paired") +
+  labs(x = "longitude", y = "latitude", color = "")
+
+
+#studies with paradigms
+evidence <- studies %>%
+  filter(exclude == "no")
+
+ggplot(evidence, aes(paradigm, fill = paradigm)) +
+  geom_bar(na.rm = TRUE) +
+  coord_flip() +
+  scale_fill_brewer(palette = "Paired") +
+  labs(y = "frequency")
+
+ggplot(evidence, aes(region, fill = paradigm)) +
+  geom_bar(na.rm = TRUE) +
+  coord_flip() +
+  scale_fill_brewer(palette = "Paired") +
+  labs(y = "frequency")
+
+
+ggplot(evidence, aes(system, fill = paradigm)) +
+  geom_bar(na.rm = TRUE) +
+  coord_flip() +
+  scale_fill_brewer(palette = "Paired") +
+  labs(y = "frequency")
+
+ggplot(evidence, aes(disturbance, fill = paradigm)) +
+  geom_bar(na.rm = TRUE) +
+  coord_flip() +
+  scale_fill_brewer(palette = "Paired") +
+  labs(y = "frequency")
+
+mycolors = c(brewer.pal(name="Set3", n = 12), brewer.pal(name="Paired", n = 12))
+
+ggplot(evidence, aes(region, fill = disturbance)) +
+  geom_bar(na.rm = TRUE) +
+  coord_flip() +
+  scale_fill_manual(values = mycolors) +
+  labs(y = "frequency")
+
+
+#data extracted
+mydata<- data %>% 
+  dplyr::filter(study.ID %in% c(1,2,3,4,5,6,9,11,12,13,15,16,19,20,21,28,29,30,31,32,37,39,40,41,51,58,64,66,68,69,77,78,82,86,87,88,89,91,93,95,98,104,106,109,111,112,114,120,121,128,135,139,142,147,154,167,188,206,209,210,214,239,242,247,256,276,277,278))
+
+
+mydata.simple4 <- mydata %>% group_by(intervention,paradigm,study.ID) %>% count()
+mydata.simple5 <- mydata.simple4 %>% group_by(intervention, paradigm) %>% count()
+ggplot(na.omit(mydata.simple5), aes(intervention,nn, fill=paradigm)) + geom_bar(stat = "identity") + coord_flip(ylim=0:78) + scale_fill_brewer(palette = "Paired")+ labs(y = "frequency")
+
+mydata.simple8 <- mydata %>% group_by(technique, paradigm, study.ID) %>% count()
+mydata.simple9 <- mydata.simple8 %>% group_by(technique, paradigm) %>% count()
+ggplot(na.omit(mydata.simple9), aes(technique,nn, fill=paradigm)) + geom_bar(stat = "identity") + coord_flip(ylim=0:20) + scale_fill_brewer(palette = "Paired")+ labs(y = "frequency")
+
+mydata.simple2 <- mydata %>% group_by(technique, outcome, study.ID) %>% count()
+mydata.simple3 <- mydata.simple2 %>% group_by(technique, outcome) %>% count()
+ggplot(na.omit(mydata.simple3), aes(technique,nn, fill=outcome)) + geom_bar(stat = "identity") + coord_flip(ylim=0:20) + scale_fill_brewer(palette = "Paired") + labs(y = "frequency")
+
+mydata.simple6 <- mydata %>% group_by(outcome,paradigm,study.ID) %>% count()
+mydata.simple7 <- mydata.simple6 %>% group_by(outcome,paradigm) %>% count()
+ggplot(na.omit(mydata.simple7), aes(outcome,nn, fill=paradigm)) + geom_bar(stat = "identity") + coord_flip(ylim=0:78) + scale_fill_brewer(palette = "Paired")+ labs(y = "frequency")
+
+mydata.simple10 <- mydata %>% group_by(intervention,outcome,study.ID) %>% count()
+mydata.simple11 <- mydata.simple10 %>% group_by(intervention,outcome) %>% count()
+ggplot(na.omit(mydata.simple11), aes(intervention,nn, fill=outcome)) + geom_bar(stat = "identity") + coord_flip(ylim=0:50) + scale_fill_brewer(palette = "Paired")+ labs(y = "frequency")
+
+
+#yes/no success 
+result <- success %>%
+  filter(success %in% c("yes","no"))
+
+success1 <- result %>% group_by(intervention, success, ID) %>% count()
+success2 <- success1 %>% group_by(intervention, success) %>% count()
+ggplot(na.omit(success2), aes(intervention,nn, fill=success)) + geom_bar(stat = "identity") + coord_flip(ylim=0:60) + scale_fill_brewer(palette = "Paired")+ labs(y = "frequency")
+
+
+
+```
