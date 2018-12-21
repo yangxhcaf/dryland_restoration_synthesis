@@ -360,3 +360,31 @@ Meta and conventional statistical models to explore relative efficacy.
 #meta-stats for differences between interventions and outcomes for active test studies
 ```
 
+Step 5. Synthesis stats  
+
+```{r, synthesis, warning=FALSE, message=FALSE}
+#p-value meta
+library(metap)
+mdata <- data %>%
+  filter(paradigm == "active") %>%
+  filter(!is.na(lrr)) %>%
+  filter(!is.na(var.es)) %>%
+  filter(!is.na(n.t)) %>%
+  filter(!is.na(p)) %>%
+  filter(!is.na(intervention))
+
+schweder(mdata$p)
+sumz(p, data = mdata)
+mdata %>%
+  split(.$intervention) %>%
+  purrr::map(~sumz(.$p)) 
+sumlog(mdata$p)
+
+#effect-size meta
+library(meta)
+m <- metagen(lrr, var.es, studlab = ID, byvar = intervention, data = mdata)
+summary(m)
+
+
+
+```
