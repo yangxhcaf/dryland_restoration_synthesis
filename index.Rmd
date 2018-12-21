@@ -383,7 +383,7 @@ sumlog(mdata$p)
 
 #effect-size meta
 library(meta)
-m <- metagen(lrr, var.es, studlab = intervention, byvar = outcome, data = mdata)
+m <- metagen(lrr, var.es, studlab = ID, byvar = intervention, data = mdata)
 summary(m)
 funnel(m)
 #metabias(m)
