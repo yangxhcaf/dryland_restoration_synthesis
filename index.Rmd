@@ -419,5 +419,11 @@ forest(m1, sortvar = intervention, fontsize = 10, xlim = c(-2, 2))
 
 forest(m2, sortvar = intervention, fontsize = 10, xlim = c(-2, 2))
 
+#t-tests for lrr diff from 0
+mdata %>%
+  split(.$intervention) %>%
+  purrr::map(~sumz(.$lrr)) 
+
+
 ```
 
