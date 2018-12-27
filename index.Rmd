@@ -365,6 +365,7 @@ Step 5. Synthesis stats
 ```{r, synthesis, warning=FALSE, message=FALSE}
 #p-value meta
 library(metap)
+#all data for metas but cleaned for na's
 mdata <- data %>%
   filter(paradigm == "active") %>%
   filter(!is.na(lrr)) %>%
@@ -374,6 +375,25 @@ mdata <- data %>%
   filter(!is.na(intervention)) %>%
   filter(is.finite(lrr))
 
+#aggregated data for metas var estimated with central tendency
+#note - could also bootstrap mean variance here instead of arithematic mean
+simple.mdata <- mdata %>%
+  group_by(intervention) %>%
+  summarise(lrr = mean(lrr), var.es = mean(var.es), n = mean(n.t))
+
+simple.mdata.2 <- mdata %>%
+  group_by(intervention, outcome) %>%
+  summarise(lrr = mean(lrr), var.es = mean(var.es), n = mean(n.t))  
+
+simple.mdata.var <- mdata %>%
+  group_by(intervention) %>%
+  summarise(lrr = mean(lrr), var.es = se(var.es), n = mean(n.t))
+
+simple.mdata2.var <- mdata %>%
+  group_by(intervention, outcome) %>%
+  summarise(lrr = mean(lrr), var.es = se(var.es), n = mean(n.t))
+
+#metas with p-values####
 schweder(mdata$p)
 sumz(p, data = mdata)
 mdata %>%
@@ -381,33 +401,47 @@ mdata %>%
   purrr::map(~sumz(.$p)) 
 sumlog(mdata$p)
 
-#effect-size meta
+#metas with meta package on effect size measures####
 library(meta)
+#all data non-aggregated
 m <- metagen(lrr, var.es, studlab = ID, byvar = intervention, data = mdata)
 summary(m)
 funnel(m)
 #metabias(m)
 #forest(m, sortvar = intervention)
 
-simple.mdata <- mdata %>%
-  group_by(intervention) %>%
-  summarise(lrr = mean(lrr), var.es = mean(var.es), n = mean(n.t))
+m.study <- metagen(lrr, var.es, studlab = study.ID, byvar = intervention, data = mdata)
+summary(m.study)
+#funnel(m)
+#metabias(m)
+#forest(m, sortvar = intervention)
 
+#aggregated data
 m1 <- metagen(lrr, var.es, studlab = intervention, data = simple.mdata)
 summary(m1)
-#funnel(m)
+funnel(m1)
 metabias(m1)
 #forest(m, sortvar = intervention)
 
-simple.mdata <- mdata %>%
-  group_by(intervention, outcome) %>%
-  summarise(lrr = mean(lrr), var.es = mean(var.es), n = mean(n.t))  
-
-
-m2 <- metagen(lrr, var.es, studlab = intervention, byvar = outcome, data = simple.mdata)
+#different var estimate
+m2 <- metagen(lrr, var.es, studlab = intervention, data = simple.mdata.var)
 summary(m2)
+funnel(m2)
+metabias(m2)
+#forest(m, sortvar = intervention)
+
+
+m3 <- metagen(lrr, var.es, studlab = intervention, byvar = outcome, data = simple.mdata.2)
+summary(m3)
 #funnel(m)
-radial(m)
+radial(m3)
+#metabias(m2)
+#forest(m, sortvar = intervention)
+
+m4 <- metagen(lrr, var.es, studlab = intervention, byvar = outcome, data = simple.mdata2.var)
+summary(m4)
+#funnel(m)
+radial(m4)
 #metabias(m2)
 #forest(m, sortvar = intervention)
 
@@ -418,6 +452,10 @@ radial(m)
 forest(m1, sortvar = intervention, fontsize = 10, xlim = c(-2, 2))
 
 forest(m2, sortvar = intervention, fontsize = 10, xlim = c(-2, 2))
+
+forest(m3, sortvar = intervention, fontsize = 10, xlim = c(-2, 2))
+
+forest(m4, sortvar = intervention, fontsize = 10, xlim = c(-2, 2))
 
 #t-tests for lrr diff from 0
 mdata %>%
