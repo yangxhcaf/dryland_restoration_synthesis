@@ -131,12 +131,17 @@ prisma(found = 1504,
 ###Step 3. Synthesize  
 Check data and calculate necessary measures.
 ```{r, step 3, warning=FALSE, message=FALSE}
+#all data
 data <- read_csv("data/data.csv")
 data <- data %>%
   mutate(lrr = log(mean.t/mean.c), rii = ((mean.t-mean.c)/(mean.t + mean.c)), var.es = ((sd.t^2/n.t*mean.t^2) + (sd.c^2/n.c*mean.c^2)))
-#data
 
-#consider adding some other effect size measures and/or study-level data too
+#other effect size estimates
+#library(compute.es)
+#data <- data %>%
+  #mutate(d=mes(mean.t, mean.c, sd.t, sd.c, n.t, n.c, level = 95, #cer = 0.2, dig = 2, , id = ID, data = data))
+#check metafor
+
 ```
 
 ###Step 4. Summarize  
