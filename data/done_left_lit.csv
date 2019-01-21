@@ -1,19 +1,19 @@
-disturbance,total,done,left,date,,
-agriculture,45,44,1,january 8,,
-grazing,32,11,21,january 8,,
-exotics,25,2,23,january 8,,
-anthropogenic disturbance,21,2,19,january 8,,
-desertification,20,11,9,january 8,,
-mining,11,3,8,january 8,,
-"grazing, fire",1,1,0,january 8,,
-land-use changes,2,0,2,january 8,,
-not disturbance reported,1,1,0,january 8,,
-shrub encroachment,3,2,1,january 8,,
-soil erosion,6,1,5,january 8,,
-stressful soil,2,0,2,january 8,,
-"various, grazing, herbicide, soil disturbance",1,1,0,january 8,,
-wildfire,1,0,1,january 8,,
-browsing,1,0,1,january 8,,
-canopy removal,1,0,1,january 8,,
-clearing,3,0,3,january 8,,
-deforestation,2,0,2,january 8,,
+disturbance,total,done,left,percent,date
+agriculture,45,45,0,100,january 21
+grazing,32,32,0,100,january 21
+exotics,25,2,23,8,january 21
+anthropogenic disturbance,21,2,19,9.523809524,january 21
+desertification,20,11,9,55,january 21
+mining,11,3,8,27.27272727,january 21
+"grazing, fire",1,1,0,100,january 21
+land-use changes,2,0,2,0,january 21
+not disturbance reported,1,1,0,100,january 21
+shrub encroachment,3,2,1,66.66666667,january 21
+soil erosion,6,1,5,16.66666667,january 21
+stressful soil,2,0,2,0,january 21
+"various, grazing, herbicide, soil disturbance",1,1,0,100,january 21
+wildfire,1,0,1,0,january 21
+browsing,1,0,1,0,january 21
+canopy removal,1,0,1,0,january 21
+clearing,3,0,3,0,january 21
+deforestation,2,0,2,0,january 21
