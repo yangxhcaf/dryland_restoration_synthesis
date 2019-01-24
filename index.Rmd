@@ -475,16 +475,38 @@ library(meta)
 #metabias(m)
 #forest(m, sortvar = intervention)
 
+#Propose we only use random effect models because of the diversity of studies
+m <- metagen(lrr, var.es, studlab = ID, byvar = paradigm, data = mdata.all)
+summary(m) #active is positive and passive is negative so should not mix
+
+#should do a t-test right now of paradigm is diff from 0
+
+#interventions
 m <- metagen(lrr, var.es, studlab = ID, byvar = intervention, subset = paradigm == "active", data = mdata.all)
 summary(m)
 
 m <- metagen(lrr, var.es, studlab = ID, byvar = intervention, subset = paradigm == "passive", data = mdata.all)
 summary(m)
 
-m <- metagen(lrr, var.es, studlab = ID, byvar = paradigm, data = mdata.all)
+#use random effects mean and var estimate to plot
+
+#do t-tests here too
+
+#outcomes
+m <- metagen(lrr, var.es, studlab = ID, byvar = outcome, subset = paradigm == "active", data = mdata.all)
 summary(m)
 
+m <- metagen(lrr, var.es, studlab = ID, byvar = outcome, subset = paradigm == "passive", data = mdata.all)
+summary(m)
 
+#t-tests for outcomes diff from 0 but you can see using the 95% CI what is different
+
+#check metafor for interactions?? in these big models or are we ok??
+
+#brainstorm on how to explore?? techniques
+
+
+#save but cut all this.
 #m.study <- metagen(lrr, var.es, studlab = study.ID, byvar = intervention, data = mdata)
 #summary(m.study)
 #funnel(m)
