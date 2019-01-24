@@ -158,7 +158,7 @@ Explore summary level data of all data. Explore aggregation levels that support 
 #evidence map####
 require(maps)
 world<-map_data("world")
-#map<-ggplot() + geom_polygon(data=world, fill="gray50", aes(x=long, y=lat, #group=group))
+map<-ggplot() + geom_polygon(data=world, fill="gray50", aes(x=long, y=lat, group=group))
 #map + geom_point(data=paperdata, aes(x=long, y=lat)) +
   #labs(x = "longitude", y = "latitude") #render a literal map, i.e. evidence map, of where we study the niche in deserts globally
 
