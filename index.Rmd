@@ -122,8 +122,8 @@ prisma(found = 1504,
        screened = 1039, 
        screen_exclusions = 861, 
        full_text = 178,
-       full_text_exclusions = 112, 
-       qualitative = 66, 
+       full_text_exclusions = 101, 
+       qualitative = 77, 
        quantitative = 66,
        width = 800, height = 800)
 ```
@@ -192,11 +192,18 @@ tech.data <- na.omit(tech.data)
 success.data <- paperdata %>% group_by(study.ID, measure.success) %>% summarise(mean.rii = mean(rii), error = se(rii))
 success.data <- na.omit(success.data)
 
+
 #active
 active <- paperdata %>%
   filter(paradigm == "active")
 
 #viz for aggregation####
+
+disturbance.data <- paperdata %>% group_by(study.ID,disturbance, paradigm) %>% count()
+disturbance.data2 <- disturbance.data %>% group_by(disturbance,paradigm) %>% count()
+ggplot(na.omit(disturbance.data2), aes(disturbance,nn, fill=paradigm))+ geom_bar(stat = "identity") + coord_flip(ylim=0:44) + scale_fill_brewer(palette = "Blues")
+
+
 ggplot(na.omit(data.simple), aes(technique, n, fill = paradigm)) + 
   geom_bar(stat = "identity") + 
   coord_flip() + 
