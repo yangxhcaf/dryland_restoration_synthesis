@@ -147,6 +147,7 @@ paperdata <- read_csv("data/paper_data.csv")
 paperdata <- paperdata %>%
   mutate(lrr = log(mean.t/mean.c), rii = ((mean.t-mean.c)/(mean.t + mean.c)), var.es = ((sd.t^2/n.t*mean.t^2) + (sd.c^2/n.c*mean.c^2)))
 
+
 ```
 
 ###Step 4. Summarize  
@@ -189,6 +190,8 @@ parad.data <- na.omit(parad.data)
 tech.data <- paperdata %>% group_by(study.ID, technique) %>% summarise(mean.rii = mean(rii), error = se(rii))
 tech.data <- na.omit(tech.data)
 
+tech.data
+
 success.data <- paperdata %>% group_by(study.ID, measure.success) %>% summarise(mean.rii = mean(rii), error = se(rii))
 success.data <- na.omit(success.data)
 
@@ -202,6 +205,15 @@ active <- paperdata %>%
 disturbance.data <- paperdata %>% group_by(study.ID,disturbance, paradigm) %>% count()
 disturbance.data2 <- disturbance.data %>% group_by(disturbance,paradigm) %>% count()
 ggplot(na.omit(disturbance.data2), aes(disturbance,nn, fill=paradigm))+ geom_bar(stat = "identity") + coord_flip(ylim=0:44) + scale_fill_brewer(palette = "Blues")
+
+
+intervention.data <- active %>% group_by(study.ID,intervention, paradigm) %>% count()
+intervention.data2 <- intervention.data %>% group_by(intervention,paradigm) %>% count()
+ggplot(na.omit(intervention.data2), aes(intervention,nn, fill=paradigm))+ geom_bar(stat = "identity") + coord_flip(ylim=0:44) + scale_fill_brewer(palette = "Blues")
+
+technique.data <- paperdata %>% group_by(study.ID,technique, paradigm) %>% count()
+technique.data2 <- technique.data %>% group_by(technique,paradigm) %>% count()
+technique.data3 <- technique.data2 %>% group_by(technique) %>% count()
 
 
 ggplot(na.omit(data.simple), aes(technique, n, fill = paradigm)) + 
@@ -397,8 +409,6 @@ mdata <- paperdata %>%
 simple.mdata <- mdata %>%
   group_by(intervention) %>%
   summarise(lrr = mean(lrr), var.es = mean(var.es), n = mean(n.t))
-
-simple.mdata
 
 simple.mdata.2 <- mdata %>%
   group_by(intervention, outcome) %>%
