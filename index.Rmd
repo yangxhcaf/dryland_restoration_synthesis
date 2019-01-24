@@ -122,9 +122,9 @@ prisma(found = 1504,
        screened = 1039, 
        screen_exclusions = 861, 
        full_text = 178,
-       full_text_exclusions = 100, 
-       qualitative = 78, 
-       quantitative = 78,
+       full_text_exclusions = 112, 
+       qualitative = 66, 
+       quantitative = 66,
        width = 800, height = 800)
 ```
 
@@ -132,15 +132,20 @@ prisma(found = 1504,
 Check data and calculate necessary measures.
 ```{r, step 3, warning=FALSE, message=FALSE}
 #all data
-data <- read_csv("data/data.csv")
-data <- data %>%
-  mutate(lrr = log(mean.t/mean.c), rii = ((mean.t-mean.c)/(mean.t + mean.c)), var.es = ((sd.t^2/n.t*mean.t^2) + (sd.c^2/n.c*mean.c^2)))
+#data <- read_csv("data/data.csv")
+#data <- data %>%
+  #mutate(lrr = log(mean.t/mean.c), rii = ((mean.t-mean.c)/(mean.t + mean.c)), var.es = ((sd.t^2/n.t*mean.t^2) + (sd.c^2/n.c*mean.c^2)))
 
 #other effect size estimates
 #library(compute.es)
 #data <- data %>%
   #mutate(d=mes(mean.t, mean.c, sd.t, sd.c, n.t, n.c, level = 95, #cer = 0.2, dig = 2, , id = ID, data = data))
 #check metafor
+
+#all data
+paperdata <- read_csv("data/paper_data.csv")
+paperdata <- paperdata %>%
+  mutate(lrr = log(mean.t/mean.c), rii = ((mean.t-mean.c)/(mean.t + mean.c)), var.es = ((sd.t^2/n.t*mean.t^2) + (sd.c^2/n.c*mean.c^2)))
 
 ```
 
@@ -152,11 +157,11 @@ Explore summary level data of all data. Explore aggregation levels that support 
 require(maps)
 world<-map_data("world")
 map<-ggplot() + geom_polygon(data=world, fill="gray50", aes(x=long, y=lat, group=group))
-map + geom_point(data=data, aes(x=long, y=lat)) +
+map + geom_point(data=paperdata, aes(x=long, y=lat)) +
   labs(x = "longitude", y = "latitude") #render a literal map, i.e. evidence map, of where we study the niche in deserts globally
 
 #add in levels and color code points on map####
-map + geom_point(data=data, aes(x=long, y=lat, color = paradigm)) + 
+map + geom_point(data=paperdata, aes(x=long, y=lat, color = paradigm)) + 
   scale_color_brewer(palette = "Paired") +
   labs(x = "longitude", y = "latitude", color = "")
 
@@ -165,30 +170,30 @@ se <- function(x){
   sd(x)/sqrt(length(x))
 }
 
-data.simple <- data %>%
+data.simple <- paperdata %>%
   group_by(study.ID, paradigm, technique, measure.success) %>%
   summarise(n = n(), mean.lrr = mean(lrr), mean.rii = mean(rii), mean.var = mean(var.es))
 
-main.data <- data %>%
+main.data <- paperdata %>%
   group_by(study.ID, paradigm, intervention, outcome) %>%
   summarise(n = n(), mean.lrr = mean(lrr), mean.rii = mean(rii), mean.var = mean(var.es))
 
 
 #EDA data####
-simple.data <- data %>% group_by(study.ID, paradigm, technique, measure.success) %>% summarise(mean.rii = mean(rii), error = se(rii))
+simple.data <- paperdata %>% group_by(study.ID, paradigm, technique, measure.success) %>% summarise(mean.rii = mean(rii), error = se(rii))
 simple.data <- na.omit(simple.data)
 
-parad.data <- data %>% group_by(study.ID, paradigm) %>% summarise(mean.rii = mean(rii), error = se(rii))
+parad.data <- paperdata %>% group_by(study.ID, paradigm) %>% summarise(mean.rii = mean(rii), error = se(rii))
 parad.data <- na.omit(parad.data)
 
-tech.data <- data %>% group_by(study.ID, technique) %>% summarise(mean.rii = mean(rii), error = se(rii))
+tech.data <- paperdata %>% group_by(study.ID, technique) %>% summarise(mean.rii = mean(rii), error = se(rii))
 tech.data <- na.omit(tech.data)
 
-success.data <- data %>% group_by(study.ID, measure.success) %>% summarise(mean.rii = mean(rii), error = se(rii))
+success.data <- paperdata %>% group_by(study.ID, measure.success) %>% summarise(mean.rii = mean(rii), error = se(rii))
 success.data <- na.omit(success.data)
 
 #active
-active <- data %>%
+active <- paperdata %>%
   filter(paradigm == "active")
 
 #viz for aggregation####
@@ -371,7 +376,7 @@ Step 5. Synthesis stats
 #p-value meta
 library(metap)
 #all data for metas but cleaned for na's
-mdata <- data %>%
+mdata <- paperdata %>%
   filter(paradigm == "active") %>%
   filter(!is.na(lrr)) %>%
   filter(!is.na(var.es)) %>%
@@ -385,6 +390,8 @@ mdata <- data %>%
 simple.mdata <- mdata %>%
   group_by(intervention) %>%
   summarise(lrr = mean(lrr), var.es = mean(var.es), n = mean(n.t))
+
+simple.mdata
 
 simple.mdata.2 <- mdata %>%
   group_by(intervention, outcome) %>%
