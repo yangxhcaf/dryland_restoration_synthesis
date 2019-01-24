@@ -51,11 +51,11 @@ evidence <- studies %>%
 
 #study-level viz#####
 #exclusions
-ggplot(exclusions, aes(rationale, fill = region)) +
-  geom_bar() +
-  coord_flip() +
-  labs(x = "rational for exclusion", y = "frequency") +
-  scale_fill_brewer(palette = "Paired")
+#ggplot(exclusions, aes(rationale, fill = region)) +
+ # geom_bar() +
+ # coord_flip() +
+ # labs(x = "rational for exclusion", y = "frequency") +
+ # scale_fill_brewer(palette = "Paired")
 
 ggplot(evidence, aes(disturbance, fill = paradigm)) +
   geom_bar(na.rm = TRUE) +
@@ -63,29 +63,29 @@ ggplot(evidence, aes(disturbance, fill = paradigm)) +
   scale_fill_brewer(palette = "Paired") +
   labs(y = "frequency")
 
-ggplot(evidence, aes(region, fill = paradigm)) +
-  geom_bar(na.rm = TRUE) +
-  coord_flip() +
-  scale_fill_brewer(palette = "Paired") +
-  labs(y = "frequency")
+#ggplot(evidence, aes(region, fill = paradigm)) +
+ # geom_bar(na.rm = TRUE) +
+ # coord_flip() +
+ # scale_fill_brewer(palette = "Paired") +
+ # labs(y = "frequency")
 
-ggplot(evidence, aes(data, fill = paradigm)) +
-  geom_bar(na.rm = TRUE) +
-  coord_flip() +
-  scale_fill_brewer(palette = "Paired") +
-  labs(y = "frequency")
+#ggplot(evidence, aes(data, fill = paradigm)) +
+ # geom_bar(na.rm = TRUE) +
+  #coord_flip() +
+  #scale_fill_brewer(palette = "Paired") +
+  #labs(y = "frequency")
 
-ggplot(evidence, aes(system, fill = paradigm)) +
-  geom_bar(na.rm = TRUE) +
-  coord_flip() +
-  scale_fill_brewer(palette = "Paired") +
-  labs(y = "frequency")
+#ggplot(evidence, aes(system, fill = paradigm)) +
+ # geom_bar(na.rm = TRUE) +
+ # coord_flip() +
+ # scale_fill_brewer(palette = "Paired") +
+ # labs(y = "frequency")
 
-ggplot(evidence, aes(goal, fill = paradigm)) +
-  geom_bar(na.rm = TRUE) +
-  coord_flip() +
-  scale_fill_brewer(palette = "Paired") +
-  labs(x = "outcome", y = "frequency")
+#ggplot(evidence, aes(goal, fill = paradigm)) +
+  #geom_bar(na.rm = TRUE) +
+  #coord_flip() +
+  #scale_fill_brewer(palette = "Paired") +
+  #labs(x = "outcome", y = "frequency")
 
 #step 1 models####
 #paradigm
@@ -142,10 +142,11 @@ Check data and calculate necessary measures.
   #mutate(d=mes(mean.t, mean.c, sd.t, sd.c, n.t, n.c, level = 95, #cer = 0.2, dig = 2, , id = ID, data = data))
 #check metafor
 
-#all data
+#data from ag and grazing studies that examined restoration in drylands
 paperdata <- read_csv("data/paper_data.csv")
 paperdata <- paperdata %>%
-  mutate(lrr = log(mean.t/mean.c), rii = ((mean.t-mean.c)/(mean.t + mean.c)), var.es = ((sd.t^2/n.t*mean.t^2) + (sd.c^2/n.c*mean.c^2)))
+  mutate(lrr = log(mean.t/mean.c), rii = ((mean.t-mean.c)/(mean.t + mean.c)), var.es = ((sd.t^2/n.t*mean.t^2) + (sd.c^2/n.c*mean.c^2))) #use only lrr now
+
 
 
 ```
@@ -157,9 +158,9 @@ Explore summary level data of all data. Explore aggregation levels that support 
 #evidence map####
 require(maps)
 world<-map_data("world")
-map<-ggplot() + geom_polygon(data=world, fill="gray50", aes(x=long, y=lat, group=group))
-map + geom_point(data=paperdata, aes(x=long, y=lat)) +
-  labs(x = "longitude", y = "latitude") #render a literal map, i.e. evidence map, of where we study the niche in deserts globally
+#map<-ggplot() + geom_polygon(data=world, fill="gray50", aes(x=long, y=lat, #group=group))
+#map + geom_point(data=paperdata, aes(x=long, y=lat)) +
+  #labs(x = "longitude", y = "latitude") #render a literal map, i.e. evidence map, of where we study the niche in deserts globally
 
 #add in levels and color code points on map####
 map + geom_point(data=paperdata, aes(x=long, y=lat, color = paradigm)) + 
@@ -201,19 +202,44 @@ active <- paperdata %>%
   filter(paradigm == "active")
 
 #viz for aggregation####
+disturbance.data <- paperdata %>% 
+  group_by(study.ID,disturbance, paradigm) %>% 
+  count()
 
-disturbance.data <- paperdata %>% group_by(study.ID,disturbance, paradigm) %>% count()
-disturbance.data2 <- disturbance.data %>% group_by(disturbance,paradigm) %>% count()
-ggplot(na.omit(disturbance.data2), aes(disturbance,nn, fill=paradigm))+ geom_bar(stat = "identity") + coord_flip(ylim=0:44) + scale_fill_brewer(palette = "Blues")
+disturbance.data2 <- disturbance.data %>% 
+  group_by(disturbance,paradigm) %>% 
+  count()
+
+ggplot(na.omit(disturbance.data2), aes(disturbance,nn, fill=paradigm))+ 
+  geom_bar(stat = "identity") + 
+  coord_flip(ylim=0:44) + 
+  scale_fill_brewer(palette = "Blues")
 
 
-intervention.data <- active %>% group_by(study.ID,intervention, paradigm) %>% count()
-intervention.data2 <- intervention.data %>% group_by(intervention,paradigm) %>% count()
-ggplot(na.omit(intervention.data2), aes(intervention,nn, fill=paradigm))+ geom_bar(stat = "identity") + coord_flip(ylim=0:44) + scale_fill_brewer(palette = "Blues")
+intervention.data <- active %>% 
+  group_by(study.ID,intervention, paradigm) %>% 
+  count()
 
-technique.data <- paperdata %>% group_by(study.ID,technique, paradigm) %>% count()
-technique.data2 <- technique.data %>% group_by(technique,paradigm) %>% count()
-technique.data3 <- technique.data2 %>% group_by(technique) %>% count()
+intervention.data2 <- intervention.data %>% 
+  group_by(intervention,paradigm) %>% 
+  count()
+
+#ggplot(na.omit(intervention.data2), aes(intervention,nn, fill=paradigm)) +
+  #geom_bar(stat = "identity") + 
+  #coord_flip(ylim=0:44) + 
+  #scale_fill_brewer(palette = "Blues")
+
+technique.data <- paperdata %>% 
+  group_by(study.ID,technique, paradigm) %>% 
+  count()
+
+technique.data2 <- technique.data %>% 
+  group_by(technique,paradigm) %>% 
+  count()
+
+technique.data3 <- technique.data2 %>% 
+  group_by(technique) %>% 
+  count()
 
 
 ggplot(na.omit(data.simple), aes(technique, n, fill = paradigm)) + 
@@ -393,8 +419,18 @@ Step 5. Synthesis stats
 
 ```{r, synthesis, warning=FALSE, message=FALSE}
 #p-value meta
-library(metap)
+#library(metap)
 #all data for metas but cleaned for na's
+#all data for meta cleaned
+mdata.all <- paperdata %>%
+  filter(!is.na(lrr)) %>%
+  filter(!is.na(var.es)) %>%
+  filter(!is.na(n.t)) %>%
+  filter(!is.na(p)) %>%
+  filter(!is.na(intervention)) %>%
+  filter(is.finite(lrr))
+
+#active only data for meta cleaned up
 mdata <- paperdata %>%
   filter(paradigm == "active") %>%
   filter(!is.na(lrr)) %>%
@@ -423,54 +459,64 @@ simple.mdata2.var <- mdata %>%
   summarise(lrr = mean(lrr), var.es = se(var.es), n = mean(n.t))
 
 #metas with p-values####
-schweder(mdata$p)
-sumz(p, data = mdata)
-mdata %>%
-  split(.$intervention) %>%
-  purrr::map(~sumz(.$p)) 
-sumlog(mdata$p)
+#schweder(mdata$p)
+#sumz(p, data = mdata)
+#mdata %>%
+  #split(.$intervention) %>%
+  #purrr::map(~sumz(.$p)) 
+#sumlog(mdata$p)
 
 #metas with meta package on effect size measures####
 library(meta)
 #all data non-aggregated
-m <- metagen(lrr, var.es, studlab = ID, byvar = intervention, data = mdata)
-summary(m)
-funnel(m)
+#m <- metagen(lrr, var.es, studlab = ID, byvar = intervention, data = mdata)
+#summary(m)
+#funnel(m)
 #metabias(m)
 #forest(m, sortvar = intervention)
 
-m.study <- metagen(lrr, var.es, studlab = study.ID, byvar = intervention, data = mdata)
-summary(m.study)
+m <- metagen(lrr, var.es, studlab = ID, byvar = intervention, subset = paradigm == "active", data = mdata.all)
+summary(m)
+
+m <- metagen(lrr, var.es, studlab = ID, byvar = intervention, subset = paradigm == "passive", data = mdata.all)
+summary(m)
+
+m <- metagen(lrr, var.es, studlab = ID, byvar = paradigm, data = mdata.all)
+summary(m)
+
+
+#m.study <- metagen(lrr, var.es, studlab = study.ID, byvar = intervention, data = mdata)
+#summary(m.study)
 #funnel(m)
 #metabias(m)
 #forest(m, sortvar = intervention)
 
 #aggregated data
-m1 <- metagen(lrr, var.es, studlab = intervention, data = simple.mdata)
-summary(m1)
-funnel(m1)
-metabias(m1)
+#m1 <- metagen(lrr, var.es, studlab = intervention, data = simple.mdata)
+#summary(m1)
+#funnel(m1)
+#metabias(m1)
 #forest(m, sortvar = intervention)
 
 #different var estimate
-m2 <- metagen(lrr, var.es, studlab = intervention, data = simple.mdata.var)
-summary(m2)
-funnel(m2)
-metabias(m2)
-#forest(m, sortvar = intervention)
-
-
-m3 <- metagen(lrr, var.es, studlab = intervention, byvar = outcome, data = simple.mdata.2)
-summary(m3)
-#funnel(m)
-radial(m3)
+#m2 <- metagen(lrr, var.es, studlab = intervention, data = simple.mdata.var)
+#summary(m2)
+#funnel(m2)
 #metabias(m2)
 #forest(m, sortvar = intervention)
 
-m4 <- metagen(lrr, var.es, studlab = intervention, byvar = outcome, data = simple.mdata2.var)
-summary(m4)
+
+#m3 <- metagen(lrr, var.es, studlab = intervention, byvar = outcome, data = simple.mdata.2)
+#summary(m3)
 #funnel(m)
-radial(m4)
+#radial(m3)
+#metabias(m2)
+#forest(m, sortvar = intervention)
+
+#m4 <- metagen(lrr, var.es, studlab = intervention, byvar = outcome, data = simple.mdata2.var)
+#summary(m4)
+#funnel(m)
+#radial(m4)
 #metabias(m2)
 #forest(m, sortvar = intervention)
 
@@ -478,53 +524,53 @@ radial(m4)
 
 ```{r, metaplot, warning=FALSE, message=FALSE,fig.width=10, fig.height=14}
 
-forest(m1, sortvar = intervention, fontsize = 10, xlim = c(-2, 2))
+#forest(m1, sortvar = intervention, fontsize = 10, xlim = c(-2, 2))
 
-forest(m2, sortvar = intervention, fontsize = 10, xlim = c(-2, 2))
+#forest(m2, sortvar = intervention, fontsize = 10, xlim = c(-2, 2))
 
-forest(m3, sortvar = intervention, fontsize = 10, xlim = c(-2, 2))
+#forest(m3, sortvar = intervention, fontsize = 10, xlim = c(-2, 2))
 
-forest(m4, sortvar = intervention, fontsize = 10, xlim = c(-2, 2))
+#forest(m4, sortvar = intervention, fontsize = 10, xlim = c(-2, 2))
 
 #t-tests for lrr diff from 0
-mdata %>%
-  split(.$intervention) %>%
-  purrr::map(~sumz(.$lrr)) 
+#mdata %>%
+  #split(.$intervention) %>%
+  #purrr::map(~sumz(.$lrr)) 
 
 ```
 
 ```{r, eplots, warning=FALSE, message=FALSE}
 #effect sizes plots
 #need better ci estimates
-ggplot(simple.mdata, aes(intervention, lrr)) +
-  ylim(c(-2,2)) +
-  geom_point(position = position_dodge(width = 0.5)) + 
-  labs(x = "", y = "lrr") +
-  coord_flip() +
-  geom_errorbar(aes(ymin=lrr-var.es, ymax=lrr+var.es), width=.05, position = position_dodge(width = 0.5)) +
-  geom_hline(yintercept = 0, colour="grey", linetype = "longdash")
+#ggplot(simple.mdata, aes(intervention, lrr)) +
+ # ylim(c(-2,2)) +
+#  geom_point(position = position_dodge(width = 0.5)) + 
+ # labs(x = "", y = "lrr") +
+ # coord_flip() +
+ # geom_errorbar(aes(ymin=lrr-var.es, ymax=lrr+var.es), width=.05, position = position_dodge(width = 0.5)) +
+ # geom_hline(yintercept = 0, colour="grey", linetype = "longdash")
 
-ggplot(simple.mdata.2, aes(intervention, lrr, color = outcome)) +
-  ylim(c(-2,2)) +
-  geom_point(position = position_dodge(width = 0.5)) + 
-  labs(x = "", y = "lrr", color = "") +
-  coord_flip() +
-  geom_errorbar(aes(ymin=lrr-var.es, ymax=lrr+var.es), width=.05, position = position_dodge(width = 0.5)) +
-  geom_hline(yintercept = 0, colour="grey", linetype = "longdash")
+#ggplot(simple.mdata.2, aes(intervention, lrr, color = outcome)) +
+ # ylim(c(-2,2)) +
+  #geom_point(position = position_dodge(width = 0.5)) + 
+ # labs(x = "", y = "lrr", color = "") +
+ # coord_flip() +
+  #geom_errorbar(aes(ymin=lrr-var.es, ymax=lrr+var.es), width=.05, position = #position_dodge(width = 0.5)) +
+  #geom_hline(yintercept = 0, colour="grey", linetype = "longdash")
 
-ggplot(mdata, aes(lrr, color = intervention)) +
-  geom_freqpoly(binwidth = 0.5, size = 2) + 
-  xlim(c(-10, 10)) +
-  labs(x = "lrr", y = "frequency", color = "") +
-  geom_vline(xintercept = 0, colour="grey", linetype = "longdash") +
-  scale_color_brewer()
+#ggplot(mdata, aes(lrr, color = intervention)) +
+  #geom_freqpoly(binwidth = 0.5, size = 2) + 
+  #xlim(c(-10, 10)) +
+  #labs(x = "lrr", y = "frequency", color = "") +
+  #geom_vline(xintercept = 0, colour="grey", linetype = "longdash") +
+  #scale_color_brewer()
 
-ggplot(mdata, aes(lrr, fill = intervention)) +
-  geom_dotplot(binwidth = 1) + 
-  xlim(c(-10, 10)) +
-  labs(x = "lrr", y = "frequency", fill = "") +
-  geom_vline(xintercept = 0, colour="grey", linetype = "longdash") +
-  scale_fill_brewer()
+#ggplot(mdata, aes(lrr, fill = intervention)) +
+  #geom_dotplot(binwidth = 1) + 
+ # xlim(c(-10, 10)) +
+ # labs(x = "lrr", y = "frequency", fill = "") +
+ # geom_vline(xintercept = 0, colour="grey", linetype = "longdash") +
+ # scale_fill_brewer()
 
 
 ```
