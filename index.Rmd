@@ -143,8 +143,14 @@ Check data and calculate necessary measures.
 #check metafor
 
 #data from ag and grazing studies that examined restoration in drylands
-paperdata <- read_csv("data/paper_data.csv")
-paperdata <- paperdata %>%
+data <- read_csv("data/data.csv")
+mydata<- data %>% 
+ filter(disturbance == c("agriculture","grazing")) %>% 
+ filter(!study.ID %in% c(23,35,76,80,84,85,96,110,219,274,275))
+
+mydata
+
+mydata <- mydata %>%
   mutate(lrr = log(mean.t/mean.c), rii = ((mean.t-mean.c)/(mean.t + mean.c)), var.es = ((sd.t^2/n.t*mean.t^2) + (sd.c^2/n.c*mean.c^2))) #use only lrr now
 
 
@@ -163,7 +169,11 @@ map<-ggplot() + geom_polygon(data=world, fill="gray50", aes(x=long, y=lat, group
   #labs(x = "longitude", y = "latitude") #render a literal map, i.e. evidence map, of where we study the niche in deserts globally
 
 #add in levels and color code points on map####
-map + geom_point(data=paperdata, aes(x=long, y=lat, color = paradigm)) + 
+map + geom_point(data=data, aes(x=long, y=lat, color = paradigm)) + 
+  scale_color_brewer(palette = "Paired") +
+  labs(x = "longitude", y = "latitude", color = "")
+
+map + geom_point(data=mydata, aes(x=long, y=lat, color = paradigm)) + 
   scale_color_brewer(palette = "Paired") +
   labs(x = "longitude", y = "latitude", color = "")
 
@@ -172,37 +182,35 @@ se <- function(x){
   sd(x)/sqrt(length(x))
 }
 
-data.simple <- paperdata %>%
+data.simple <- mydata %>%
   group_by(study.ID, paradigm, technique, measure.success) %>%
   summarise(n = n(), mean.lrr = mean(lrr), mean.rii = mean(rii), mean.var = mean(var.es))
 
-main.data <- paperdata %>%
+main.data <- mydata %>%
   group_by(study.ID, paradigm, intervention, outcome) %>%
   summarise(n = n(), mean.lrr = mean(lrr), mean.rii = mean(rii), mean.var = mean(var.es))
 
 
 #EDA data####
-simple.data <- paperdata %>% group_by(study.ID, paradigm, technique, measure.success) %>% summarise(mean.rii = mean(rii), error = se(rii))
+simple.data <- mydata %>% group_by(study.ID, paradigm, technique, measure.success) %>% summarise(mean.rii = mean(rii), error = se(rii))
 simple.data <- na.omit(simple.data)
 
-parad.data <- paperdata %>% group_by(study.ID, paradigm) %>% summarise(mean.rii = mean(rii), error = se(rii))
+parad.data <- mydata %>% group_by(study.ID, paradigm) %>% summarise(mean.rii = mean(rii), error = se(rii))
 parad.data <- na.omit(parad.data)
 
-tech.data <- paperdata %>% group_by(study.ID, technique) %>% summarise(mean.rii = mean(rii), error = se(rii))
+tech.data <- mydata %>% group_by(study.ID, technique) %>% summarise(mean.rii = mean(rii), error = se(rii))
 tech.data <- na.omit(tech.data)
 
-tech.data
-
-success.data <- paperdata %>% group_by(study.ID, measure.success) %>% summarise(mean.rii = mean(rii), error = se(rii))
+success.data <- mydata %>% group_by(study.ID, measure.success) %>% summarise(mean.rii = mean(rii), error = se(rii))
 success.data <- na.omit(success.data)
 
 
 #active
-active <- paperdata %>%
+active <- mydata %>%
   filter(paradigm == "active")
 
 #viz for aggregation####
-disturbance.data <- paperdata %>% 
+disturbance.data <- mydata %>% 
   group_by(study.ID,disturbance, paradigm) %>% 
   count()
 
@@ -229,7 +237,7 @@ intervention.data2 <- intervention.data %>%
   #coord_flip(ylim=0:44) + 
   #scale_fill_brewer(palette = "Blues")
 
-technique.data <- paperdata %>% 
+technique.data <- mydata %>% 
   group_by(study.ID,technique, paradigm) %>% 
   count()
 
@@ -422,7 +430,7 @@ Step 5. Synthesis stats
 #library(metap)
 #all data for metas but cleaned for na's
 #all data for meta cleaned
-mdata.all <- paperdata %>%
+mdata.all <- mydata %>%
   filter(!is.na(lrr)) %>%
   filter(!is.na(var.es)) %>%
   filter(!is.na(n.t)) %>%
@@ -431,7 +439,7 @@ mdata.all <- paperdata %>%
   filter(is.finite(lrr))
 
 #active only data for meta cleaned up
-mdata <- paperdata %>%
+mdata <- mydata %>%
   filter(paradigm == "active") %>%
   filter(!is.na(lrr)) %>%
   filter(!is.na(var.es)) %>%
