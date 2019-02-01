@@ -146,13 +146,11 @@ Check data and calculate necessary measures.
 data <- read_csv("data/data.csv")
 mydata<- data %>% 
  filter(disturbance == c("agriculture","grazing")) %>% 
- filter(!study.ID %in% c(23,35,76,80,84,85,96,110,219,274,275))
+ filter(!notes %in% "couldnt extract data")
 
-mydata
 
 mydata <- mydata %>%
   mutate(lrr = log(mean.t/mean.c), rii = ((mean.t-mean.c)/(mean.t + mean.c)), var.es = ((sd.t^2/n.t*mean.t^2) + (sd.c^2/n.c*mean.c^2))) #use only lrr now
-
 
 
 ```
@@ -169,10 +167,12 @@ map<-ggplot() + geom_polygon(data=world, fill="gray50", aes(x=long, y=lat, group
   #labs(x = "longitude", y = "latitude") #render a literal map, i.e. evidence map, of where we study the niche in deserts globally
 
 #add in levels and color code points on map####
+#map of 178 articles
 map + geom_point(data=data, aes(x=long, y=lat, color = paradigm)) + 
   scale_color_brewer(palette = "Paired") +
   labs(x = "longitude", y = "latitude", color = "")
 
+#map of selected articles, agriculture and grazing disturbances
 map + geom_point(data=mydata, aes(x=long, y=lat, color = paradigm)) + 
   scale_color_brewer(palette = "Paired") +
   labs(x = "longitude", y = "latitude", color = "")
