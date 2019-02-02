@@ -436,7 +436,9 @@ mdata.all <- mydata %>%
   filter(!is.na(n.t)) %>%
   filter(!is.na(p)) %>%
   filter(!is.na(intervention)) %>%
-  filter(is.finite(lrr))
+  filter(is.finite(lrr)) %>%
+  rename(exp.length = `exp.length (months)`) #%>%
+  #filter(!is.na(exp.length))
 
 #active only data for meta cleaned up
 mdata <- mydata %>%
@@ -446,7 +448,9 @@ mdata <- mydata %>%
   filter(!is.na(n.t)) %>%
   filter(!is.na(p)) %>%
   filter(!is.na(intervention)) %>%
-  filter(is.finite(lrr))
+  filter(is.finite(lrr)) %>%
+  rename(exp.length = `exp.length (months)`) #%>%
+  #filter(!is.na(exp.length))
 
 #aggregated data for metas var estimated with central tendency
 #note - could also bootstrap mean variance here instead of arithematic mean
