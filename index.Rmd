@@ -483,18 +483,28 @@ library(meta)
 #metabias(m)
 #forest(m, sortvar = intervention)
 
+#t-tests if different from 0
+
+tmu <- function(x){t.test(x, mu = 0, paired = FALSE, var.equal=FALSE, conf.level = 0.95)}
+
+mdata.all %>%
+  split(.$paradigm) %>%
+  purrr::map(~tmu(.$lrr)) #note this uses arithmetic means not estimated means from random effect models
+
 #Propose we only use random effect models because of the diversity of studies
 m <- metagen(lrr, var.es, studlab = ID, byvar = paradigm, data = mdata.all)
 summary(m) #active is positive and passive is negative so should not mix
-
+#metabias(m)
 #should do a t-test right now of paradigm is diff from 0
 
 #interventions
 m <- metagen(lrr, var.es, studlab = ID, byvar = intervention, subset = paradigm == "active", data = mdata.all)
 summary(m)
+#metabias(m)
 
 m <- metagen(lrr, var.es, studlab = ID, byvar = intervention, subset = paradigm == "passive", data = mdata.all)
 summary(m)
+#metabias(m)
 
 #use random effects mean and var estimate to plot
 
@@ -503,9 +513,11 @@ summary(m)
 #outcomes
 m <- metagen(lrr, var.es, studlab = ID, byvar = outcome, subset = paradigm == "active", data = mdata.all)
 summary(m)
+#metabias(m)
 
 m <- metagen(lrr, var.es, studlab = ID, byvar = outcome, subset = paradigm == "passive", data = mdata.all)
 summary(m)
+#metabias(m)
 
 #t-tests for outcomes diff from 0 but you can see using the 95% CI what is different
 
@@ -605,3 +617,14 @@ summary(m)
 
 ```
 
+###Interpretations  
+1. Little to no replication of specific techniques.   
+2. Intervention and outcome classification useful and appropriate.  
+3. Active versus passive interesting and fascinating.  
+4. Use only random effect model statistics because of heterogeneity and conceptual focus of data and synthesis.  
+5. Active and passive are not the same - active is net positive and passive is net negative. Amazing finding.
+6. Then subset out each of active passive and run a meta.  Found that both for active and passive, vegetation is a path forward for restoration (list techniques in paper) particularly active.
+7. Adding water does not generate significant effects, soil remediation is powerful active intervention and ignoring passive changes in soil is a dramatic and negative impediment to restoration.  
+8. Habitat is challenging to actively restore but plants, animals, and soils are viable and significant positive outcomes that can be restored.  
+9. Passive restoration confirms that habitat does not generally respond, plants can recover passively, but soil does not.
+10. Additional ideas - test ONE key moderator such as aridity index or length of experiment?
