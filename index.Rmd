@@ -492,17 +492,17 @@ mdata.all %>%
   purrr::map(~tmu(.$lrr)) #note this uses arithmetic means not estimated means from random effect models
 
 #Propose we only use random effect models because of the diversity of studies
-m <- metagen(lrr, var.es, studlab = ID, byvar = paradigm, data = mdata.all)
+m <- metagen(lrr, var.es, studlab = ID, byvar = paradigm, comb.fixed=FALSE, data = mdata.all)
 summary(m) #active is positive and passive is negative so should not mix
 #metabias(m)
 #should do a t-test right now of paradigm is diff from 0
 
 #interventions
-m <- metagen(lrr, var.es, studlab = ID, byvar = intervention, subset = paradigm == "active", data = mdata.all)
+m <- metagen(lrr, var.es, studlab = ID, byvar = intervention, comb.fixed=FALSE, subset = paradigm == "active", data = mdata.all)
 summary(m)
 #metabias(m)
 
-m <- metagen(lrr, var.es, studlab = ID, byvar = intervention, subset = paradigm == "passive", data = mdata.all)
+m <- metagen(lrr, var.es, studlab = ID, byvar = intervention, subset = paradigm == "passive", comb.fixed=FALSE, data = mdata.all)
 summary(m)
 #metabias(m)
 
@@ -511,11 +511,11 @@ summary(m)
 #do t-tests here too
 
 #outcomes
-m <- metagen(lrr, var.es, studlab = ID, byvar = outcome, subset = paradigm == "active", data = mdata.all)
+m <- metagen(lrr, var.es, studlab = ID, byvar = outcome, subset = paradigm == "active", comb.fixed=FALSE, data = mdata.all)
 summary(m)
 #metabias(m)
 
-m <- metagen(lrr, var.es, studlab = ID, byvar = outcome, subset = paradigm == "passive", data = mdata.all)
+m <- metagen(lrr, var.es, studlab = ID, byvar = outcome, subset = paradigm == "passive", comb.fixed=FALSE, data = mdata.all)
 summary(m)
 #metabias(m)
 
