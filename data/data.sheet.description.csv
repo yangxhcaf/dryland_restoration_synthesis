@@ -39,7 +39,7 @@ site description,long,site longitude in decimal degrees
 site description,continent,continent of study sites
 site description,country,country of study sites
 site description,ecosystem,ecosystem of the study site 
-site description,elevation,elevation of the study site 
+site description,elevation,"elevation of the study site, meter"
 site description,MAP,"mean annual precipitation, mm"
 site description,MAT,"mean annual temperature, centigrades"
 site description,aridity.index,"de Martonne index, MAP/(MAT+10)"
