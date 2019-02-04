@@ -4,16 +4,18 @@ article info,ID,article ID and categories
 article info,publication.year,publication year
 article info,data.year,year when data collection started
 article info,exp.year,year when restoration technique or experiment started
-article info,exp.length,"duration of experiment, monitoring"
+article info,exp.length,"duration of experiment, monitoring, in months"
 problem description/technique,disturbance,main/s disturbance factor/s
 problem description/technique,focus,"restoration focus, main goal"
 problem description/technique,technique,restoration technique used
+problem description/technique,intervention,categories of techniques
 problem description/technique,paradigm,"restoration paradigm adopted, either active or passive"
 problem description/technique,hypothesis,article hypothesis
 problem description/technique,pathway,ecological pathway measured
 problem description/technique,plant.species,main plant species measured/included
 problem description/technique,target.plant,target plant for restoration
 problem description/technique,measure.success,measure of success considered by authors
+problem description/technique,outcome,focus measured
 problem description/technique,measured.factors,factors or variables measured
 problem description/technique,factor.levels,different levels of factors measured
 problem description/technique,treatment,different treatments evaluated
@@ -29,17 +31,18 @@ data,sd.t,Standard deviation in treatment group
 data,sd.c,Standard deviation in control group
 data,se.t,Standard error in treatment group
 data,se.c,Standard error in control group
-data,p-value,p value of treatment-control comparison
+data,p,p value of treatment-control comparison
 data,df,degrees of freedom 
-data,measure.dispersion,"measure of dispersion used in each study, standard deviation, std error "
+data,measure.dispersion,"measure of dispersion reported in each study, standard deviation, std error "
 site description,lat,site latitude in decimal degrees
 site description,long,site longitude in decimal degrees
 site description,continent,continent of study sites
 site description,country,country of study sites
 site description,ecosystem,ecosystem of the study site 
 site description,elevation,elevation of the study site 
-site description,MAP (mean anual precipitation),mean anual precipitation of the study site 
-site description,aridity.index,aridity value of the study site 
+site description,MAP,"mean annual precipitation, mm"
+site description,MAT,"mean annual temperature, centigrades"
+site description,aridity.index,"de Martonne index, MAP/(MAT+10)"
 site description,potential.evaporation (mm),potential evaporation value (in mm) of the study sites
 data,grazing,grazing condition of study sites
 data,soil,soil features measured 
