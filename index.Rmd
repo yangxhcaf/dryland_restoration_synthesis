@@ -574,7 +574,7 @@ summary(m)
 
 
 
-```{r}
+```{r, metafor, warning=FALSE, message=FALSE}
 library(metafor)
 
 #metadata<-escalc(measure="ROM",m1i=mean.t,m2i=mean.c,sd1i=sd.t,sd2i=sd.c,n1i=n.t,n2i=n.c, data=mydata,var.names=c("LRR","LRR_var"),digits=4)
@@ -583,10 +583,10 @@ library(metafor)
 mdata.mean<- mdata.all %>% 
   group_by(study.ID, aridity.index, exp.length, paradigm) %>% 
   summarize(mean_lrr= mean(lrr),
-  mean_var.es= mean(var.es))
+  mean_var.es= mean(var.es)) #collapsing data to means
 
 mdata.mean<- mdata.mean %>%
-  filter(!is.infinite(mean_var.es))
+  filter(!is.infinite(mean_var.es)) #filter out outliers that are infinite
 
 mod.1<-rma(mean_lrr,mean_var.es, mods= intervention, subset= paradigm == "active", digits=4,data=mdata.mean)
 
