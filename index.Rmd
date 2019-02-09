@@ -439,8 +439,8 @@ mdata.all <- mydata %>%
   filter(is.finite(lrr)) %>%
   filter(!is.na(exp.length)) %>%
   filter(!is.na(MAP)) %>%
-  filter(!is.na(aridity.index)) %>% 
-  filter(!is.infinite(var.es))
+  filter(!is.na(aridity.index)) #%>% 
+  #filter(!is.infinite(var.es))
 
 #active only data for meta cleaned up
 mdata <- mydata %>%
@@ -497,19 +497,25 @@ mdata.all %>%
   purrr::map(~tmu(.$lrr)) #note this uses arithmetic means not estimated means from random effect models
 
 #Propose we only use random effect models because of the diversity of studies, differences in the methods and samples that may introduce heterogeneity
-m <- metagen(lrr, var.es, studlab = ID, byvar = paradigm, comb.fixed=FALSE, data = mdata.all)
-summary(m) #active is positive and passive is negative so should not mix
+m1 <- metagen(lrr, var.es, studlab = ID, byvar = paradigm, comb.fixed=FALSE, data = mdata.all)
+summary(m1) #active is positive and passive is negative so should not mix
 #metabias(m)
 #should do a t-test right now of paradigm is diff from 0
 
 #interventions
-m <- metagen(lrr, var.es, studlab = ID, byvar = intervention, comb.fixed=FALSE, subset = paradigm == "active", data = mdata.all)
-summary(m)
+m2 <- metagen(lrr, var.es, studlab = ID, byvar = intervention, comb.fixed=FALSE, subset = paradigm == "active", data = mdata.all)
+summary(m2)
 #metabias(m)
-metareg(m, ~ exp.length)
+#metareg(m2, exp.length)
 
-m <- metagen(lrr, var.es, studlab = ID, byvar = intervention, subset = paradigm == "passive", comb.fixed=FALSE, data = mdata.all)
-summary(m)
+
+#table(mydata$exp.length)
+#mean(mydata$exp.length)
+#explength.c <- with(mydata, exp.length - mean(exp.length))
+#m2.c <- metareg(m2, explength.c)
+
+m3 <- metagen(lrr, var.es, studlab = ID, byvar = intervention, subset = paradigm == "passive", comb.fixed=FALSE, data = mdata.all)
+summary(m3)
 #metabias(m)
 
 #metareg(~ aridity.index, m) error
@@ -581,7 +587,7 @@ library(metafor)
 
 
 mdata.mean<- mdata.all %>% 
-  group_by(study.ID, aridity.index, exp.length, paradigm) %>% 
+  group_by(study.ID, aridity.index, exp.length, paradigm, intervention, outcome) %>% 
   summarize(mean_lrr= mean(lrr),
   mean_var.es= mean(var.es)) #collapsing data to means
 
@@ -590,13 +596,13 @@ mdata.mean<- mdata.mean %>%
 
 mod.1<-rma(mean_lrr,mean_var.es, mods= intervention, subset= paradigm == "active", digits=4,data=mdata.mean)
 
-m2<-rma.mv(yi=lrr, V=var.es, mods= ~ aridity.index, random = ~ 1 | ID, data=mdata.all, sparse=TRUE)
+mod.2<-rma.mv(yi=lrr, V=var.es, mods= ~ aridity.index, random = ~ 1 | ID, data=mdata.all, sparse=TRUE)
 
-m1 <- rma(yi=lrr, vi=var.es, data = mdata.all)
+mod.3 <- rma(yi=lrr, vi=var.es, data = mdata.all)
 summary(m1)
 
 
-m1 <- rma(lrr, var.es, mods= cbind (aridity.index, exp.length), data = mdata.all, subset = paradigm == "active")
+mod.4 <- rma(lrr, var.es, mods= cbind (aridity.index, exp.length), data = mdata.all, subset = paradigm == "active")
 summary(m1)
 
 
