@@ -153,6 +153,10 @@ filter(!notes %in% "couldnt extract data")
 mydata <- mydata %>%
   mutate(lrr = log(mean.t/mean.c), rii = ((mean.t-mean.c)/(mean.t + mean.c)), var.es = ((sd.t^2/n.t*mean.t^2) + (sd.c^2/n.c*mean.c^2))) #use only lrr now
 
+mydata<- mydata %>% 
+  mutate(aridity.range = cut(aridity.index, breaks=c(0,5,10,20,25,69.92), labels=c("hyperarid","arid", "semiarid", "moderately arid", "slightly humid"))) #categorization of aridity.index values, according to de Martone
+                     
+
 ```
 
 ###Step 4. Summarize  
@@ -248,6 +252,12 @@ technique.data2 <- technique.data %>%
 technique.data3 <- technique.data2 %>% 
   group_by(technique) %>% 
   count()
+
+aridity<- mydata %>% 
+  group_by(continent) %>% summarize(mean.aridity=mean(aridity.index))
+aridity  
+
+table(mydata$aridity.index)
 
 
 ggplot(na.omit(data.simple), aes(technique, n, fill = paradigm)) + 
@@ -501,12 +511,14 @@ m1 <- metagen(lrr, var.es, studlab = ID, byvar = paradigm, comb.fixed=FALSE, dat
 summary(m1) #active is positive and passive is negative so should not mix
 #metabias(m)
 #should do a t-test right now of paradigm is diff from 0
+#metareg(m1,aridity.range)
+
 
 #interventions
 m2 <- metagen(lrr, var.es, studlab = ID, byvar = intervention, comb.fixed=FALSE, subset = paradigm == "active", data = mdata.all)
 summary(m2)
 #metabias(m)
-#metareg(m2, exp.length)
+#metareg(m2, aridity.index)
 
 
 #table(mydata$exp.length)
@@ -519,6 +531,18 @@ summary(m3)
 #metabias(m)
 
 #metareg(~ aridity.index, m) error
+
+#continents and aridity index ranges
+m4 <- metagen(lrr, var.es, studlab = ID, byvar = continent, subset = paradigm == "active", comb.fixed=FALSE, data = mdata.all)
+summary(m4)
+
+m5 <- metagen(lrr, var.es, studlab = ID, byvar = continent, subset = paradigm == "passive", comb.fixed=FALSE, data = mdata.all)
+summary(m5)
+
+m6 <- metagen(lrr, var.es, studlab = ID, byvar = aridity.range, comb.fixed=FALSE, data = mdata.all)
+summary(m6)
+
+
 
 #use random effects mean and var estimate to plot
 
@@ -599,13 +623,15 @@ mod.1<-rma(mean_lrr,mean_var.es, mods= intervention, subset= paradigm == "active
 mod.2<-rma.mv(yi=lrr, V=var.es, mods= ~ aridity.index, random = ~ 1 | ID, data=mdata.all, sparse=TRUE)
 
 mod.3 <- rma(yi=lrr, vi=var.es, data = mdata.all)
-summary(m1)
+summary(m3)
 
 
 mod.4 <- rma(lrr, var.es, mods= cbind (aridity.index, exp.length), data = mdata.all, subset = paradigm == "active")
-summary(m1)
+summary(m4)
 
 
+mod.5 <- rma(lrr, var.es, mods= aridity.range, data = mdata.all, subset = paradigm == "active")
+summary(m5)
 ```
 
 ```{r, metaplot, warning=FALSE, message=FALSE,fig.width=10, fig.height=14}
