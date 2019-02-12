@@ -148,7 +148,7 @@ mydata<- data %>%
  filter(disturbance %in% c("agriculture","grazing")) %>% 
 filter(!notes %in% "couldnt extract data")
 
-#write.csv(mydata, file="mydata.csv")
+write.csv(mydata, file="mydata.csv")
 
 mydata <- mydata %>%
   mutate(lrr = log(mean.t/mean.c), rii = ((mean.t-mean.c)/(mean.t + mean.c)), var.es = ((sd.t^2/n.t*mean.t^2) + (sd.c^2/n.c*mean.c^2))) #use only lrr now
@@ -618,9 +618,9 @@ mdata.mean<- mdata.all %>%
 mdata.mean<- mdata.mean %>%
   filter(!is.infinite(mean_var.es)) #filter out outliers that are infinite
 
-mod.1<-rma(mean_lrr,mean_var.es, mods= intervention, subset= paradigm == "active", digits=4,data=mdata.mean)
+mod.1<-rma(lrr,var.es, mods= ~ intervention, subset= paradigm == "active", digits=4,data=mdata.all)
 
-mod.2<-rma.mv(yi=lrr, V=var.es, mods= ~ aridity.index, random = ~ 1 | ID, data=mdata.all, sparse=TRUE)
+mod.2<-rma.mv(yi=lrr, V=var.es, mods= ~ aridity.index, method = "REML",  test="t", random = ~ 1 | ID, data=mdata.all, sparse=TRUE)
 
 mod.3 <- rma(yi=lrr, vi=var.es, data = mdata.all)
 summary(m3)
@@ -630,7 +630,7 @@ mod.4 <- rma(lrr, var.es, mods= cbind (aridity.index, exp.length), data = mdata.
 summary(m4)
 
 
-mod.5 <- rma(lrr, var.es, mods= aridity.range, data = mdata.all, subset = paradigm == "active")
+mod.5 <- rma(lrr, var.es, mods=  ~unit, data = mdata.all, subset = paradigm == "active")
 summary(m5)
 ```
 
