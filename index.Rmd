@@ -609,6 +609,16 @@ library(metafor)
 
 #metadata<-escalc(measure="ROM",m1i=mean.t,m2i=mean.c,sd1i=sd.t,sd2i=sd.c,n1i=n.t,n2i=n.c, data=mydata,var.names=c("LRR","LRR_var"),digits=4)
 
+mdata.veg <- mydata %>%
+  filter(paradigm == "active") %>%
+  filter(intervention=="vegetation") %>% #filtering by intervention
+  filter(!is.na(lrr)) %>%
+  filter(!is.na(var.es)) %>%
+  filter(!is.na(n.t)) %>%
+  filter(!is.na(p)) %>%
+  filter(!is.na(intervention)) %>%
+  filter(is.finite(lrr)) %>%
+  filter(!is.na(exp.length))
 
 mdata.mean<- mdata.all %>% 
   group_by(study.ID, aridity.index, exp.length, paradigm, intervention, outcome) %>% 
@@ -619,12 +629,14 @@ mdata.mean<- mdata.mean %>%
   filter(!is.infinite(mean_var.es)) #filter out outliers that are infinite
 
 
-#res1 <- rma(lrr, var.es, data=mdata.all, subset=intervention=="vegetation") error
+#res1 <- rma(lrr, var.es, mods= aridity.index, data=mdata.all, subset=intervention=="vegetation") 
 #res2 <- rma(lrr, var.es, data=mdata.all, subset=intervention=="soil") error
 
 mod.1<-rma(lrr,var.es, mods= ~ aridity.index, subset= paradigm == "active", digits=4,data=mdata.for)
 
-mod.2<-rma.mv(yi=lrr, V=var.es, mods= ~ aridity.index, method = "REML",  test="t", random = ~ 1 | ID, data=mdata.all, sparse=TRUE)
+mod<-rma(lrr,var.es, mods= aridity.index, digits=4,data=mdata.veg)
+
+mod.2<-rma.mv(yi=lrr, V=var.es, mods= aridity.index, method = "REML",  test="t", random = ~ 1 | ID, data=mdata.all, sparse=TRUE)
 
 mod.3 <- rma(yi=lrr, vi=var.es, data = mdata.all)
 summary(m3)
@@ -634,7 +646,7 @@ mod.4 <- rma(lrr, var.es, mods= cbind (aridity.index, exp.length), data = mdata.
 summary(m4)
 
 
-mod.5 <- rma(lrr, var.es, mods=  ~unit, data = mdata.all, subset = paradigm == "active")
+mod.5 <- rma(lrr, var.es, mods=  ~intervention, data = mdata.all, subset = paradigm == "active")
 summary(m5)
 ```
 
