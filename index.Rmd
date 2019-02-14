@@ -619,6 +619,8 @@ mdata.mean<- mdata.mean %>%
   filter(!is.infinite(mean_var.es)) #filter out outliers that are infinite
 
 
+#res1 <- rma(lrr, var.es, data=mdata.all, subset=intervention=="vegetation") error
+#res2 <- rma(lrr, var.es, data=mdata.all, subset=intervention=="soil") error
 
 mod.1<-rma(lrr,var.es, mods= ~ aridity.index, subset= paradigm == "active", digits=4,data=mdata.for)
 
