@@ -452,6 +452,32 @@ mdata.all <- mydata %>%
   filter(!is.na(aridity.index)) #%>% 
   #filter(!is.infinite(var.es))
 
+
+summary(mdata.all$var.es)
+plot(density(mdata.all$var.es))
+top_n(mdata.all, -10, var.es)
+top_n(mdata.all, 5, var.es)
+
+library(metafor)
+
+metadata<-escalc(measure="ROM",m1i=mean.t,m2i=mean.c,sd1i=sd.t,sd2i=sd.c,n1i=n.t,n2i=n.c, data=mydata,var.names=c("LRR","LRR_var"),digits=4)
+
+metadata <- metadata %>%
+  filter(!is.na(LRR)) %>%
+  filter(!is.na(LRR_var)) %>%
+  filter(!is.na(n.t)) %>%
+  filter(!is.na(p)) %>%
+  filter(!is.na(intervention)) %>%
+  filter(is.finite(lrr)) %>%
+  filter(!is.na(exp.length)) %>% 
+  filter(!is.na(aridity.index))
+
+summary(metadata$LRR_var)
+plot(density(metadata$var.es))
+top_n(metadata, -10, LRR_var)
+top_n(metadata, 5, LRR_var)
+
+
 #active only data for meta cleaned up
 mdata <- mydata %>%
   filter(paradigm == "active") %>%
@@ -507,7 +533,7 @@ mdata.all %>%
   purrr::map(~tmu(.$lrr)) #note this uses arithmetic means not estimated means from random effect models
 
 #Propose we only use random effect models because of the diversity of studies, differences in the methods and samples that may introduce heterogeneity
-m1 <- metagen(lrr, var.es, studlab = ID, byvar = paradigm, comb.fixed=FALSE, data = mdata.all)
+m1 <- metagen(LRR, LRR_var, studlab = ID, byvar = paradigm, comb.fixed=FALSE, data = metadata)
 summary(m1) #active is positive and passive is negative so should not mix
 #metabias(m)
 #should do a t-test right now of paradigm is diff from 0
@@ -515,11 +541,15 @@ summary(m1) #active is positive and passive is negative so should not mix
 
 
 #interventions
-m2 <- metagen(lrr, var.es, studlab = ID, byvar = intervention, comb.fixed=FALSE, subset = paradigm == "active", data = mdata.all)
+m2 <- metagen(LRR, LRR_var, studlab = ID, byvar = intervention, comb.fixed=FALSE, subset = paradigm == "active", data = metadata)
 summary(m2)
 #metabias(m)
-#metareg(m2, ~ aridity.index, data=mdata.all)
 
+#Meta regression for aridity index (de Martonne 1927) and length of experiments (in months)
+metareg(m2, ~ aridity.index)
+metareg(m2, ~ exp.length )
+
+max(mdata.all$var.es)/min(mdata.all$var.es)
 
 #table(mydata$exp.length)
 #mean(mydata$exp.length)
@@ -541,7 +571,6 @@ summary(m5)
 
 m6 <- metagen(lrr, var.es, studlab = ID, byvar = aridity.range, comb.fixed=FALSE, data = mdata.all)
 summary(m6)
-
 
 
 #use random effects mean and var estimate to plot
@@ -600,6 +629,9 @@ summary(m)
 #metabias(m2)
 #forest(m, sortvar = intervention)
 
+table(mdata.all$var.es)
+
+#write.csv(mdata.all, file="mdata.all.csv")
 ```
 
 
@@ -607,32 +639,51 @@ summary(m)
 ```{r, metafor, warning=FALSE, message=FALSE}
 library(metafor)
 
-#metadata<-escalc(measure="ROM",m1i=mean.t,m2i=mean.c,sd1i=sd.t,sd2i=sd.c,n1i=n.t,n2i=n.c, data=mydata,var.names=c("LRR","LRR_var"),digits=4)
+metadata<-escalc(measure="ROM",m1i=mean.t,m2i=mean.c,sd1i=sd.t,sd2i=sd.c,n1i=n.t,n2i=n.c, data=mydata,var.names=c("LRR","LRR_var"),digits=4)
 
-mdata.veg <- mydata %>%
-  filter(paradigm == "active") %>%
-  filter(intervention=="vegetation") %>% #filtering by intervention
-  filter(!is.na(lrr)) %>%
-  filter(!is.na(var.es)) %>%
+metadata <- metadata %>%
+  filter(!is.na(LRR)) %>%
+  filter(!is.na(LRR_var)) %>%
   filter(!is.na(n.t)) %>%
   filter(!is.na(p)) %>%
   filter(!is.na(intervention)) %>%
   filter(is.finite(lrr)) %>%
-  filter(!is.na(exp.length))
+  filter(!is.na(exp.length)) %>% 
+  filter(!is.na(aridity.index))
 
-mdata.mean<- mdata.all %>% 
-  group_by(study.ID, aridity.index, exp.length, paradigm, intervention, outcome) %>% 
-  summarize(mean_lrr= mean(lrr),
-  mean_var.es= mean(var.es)) #collapsing data to means
+summary(metadata$LRR_var)
+plot(density(metadata$var.es))
+top_n(metadata, -10, LRR_var)
+top_n(metadata, 5, LRR_var)
 
-mdata.mean<- mdata.mean %>%
-  filter(!is.infinite(mean_var.es)) #filter out outliers that are infinite
+
+#write.csv(metadata, "metadata.csv")
+
+#mdata.veg <- mydata %>%
+ # filter(paradigm == "active") %>%
+  #filter(intervention=="vegetation") %>% #filtering by intervention
+  #filter(!is.na(lrr)) %>%
+  #filter(!is.na(var.es)) %>%
+#  filter(!is.na(n.t)) %>%
+#  filter(!is.na(p)) %>%
+#  filter(!is.na(intervention)) %>%
+#  filter(is.finite(lrr)) %>%
+#  filter(!is.na(exp.length))
+
+#mdata.mean<- mdata.all %>% 
+#  group_by(study.ID, aridity.index, exp.length, paradigm, intervention, outcome) %>% 
+#  summarize(mean_lrr= mean(lrr),
+#  mean_var.es= mean(var.es)) #collapsing data to means
+
+#mdata.mean<- mdata.mean %>%
+#  filter(!is.infinite(mean_var.es)) #filter out outliers that are infinite
 
 
 #res1 <- rma(lrr, var.es, mods= aridity.index, data=mdata.all, subset=intervention=="vegetation") 
 #res2 <- rma(lrr, var.es, data=mdata.all, subset=intervention=="soil") error
 
-mod.1<-rma(lrr,var.es, mods= ~ aridity.index, subset= paradigm == "active", digits=4,data=mdata.for)
+mod.1<-rma(LRR,LRR_var, mods= ~ aridity.index, subset= paradigm == "active", digits=4,data=metadata)
+mod.1
 
 mod<-rma(lrr,var.es, mods= aridity.index, digits=4,data=mdata.veg)
 
