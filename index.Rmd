@@ -148,7 +148,7 @@ mydata<- data %>%
  filter(disturbance %in% c("agriculture","grazing")) %>% 
 filter(!notes %in% "couldnt extract data")
 
-write.csv(mydata, file="mydata.csv")
+#write.csv(mydata, file="mydata.csv")
 
 mydata <- mydata %>%
   mutate(lrr = log(mean.t/mean.c), rii = ((mean.t-mean.c)/(mean.t + mean.c)), var.es = ((sd.t^2/(n.t*mean.t^2)) + (sd.c^2/(n.c*mean.c^2)))) #use only lrr now
@@ -460,22 +460,22 @@ top_n(mdata.all, 5, var.es)
 
 library(metafor)
 
-metadata<-escalc(measure="ROM",m1i=mean.t,m2i=mean.c,sd1i=sd.t,sd2i=sd.c,n1i=n.t,n2i=n.c, data=mydata,var.names=c("LRR","LRR_var"),digits=4)
+#metadata<-escalc(measure="ROM",m1i=mean.t,m2i=mean.c,sd1i=sd.t,sd2i=sd.c,n1i=n.t,n2i=n.c, #data=mydata,var.names=c("LRR","LRR_var"),digits=4)
 
-metadata <- metadata %>%
-  filter(!is.na(LRR)) %>%
-  filter(!is.na(LRR_var)) %>%
-  filter(!is.na(n.t)) %>%
-  filter(!is.na(p)) %>%
-  filter(!is.na(intervention)) %>%
-  filter(is.finite(lrr)) %>%
-  filter(!is.na(exp.length)) %>% 
-  filter(!is.na(aridity.index))
+#metadata <- metadata %>%
+#  filter(!is.na(LRR)) %>%
+#  filter(!is.na(LRR_var)) %>%
+#  filter(!is.na(n.t)) %>%
+#  filter(!is.na(p)) %>%
+#  filter(!is.na(intervention)) %>%
+#  filter(is.finite(lrr)) %>%
+#  filter(!is.na(exp.length)) %>% 
+#  filter(!is.na(aridity.index))
 
-summary(metadata$LRR_var)
-plot(density(metadata$var.es))
-top_n(metadata, -10, LRR_var)
-top_n(metadata, 5, LRR_var)
+#summary(metadata$LRR_var)
+#plot(density(metadata$var.es))
+#top_n(metadata, -10, LRR_var)
+#top_n(metadata, 5, LRR_var)
 
 max(mdata.all$var.es)/min(mdata.all$var.es)
 
@@ -538,7 +538,7 @@ m1 <- metagen(lrr, var.es, studlab = ID, byvar = paradigm, comb.fixed=FALSE, dat
 summary(m1) #active is positive and passive is negative so should not mix
 #metabias(m)
 #should do a t-test right now of paradigm is diff from 0
-#metareg(m1,aridity.range)
+metareg(m1,aridity.index)
 
 
 #interventions
@@ -546,32 +546,23 @@ m2 <- metagen(lrr, var.es, studlab = ID, byvar = intervention, comb.fixed=FALSE,
 summary(m2)
 #metabias(m)
 
-#Meta regression for aridity index (de Martonne 1927) and length of experiments (in months)
-#metareg(m2, ~ aridity.index)
-#metareg(m2, ~ exp.length )
+# Meta regression for aridity index (de Martonne 1927) and length of experiments (in months)
+metareg(m2, ~ aridity.index)
+metareg(m2, ~ exp.length )
 
-#max(mdata.all$var.es)/min(mdata.all$var.es)
 
-#table(mydata$exp.length)
-#mean(mydata$exp.length)
-#explength.c <- with(mydata, exp.length - mean(exp.length))
-#m2.c <- metareg(m2, explength.c)
 
 m3 <- metagen(lrr, var.es, studlab = ID, byvar = intervention, subset = paradigm == "passive", comb.fixed=FALSE, data = mdata.all)
 summary(m3)
 #metabias(m)
 
-#metareg(~ aridity.index, m) error
 
-#continents and aridity index ranges
+#trying models by continents
 m4 <- metagen(lrr, var.es, studlab = ID, byvar = continent, subset = paradigm == "active", comb.fixed=FALSE, data = mdata.all)
 summary(m4)
 
 m5 <- metagen(lrr, var.es, studlab = ID, byvar = continent, subset = paradigm == "passive", comb.fixed=FALSE, data = mdata.all)
 summary(m5)
-
-m6 <- metagen(lrr, var.es, studlab = ID, byvar = aridity.range, comb.fixed=FALSE, data = mdata.all)
-summary(m6)
 
 
 #use random effects mean and var estimate to plot
@@ -630,9 +621,6 @@ summary(m)
 #metabias(m2)
 #forest(m, sortvar = intervention)
 
-table(mdata.all$var.es)
-
-#write.csv(mdata.all, file="mdata.all.csv")
 ```
 
 
@@ -640,22 +628,28 @@ table(mdata.all$var.es)
 ```{r, metafor, warning=FALSE, message=FALSE}
 library(metafor)
 
-metadata<-escalc(measure="ROM",m1i=mean.t,m2i=mean.c,sd1i=sd.t,sd2i=sd.c,n1i=n.t,n2i=n.c, data=mydata,var.names=c("LRR","LRR_var"),digits=4)
 
-metadata <- metadata %>%
-  filter(!is.na(LRR)) %>%
-  filter(!is.na(LRR_var)) %>%
-  filter(!is.na(n.t)) %>%
-  filter(!is.na(p)) %>%
-  filter(!is.na(intervention)) %>%
-  filter(is.finite(lrr)) %>%
-  filter(!is.na(exp.length)) %>% 
-  filter(!is.na(aridity.index))
+# I´ve installed the 'devel' version of metafor (https://wviechtb.github.io/metafor/#installation)
 
-summary(metadata$LRR_var)
-plot(density(metadata$var.es))
-top_n(metadata, -10, LRR_var)
-top_n(metadata, 5, LRR_var)
+#checking and comparing Lrr and sampling variances values obtained with escalc() function and by functions manually defined (lines 153-155)
+
+#metadata<-escalc(measure="ROM",m1i=mean.t,m2i=mean.c,sd1i=sd.t,sd2i=sd.c,n1i=n.t,n2i=n.c, #data=mydata,var.names=c("LRR","LRR_var"),digits=4)
+
+
+#metadata <- metadata %>%
+#  filter(!is.na(LRR)) %>%
+#  filter(!is.na(LRR_var)) %>%
+#  filter(!is.na(n.t)) %>%
+#  filter(!is.na(p)) %>%
+#  filter(!is.na(intervention)) %>%
+#  filter(is.finite(lrr)) %>%
+#  filter(!is.na(exp.length)) %>% 
+#  filter(!is.na(aridity.index))
+
+#summary(metadata$LRR_var)
+#plot(density(metadata$var.es))
+#top_n(metadata, -10, LRR_var)
+#top_n(metadata, 5, LRR_var)
 
 
 #write.csv(metadata, "metadata.csv")
@@ -683,10 +677,9 @@ top_n(metadata, 5, LRR_var)
 #res1 <- rma(lrr, var.es, mods= aridity.index, data=mdata.all, subset=intervention=="vegetation") 
 #res2 <- rma(lrr, var.es, data=mdata.all, subset=intervention=="soil") error
 
-mod.1<-rma(LRR,LRR_var, mods= ~ aridity.index, subset= paradigm == "active", digits=4,data=metadata)
+mod.1<-rma(lrr,var.es, mods= ~ aridity.index, subset= paradigm == "active", digits=4,data=mydata.all)
 mod.1
 
-mod<-rma(lrr,var.es, mods= aridity.index, digits=4,data=mdata.veg)
 
 mod.2<-rma.mv(yi=lrr, V=var.es, mods= aridity.index, method = "REML",  test="t", random = ~ 1 | ID, data=mdata.all, sparse=TRUE)
 
