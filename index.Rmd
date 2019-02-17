@@ -547,10 +547,10 @@ summary(m2)
 #metabias(m)
 
 #Meta regression for aridity index (de Martonne 1927) and length of experiments (in months)
-metareg(m2, ~ aridity.index)
-metareg(m2, ~ exp.length )
+#metareg(m2, ~ aridity.index)
+#metareg(m2, ~ exp.length )
 
-max(mdata.all$var.es)/min(mdata.all$var.es)
+#max(mdata.all$var.es)/min(mdata.all$var.es)
 
 #table(mydata$exp.length)
 #mean(mydata$exp.length)
