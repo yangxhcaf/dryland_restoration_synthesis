@@ -547,9 +547,7 @@ summary(m2)
 #metabias(m)
 
 # Meta regression for aridity index (de Martonne 1927) and length of experiments (in months)
-metareg(m2, ~ aridity.index)
-metareg(m2, ~ exp.length )
-
+metareg(m2, ~ aridity.index + exp.length)
 
 
 m3 <- metagen(lrr, var.es, studlab = ID, byvar = intervention, subset = paradigm == "passive", comb.fixed=FALSE, data = mdata.all)
@@ -681,18 +679,19 @@ mod.1<-rma(lrr,var.es, mods= ~ aridity.index, subset= paradigm == "active", digi
 mod.1
 
 
-mod.2<-rma.mv(yi=lrr, V=var.es, mods= aridity.index, method = "REML",  test="t", random = ~ 1 | ID, data=mdata.all, sparse=TRUE)
+mod.2<-rma.mv(yi=lrr, V=var.es, mods= ~intervention+aridity.index+exp.length, method = "REML",  test="t", random = ~ 1 | ID, data=mdata.all, sparse=TRUE)
+summary(mod.2)
 
 mod.3 <- rma(yi=lrr, vi=var.es, data = mdata.all)
-summary(m3)
+summary(mod.3)
 
 
 mod.4 <- rma(lrr, var.es, mods= cbind (aridity.index, exp.length), data = mdata.all, subset = paradigm == "active")
-summary(m4)
+summary(mod.4)
 
 
-mod.5 <- rma(lrr, var.es, mods=  ~intervention, data = mdata.all, subset = paradigm == "active")
-summary(m5)
+mod.5 <- rma(lrr, var.es, mods=  ~intervention+aridity.index+exp.length, data = mdata.all, subset = paradigm == "active")
+summary(mod.5)
 ```
 
 ```{r, metaplot, warning=FALSE, message=FALSE,fig.width=10, fig.height=14}
