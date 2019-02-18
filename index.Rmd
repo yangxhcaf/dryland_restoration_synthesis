@@ -449,35 +449,18 @@ mdata.all <- mydata %>%
   filter(is.finite(lrr)) %>%
   filter(!is.na(exp.length)) %>%
   filter(!is.na(MAP)) %>%
-  filter(!is.na(aridity.index)) #%>% 
-  #filter(!is.infinite(var.es))
-
+  filter(!is.na(aridity.index))
+ 
+#after filtering NAs we apply models to 40 articles
 
 summary(mdata.all$var.es)
-plot(density(mdata.all$var.es))
+#plot(density(mdata.all$var.es))
 top_n(mdata.all, -10, var.es)
 top_n(mdata.all, 5, var.es)
-
-library(metafor)
-
-#metadata<-escalc(measure="ROM",m1i=mean.t,m2i=mean.c,sd1i=sd.t,sd2i=sd.c,n1i=n.t,n2i=n.c, #data=mydata,var.names=c("LRR","LRR_var"),digits=4)
-
-#metadata <- metadata %>%
-#  filter(!is.na(LRR)) %>%
-#  filter(!is.na(LRR_var)) %>%
-#  filter(!is.na(n.t)) %>%
-#  filter(!is.na(p)) %>%
-#  filter(!is.na(intervention)) %>%
-#  filter(is.finite(lrr)) %>%
-#  filter(!is.na(exp.length)) %>% 
-#  filter(!is.na(aridity.index))
-
-#summary(metadata$LRR_var)
-#plot(density(metadata$var.es))
-#top_n(metadata, -10, LRR_var)
-#top_n(metadata, 5, LRR_var)
-
 max(mdata.all$var.es)/min(mdata.all$var.es)
+
+table(mdata.all$study.ID)
+
 
 #active only data for meta cleaned up
 mdata <- mydata %>%
@@ -536,31 +519,31 @@ mdata.all %>%
 #Propose we only use random effect models because of the diversity of studies, differences in the methods and samples that may introduce heterogeneity
 m1 <- metagen(lrr, var.es, studlab = ID, byvar = paradigm, comb.fixed=FALSE, data = mdata.all)
 summary(m1) #active is positive and passive is negative so should not mix
-#metabias(m)
+mb1<- metabias(m1)
+mb1
 #should do a t-test right now of paradigm is diff from 0
-metareg(m1,aridity.index)
+metareg(m1,aridity.index+exp.length)
 
 
 #interventions
 m2 <- metagen(lrr, var.es, studlab = ID, byvar = intervention, comb.fixed=FALSE, subset = paradigm == "active", data = mdata.all)
 summary(m2)
 #metabias(m)
-
-# Meta regression for aridity index (de Martonne 1927) and length of experiments (in months)
 metareg(m2, ~ aridity.index + exp.length)
 
 
 m3 <- metagen(lrr, var.es, studlab = ID, byvar = intervention, subset = paradigm == "passive", comb.fixed=FALSE, data = mdata.all)
 summary(m3)
 #metabias(m)
+metareg(m3, ~ aridity.index + exp.length)
 
 
 #trying models by continents
-m4 <- metagen(lrr, var.es, studlab = ID, byvar = continent, subset = paradigm == "active", comb.fixed=FALSE, data = mdata.all)
-summary(m4)
+#m4 <- metagen(lrr, var.es, studlab = ID, byvar = continent, subset = paradigm == "active", comb.fixed=FALSE, data = #mdata.all)
+#summary(m4)
 
-m5 <- metagen(lrr, var.es, studlab = ID, byvar = continent, subset = paradigm == "passive", comb.fixed=FALSE, data = mdata.all)
-summary(m5)
+#m5 <- metagen(lrr, var.es, studlab = ID, byvar = continent, subset = paradigm == "passive", comb.fixed=FALSE, data = #mdata.all)
+#summary(m5)
 
 
 #use random effects mean and var estimate to plot
@@ -568,13 +551,15 @@ summary(m5)
 #do t-tests here too
 
 #outcomes
-m <- metagen(lrr, var.es, studlab = ID, byvar = outcome, subset = paradigm == "active", comb.fixed=FALSE, data = mdata.all)
-summary(m)
+m6 <- metagen(lrr, var.es, studlab = ID, byvar = outcome, subset = paradigm == "active", comb.fixed=FALSE, data = mdata.all)
+summary(m6)
 #metabias(m)
+metareg(m6, ~ aridity.index + exp.length)
 
-m <- metagen(lrr, var.es, studlab = ID, byvar = outcome, subset = paradigm == "passive", comb.fixed=FALSE, data = mdata.all)
-summary(m)
+m7 <- metagen(lrr, var.es, studlab = ID, byvar = outcome, subset = paradigm == "passive", comb.fixed=FALSE, data = mdata.all)
+summary(m7)
 #metabias(m)
+metareg(m7, ~ aridity.index + exp.length)
 
 #t-tests for outcomes diff from 0 but you can see using the 95% CI what is different
 
@@ -626,6 +611,7 @@ summary(m)
 ```{r, metafor, warning=FALSE, message=FALSE}
 library(metafor)
 
+#With metafor it is possible to fit metaregression models (e.g., Berkey et al. 1995; van Houwelingen et al. 2002), that #is, linear models that examine the infuence of one or more moderator variables on the outcomes (Viechtbauer, 2010). 
 
 # I´ve installed the 'devel' version of metafor (https://wviechtb.github.io/metafor/#installation)
 
@@ -649,7 +635,6 @@ library(metafor)
 #top_n(metadata, -10, LRR_var)
 #top_n(metadata, 5, LRR_var)
 
-
 #write.csv(metadata, "metadata.csv")
 
 #mdata.veg <- mydata %>%
@@ -672,26 +657,35 @@ library(metafor)
 #  filter(!is.infinite(mean_var.es)) #filter out outliers that are infinite
 
 
-#res1 <- rma(lrr, var.es, mods= aridity.index, data=mdata.all, subset=intervention=="vegetation") 
-#res2 <- rma(lrr, var.es, data=mdata.all, subset=intervention=="soil") error
+mod.1 <- rma(yi=lrr, vi=var.es, data = mdata.all)
+summary(mod.1)
+exp(0.0899) #estimate
 
-mod.1<-rma(lrr,var.es, mods= ~ aridity.index, subset= paradigm == "active", digits=4,data=mdata.all)
-mod.1
-
-
-mod.2<-rma.mv(yi=lrr, V=var.es, mods= ~intervention+aridity.index+exp.length, method = "REML",  test="t", random = ~ 1 | ID, data=mdata.all, sparse=TRUE)
+mod.2 <- rma(lrr, var.es, mods=  ~paradigm+aridity.index+exp.length -1, data = mdata.all)
 summary(mod.2)
 
-mod.3 <- rma(yi=lrr, vi=var.es, data = mdata.all)
+#Evaluating the influence of moderators on the heterogeneity
+
+#interventions
+mod.3 <- rma(lrr, var.es, slab= ID, mods=  ~intervention+aridity.index+exp.length -1, data = mdata.all, subset = paradigm == "active")
 summary(mod.3)
 
+mod.4 <- rma(lrr, var.es, slab= ID, mods=  ~intervention+aridity.index+exp.length -1, data = mdata.all, subset = paradigm == "passive")
+summary(mod.4) #aridity.index and exp.length non significants
 
-mod.4 <- rma(lrr, var.es, mods= cbind (aridity.index, exp.length), data = mdata.all, subset = paradigm == "active")
-summary(mod.4)
+mod.4b <- rma(lrr, var.es, slab= ID, mods=  ~intervention -1, data = mdata.all, subset = paradigm == "passive")
+summary(mod.4b)
 
-
-mod.5 <- rma(lrr, var.es, mods=  ~intervention+aridity.index+exp.length, data = mdata.all, subset = paradigm == "active")
+#outcomes
+mod.5 <- rma(lrr, var.es, slab= ID, mods=  ~outcome+aridity.index+exp.length -1, data = mdata.all, subset = paradigm == "active")
 summary(mod.5)
+
+mod.6 <- rma(lrr, var.es, slab= ID, mods=  ~outcome+aridity.index+exp.length -1, data = mdata.all, subset = paradigm == "passive")
+summary(mod.6) #aridity.index non significant
+
+mod.6b <- rma(lrr, var.es, slab= ID, mods=  ~outcome+exp.length -1, data = mdata.all, subset = paradigm == "passive")
+summary(mod.6b)
+
 ```
 
 ```{r, metaplot, warning=FALSE, message=FALSE,fig.width=10, fig.height=14}
