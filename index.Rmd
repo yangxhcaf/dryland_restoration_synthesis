@@ -669,6 +669,7 @@ summary(mod.2)
 #interventions
 mod.3 <- rma(lrr, var.es, slab= ID, mods=  ~intervention+aridity.index+exp.length -1, data = mdata.all, subset = paradigm == "active")
 summary(mod.3)
+#forest(mod.3)
 
 mod.4 <- rma(lrr, var.es, slab= ID, mods=  ~intervention+aridity.index+exp.length -1, data = mdata.all, subset = paradigm == "passive")
 summary(mod.4) #aridity.index and exp.length non significants
@@ -748,7 +749,7 @@ summary(mod.6b)
 4. Use only random effect model statistics because of heterogeneity and conceptual focus of data and synthesis.  
 5. Active and passive are not the same - active is net positive and passive is net negative. Amazing finding.
 6. Then subset out each of active passive and run a meta.  Found that both for active and passive, vegetation is a path forward for restoration (list techniques in paper) particularly active.
-7. Adding water does not generate significant effects, soil remediation is powerful active intervention and ignoring passive changes in soil is a dramatic and negative impediment to restoration.  
-8. Habitat is challenging to actively restore but plants, animals, and soils are viable and significant positive outcomes that can be restored.  
-9. Passive restoration confirms that habitat does not generally respond, plants can recover passively, but soil does not.
-10. Additional ideas - test ONE key moderator such as aridity index or length of experiment?
+7. For active interventions aridity index and experiment length are significants in explaining heterogeneity of outcomes. While for passive interventions none of these two moderators were significants.
+8. Soil remediation is powerful active intervention and ignoring passive changes in soil is a dramatic and negative impediment to restoration.  
+9. Habitat, animals and soils are challenging to actively (and passively) restore but plants are viable and significant positive outcomes that can be restored.  
+10. Passive restoration confirms that plants can recover passively, but soil does not.
