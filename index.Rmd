@@ -243,13 +243,16 @@ summary(mod.4)
 mod.5 <- rma(lrr, var.es, slab= ID, mods=  ~outcome+aridity.index*exp.length -1, data = data, subset = paradigm == "passive")
 summary(mod.5)
 
+detach(package:metafor, unload = TRUE)
+
 ```
 
 
 ###Viz  
 ```{r, viz, warning=FALSE, message=FALSE}
-#forestplot package
-#ggplot2
+study_data <- data %>%
+  group_by(study.ID, paradigm) %>%
+  summarise(lrr = mean(lrr), var.es = mean(var.es), exp.length = mean(exp.length), aridity.index = mean(aridity.index))
 
 ```
 
