@@ -164,6 +164,7 @@ summary(m2)
 
 #metareg(m2, ~ aridity.index + exp.length)
 mr2 <- metareg(m2, ~ aridity.index*exp.length)
+summary(mr2)
 plot(mr2)
 mr2.1 <- metareg(m2, ~ aridity.index)
 bubble(mr2.1)
@@ -179,7 +180,7 @@ summary(m3)
 
 #metareg(m3, ~ aridity.index + exp.length)
 mr3 <- metareg(m3, ~ aridity.index*exp.length)
-mr3 
+summary(mr3) 
 plot(mr3)
 mr3.1 <- metareg(m3, ~ aridity.index)
 bubble(mr3.1)
@@ -250,6 +251,8 @@ detach(package:meta, unload = TRUE)
 
 ###Viz  
 ```{r, viz, warning=FALSE, message=FALSE}
+#ggplot uses geometric means and random means reported in models are harmonic
+
 ggplot(data, aes(paradigm, lrr, color = intervention)) +
   ylim(c(-2,2)) +
   geom_boxplot() + 
@@ -286,6 +289,34 @@ ggplot(data, aes(exp.length, lrr, color = intervention)) +
   scale_color_brewer(palette = "Set1") + 
   labs(x = "length of experiment", y = "lrr", color = "")
 
+#random model outputs
+models <- read_csv("data/meta_outputs.csv")
+ggplot(models, aes(paradigm, lrr, color = intervention)) +
+  ylim(c(-2,2)) +
+  geom_point(position = position_dodge(width = 0.5)) + 
+  labs(x = "", y = "lrr", color = "") +
+  coord_flip() +
+  geom_errorbar(aes(ymin=lower, ymax=upper), width=.05, position = position_dodge(width = 0.5)) +
+  geom_hline(yintercept = 0, colour="grey", linetype = "longdash")+
+  theme(axis.text.x=element_text(face="bold"),
+        axis.text.y=element_text(face="bold"),
+        axis.title=element_text(size=12,face="bold"),
+        strip.text.y = element_text(hjust=0,vjust = 1,angle=180,face="bold")) +
+  scale_color_brewer(palette = "Set1")
+
+
+p <- ggplot(models, aes(paradigm, lrr, fill = intervention)) +
+  ylim(c(-2,2)) +
+  geom_point(shape = 23, size = 2, position = position_dodge(width = 0.5)) + 
+  labs(x = "", y = "lrr", fill = "") +
+  coord_flip() +
+  geom_hline(yintercept = 0, colour="grey", linetype = "longdash")+
+  theme(axis.text.x=element_text(face="bold"),
+        axis.text.y=element_text(face="bold"),
+        axis.title=element_text(size=12,face="bold"),
+        strip.text.y = element_text(hjust=0,vjust = 1,angle=180,face="bold")) +
+scale_color_brewer(palette = "Set1")
+
 ```
 
 ###Interpretations  
@@ -298,4 +329,4 @@ ggplot(data, aes(exp.length, lrr, color = intervention)) +
 7. For active interventions aridity index and experiment length are significants in explaining heterogeneity of outcomes. While for passive interventions none of these two moderators were significants.
 8. Soil remediation is powerful active intervention and ignoring passive changes in soil is a dramatic and negative impediment to restoration.  
 9. Habitat, animals and soils are challenging to actively (and passively) restore but plants are viable and significant positive outcomes that can be restored.  
-10. Passive restoration confirms that plants can recover passively, but soil does not.
+10. Passive restoration confirms that plants can recover passively, but soil does not recover.
