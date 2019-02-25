@@ -138,6 +138,7 @@ m1 <- metagen(lrr, var.es, studlab = ID, comb.fixed = FALSE, byvar = paradigm, d
 summary(m1)
 #funnel(m1)
 #radial(m1)
+#forest(m1, layout = "JAMA", study.results = FALSE)
 
 #t-tests if different from 0
 tmu <- function(x){t.test(x, mu = 0, paired = FALSE, var.equal=FALSE, conf.level = 0.95)
@@ -159,10 +160,15 @@ summary(m2)
 #funnel(m2)
 #radial(m2)
 #metabias(m2)
+#forest(m2, layout = "JAMA", study.results = FALSE)
 
 #metareg(m2, ~ aridity.index + exp.length)
 mr2 <- metareg(m2, ~ aridity.index*exp.length)
 plot(mr2)
+mr2.1 <- metareg(m2, ~ aridity.index)
+bubble(mr2.1)
+mr2.2 <- metareg(m2, ~ exp.length)
+bubble(mr2.2)
 
 #passive
 m3 <- metagen(lrr, var.es, studlab = ID, byvar = intervention, subset = paradigm == "passive", comb.fixed=FALSE, data = data)
@@ -175,6 +181,11 @@ summary(m3)
 mr3 <- metareg(m3, ~ aridity.index*exp.length)
 mr3 
 plot(mr3)
+mr3.1 <- metareg(m3, ~ aridity.index)
+bubble(mr3.1)
+
+mr3.2 <- metareg(m3, ~ exp.length)
+bubble(mr3.2)
 
 #outcomes
 #active
@@ -187,17 +198,18 @@ plot(mr4)
 
 #passive
 m5 <- metagen(lrr, var.es, studlab = ID, byvar = outcome, subset = paradigm == "passive", comb.fixed=FALSE, data = data)
-m5
+summary(m5)
 #metabias(m)
 mr5 <- metareg(m5, ~ aridity.index*exp.length)
 mr5
 plot(mr5)
-#detach(package:meta, unload = TRUE)
+
+detach(package:meta, unload = TRUE)
 ```
 
 
 ```{r, metafor, warning=FALSE, message=FALSE}
-#library(metafor)
+library(metafor)
 #must use dev version of metafor (https://wviechtb.github.io/metafor/#installation)
 
 #data<-escalc(measure="ROM",m1i=mean.t,m2i=mean.c,sd1i=sd.t,sd2i=sd.c,n1i=n.t,n2i=n.c, #data=mydata,var.names=c("LRR","LRR_var"),digits=4)
@@ -212,41 +224,33 @@ plot(mr5)
 #  filter(!is.na(exp.length)) %>% 
 #  filter(!is.na(aridity.index))
 
-#mod.1 <- rma(yi=lrr, vi=var.es, data = mdata.all)
-#summary(mod.1)
-#exp(0.0899) #estimate
-
-#mod.2 <- rma(lrr, var.es, mods=  ~paradigm+aridity.index+exp.length -1, data = mdata.all)
-#summary(mod.2)
-
-#Evaluating the influence of moderators on the heterogeneity
+mod.1 <- rma(yi=lrr, vi=var.es, mods = ~paradigm, data = data)
+summary(mod.1)
+#forest(mod.1)
 
 #interventions
-#mod.3 <- rma(lrr, var.es, slab= ID, mods=  ~intervention+aridity.index+exp.length -1, data = mdata.all, subset = paradigm == "active")
-#summary(mod.3)
+mod.2 <- rma(lrr, var.es, slab= ID, mods=  ~intervention+aridity.index*exp.length -1, data = data, subset = paradigm == "active")
+summary(mod.2)
 #forest(mod.3, slab= "study.ID")
 
-#mod.4 <- rma(lrr, var.es, slab= ID, mods=  ~intervention+aridity.index+exp.length -1, data = mdata.all, subset = paradigm == "passive")
-#summary(mod.4) #aridity.index and exp.length non significants
-
-#mod.4b <- rma(lrr, var.es, slab= ID, mods=  ~intervention -1, data = mdata.all, subset = paradigm == "passive")
-#summary(mod.4b)
+mod.3 <- rma(lrr, var.es, slab= ID, mods=  ~intervention+aridity.index*exp.length -1, data = data, subset = paradigm == "passive")
+summary(mod.3)
 
 #outcomes
-#mod.5 <- rma(lrr, var.es, slab= ID, mods=  ~outcome+aridity.index+exp.length -1, data = mdata.all, subset = paradigm == "active")
-#summary(mod.5)
+mod.4 <- rma(lrr, var.es, slab= ID, mods=  ~outcome+aridity.index*exp.length -1, data = data, subset = paradigm == "active")
+summary(mod.4)
 
-#mod.6 <- rma(lrr, var.es, slab= ID, mods=  ~outcome+aridity.index+exp.length -1, data = mdata.all, subset = paradigm == "passive")
-#summary(mod.6) #aridity.index non significant
-
-#mod.6b <- rma(lrr, var.es, slab= ID, mods=  ~outcome+exp.length -1, data = mdata.all, subset = paradigm == "passive")
-#summary(mod.6b)
+mod.5 <- rma(lrr, var.es, slab= ID, mods=  ~outcome+aridity.index*exp.length -1, data = data, subset = paradigm == "passive")
+summary(mod.5)
 
 ```
 
 
 ###Viz  
 ```{r, viz, warning=FALSE, message=FALSE}
+#forestplot package
+#ggplot2
+
 ```
 
 ###Interpretations  
