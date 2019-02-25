@@ -209,7 +209,7 @@ detach(package:meta, unload = TRUE)
 
 
 ```{r, metafor, warning=FALSE, message=FALSE}
-library(metafor)
+#library(metafor)
 #must use dev version of metafor (https://wviechtb.github.io/metafor/#installation)
 
 #data<-escalc(measure="ROM",m1i=mean.t,m2i=mean.c,sd1i=sd.t,sd2i=sd.c,n1i=n.t,n2i=n.c, #data=mydata,var.names=c("LRR","LRR_var"),digits=4)
@@ -224,40 +224,72 @@ library(metafor)
 #  filter(!is.na(exp.length)) %>% 
 #  filter(!is.na(aridity.index))
 
-mod.1 <- rma(yi=lrr, vi=var.es, mods = ~paradigm, data = data)
-summary(mod.1)
+#mod.1 <- rma(yi=lrr, vi=var.es, mods = ~paradigm, data = data)
+#summary(mod.1)
 #forest(mod.1)
 
 #interventions
-mod.2 <- rma(lrr, var.es, slab= ID, mods=  ~intervention+aridity.index*exp.length -1, data = data, subset = paradigm == "active")
-summary(mod.2)
+#mod.2 <- rma(lrr, var.es, slab= ID, mods=  ~intervention+aridity.index*exp.length -1, data = data, subset = paradigm == "active")
+#summary(mod.2)
 #forest(mod.3, slab= "study.ID")
 
-mod.3 <- rma(lrr, var.es, slab= ID, mods=  ~intervention+aridity.index*exp.length -1, data = data, subset = paradigm == "passive")
-summary(mod.3)
+#mod.3 <- rma(lrr, var.es, slab= ID, mods=  ~intervention+aridity.index*exp.length -1, data = data, subset = paradigm == "passive")
+#summary(mod.3)
 
 #outcomes
-mod.4 <- rma(lrr, var.es, slab= ID, mods=  ~outcome+aridity.index*exp.length -1, data = data, subset = paradigm == "active")
-summary(mod.4)
+#mod.4 <- rma(lrr, var.es, slab= ID, mods=  ~outcome+aridity.index*exp.length -1, data = data, subset = paradigm == "active")
+#summary(mod.4)
 
-mod.5 <- rma(lrr, var.es, slab= ID, mods=  ~outcome+aridity.index*exp.length -1, data = data, subset = paradigm == "passive")
-summary(mod.5)
+#mod.5 <- rma(lrr, var.es, slab= ID, mods=  ~outcome+aridity.index*exp.length -1, data = data, subset = paradigm == "passive")
+#summary(mod.5)
 
-detach(package:metafor, unload = TRUE)
+#detach(package:metafor, unload = TRUE)
 
 ```
 
 
 ###Viz  
 ```{r, viz, warning=FALSE, message=FALSE}
-study_data <- data %>%
-  group_by(study.ID, paradigm) %>%
-  summarise(lrr = mean(lrr), var.es = mean(var.es), exp.length = mean(exp.length), aridity.index = mean(aridity.index))
+ggplot(data, aes(paradigm, lrr, color = intervention)) +
+  ylim(c(-2,2)) +
+  geom_boxplot() + 
+  labs(x = "", y = "lrr", color = "") +
+  coord_flip() +
+  geom_hline(yintercept = 0, colour="grey", linetype = "longdash")+
+  theme(axis.text.x=element_text(face="bold"),
+        axis.text.y=element_text(face="bold"),
+        axis.title=element_text(size=12,face="bold"),
+        strip.text.y = element_text(hjust=0,vjust = 1,angle=180,face="bold")) +
+  scale_color_brewer(palette = "Set1")
+
+ggplot(data, aes(paradigm, lrr, fill = intervention)) +
+  ylim(c(-2,2)) +
+  geom_violin() + 
+  labs(x = "", y = "lrr", fill = "") +
+  coord_flip() +
+  geom_hline(yintercept = 0, colour="grey", linetype = "longdash")+
+  theme(axis.text.x=element_text(face="bold"),
+        axis.text.y=element_text(face="bold"),
+        axis.title=element_text(size=12,face="bold"),
+        strip.text.y = element_text(hjust=0,vjust = 1,angle=180,face="bold")) +
+  scale_fill_brewer(palette = "Set1")
+
+ggplot(data, aes(aridity.index, lrr, color = intervention)) + 
+  geom_point(position = position_dodge(width = 0.5)) +
+  facet_wrap(~paradigm) +
+  scale_color_brewer(palette = "Set1") + 
+  labs(x = "aridity", y = "lrr", color = "")
+
+ggplot(data, aes(exp.length, lrr, color = intervention)) + 
+  geom_point(position = position_dodge(width = 0.5)) +
+  facet_wrap(~paradigm) +
+  scale_color_brewer(palette = "Set1") + 
+  labs(x = "length of experiment", y = "lrr", color = "")
 
 ```
 
 ###Interpretations  
-1. Little to no replication of specific techniques.   
+1. Specific techniques are infrequently replicated in drylands globally.   
 2. Intervention and outcome classification useful and appropriate.  
 3. Active versus passive interesting and fascinating.  
 4. Use only random effect model statistics because of heterogeneity and conceptual focus of data and synthesis.  
