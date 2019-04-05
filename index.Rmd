@@ -25,19 +25,6 @@ To quantitatively examine the efficacy of vegetation restoration in drylands glo
 2. How much variation was there in the techniques tested and how long were experiments monitored and tested?  
 3. How effective are dryland restoration techniques for vegetation?  
 
-```{r setup}
-
-#knitr::opts_chunk$set(
-  #  echo = FALSE,
-   # message = FALSE,
-  #  warning = FALSE,
-  #  fig.align='center',
-  #  fig.pos='H',
-  #  fig.path = "plots/",
-  #  dev = "svg",
-  #  dpi=500
-#)
-```
 
 ###Step 1. Search  
 ```{r, step 1, warning=FALSE, message=FALSE}
@@ -103,6 +90,7 @@ prisma(found = 1504,
        qualitative = 77, 
        quantitative = 66,
        width = 500, height = 500)
+
 ```
 
 ###Step 3. Synthesize  
