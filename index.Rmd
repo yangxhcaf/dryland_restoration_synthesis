@@ -123,11 +123,15 @@ data <- data_all %>%
 #evidence map####
 require(maps)
 world<-map_data("world")
-map<-ggplot() + geom_polygon(data=world, fill="gray50", aes(x=long, y=lat, group=group))
+map<-ggplot() + geom_polygon(data=world, fill="gray75", aes(x=long, y=lat, group=group))
 
-map + geom_point(data=data, aes(x=long, y=lat, color = paradigm)) + 
+map + geom_point(data=data, aes(x=long, y=lat, color = paradigm), size=1.5)+ 
+  theme(panel.background = element_rect(fill="white", colour="gray50",linetype="solid"))+
+  theme(panel.grid.minor = element_line(colour="gray80", linetype="dashed"))+
   scale_color_brewer(palette = "Paired") +
   labs(x = "longitude", y = "latitude", color = "")
+
+#ggsave(file="map.svg", width=12.7, height=8)
 
 ```
 
@@ -298,13 +302,16 @@ ggplot(models, aes(paradigm, lrr, color = intervention)) +
   geom_point(position = position_dodge(width = 0.5)) + 
   labs(x = "", y = "lrr", color = "") +
   coord_flip() +
-  geom_errorbar(aes(ymin=lower, ymax=upper), width=.05, position = position_dodge(width = 0.5)) +
+  geom_errorbar(aes(ymin=lower, ymax=upper), size= 0.2, width=0.2, position = position_dodge(width = 0.5)) +
   geom_hline(yintercept = 0, colour="grey", linetype = "longdash")+
   theme(axis.text.x=element_text(face="bold"),
         axis.text.y=element_text(face="bold"),
         axis.title=element_text(size=12,face="bold"),
         strip.text.y = element_text(hjust=0,vjust = 1,angle=180,face="bold")) +
+  theme_bw()+
   scale_color_brewer(palette = "Set1")
+
+#ggsave(file="lrr.svg", width=9, height=5)
 
 
 p <- ggplot(models, aes(paradigm, lrr, fill = intervention)) +
@@ -314,10 +321,10 @@ p <- ggplot(models, aes(paradigm, lrr, fill = intervention)) +
   coord_flip() +
   geom_hline(yintercept = 0, colour="grey", linetype = "longdash")+
   theme(axis.text.x=element_text(face="bold"),
-        axis.text.y=element_text(face="bold"),
-        axis.title=element_text(size=12,face="bold"),
-        strip.text.y = element_text(hjust=0,vjust = 1,angle=180,face="bold")) +
-scale_color_brewer(palette = "Set1")
+  axis.text.y=element_text(face="bold"),
+  axis.title=element_text(size=12,face="bold"),
+  strip.text.y = element_text(hjust=0,vjust = 1,angle=180,face="bold"))+
+  scale_color_brewer(palette = "Set1")
 
 ```
 
