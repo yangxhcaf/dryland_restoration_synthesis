@@ -43,11 +43,15 @@ studies <- read_csv("data/studies.csv")
 evidence <- studies %>%
   filter(exclude == "no")
 
-ggplot(evidence, aes(disturbance, fill = paradigm)) +
+dist<- ggplot(evidence, aes(disturbance, fill = paradigm)) +
   geom_bar(na.rm = TRUE) +
   coord_flip() +
   scale_fill_brewer(palette = "Paired") +
-  labs(y = "frequency")
+  labs(y = "frequency")+
+  theme(panel.background = element_rect(fill="white", colour="gray50",linetype="solid"))+
+  theme(panel.grid.minor = element_line(colour="gray80", linetype="dashed"))
+
+#ggsave(file="dist.svg", width=9, height=5)
 
 ggplot(evidence, aes(intervention, fill = paradigm)) +
   geom_bar(na.rm = TRUE) +
@@ -116,6 +120,10 @@ data <- data_all %>%
 #write cleaned data for provenace and more rapid reuse
 #write_csv(data, "data/data.csv")
 
+
+#totable <- data %>% group_by(paradigm, intervention, technique, outcome) %>% count()
+#write.csv(totable,"totable.csv")
+
 ```
 
 ###Step 4. Summarize  
@@ -125,13 +133,13 @@ require(maps)
 world<-map_data("world")
 map<-ggplot() + geom_polygon(data=world, fill="gray75", aes(x=long, y=lat, group=group))
 
-map + geom_point(data=data, aes(x=long, y=lat, color = paradigm), size=1.6)+ 
+map + geom_point(data=data, aes(x=long, y=lat, color = paradigm), size=2)+ 
   theme(panel.background = element_rect(fill="white", colour="gray50",linetype="solid"))+
   theme(panel.grid.minor = element_line(colour="gray80", linetype="dashed"))+
   scale_color_brewer(palette = "Paired") +
   labs(x = "longitude", y = "latitude", color = "")
 
-#ggsave(file="map.svg", width=12.7, height=8)
+ggsave(file="map.svg", width=12.7, height=8)
 
 ```
 
