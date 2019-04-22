@@ -321,12 +321,12 @@ ggplot(models, aes(paradigm, lrr, color = intervention)) +
 
 
 models <- read_csv("data/meta_outputs.csv")
-ggplot(models, aes(intervention, lrr, color = paradigm)) +
-  ylim(c(-2,2)) +
-  geom_point(position = position_dodge(width = 0.5)) + 
+ggplot(models, aes(paradigm, lrr, color = intervention)) +
+  ylim(c(-1.5,1.5)) +
+  geom_point(position = position_dodge(width = 0.5), size=2) + 
   labs(x = "", y = "lrr", color = "") +
   coord_flip() +
-  geom_errorbar(aes(ymin=lower, ymax=upper), size= 0.2, width=0.2, position = position_dodge(width = 0.5)) +
+  geom_errorbar(aes(ymin=lower, ymax=upper), size= 0.7, width=0.2, position = position_dodge(width = 0.5)) +
   geom_hline(yintercept = 0, colour="grey", linetype = "longdash")+
   theme(axis.text.x=element_text(face="bold"),
         axis.text.y=element_text(face="bold"),
@@ -335,7 +335,7 @@ ggplot(models, aes(intervention, lrr, color = paradigm)) +
   theme_bw()+
   scale_color_brewer(palette = "Set1")
 
-#ggsave(file="lrr.svg", width=9, height=5)
+ggsave(file="lrr.svg", width=9, height=5)
 
 
 p <- ggplot(models, aes(paradigm, lrr, fill = intervention)) +
