@@ -1,0 +1,35 @@
+Restoration,Intervention,Technique,Outcome,independent entries
+active,soil,"carbon addition, top soil removal, seeding",habitat,45
+active,soil,carbon amendment,habitat,27
+active,soil,"fertilization, biostimulants, seeding",soil,48
+active,soil,mycorrhizal inoculation,plants,128
+active,vegetation,"burning, mowing",habitat,24
+active,vegetation,mechanical disturbance and seeding,plants,4
+active,vegetation,"mowing, grazing",habitat,3
+active,vegetation,planting,habitat,369
+active,vegetation,planting,plants,26
+active,vegetation,planting,soil,84
+active,vegetation,"planting, grazing exclusion",animals,24
+active,vegetation,seeding,plants,44
+active,vegetation,seeding,soil,117
+active,vegetation,seeding and ripping,plants,12
+active,vegetation,"seeding, cutting, grazing treatments",habitat,2
+active,vegetation,"seeding, gypsum and organic mulch",habitat,9
+active,vegetation,"seeding, irrigation",plants,7
+active,vegetation,"seeding, mowing and herbicide, mulching (straw and sawdust)",habitat,18
+active,vegetation,"seeding, mulching, weeding",plants,6
+active,vegetation,"seeding, planting",habitat,15
+active,vegetation,"seeding, safe sites for seeds, fencing",plants,8
+active,vegetation,"seeding, soil tilling, fertilization",plants,7
+active,water addition,"seeding, irrigation",plants,63
+active,water addition,water addition,habitat,12
+passive,grazing exclusion,fencing,plants,21
+passive,grazing exclusion,grazing exclusion,plants,8
+passive,soil,mycorrhizal recovery,soil,6
+passive,soil,natural recovery,soil,198
+passive,vegetation,facilitation,habitat,35
+passive,vegetation,fencing,habitat,15
+passive,vegetation,grazing exclusion,plants,17
+passive,vegetation,natural recovery,habitat,30
+passive,vegetation,natural recovery,plants,4
+passive,vegetation,"seeding, shrub facilitation",habitat,24
