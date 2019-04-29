@@ -13,20 +13,20 @@ output:
 ---
 <br>  
 
-###A synthesis of dryland restoration techniques.  
+### A synthesis of dryland restoration techniques.  
 
 ![](./drylands.jpg)   
 
-###Purpose
+### Purpose
 To quantitatively examine the efficacy of vegetation restoration in drylands globally.  
 
-###Questions  
+### Questions  
 1. What were the primary restoration goals as reported by primary authors?  
 2. How much variation was there in the techniques tested and how long were experiments monitored and tested?  
 3. How effective are dryland restoration techniques for vegetation?  
 
 
-###Step 1. Search  
+### Step 1. Search  
 ```{r, step 1, warning=FALSE, message=FALSE}
 #general library loads
 library(tidyverse)
@@ -81,7 +81,7 @@ anova(m2, test="Chisq")
 
 ```
 
-###Step 2. Sort  
+### Step 2. Sort  
 ```{r, step 2, warning=FALSE, message=FALSE}
 library(PRISMAstatement)
 prisma(found = 1504,
@@ -99,7 +99,7 @@ prisma(found = 1504,
 
 ```
 
-###Step 3. Synthesize  
+### Step 3. Synthesize  
 ```{r, step 3, warning=FALSE, message=FALSE}
 #all data includes non-relevant and inc search term studies
 data_all <- read_csv("data/data_all.csv")
@@ -128,32 +128,23 @@ data <- data_all %>%
 
 ```
 
-###Step 4. Summarize  
+### Step 4. Summarize  
 ```{r, step 4, warning=FALSE, message=FALSE}
 #evidence map####
 require(maps)
 world<-map_data("world")
 map<-ggplot() + geom_polygon(data=world, fill="gray80", aes(x=long, y=lat, group=group))
 
-map + geom_point(data=data, aes(x=long, y=lat, color = paradigm), size=2)+ 
-  theme(panel.background = element_rect(fill="white", colour="gray50",linetype="solid"))+
-  #theme(panel.grid.minor = element_line(colour="gray80", linetype="dashed"))+
-  scale_color_brewer(palette = "Paired") +
-  theme(legend.position = c(0.1, 0.3)) +
-  guides(fill=guide_legend(title=NULL)) +
-  theme(legend.background = element_rect(fill="white", 
-                                  size=0.5, linetype="solid", colour="gray70"))+
-  labs(x = "longitude", y = "latitude", color = "")
+#map + geom_point(data=data, aes(x=long, y=lat, color = paradigm), size=2)+ 
+  #theme(panel.background = element_rect(fill="white", colour="gray50",linetype="solid"))+
+  #theme(panel.grid.minor = element_line(colour="gray80", #linetype="dashed"))+
+  #scale_color_brewer(palette = "Paired") +
+  #theme(legend.position = c(0.1, 0.3)) +
+  #guides(fill=guide_legend(title=NULL)) +
+  #theme(legend.background = element_rect(fill="white", 
+                                  #size=0.5, linetype="solid", #colour="gray70"))+
+  #labs(x = "longitude", y = "latitude", color = "")
 
-map + geom_point(data=data, aes(x=long, y=lat, color = paradigm), size=2)+ 
-  theme(panel.background = element_rect(fill="white", colour="gray50",linetype="solid"))+
-  #theme(panel.grid.minor = element_line(colour="gray80", linetype="dashed"))+
-  scale_color_brewer(palette = "Set1") +
-  theme(legend.position = c(0.1, 0.3)) +
-  guides(fill=guide_legend(title=NULL)) +
-  theme(legend.background = element_rect(fill="white", 
-                                  size=0.5, linetype="solid", colour="gray70"))+
-  labs(x = "longitude", y = "latitude", color = "")
 
 map + geom_point(data=data_all, aes(x=long, y=lat, color = paradigm), size=2)+ 
   theme(panel.background = element_rect(fill="white", colour="gray50",linetype="solid"))+
@@ -170,7 +161,7 @@ map + geom_point(data=data_all, aes(x=long, y=lat, color = paradigm), size=2)+
 
 ```
 
-###Step 5. Models    
+### Step 5. Models    
 ```{r, step 5, warning=FALSE, message=FALSE}
 #meta####
 library(meta)
@@ -290,7 +281,7 @@ detach(package:meta, unload = TRUE)
 ```
 
 
-###Viz  
+### Viz  
 ```{r, viz, warning=FALSE, message=FALSE}
 #ggplot uses geometric means and random means reported in models are harmonic
 
@@ -381,7 +372,7 @@ p <- ggplot(models, aes(paradigm, lrr, fill = intervention)) +
 
 ```
 
-###Interpretations  
+### Interpretations  
 1. Specific techniques are infrequently replicated in drylands globally.   
 2. Intervention and outcome classification useful and appropriate.  
 3. Active versus passive interesting and fascinating.  
