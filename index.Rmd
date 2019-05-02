@@ -93,7 +93,7 @@ prisma(found = 1504,
        full_text_exclusions = 101, 
        qualitative = 77, 
        quantitative = 40,
-       width = 1000, height = 1000)
+       width = 800, height = 800)
 
 #pdf(prisma, "prisma.pdf")
 
@@ -158,6 +158,7 @@ map + geom_point(data=data_all, aes(x=long, y=lat, color = paradigm), size=2)+
   
 
 #ggsave(file="map.svg", width=12.7, height=8)
+
 
 ```
 
@@ -341,9 +342,9 @@ ggplot(models, aes(paradigm, lrr, color = intervention)) +
 
 models <- read_csv("data/meta_outputs.csv")
 ggplot(models, aes(paradigm, lrr, color = intervention)) +
-  ylim(c(-1.5,1.5)) +
+  ylim(c(-2,2)) +
   geom_point(position = position_dodge(width = 0.5), size=2) + 
-  labs(x = "", y = "lrr", color = "") +
+  labs(x = "", y = "log response ratio", color = "") +
   coord_flip() +
   geom_errorbar(aes(ymin=lower, ymax=upper), size= 0.7, width=0.2, position = position_dodge(width = 0.5)) +
   geom_hline(yintercept = 0, colour="grey", linetype = "longdash")+
@@ -353,12 +354,32 @@ ggplot(models, aes(paradigm, lrr, color = intervention)) +
         strip.text.y = element_text(hjust=0,vjust = 1,angle=180,face="bold")) +
   theme_bw()+
   scale_color_brewer(palette = "Set1")
+
+ggplot(models, aes(paradigm, lrr, color = intervention))+
+  ylim(c(-2,2)) +
+  geom_point(position = position_dodge(width = 0.5), size=2) + 
+  labs(x = "", y = "log response ratio", color = "") +
+  coord_flip() +
+  geom_errorbar(aes(ymin=lower, ymax=upper), size= 0.8, width=0.2, position = position_dodge(width = 0.5)) +
+  geom_hline(yintercept = 0, colour="grey", linetype = "longdash", size=0.8)+
+  theme(axis.text.x=element_text(face="bold"),
+        axis.text.y=element_text(face="bold"),
+        axis.title=element_text(size=12,face="bold"),
+        strip.text.y = element_text(hjust=0,vjust = 1,angle=180,face="bold")) +
+  theme_bw()+
+  scale_color_brewer(palette = "Set1")+
+  theme( panel.border = element_blank(),
+  panel.grid.major = element_blank(),
+  panel.grid.minor = element_blank(),  
+  axis.line.x = element_line(colour = "black"),
+  axis.line.y= element_blank())
+ 
   
 
 #ggsave(file="lrr.svg", width=9, height=5)
 
 
-p <- ggplot(models, aes(paradigm, lrr, fill = intervention)) +
+ggplot(models, aes(paradigm, lrr, fill = intervention)) +
   ylim(c(-2,2)) +
   geom_point(shape = 23, size = 2, position = position_dodge(width = 0.5)) + 
   labs(x = "", y = "lrr", fill = "") +
