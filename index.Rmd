@@ -326,23 +326,6 @@ ggplot(data, aes(exp.length, lrr, color = intervention)) +
 models <- read_csv("data/meta_outputs.csv")
 ggplot(models, aes(paradigm, lrr, color = intervention)) +
   ylim(c(-2,2)) +
-  geom_point(position = position_dodge(width = 0.5)) + 
-  labs(x = "", y = "lrr", color = "") +
-  coord_flip() +
-  geom_errorbar(aes(ymin=lower, ymax=upper), size= 0.2, width=0.2, position = position_dodge(width = 0.5)) +
-  geom_hline(yintercept = 0, colour="grey", linetype = "longdash")+
-  theme(axis.text.x=element_text(face="bold"),
-        axis.text.y=element_text(face="bold"),
-        axis.title=element_text(size=12,face="bold"),
-        strip.text.y = element_text(hjust=0,vjust = 1,angle=180,face="bold")) +
-  theme_bw()+
-  scale_color_brewer(palette = "Set1")
-  
-
-
-models <- read_csv("data/meta_outputs.csv")
-ggplot(models, aes(paradigm, lrr, color = intervention)) +
-  ylim(c(-2,2)) +
   geom_point(position = position_dodge(width = 0.5), size=2) + 
   labs(x = "", y = "log response ratio", color = "") +
   coord_flip() +
@@ -355,12 +338,15 @@ ggplot(models, aes(paradigm, lrr, color = intervention)) +
   theme_bw()+
   scale_color_brewer(palette = "Set1")
 
+
 ggplot(models, aes(paradigm, lrr, color = intervention))+
-  ylim(c(-2,2)) +
+  ylim(c(-1,1)) +
   geom_point(position = position_dodge(width = 0.5), size=2) + 
+scale_x_discrete(limits=c("passive","active"))+
   labs(x = "", y = "log response ratio", color = "") +
   coord_flip() +
-  geom_errorbar(aes(ymin=lower, ymax=upper), size= 0.8, width=0.2, position = position_dodge(width = 0.5)) +
+  geom_text(data=models, mapping=aes(x=paradigm, y=lrr, label=k, group=intervention),  position = position_dodge(width = 0.5), size=3, vjust=-0.6, hjust=-0.5) +
+  geom_errorbar(aes(ymin=lower, ymax=upper), size= 0.9, width=0.2, position = position_dodge(width = 0.5)) +
   geom_hline(yintercept = 0, colour="grey", linetype = "longdash", size=0.8)+
   theme(axis.text.x=element_text(face="bold"),
         axis.text.y=element_text(face="bold"),
@@ -368,28 +354,28 @@ ggplot(models, aes(paradigm, lrr, color = intervention))+
         strip.text.y = element_text(hjust=0,vjust = 1,angle=180,face="bold")) +
   theme_bw()+
   scale_color_brewer(palette = "Set1")+
-  theme( panel.border = element_blank(),
+  theme(panel.border = element_blank(),
   panel.grid.major = element_blank(),
   panel.grid.minor = element_blank(),  
   axis.line.x = element_line(colour = "black"),
-  axis.line.y= element_blank())
- 
-  
+  axis.line.y= element_blank()) 
+
+
 
 #ggsave(file="lrr.svg", width=9, height=5)
 
 
-ggplot(models, aes(paradigm, lrr, fill = intervention)) +
-  ylim(c(-2,2)) +
-  geom_point(shape = 23, size = 2, position = position_dodge(width = 0.5)) + 
-  labs(x = "", y = "lrr", fill = "") +
-  coord_flip() +
-  geom_hline(yintercept = 0, colour="grey", linetype = "longdash")+
-  theme(axis.text.x=element_text(face="bold"),
-  axis.text.y=element_text(face="bold"),
-  axis.title=element_text(size=12,face="bold"),
-  strip.text.y = element_text(hjust=0,vjust = 1,angle=180,face="bold"))+
-  scale_color_brewer(palette = "Set1")
+#ggplot(models, aes(paradigm, lrr, fill = intervention)) +
+ # ylim(c(-2,2)) +
+#  geom_point(shape = 23, size = 2, position = position_dodge(width = 0.5)) + 
+#  labs(x = "", y = "lrr", fill = "") +
+#  coord_flip() +
+#  geom_hline(yintercept = 0, colour="grey", linetype = "longdash")+
+#  theme(axis.text.x=element_text(face="bold"),
+#  axis.text.y=element_text(face="bold"),
+#  axis.title=element_text(size=12,face="bold"),
+#  strip.text.y = element_text(hjust=0,vjust = 1,angle=180,face="bold"))+
+#  scale_color_brewer(palette = "Set1")
 
 ```
 
