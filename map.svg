@@ -11,7 +11,7 @@
    version="1.1"
    id="svg21764"
    sodipodi:docname="map.svg"
-   inkscape:export-filename="C:\Users\mflor\Documents\TNC_2018\paper\paper\tables and figures\map.png"
+   inkscape:export-filename="C:\Users\mflor\Documents\TNC_2018\paper\paper\tables and figures\map1.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300"
    inkscape:version="0.92.3 (2405546, 2018-03-11)">
@@ -40,8 +40,8 @@
      id="namedview21766"
      showgrid="false"
      inkscape:zoom="1.3246528"
-     inkscape:cx="258.65742"
-     inkscape:cy="288"
+     inkscape:cx="478.66966"
+     inkscape:cy="257.80341"
      inkscape:window-x="-11"
      inkscape:window-y="-11"
      inkscape:window-maximized="1"
@@ -90,11 +90,12 @@
   <rect
      x="36.27"
      y="5.48"
-     width="872.65"
-     height="538.15"
-     style="stroke-width: 1.07; stroke: #7F7F7F; fill: #FFFFFF;"
+     width="872.65002"
+     height="538.15002"
+     style="fill:#ffffff;stroke:#7f7f7f;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
      clip-path="url(#cpMzYuMjY4OHw5MDguOTIxfDU0My42MjV8NS40Nzk0NQ==)"
-     id="rect10903" />
+     id="rect10903"
+     transform="translate(0,-4)" />
   <polyline
      points="36.27,489.62 908.92,489.62 "
      style="stroke-width: 0.53; stroke: #FFFFFF; stroke-linecap: butt;"
@@ -34568,26 +34569,29 @@
      id="polyline21706" />
   <polyline
      points="253.00,546.37 253.00,543.63 "
-     style="stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;"
+     style="fill:none;stroke:#333333;stroke-width:1.07000005;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
      clip-path="url(#cpMHw5MTQuNHw1NzZ8MA==)"
-     id="polyline21710" />
+     id="polyline21710"
+     transform="translate(0,-4)" />
   <polyline
      points="465.30,546.37 465.30,543.63 "
-     style="stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;"
+     style="fill:none;stroke:#333333;stroke-width:1.07000005;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
      clip-path="url(#cpMHw5MTQuNHw1NzZ8MA==)"
-     id="polyline21712" />
+     id="polyline21712"
+     transform="translate(0,-4)" />
   <polyline
      points="677.61,546.37 677.61,543.63 "
-     style="stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;"
+     style="fill:none;stroke:#333333;stroke-width:1.07000005;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
      clip-path="url(#cpMHw5MTQuNHw1NzZ8MA==)"
-     id="polyline21714" />
+     id="polyline21714"
+     transform="translate(0,-4)" />
   <g
      clip-path="url(#cpMHw5MTQuNHw1NzZ8MA==)"
      id="g21724" />
   <g
      clip-path="url(#cpMHw5MTQuNHw1NzZ8MA==)"
      id="g21740"
-     transform="translate(46,2)">
+     transform="matrix(1,0,0,1.2242717,-48,-121.50845)">
     <text
        x="450.26999"
        y="568"
@@ -34595,7 +34599,7 @@
        textLength="44.650002"
        lengthAdjust="spacingAndGlyphs"
        id="text21738"
-       transform="matrix(1.4513644,0,0,1.1979223,-167.55315,-114.93444)">
+       transform="matrix(1.4513644,0,0,1.1979223,-167.55315,-113.30082)">
       <tspan
          style="font-size:12.13437557px"
          id="tspan21770">longitude</tspan>
@@ -34604,7 +34608,7 @@
   <g
      clip-path="url(#cpMHw5MTQuNHw1NzZ8MA==)"
      id="g21744"
-     transform="translate(0,-60)">
+     transform="matrix(1.2035904,0,0,1.016823,-2.7469839,-4.838069)">
     <text
        transform="matrix(0,-1.3080818,1.1945552,0,13.313521,288.50663)"
        style="font-size:11px;font-family:Arial"
@@ -34645,34 +34649,34 @@
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
      x="231.17955"
-     y="559.84271"
+     y="555.84271"
      id="text21778"><tspan
        sodipodi:role="line"
        id="tspan21776"
        x="231.17955"
-       y="559.84271"
+       y="555.84271"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.66666698px;font-family:Arial;-inkscape-font-specification:Arial">- 100</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
      x="462.38007"
-     y="559.65662"
+     y="557.65662"
      id="text21782"><tspan
        sodipodi:role="line"
        id="tspan21780"
        x="462.38007"
-       y="559.65662"
+       y="557.65662"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.66666698px;font-family:Arial;-inkscape-font-specification:Arial">0</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
      x="668.13892"
-     y="559.39185"
+     y="557.39185"
      id="text21786"><tspan
        sodipodi:role="line"
        id="tspan21784"
        x="668.13892"
-       y="559.39185"
+       y="557.39185"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.66666698px;font-family:Arial;-inkscape-font-specification:Arial">100</tspan></text>
   <text
      xml:space="preserve"

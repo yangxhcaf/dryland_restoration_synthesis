@@ -43,15 +43,18 @@ studies <- read_csv("data/studies.csv")
 evidence <- studies %>%
   filter(exclude == "no")
 
-dist<- ggplot(evidence, aes(disturbance, fill = paradigm)) +
+ggplot(evidence, aes(disturbance, fill = paradigm)) +
   geom_bar(na.rm = TRUE) +
   coord_flip() +
-  scale_fill_brewer(palette = "Paired") +
-  labs(y = "frequency")+
+  scale_fill_brewer(palette = "Set1") +
+  labs(y = "frequency", x="") +
   theme(panel.background = element_rect(fill="white", colour="gray50",linetype="solid"))+
-  theme(panel.grid.minor = element_line(colour="gray80", linetype="dashed"))
+  theme(panel.grid.minor = element_line(colour="gray80", linetype="dashed")) +
+  theme(legend.background = element_rect(fill="white", 
+                                  size=0.5, linetype="solid", colour="gray70")) +
+  theme(legend.position = c(0.85,0.85))
 
-#ggsave(file="dist.svg", width=9, height=5)
+#ggsave(file="s1.svg", width=9, height=5)
 
 ggplot(evidence, aes(intervention, fill = paradigm)) +
   geom_bar(na.rm = TRUE) +
@@ -95,7 +98,6 @@ prisma(found = 1504,
        quantitative = 40,
        width = 800, height = 800)
 
-#pdf(prisma, "prisma.pdf")
 
 ```
 
