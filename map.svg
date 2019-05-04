@@ -11,7 +11,7 @@
    version="1.1"
    id="svg21764"
    sodipodi:docname="map.svg"
-   inkscape:export-filename="C:\Users\mflor\Documents\TNC_2018\paper\paper\tables and figures\map1.png"
+   inkscape:export-filename="C:\Users\mflor\Documents\TNC_2018\paper\paper\tables and figures\map2.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300"
    inkscape:version="0.92.3 (2405546, 2018-03-11)">
@@ -41,11 +41,12 @@
      showgrid="false"
      inkscape:zoom="1.3246528"
      inkscape:cx="478.66966"
-     inkscape:cy="257.80341"
+     inkscape:cy="288"
      inkscape:window-x="-11"
      inkscape:window-y="-11"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg21764" />
+     inkscape:current-layer="svg21764"
+     showguides="true" />
   <defs
      id="defs10892">
     <style
@@ -59,6 +60,60 @@
       stroke-miterlimit: 10.00;
     }
   ]]></style>
+    <clipPath
+       id="cpMHw5MTQuNHw1NzZ8MA==-2">
+      <rect
+         x="0"
+         y="0"
+         width="914.40002"
+         height="576"
+         id="rect21685-9" />
+    </clipPath>
+    <clipPath
+       id="cpMHw5MTQuNHw1NzZ8MA==-1">
+      <rect
+         x="0"
+         y="0"
+         width="914.40002"
+         height="576"
+         id="rect21685-1" />
+    </clipPath>
+    <clipPath
+       id="cpMHw5MTQuNHw1NzZ8MA==-8">
+      <rect
+         x="0"
+         y="0"
+         width="914.40002"
+         height="576"
+         id="rect21685-6" />
+    </clipPath>
+    <clipPath
+       id="cpMHw5MTQuNHw1NzZ8MA==-7">
+      <rect
+         x="0"
+         y="0"
+         width="914.40002"
+         height="576"
+         id="rect21685-7" />
+    </clipPath>
+    <clipPath
+       id="cpMHw5MTQuNHw1NzZ8MA==-7-0">
+      <rect
+         x="0"
+         y="0"
+         width="914.40002"
+         height="576"
+         id="rect21685-7-8" />
+    </clipPath>
+    <clipPath
+       id="cpMHw5MTQuNHw1NzZ8MA==-7-0-2">
+      <rect
+         x="0"
+         y="0"
+         width="914.40002"
+         height="576"
+         id="rect21685-7-8-1" />
+    </clipPath>
   </defs>
   <rect
      width="100%"
@@ -72,7 +127,7 @@
      height="576.00"
      style="stroke-width: 1.07; stroke: #FFFFFF; fill: #FFFFFF;"
      id="rect10896"
-     inkscape:export-filename="C:\Users\mflor\Documents\TNC_2018\paper\paper\tables and figures\map.png"
+     inkscape:export-filename="C:\Users\mflor\Documents\TNC_2018\paper\paper\tables and figures\map2.png"
      inkscape:export-xdpi="300"
      inkscape:export-ydpi="300" />
   <defs
@@ -95,7 +150,7 @@
      style="fill:#ffffff;stroke:#7f7f7f;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
      clip-path="url(#cpMzYuMjY4OHw5MDguOTIxfDU0My42MjV8NS40Nzk0NQ==)"
      id="rect10903"
-     transform="translate(0,-4)" />
+     transform="translate(4,-4)" />
   <polyline
      points="36.27,489.62 908.92,489.62 "
      style="stroke-width: 0.53; stroke: #FFFFFF; stroke-linecap: butt;"
@@ -151,11 +206,6 @@
      style="stroke-width: 1.07; stroke: #FFFFFF; stroke-linecap: butt;"
      clip-path="url(#cpMzYuMjY4OHw5MDguOTIxfDU0My42MjV8NS40Nzk0NQ==)"
      id="polyline10925" />
-  <polyline
-     points="40.69,543.63 40.69,5.48 "
-     style="stroke-width: 1.07; stroke: #FFFFFF; stroke-linecap: butt;"
-     clip-path="url(#cpMzYuMjY4OHw5MDguOTIxfDU0My42MjV8NS40Nzk0NQ==)"
-     id="polyline10927" />
   <polyline
      points="253.00,543.63 253.00,5.48 "
      style="stroke-width: 1.07; stroke: #FFFFFF; stroke-linecap: butt;"
@@ -34553,73 +34603,14 @@
     </clipPath>
   </defs>
   <polyline
-     points="33.53,417.16 36.27,417.16 "
-     style="stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;"
-     clip-path="url(#cpMHw5MTQuNHw1NzZ8MA==)"
-     id="polyline21702" />
-  <polyline
-     points="33.53,272.24 36.27,272.24 "
-     style="stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;"
-     clip-path="url(#cpMHw5MTQuNHw1NzZ8MA==)"
-     id="polyline21704" />
-  <polyline
      points="33.53,127.33 36.27,127.33 "
-     style="stroke-width: 1.07; stroke: #333333; stroke-linecap: butt;"
-     clip-path="url(#cpMHw5MTQuNHw1NzZ8MA==)"
-     id="polyline21706" />
-  <polyline
-     points="253.00,546.37 253.00,543.63 "
      style="fill:none;stroke:#333333;stroke-width:1.07000005;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
      clip-path="url(#cpMHw5MTQuNHw1NzZ8MA==)"
-     id="polyline21710"
-     transform="translate(0,-4)" />
-  <polyline
-     points="465.30,546.37 465.30,543.63 "
-     style="fill:none;stroke:#333333;stroke-width:1.07000005;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
-     clip-path="url(#cpMHw5MTQuNHw1NzZ8MA==)"
-     id="polyline21712"
-     transform="translate(0,-4)" />
-  <polyline
-     points="677.61,546.37 677.61,543.63 "
-     style="fill:none;stroke:#333333;stroke-width:1.07000005;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
-     clip-path="url(#cpMHw5MTQuNHw1NzZ8MA==)"
-     id="polyline21714"
-     transform="translate(0,-4)" />
+     id="polyline21706"
+     transform="matrix(1.6788322,0,0,1,-20.021244,0)" />
   <g
      clip-path="url(#cpMHw5MTQuNHw1NzZ8MA==)"
      id="g21724" />
-  <g
-     clip-path="url(#cpMHw5MTQuNHw1NzZ8MA==)"
-     id="g21740"
-     transform="matrix(1,0,0,1.2242717,-48,-121.50845)">
-    <text
-       x="450.26999"
-       y="568"
-       style="font-size:11px;font-family:Arial"
-       textLength="44.650002"
-       lengthAdjust="spacingAndGlyphs"
-       id="text21738"
-       transform="matrix(1.4513644,0,0,1.1979223,-167.55315,-113.30082)">
-      <tspan
-         style="font-size:12.13437557px"
-         id="tspan21770">longitude</tspan>
-    </text>
-  </g>
-  <g
-     clip-path="url(#cpMHw5MTQuNHw1NzZ8MA==)"
-     id="g21744"
-     transform="matrix(1.2035904,0,0,1.016823,-2.7469839,-4.838069)">
-    <text
-       transform="matrix(0,-1.3080818,1.1945552,0,13.313521,288.50663)"
-       style="font-size:11px;font-family:Arial"
-       textLength="35.470001"
-       lengthAdjust="spacingAndGlyphs"
-       id="text21742">
-      <tspan
-         style="font-size:12.79968929px"
-         id="tspan21772">latitude</tspan>
-    </text>
-  </g>
   <rect
      x="91.760002"
      y="351.48001"
@@ -34628,7 +34619,7 @@
      style="fill:#ffffff;stroke:#b3b3b3;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
      clip-path="url(#cpMHw5MTQuNHw1NzZ8MA==)"
      id="rect21746"
-     transform="matrix(2.716822,0,0,1.2937654,-170.98741,-98.834778)" />
+     transform="matrix(2.716822,0,0,1.2937654,-174.98741,-98.834778)" />
   <circle
      cx="105.88"
      cy="381.48001"
@@ -34636,7 +34627,7 @@
      style="fill:#e41a1c;stroke:#e41a1c;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
      clip-path="url(#cpMHw5MTQuNHw1NzZ8MA==)"
      id="circle21750"
-     transform="matrix(1.821676,0,0,1.821676,-95.979393,-298.47263)" />
+     transform="matrix(1.821676,0,0,1.821676,-99.979393,-298.47263)" />
   <circle
      cx="105.88"
      cy="398.76001"
@@ -34644,17 +34635,17 @@
      style="fill:#377eb8;stroke:#377eb8;stroke-width:0.70999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
      clip-path="url(#cpMHw5MTQuNHw1NzZ8MA==)"
      id="circle21754"
-     transform="matrix(1.8176144,0,0,1.7852079,-95.549344,-292.21135)" />
+     transform="matrix(1.8176144,0,0,1.7852079,-99.549344,-292.21135)" />
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
      x="231.17955"
-     y="555.84271"
+     y="557.84271"
      id="text21778"><tspan
        sodipodi:role="line"
        id="tspan21776"
        x="231.17955"
-       y="555.84271"
+       y="557.84271"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.66666698px;font-family:Arial;-inkscape-font-specification:Arial">- 100</tspan></text>
   <text
      xml:space="preserve"
@@ -34681,12 +34672,12 @@
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-     x="23.989513"
+     x="25.989513"
      y="277.32895"
      id="text21790"><tspan
        sodipodi:role="line"
        id="tspan21788"
-       x="23.989513"
+       x="25.989513"
        y="277.32895"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.66666698px;font-family:Arial;-inkscape-font-specification:Arial">0</tspan></text>
   <text
@@ -34703,45 +34694,98 @@
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-     x="5.9895134"
+     x="7.9895134"
      y="421.12451"
      id="text21798"><tspan
        sodipodi:role="line"
        id="tspan21796"
-       x="5.9895134"
+       x="7.9895134"
        y="421.12451"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.66666698px;font-family:Arial;-inkscape-font-specification:Arial">- 50</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-     x="110.57143"
+     x="106.57143"
      y="400.47705"
      id="text21802"><tspan
        sodipodi:role="line"
        id="tspan21800"
-       x="110.57143"
+       x="106.57143"
        y="400.47705"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.66666667px;font-family:Arial;-inkscape-font-specification:Arial">active</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:Arial;-inkscape-font-specification:Arial">active</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-     x="110.18874"
+     x="106.18874"
      y="424.14417"
      id="text21806"><tspan
        sodipodi:role="line"
        id="tspan21804"
-       x="110.18874"
+       x="106.18874"
        y="424.14417"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.66666667px;font-family:Arial;-inkscape-font-specification:Arial">passive</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:Arial;-inkscape-font-specification:Arial">passive</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-     x="85.940002"
+     x="81.940002"
      y="376.42001"
      id="text21810"><tspan
        sodipodi:role="line"
        id="tspan21808"
-       x="85.940002"
+       x="81.940002"
        y="376.42001"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.66666667px;font-family:Arial;-inkscape-font-specification:Arial">Restoration strategies:</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:Arial;-inkscape-font-specification:Arial">Restoration strategies</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     x="-293.11563"
+     y="17.521492"
+     id="text21995"
+     transform="rotate(-90)"><tspan
+       sodipodi:role="line"
+       id="tspan21993"
+       x="-293.11563"
+       y="17.521492"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:Arial;-inkscape-font-specification:Arial">latitude</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     x="437.70618"
+     y="573.50726"
+     id="text21999"><tspan
+       sodipodi:role="line"
+       id="tspan21997"
+       x="437.70618"
+       y="573.50726"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:Arial;-inkscape-font-specification:Arial">longitude</tspan></text>
+  <polyline
+     points="33.53,127.33 36.27,127.33 "
+     style="fill:none;stroke:#333333;stroke-width:1.07000005;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
+     clip-path="url(#cpMHw5MTQuNHw1NzZ8MA==-1)"
+     id="polyline21706-0"
+     transform="matrix(1.6788322,0,0,1,-20.090589,145.00553)" />
+  <polyline
+     points="33.53,127.33 36.27,127.33 "
+     style="fill:none;stroke:#333333;stroke-width:1.07000005;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
+     clip-path="url(#cpMHw5MTQuNHw1NzZ8MA==-8)"
+     id="polyline21706-7"
+     transform="matrix(1.6788322,0,0,1,-20.777351,289.02649)" />
+  <polyline
+     points="33.53,127.33 36.27,127.33 "
+     style="fill:none;stroke:#333333;stroke-width:1.07000005;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
+     clip-path="url(#cpMHw5MTQuNHw1NzZ8MA==-7)"
+     id="polyline21706-3"
+     transform="matrix(0,-1.6788322,1,0,126.48389,600.52047)" />
+  <polyline
+     points="33.53,127.33 36.27,127.33 "
+     style="fill:none;stroke:#333333;stroke-width:1.07000005;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
+     clip-path="url(#cpMHw5MTQuNHw1NzZ8MA==-7-0)"
+     id="polyline21706-3-1"
+     transform="matrix(0,-1.6788322,1,0,339.11561,600.62008)" />
+  <polyline
+     points="33.53,127.33 36.27,127.33 "
+     style="fill:none;stroke:#333333;stroke-width:1.07000005;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
+     clip-path="url(#cpMHw5MTQuNHw1NzZ8MA==-7-0-2)"
+     id="polyline21706-3-1-3"
+     transform="matrix(0,-1.6788322,1,0,551.18899,599.26752)" />
 </svg>
