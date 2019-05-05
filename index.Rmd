@@ -53,16 +53,16 @@ ggplot(evidence, aes(disturbance, fill = paradigm)) +
   theme(legend.background = element_rect(fill="white", 
                                   size=0.5, linetype="solid", colour="gray70")) +
   theme(legend.position = c(0.81,0.85)) +
-  labs(fill= "Restoration strategies")
+  labs(fill= "Restoration strategy")
   
 
 #ggsave(file="s1.svg", width=9, height=5)
 
-ggplot(evidence, aes(intervention, fill = paradigm)) +
-  geom_bar(na.rm = TRUE) +
-  coord_flip() +
-  scale_fill_brewer(palette = "Paired") +
-  labs(y = "frequency", fill= "Restoration strategies")
+#ggplot(evidence, aes(intervention, fill = paradigm)) +
+ # geom_bar(na.rm = TRUE) +
+#  coord_flip() +
+#  scale_fill_brewer(palette = "Paired") +
+#  labs(y = "frequency", fill= "Restoration strategies")
 
 #paradigm
 derived.evidence <- evidence %>%
@@ -291,46 +291,48 @@ detach(package:meta, unload = TRUE)
 ```{r, viz, warning=FALSE, message=FALSE}
 #ggplot uses geometric means and random means reported in models are harmonic
 
-ggplot(data, aes(paradigm, lrr, color = intervention)) +
-  ylim(c(-2,2)) +
-  geom_boxplot() + 
-  labs(x = "", y = "lrr", color = "") +
-  coord_flip() +
-  geom_hline(yintercept = 0, colour="grey", linetype = "longdash")+
-  theme(axis.text.x=element_text(face="bold"),
-        axis.text.y=element_text(face="bold"),
-        axis.title=element_text(size=12,face="bold"),
-        strip.text.y = element_text(hjust=0,vjust = 1,angle=180,face="bold")) +
-  scale_color_brewer(palette = "Set1")
+#ggplot(data, aes(paradigm, lrr, color = intervention)) +
+ # ylim(c(-2,2)) +
+  #geom_boxplot() + 
+ # labs(x = "", y = "lrr", color = "") +
+ # coord_flip() +
+ # geom_hline(yintercept = 0, colour="grey", linetype = "longdash")+
+ # theme(axis.text.x=element_text(face="bold"),
+ #       axis.text.y=element_text(face="bold"),
+  #      axis.title=element_text(size=12,face="bold"),
+  #      strip.text.y = element_text(hjust=0,vjust = 1,angle=180,face="bold")) +
+  #scale_color_brewer(palette = "Set1")
 
-ggplot(data, aes(paradigm, lrr, fill = intervention)) +
-  ylim(c(-2,2)) +
-  geom_violin() + 
-  labs(x = "", y = "lrr", fill = "") +
-  coord_flip() +
-  geom_hline(yintercept = 0, colour="grey", linetype = "longdash")+
-  theme(axis.text.x=element_text(face="bold"),
-        axis.text.y=element_text(face="bold"),
-        axis.title=element_text(size=12,face="bold"),
-        strip.text.y = element_text(hjust=0,vjust = 1,angle=180,face="bold")) +
-  scale_fill_brewer(palette = "Set1")
+#ggplot(data, aes(paradigm, lrr, fill = intervention)) +
+  #ylim(c(-2,2)) +
+  #geom_violin() + 
+  #labs(x = "", y = "lrr", fill = "") +
+  #coord_flip() +
+ # geom_hline(yintercept = 0, colour="grey", linetype = "longdash")+
+ # theme(axis.text.x=element_text(face="bold"),
+   #     axis.text.y=element_text(face="bold"),
+  #      axis.title=element_text(size=12,face="bold"),
+    #    strip.text.y = element_text(hjust=0,vjust = 1,angle=180,face="bold")) +
+  #scale_fill_brewer(palette = "Set1")
 
-ggplot(data, aes(aridity.index, lrr, color = intervention)) + 
-  geom_point(position = position_dodge(width = 0.5)) +
-  facet_wrap(~paradigm) +
-  scale_color_brewer(palette = "Set1") + 
-  labs(x = "aridity", y = "lrr", color = "")
+#ggplot(data, aes(aridity.index, lrr, color = intervention)) + 
+  #geom_point(position = position_dodge(width = 0.5)) +
+  #facet_wrap(~paradigm) +
+  #scale_color_brewer(palette = "Set1") + 
+  #labs(x = "aridity", y = "lrr", color = "")
 
-ggplot(data, aes(exp.length, lrr, color = intervention)) + 
-  geom_point(position = position_dodge(width = 0.5)) +
-  facet_wrap(~paradigm) +
-  scale_color_brewer(palette = "Set1") + 
-  labs(x = "length of experiment", y = "lrr", color = "")
+#ggplot(data, aes(exp.length, lrr, color = intervention)) + 
+ # geom_point(position = position_dodge(width = 0.5)) +
+ # facet_wrap(~paradigm) +
+ # scale_color_brewer(palette = "Set1") + 
+ # labs(x = "length of experiment", y = "lrr", color = "")
 
 #random model outputs
-models <- read_csv("data/meta_outputs.csv")
+models <- read_csv("data/meta_outputs.csv") #use means as estimate from models and not primary data values
+
+
 ggplot(models, aes(paradigm, lrr, color = intervention)) +
-  ylim(c(-2,2)) +
+  ylim(c(-1,1)) +
   geom_point(position = position_dodge(width = 0.5), size=1) + 
   labs(x = "", y = "log response ratio", color = "") +
   coord_flip() +
