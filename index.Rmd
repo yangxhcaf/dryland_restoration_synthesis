@@ -127,8 +127,8 @@ data <- data_all %>%
 #write_csv(data, "data/data.csv")
 
 
-#totable <- data %>% group_by(paradigm, intervention, technique, outcome) %>% count()
-#write.csv(totable,"totable.csv")
+#totable2 <- data %>% group_by(paradigm, intervention, technique, outcome,measured.factor) %>% count()
+#write.csv(totable2,"totable2.csv")
 
 ```
 

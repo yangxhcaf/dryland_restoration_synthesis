@@ -1,0 +1,247 @@
+,paradigm,intervention,outcome,technique,measured.factor,measurements,n,n
+1,active,soil,habitat,"carbon addition, top soil removal, seeding",bacterial-feeders,microbial abundance,15,3
+2,active,soil,habitat,"carbon addition, top soil removal, seeding",ecto-parasites,,,3
+3,active,soil,habitat,"carbon addition, top soil removal, seeding",fungal-feeders,,,3
+4,active,soil,habitat,"carbon addition, top soil removal, seeding",omni-carnivores,,,3
+5,active,soil,habitat,"carbon addition, top soil removal, seeding",root biomass,plant biomass,30,12
+6,active,soil,habitat,"carbon addition, top soil removal, seeding",root hair-feeders,,,3
+7,active,soil,habitat,"carbon addition, top soil removal, seeding",shoot biomass,,,18
+8,active,soil,habitat,carbon amendment,moss cover,moss cover,18,18
+9,active,soil,habitat,carbon amendment,nitrate,soil nutrients content,9,9
+10,active,soil,soil,"fertilization, biostimulants, seeding",bioavailable P,nutrients content and plant biomass,48,12
+11,active,soil,soil,"fertilization, biostimulants, seeding",biomass,,,12
+12,active,soil,soil,"fertilization, biostimulants, seeding",biomass P,,,12
+13,active,soil,soil,"fertilization, biostimulants, seeding",P-removal with biomass,,,12
+14,active,soil,plants,mycorrhizal,available P,soil nutrients content and soil properties,128,8
+15,active,soil,plants,mycorrhizal,electrical conductivity,,,8
+16,active,soil,plants,mycorrhizal,extractable K,,,8
+17,active,soil,plants,mycorrhizal,nitrogen,,,24
+18,active,soil,plants,mycorrhizal,ph,,,8
+19,active,soil,plants,mycorrhizal,phosphorus,,,24
+20,active,soil,plants,mycorrhizal,potassium,,,24
+21,active,soil,plants,mycorrhizal,shoot dry weight,,,16
+22,active,soil,plants,mycorrhizal,total N,,,8
+23,active,vegetation,habitat,"burning, mowing",calcium,soil nutrients content and soil properties,24,4
+24,active,vegetation,habitat,"burning, mowing",carbon,,,4
+25,active,vegetation,habitat,"burning, mowing",electrical conductivity,,,4
+26,active,vegetation,habitat,"burning, mowing",ph,,,4
+27,active,vegetation,habitat,"burning, mowing",phosphorus,,,4
+28,active,vegetation,habitat,"burning, mowing",potassium,,,4
+29,active,vegetation,plants,mechanical disturbance and seeding,density of unpalatable grasses,plant cover and density,4,1
+30,active,vegetation,plants,mechanical disturbance and seeding,Poa ligularis cover,,,1
+31,active,vegetation,plants,mechanical disturbance and seeding,Poa ligularis standing crop,,,1
+32,active,vegetation,plants,mechanical disturbance and seeding,unpalatable grasses cover,,,1
+33,active,vegetation,habitat,"mowing, grazing",bioavailable P,soil nutrients content and plant richness,3,1
+34,active,vegetation,habitat,"mowing, grazing",plant richness,,,1
+35,active,vegetation,habitat,"mowing, grazing",slowly cycling P,,,1
+36,active,vegetation,habitat,planting,aboveground biomass,"plant biomass, density, cover, diversity and richness",237,22
+37,active,vegetation,habitat,planting,available P,soil nutrients,132,22
+38,active,vegetation,habitat,planting,basal growth,,,6
+39,active,vegetation,habitat,planting,C N ratio,,,22
+40,active,vegetation,habitat,planting,C P ratio,,,22
+41,active,vegetation,habitat,planting,flowering clums,,,6
+42,active,vegetation,habitat,planting,forb biomass,,,6
+43,active,vegetation,habitat,planting,forb density,,,6
+44,active,vegetation,habitat,planting,forbs cover,,,6
+45,active,vegetation,habitat,planting,grass biomass,,,6
+46,active,vegetation,habitat,planting,grass cover,,,6
+47,active,vegetation,habitat,planting,grass density,,,6
+48,active,vegetation,habitat,planting,legume biomass,,,6
+49,active,vegetation,habitat,planting,legume cover,,,6
+50,active,vegetation,habitat,planting,legume density,,,5
+51,active,vegetation,habitat,planting,mineral N,,,22
+52,active,vegetation,habitat,planting,plant cover,,,6
+53,active,vegetation,habitat,planting,plant density,,,18
+54,active,vegetation,habitat,planting,plant diversity,,,54
+55,active,vegetation,habitat,planting,plant richness,,,72
+56,active,vegetation,habitat,planting,soil total nitrogen,,,22
+57,active,vegetation,habitat,planting,total P,,,22
+58,active,vegetation,plants,planting,bare ground,plant height and cover,6,2
+59,active,vegetation,plants,planting,invertebrate abundance,"invertebrate abundance, diversity, dominance, eveness and richness",10,2
+60,active,vegetation,plants,planting,invertebrate diversity,"lizard abundance, diversity, dominance, eveness and richness",10,2
+61,active,vegetation,plants,planting,invertebrate dominance,,,2
+62,active,vegetation,plants,planting,invertebrate evenness,,,2
+63,active,vegetation,plants,planting,invertebrate richness,,,2
+64,active,vegetation,plants,planting,lizards abundance,,,2
+65,active,vegetation,plants,planting,lizards diversity,,,2
+66,active,vegetation,plants,planting,lizards dominance,,,2
+67,active,vegetation,plants,planting,lizards evenness,,,2
+68,active,vegetation,plants,planting,lizards richness,,,2
+69,active,vegetation,plants,planting,plant height,,,2
+70,active,vegetation,plants,planting,vegetation basal cover,,,2
+71,active,vegetation,soil,planting,a D glucosidase,soil nutrients content and soil properties,84,8
+72,active,vegetation,soil,planting,b D glucosidase,,,4
+73,active,vegetation,soil,planting,catalase,,,8
+74,active,vegetation,soil,planting,nitrogen,,,8
+75,active,vegetation,soil,planting,organic carbon,,,8
+76,active,vegetation,soil,planting,ph,,,8
+77,active,vegetation,soil,planting,phosphatase,,,8
+78,active,vegetation,soil,planting,protease,,,8
+79,active,vegetation,soil,planting,soil dehydrogenase,,,8
+80,active,vegetation,soil,planting,total N,,,8
+81,active,vegetation,soil,planting,total P,,,8
+82,active,vegetation,animals,"planting, grazing exclusion",arthropod abundance,"invertebrate abundance, diversity and richness",6,2
+83,active,vegetation,animals,"planting, grazing exclusion",arthropod diversity,soil properties,10,2
+84,active,vegetation,animals,"planting, grazing exclusion",arthropod richness,"plant cover, density, height and richness",8,2
+85,active,vegetation,animals,"planting, grazing exclusion",bulk density,,,2
+86,active,vegetation,animals,"planting, grazing exclusion",coarse sand,,,2
+87,active,vegetation,animals,"planting, grazing exclusion",fine sand,,,2
+88,active,vegetation,animals,"planting, grazing exclusion",plant cover,,,2
+89,active,vegetation,animals,"planting, grazing exclusion",plant density,,,2
+90,active,vegetation,animals,"planting, grazing exclusion",plant height,,,2
+91,active,vegetation,animals,"planting, grazing exclusion",plant richness,,,2
+92,active,vegetation,animals,"planting, grazing exclusion",temperature,,,2
+93,active,vegetation,animals,"planting, grazing exclusion",water content,,,2
+94,active,vegetation,plants,seeding,annual grasses cover,plant cover and density,32,3
+95,active,vegetation,plants,seeding,colonizing perennial grasses cover,seedling emergence,6,4
+96,active,vegetation,plants,seeding,forbs cover,seedling establishment,6,5
+97,active,vegetation,plants,seeding,plant density,,,15
+98,active,vegetation,plants,seeding,seeded perennial grasses cover,,,5
+99,active,vegetation,plants,seeding,seedling emergence,,,6
+100,active,vegetation,plants,seeding,seedling establishment,,,6
+101,active,vegetation,soil,seeding,available N,soil nutrients content and soil properties,117,12
+102,active,vegetation,soil,seeding,bulk density,,,9
+103,active,vegetation,soil,seeding,C N ratio,,,9
+104,active,vegetation,soil,seeding,electrical conductivity,,,9
+105,active,vegetation,soil,seeding,microbial biomass C,,,12
+106,active,vegetation,soil,seeding,microbial biomass N,,,12
+107,active,vegetation,soil,seeding,ph,,,9
+108,active,vegetation,soil,seeding,soil organic carbon,,,24
+109,active,vegetation,soil,seeding,soil water content,,,9
+110,active,vegetation,soil,seeding,total soil nitrogen,,,12
+111,active,vegetation,plants,seeding and ripping,annual wild plant cover,plant cover and abundance,12,2
+112,active,vegetation,plants,seeding and ripping,annuals abundance,,,2
+113,active,vegetation,plants,seeding and ripping,perennials abundance,,,2
+114,active,vegetation,plants,seeding and ripping,perennials cover,,,2
+115,active,vegetation,plants,seeding and ripping,seeded plant abundance,,,2
+116,active,vegetation,plants,seeding and ripping,seeded plant cover,,,2
+117,active,vegetation,habitat,"seeding, cutting, grazing treatments",plant cover,plant cover and richness,2,1
+118,active,vegetation,habitat,"seeding, cutting, grazing treatments",plant richness,,,1
+119,active,vegetation,habitat,"seeding, gypsum and organic mulch",infiltration depth,soil properties,3,3
+120,active,vegetation,habitat,"seeding, gypsum and organic mulch",Tripteris seedlings,seedling emergence and surviving plants,6,3
+121,active,vegetation,habitat,"seeding, gypsum and organic mulch",Tripteris surviving plants,,,3
+122,active,vegetation,plants,"seeding, irrigation",seedling emergence,seedling emergence,7,7
+123,active,vegetation,habitat,"seeding, mowing and herbicide, mulching (straw and sawdust)",available N,plant cover and richness,6,6
+124,active,vegetation,habitat,"seeding, mowing and herbicide, mulching (straw and sawdust)",exotics cover,soil nutrients content and soil properties,12,3
+125,active,vegetation,habitat,"seeding, mowing and herbicide, mulching (straw and sawdust)",plant richness,,,3
+126,active,vegetation,habitat,"seeding, mowing and herbicide, mulching (straw and sawdust)",soil moisture,,,6
+127,active,vegetation,plants,"seeding, mulching, weeding",plant cover,plant cover,6,3
+128,active,vegetation,plants,"seeding, mulching, weeding",shrub cover,,,3
+129,active,vegetation,habitat,"seeding, planting",coefficient of conservatism,"plant eveness, diversity and richness",15,3
+130,active,vegetation,habitat,"seeding, planting",evenness,,,3
+131,active,vegetation,habitat,"seeding, planting",floristic quality index,,,3
+132,active,vegetation,habitat,"seeding, planting",plant diversity,,,3
+133,active,vegetation,habitat,"seeding, planting",plant richness,,,3
+134,active,vegetation,plants,"seeding, safe sites for seeds, fencing",plant biomass,plant cover and biomass,8,4
+135,active,vegetation,plants,"seeding, safe sites for seeds, fencing",plant cover,,,4
+136,active,vegetation,plants,"seeding, soil tilling, fertilization",annual grasses biomass,plant biomass,7,7
+137,active,water addition,plants,"seeding, irrigation",annuals cover,"plant cover, abundance, biomass, density and survival",63,5
+138,active,water addition,plants,"seeding, irrigation",bare ground,,,5
+139,active,water addition,plants,"seeding, irrigation",perennial grass cover,,,5
+140,active,water addition,plants,"seeding, irrigation",plant abundance,,,7
+141,active,water addition,plants,"seeding, irrigation",plant biomass,,,5
+142,active,water addition,plants,"seeding, irrigation",shrub cover,,,3
+143,active,water addition,plants,"seeding, irrigation",shrub density,,,4
+144,active,water addition,plants,"seeding, irrigation",shrub survival,,,9
+145,active,water addition,plants,"seeding, irrigation",weed biomass,,,10
+146,active,water addition,plants,"seeding, irrigation",weed density,,,10
+147,active,water addition,habitat,water addition,aboveground biomass,"plant biomass, density, cover, evenness, productivity and richness",12,2
+148,active,water addition,habitat,water addition,belowground net primary productivity,,,2
+149,active,water addition,habitat,water addition,evenness,,,2
+150,active,water addition,habitat,water addition,plant cover,,,2
+151,active,water addition,habitat,water addition,plant density,,,2
+152,active,water addition,habitat,water addition,plant richness,,,2
+153,passive,grazing exclusion,plants,fencing,herbs height,"plant height, cover and diversity",21,3
+154,passive,grazing exclusion,plants,fencing,herbs structural diversity,,,3
+155,passive,grazing exclusion,plants,fencing,plant cover,,,3
+156,passive,grazing exclusion,plants,fencing,shrubs height,,,3
+157,passive,grazing exclusion,plants,fencing,shrubs structural diversity,,,3
+158,passive,grazing exclusion,plants,fencing,trees height,,,3
+159,passive,grazing exclusion,plants,fencing,trees structural diversity,,,3
+160,passive,grazing exclusion,plants,grazing exclusion,browse height,"plant height, cover, diversity, biomass and richness",8,1
+161,passive,grazing exclusion,plants,grazing exclusion,canopy cover,,,1
+162,passive,grazing exclusion,plants,grazing exclusion,canopy height,,,1
+163,passive,grazing exclusion,plants,grazing exclusion,herbaceous plant diversity,,,1
+164,passive,grazing exclusion,plants,grazing exclusion,plant biomass,,,1
+165,passive,grazing exclusion,plants,grazing exclusion,plant diversity,,,1
+166,passive,grazing exclusion,plants,grazing exclusion,plant richness,,,1
+167,passive,grazing exclusion,plants,grazing exclusion,wood plant diversity,,,1
+168,passive,soil,soil,mycorrhizal,mycorrhizal fungi common species,microbial richness and density,6,2
+169,passive,soil,soil,mycorrhizal,mycorrhizal fungi richness,,,2
+170,passive,soil,soil,mycorrhizal,mycorrhizal fungi spore density,,,2
+171,passive,soil,soil,natural recovery,alkaline phosphatase,soil nutrients content and soil properties,198,11
+172,passive,soil,soil,natural recovery,amylase,,,11
+173,passive,soil,soil,natural recovery,available K,,,11
+174,passive,soil,soil,natural recovery,available N,,,11
+175,passive,soil,soil,natural recovery,available P,,,11
+176,passive,soil,soil,natural recovery,bulk density,,,11
+177,passive,soil,soil,natural recovery,catalase,,,11
+178,passive,soil,soil,natural recovery,cellulase,,,11
+179,passive,soil,soil,natural recovery,microbial biomass C,,,11
+180,passive,soil,soil,natural recovery,microbial biomass N,,,11
+181,passive,soil,soil,natural recovery,microbial biomass P,,,11
+182,passive,soil,soil,natural recovery,organic carbon,,,11
+183,passive,soil,soil,natural recovery,ph,,,11
+184,passive,soil,soil,natural recovery,polyphenol oxidase,,,11
+185,passive,soil,soil,natural recovery,saccharase,,,11
+186,passive,soil,soil,natural recovery,total N,,,11
+187,passive,soil,soil,natural recovery,total P,,,11
+188,passive,soil,soil,natural recovery,urease,,,11
+189,passive,vegetation,habitat,facilitation,electrical conductivity,soil nutrients content and soil properties,25,2
+190,passive,vegetation,habitat,facilitation,grass survival,"plant survival, biomass, height, lenght, width, abundance, and richness",34,3
+191,passive,vegetation,habitat,facilitation,luminance,,,4
+192,passive,vegetation,habitat,facilitation,nebkha height,,,1
+193,passive,vegetation,habitat,facilitation,nebkha lenght,,,1
+194,passive,vegetation,habitat,facilitation,nebkha width,,,1
+195,passive,vegetation,habitat,facilitation,organic matter,,,2
+196,passive,vegetation,habitat,facilitation,plant abundance,,,2
+197,passive,vegetation,habitat,facilitation,plant richness,,,2
+198,passive,vegetation,habitat,facilitation,potassium,,,1
+199,passive,vegetation,habitat,facilitation,relative humidity,,,4
+200,passive,vegetation,habitat,facilitation,sand,,,2
+201,passive,vegetation,habitat,facilitation,silt and clay,,,2
+202,passive,vegetation,habitat,facilitation,sodium,,,2
+203,passive,vegetation,habitat,facilitation,temperature,,,4
+204,passive,vegetation,habitat,facilitation,total N,,,2
+205,passive,vegetation,habitat,fencing,aboveground biomass,"plant biomass, evenness, cover, density, diversity, height and richness",8,1
+206,passive,vegetation,habitat,fencing,belowground biomass,soil nutrients content and soil properties,7,1
+207,passive,vegetation,habitat,fencing,bulk density,,,1
+208,passive,vegetation,habitat,fencing,C N ratio,,,1
+209,passive,vegetation,habitat,fencing,carbon,,,1
+210,passive,vegetation,habitat,fencing,electrical conductivity,,,1
+211,passive,vegetation,habitat,fencing,evenness,,,1
+212,passive,vegetation,habitat,fencing,ph,,,1
+213,passive,vegetation,habitat,fencing,plant cover,,,1
+214,passive,vegetation,habitat,fencing,plant density,,,1
+215,passive,vegetation,habitat,fencing,plant diversity,,,1
+216,passive,vegetation,habitat,fencing,plant height,,,1
+217,passive,vegetation,habitat,fencing,plant richness,,,1
+218,passive,vegetation,habitat,fencing,total N,,,1
+219,passive,vegetation,habitat,fencing,total P,,,1
+220,passive,vegetation,plants,grazing exclusion,annuals cover,"plant cover, density, height, biomass and richness",17,2
+221,passive,vegetation,plants,grazing exclusion,Artemisia adamsii density,,,1
+222,passive,vegetation,plants,grazing exclusion,Artemisia adamsii height,,,1
+223,passive,vegetation,plants,grazing exclusion,Artemisia adamsii leaf biomass,,,1
+224,passive,vegetation,plants,grazing exclusion,Artemisia adamsii stem biomass,,,1
+225,passive,vegetation,plants,grazing exclusion,plant biomass,,,2
+226,passive,vegetation,plants,grazing exclusion,plant cover,,,2
+227,passive,vegetation,plants,grazing exclusion,plant richness,,,2
+228,passive,vegetation,plants,grazing exclusion,shrub density,,,2
+229,passive,vegetation,plants,grazing exclusion,Stypa krylovii biomass,,,3
+230,passive,vegetation,habitat,natural recovery,available K,soil nutrients content and soil properties,30,3
+231,passive,vegetation,habitat,natural recovery,available P,,,3
+232,passive,vegetation,habitat,natural recovery,carbon,,,3
+233,passive,vegetation,habitat,natural recovery,cation exchange capacity,,,3
+234,passive,vegetation,habitat,natural recovery,clay,,,3
+235,passive,vegetation,habitat,natural recovery,coarse sand,,,3
+236,passive,vegetation,habitat,natural recovery,fine sand,,,3
+237,passive,vegetation,habitat,natural recovery,silt,,,3
+238,passive,vegetation,habitat,natural recovery,total N,,,3
+239,passive,vegetation,habitat,natural recovery,water content,,,3
+240,passive,vegetation,plants,natural recovery,canopy openness,"plant openness, frequency and richness",4,1
+241,passive,vegetation,plants,natural recovery,endemic species frequency,,,1
+242,passive,vegetation,plants,natural recovery,plant richness,,,1
+243,passive,vegetation,plants,natural recovery,shade tolerant species frequency,,,1
+244,passive,vegetation,habitat,"seeding, shrub facilitation",seedling biomass,,,8
+245,passive,vegetation,habitat,"seeding, shrub facilitation",seedling height,,,8
+246,passive,vegetation,habitat,"seeding, shrub facilitation",seedling survival,,,8
