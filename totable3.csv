@@ -1,0 +1,248 @@
+"","study.ID","paradigm","intervention","technique","outcome","measured.factor","n"
+"1",11,"active","vegetation","planting","soil","a D glucosidase",8
+"2",11,"active","vegetation","planting","soil","b D glucosidase",4
+"3",11,"active","vegetation","planting","soil","catalase",8
+"4",11,"active","vegetation","planting","soil","nitrogen",8
+"5",11,"active","vegetation","planting","soil","organic carbon",8
+"6",11,"active","vegetation","planting","soil","ph",8
+"7",11,"active","vegetation","planting","soil","phosphatase",8
+"8",11,"active","vegetation","planting","soil","protease",8
+"9",11,"active","vegetation","planting","soil","soil dehydrogenase",8
+"10",11,"active","vegetation","planting","soil","total N",8
+"11",11,"active","vegetation","planting","soil","total P",8
+"12",13,"active","vegetation","planting","plants","bare ground",2
+"13",13,"active","vegetation","planting","plants","invertebrate abundance",2
+"14",13,"active","vegetation","planting","plants","invertebrate diversity",2
+"15",13,"active","vegetation","planting","plants","invertebrate dominance",2
+"16",13,"active","vegetation","planting","plants","invertebrate evenness",2
+"17",13,"active","vegetation","planting","plants","invertebrate richness",2
+"18",13,"active","vegetation","planting","plants","lizards abundance",2
+"19",13,"active","vegetation","planting","plants","lizards diversity",2
+"20",13,"active","vegetation","planting","plants","lizards dominance",2
+"21",13,"active","vegetation","planting","plants","lizards evenness",2
+"22",13,"active","vegetation","planting","plants","lizards richness",2
+"23",13,"active","vegetation","planting","plants","plant height",2
+"24",13,"active","vegetation","planting","plants","vegetation basal cover",2
+"25",51,"active","vegetation","planting, grazing exclusion","animals","arthropod abundance",2
+"26",51,"active","vegetation","planting, grazing exclusion","animals","arthropod diversity",2
+"27",51,"active","vegetation","planting, grazing exclusion","animals","arthropod richness",2
+"28",51,"active","vegetation","planting, grazing exclusion","animals","bulk density",2
+"29",51,"active","vegetation","planting, grazing exclusion","animals","coarse sand",2
+"30",51,"active","vegetation","planting, grazing exclusion","animals","fine sand",2
+"31",51,"active","vegetation","planting, grazing exclusion","animals","plant cover",2
+"32",51,"active","vegetation","planting, grazing exclusion","animals","plant density",2
+"33",51,"active","vegetation","planting, grazing exclusion","animals","plant height",2
+"34",51,"active","vegetation","planting, grazing exclusion","animals","plant richness",2
+"35",51,"active","vegetation","planting, grazing exclusion","animals","temperature",2
+"36",51,"active","vegetation","planting, grazing exclusion","animals","water content",2
+"37",64,"active","soil","carbon addition, top soil removal, seeding","habitat","bacterial-feeders",3
+"38",64,"active","soil","carbon addition, top soil removal, seeding","habitat","ecto-parasites",3
+"39",64,"active","soil","carbon addition, top soil removal, seeding","habitat","fungal-feeders",3
+"40",64,"active","soil","carbon addition, top soil removal, seeding","habitat","omni-carnivores",3
+"41",64,"active","soil","carbon addition, top soil removal, seeding","habitat","root biomass",12
+"42",64,"active","soil","carbon addition, top soil removal, seeding","habitat","root hair-feeders",3
+"43",64,"active","soil","carbon addition, top soil removal, seeding","habitat","shoot biomass",18
+"44",66,"passive","vegetation","seeding, shrub facilitation","habitat","seedling biomass",8
+"45",66,"passive","vegetation","seeding, shrub facilitation","habitat","seedling height",8
+"46",66,"passive","vegetation","seeding, shrub facilitation","habitat","seedling survival",8
+"47",68,"active","vegetation","planting","habitat","basal growth",6
+"48",68,"active","vegetation","planting","habitat","flowering clums",6
+"49",69,"passive","vegetation","grazing exclusion","plants","annuals cover",2
+"50",69,"passive","vegetation","grazing exclusion","plants","plant biomass",2
+"51",69,"passive","vegetation","grazing exclusion","plants","plant cover",2
+"52",69,"passive","vegetation","grazing exclusion","plants","plant richness",2
+"53",69,"passive","vegetation","grazing exclusion","plants","shrub density",2
+"54",77,"active","vegetation","mowing, grazing","habitat","bioavailable P",1
+"55",77,"active","vegetation","mowing, grazing","habitat","plant richness",1
+"56",77,"active","vegetation","mowing, grazing","habitat","slowly cycling P",1
+"57",87,"active","soil","fertilization, biostimulants, seeding","soil","bioavailable P",12
+"58",87,"active","soil","fertilization, biostimulants, seeding","soil","biomass",12
+"59",87,"active","soil","fertilization, biostimulants, seeding","soil","biomass P",12
+"60",87,"active","soil","fertilization, biostimulants, seeding","soil","P-removal with biomass",12
+"61",88,"active","vegetation","seeding","soil","available N",12
+"62",88,"active","vegetation","seeding","soil","bulk density",9
+"63",88,"active","vegetation","seeding","soil","C N ratio",9
+"64",88,"active","vegetation","seeding","soil","electrical conductivity",9
+"65",88,"active","vegetation","seeding","soil","microbial biomass C",12
+"66",88,"active","vegetation","seeding","soil","microbial biomass N",12
+"67",88,"active","vegetation","seeding","soil","ph",9
+"68",88,"active","vegetation","seeding","soil","soil organic carbon",24
+"69",88,"active","vegetation","seeding","soil","soil water content",9
+"70",88,"active","vegetation","seeding","soil","total soil nitrogen",12
+"71",95,"active","vegetation","seeding, planting","habitat","coefficient of conservatism",3
+"72",95,"active","vegetation","seeding, planting","habitat","evenness",3
+"73",95,"active","vegetation","seeding, planting","habitat","floristic quality index",3
+"74",95,"active","vegetation","seeding, planting","habitat","plant diversity",3
+"75",95,"active","vegetation","seeding, planting","habitat","plant richness",3
+"76",98,"active","vegetation","seeding, cutting, grazing treatments","habitat","plant cover",1
+"77",98,"active","vegetation","seeding, cutting, grazing treatments","habitat","plant richness",1
+"78",104,"active","soil","mycorrhizal","plants","available P",8
+"79",104,"active","soil","mycorrhizal","plants","electrical conductivity",8
+"80",104,"active","soil","mycorrhizal","plants","extractable K",8
+"81",104,"active","soil","mycorrhizal","plants","nitrogen",24
+"82",104,"active","soil","mycorrhizal","plants","ph",8
+"83",104,"active","soil","mycorrhizal","plants","phosphorus",24
+"84",104,"active","soil","mycorrhizal","plants","potassium",24
+"85",104,"active","soil","mycorrhizal","plants","shoot dry weight",16
+"86",104,"active","soil","mycorrhizal","plants","total N",8
+"87",109,"active","vegetation","seeding, mulching, weeding","plants","plant cover",3
+"88",109,"active","vegetation","seeding, mulching, weeding","plants","shrub cover",3
+"89",111,"active","vegetation","planting","habitat","aboveground biomass",22
+"90",111,"active","vegetation","planting","habitat","available P",22
+"91",111,"active","vegetation","planting","habitat","C N ratio",22
+"92",111,"active","vegetation","planting","habitat","C P ratio",22
+"93",111,"active","vegetation","planting","habitat","forb biomass",6
+"94",111,"active","vegetation","planting","habitat","forb density",6
+"95",111,"active","vegetation","planting","habitat","forbs cover",6
+"96",111,"active","vegetation","planting","habitat","grass biomass",6
+"97",111,"active","vegetation","planting","habitat","grass cover",6
+"98",111,"active","vegetation","planting","habitat","grass density",6
+"99",111,"active","vegetation","planting","habitat","legume biomass",6
+"100",111,"active","vegetation","planting","habitat","legume cover",6
+"101",111,"active","vegetation","planting","habitat","legume density",5
+"102",111,"active","vegetation","planting","habitat","mineral N",22
+"103",111,"active","vegetation","planting","habitat","plant cover",6
+"104",111,"active","vegetation","planting","habitat","plant density",18
+"105",111,"active","vegetation","planting","habitat","plant richness",18
+"106",111,"active","vegetation","planting","habitat","soil total nitrogen",22
+"107",111,"active","vegetation","planting","habitat","total P",22
+"108",112,"active","vegetation","seeding, irrigation","plants","seedling emergence",7
+"109",115,"passive","grazing exclusion","fencing","plants","herbs height",3
+"110",115,"passive","grazing exclusion","fencing","plants","herbs structural diversity",3
+"111",115,"passive","grazing exclusion","fencing","plants","plant cover",3
+"112",115,"passive","grazing exclusion","fencing","plants","shrubs height",3
+"113",115,"passive","grazing exclusion","fencing","plants","shrubs structural diversity",3
+"114",115,"passive","grazing exclusion","fencing","plants","trees height",3
+"115",115,"passive","grazing exclusion","fencing","plants","trees structural diversity",3
+"116",119,"active","vegetation","burning, mowing","habitat","calcium",4
+"117",119,"active","vegetation","burning, mowing","habitat","carbon",4
+"118",119,"active","vegetation","burning, mowing","habitat","electrical conductivity",4
+"119",119,"active","vegetation","burning, mowing","habitat","ph",4
+"120",119,"active","vegetation","burning, mowing","habitat","phosphorus",4
+"121",119,"active","vegetation","burning, mowing","habitat","potassium",4
+"122",121,"active","vegetation","planting","habitat","plant diversity",54
+"123",121,"active","vegetation","planting","habitat","plant richness",54
+"124",135,"passive","vegetation","natural recovery","habitat","available K",3
+"125",135,"passive","vegetation","natural recovery","habitat","available P",3
+"126",135,"passive","vegetation","natural recovery","habitat","carbon",3
+"127",135,"passive","vegetation","natural recovery","habitat","cation exchange capacity",3
+"128",135,"passive","vegetation","natural recovery","habitat","clay",3
+"129",135,"passive","vegetation","natural recovery","habitat","coarse sand",3
+"130",135,"passive","vegetation","natural recovery","habitat","fine sand",3
+"131",135,"passive","vegetation","natural recovery","habitat","silt",3
+"132",135,"passive","vegetation","natural recovery","habitat","total N",3
+"133",135,"passive","vegetation","natural recovery","habitat","water content",3
+"134",142,"active","vegetation","seeding","plants","seedling emergence",6
+"135",142,"active","vegetation","seeding","plants","seedling establishment",6
+"136",147,"active","vegetation","seeding","plants","annual grasses cover",3
+"137",147,"active","vegetation","seeding","plants","colonizing perennial grasses cover",4
+"138",147,"active","vegetation","seeding","plants","forbs cover",5
+"139",147,"active","vegetation","seeding","plants","plant density",15
+"140",147,"active","vegetation","seeding","plants","seeded perennial grasses cover",5
+"141",152,"active","vegetation","seeding, soil tilling, fertilization","plants","annual grasses biomass",7
+"142",154,"active","water addition","water addition","habitat","aboveground biomass",2
+"143",154,"active","water addition","water addition","habitat","belowground net primary productivity",2
+"144",154,"active","water addition","water addition","habitat","evenness",2
+"145",154,"active","water addition","water addition","habitat","plant cover",2
+"146",154,"active","water addition","water addition","habitat","plant density",2
+"147",154,"active","water addition","water addition","habitat","plant richness",2
+"148",161,"active","vegetation","mechanical disturbance and seeding","plants","density of unpalatable grasses",1
+"149",161,"active","vegetation","mechanical disturbance and seeding","plants","Poa ligularis cover",1
+"150",161,"active","vegetation","mechanical disturbance and seeding","plants","Poa ligularis standing crop",1
+"151",161,"active","vegetation","mechanical disturbance and seeding","plants","unpalatable grasses cover",1
+"152",167,"active","vegetation","seeding, mowing and herbicide, mulching (straw and sawdust)","habitat","available N",6
+"153",167,"active","vegetation","seeding, mowing and herbicide, mulching (straw and sawdust)","habitat","exotics cover",3
+"154",167,"active","vegetation","seeding, mowing and herbicide, mulching (straw and sawdust)","habitat","plant richness",3
+"155",167,"active","vegetation","seeding, mowing and herbicide, mulching (straw and sawdust)","habitat","soil moisture",6
+"156",170,"passive","grazing exclusion","grazing exclusion","plants","plant biomass",1
+"157",170,"passive","grazing exclusion","grazing exclusion","plants","plant diversity",1
+"158",170,"passive","grazing exclusion","grazing exclusion","plants","plant richness",1
+"159",179,"active","vegetation","seeding and ripping","plants","annual wild plant cover",2
+"160",179,"active","vegetation","seeding and ripping","plants","annuals abundance",2
+"161",179,"active","vegetation","seeding and ripping","plants","perennials abundance",2
+"162",179,"active","vegetation","seeding and ripping","plants","perennials cover",2
+"163",179,"active","vegetation","seeding and ripping","plants","seeded plant abundance",2
+"164",179,"active","vegetation","seeding and ripping","plants","seeded plant cover",2
+"165",206,"active","water addition","seeding, irrigation","plants","annuals cover",5
+"166",206,"active","water addition","seeding, irrigation","plants","bare ground",5
+"167",206,"active","water addition","seeding, irrigation","plants","perennial grass cover",5
+"168",206,"active","water addition","seeding, irrigation","plants","plant abundance",7
+"169",206,"active","water addition","seeding, irrigation","plants","plant biomass",5
+"170",206,"active","water addition","seeding, irrigation","plants","shrub cover",3
+"171",206,"active","water addition","seeding, irrigation","plants","shrub density",4
+"172",206,"active","water addition","seeding, irrigation","plants","shrub survival",9
+"173",206,"active","water addition","seeding, irrigation","plants","weed biomass",10
+"174",206,"active","water addition","seeding, irrigation","plants","weed density",10
+"175",207,"passive","vegetation","fencing","habitat","aboveground biomass",1
+"176",207,"passive","vegetation","fencing","habitat","belowground biomass",1
+"177",207,"passive","vegetation","fencing","habitat","bulk density",1
+"178",207,"passive","vegetation","fencing","habitat","C N ratio",1
+"179",207,"passive","vegetation","fencing","habitat","carbon",1
+"180",207,"passive","vegetation","fencing","habitat","electrical conductivity",1
+"181",207,"passive","vegetation","fencing","habitat","evenness",1
+"182",207,"passive","vegetation","fencing","habitat","ph",1
+"183",207,"passive","vegetation","fencing","habitat","plant cover",1
+"184",207,"passive","vegetation","fencing","habitat","plant density",1
+"185",207,"passive","vegetation","fencing","habitat","plant diversity",1
+"186",207,"passive","vegetation","fencing","habitat","plant height",1
+"187",207,"passive","vegetation","fencing","habitat","plant richness",1
+"188",207,"passive","vegetation","fencing","habitat","total N",1
+"189",207,"passive","vegetation","fencing","habitat","total P",1
+"190",210,"active","soil","carbon amendment","habitat","moss cover",18
+"191",210,"active","soil","carbon amendment","habitat","nitrate",9
+"192",223,"passive","vegetation","facilitation","habitat","grass survival",3
+"193",223,"passive","vegetation","facilitation","habitat","luminance",4
+"194",223,"passive","vegetation","facilitation","habitat","relative humidity",4
+"195",223,"passive","vegetation","facilitation","habitat","temperature",4
+"196",231,"passive","vegetation","grazing exclusion","plants","Artemisia adamsii density",1
+"197",231,"passive","vegetation","grazing exclusion","plants","Artemisia adamsii height",1
+"198",231,"passive","vegetation","grazing exclusion","plants","Artemisia adamsii leaf biomass",1
+"199",231,"passive","vegetation","grazing exclusion","plants","Artemisia adamsii stem biomass",1
+"200",231,"passive","vegetation","grazing exclusion","plants","Stypa krylovii biomass",3
+"201",239,"passive","vegetation","natural recovery","plants","canopy openness",1
+"202",239,"passive","vegetation","natural recovery","plants","endemic species frequency",1
+"203",239,"passive","vegetation","natural recovery","plants","plant richness",1
+"204",239,"passive","vegetation","natural recovery","plants","shade tolerant species frequency",1
+"205",247,"passive","soil","natural recovery","soil","alkaline phosphatase",11
+"206",247,"passive","soil","natural recovery","soil","amylase",11
+"207",247,"passive","soil","natural recovery","soil","available K",11
+"208",247,"passive","soil","natural recovery","soil","available N",11
+"209",247,"passive","soil","natural recovery","soil","available P",11
+"210",247,"passive","soil","natural recovery","soil","bulk density",11
+"211",247,"passive","soil","natural recovery","soil","catalase",11
+"212",247,"passive","soil","natural recovery","soil","cellulase",11
+"213",247,"passive","soil","natural recovery","soil","microbial biomass C",11
+"214",247,"passive","soil","natural recovery","soil","microbial biomass N",11
+"215",247,"passive","soil","natural recovery","soil","microbial biomass P",11
+"216",247,"passive","soil","natural recovery","soil","organic carbon",11
+"217",247,"passive","soil","natural recovery","soil","ph",11
+"218",247,"passive","soil","natural recovery","soil","polyphenol oxidase",11
+"219",247,"passive","soil","natural recovery","soil","saccharase",11
+"220",247,"passive","soil","natural recovery","soil","total N",11
+"221",247,"passive","soil","natural recovery","soil","total P",11
+"222",247,"passive","soil","natural recovery","soil","urease",11
+"223",251,"active","vegetation","seeding, safe sites for seeds, fencing","plants","plant biomass",4
+"224",251,"active","vegetation","seeding, safe sites for seeds, fencing","plants","plant cover",4
+"225",255,"passive","grazing exclusion","grazing exclusion","plants","browse height",1
+"226",255,"passive","grazing exclusion","grazing exclusion","plants","canopy cover",1
+"227",255,"passive","grazing exclusion","grazing exclusion","plants","canopy height",1
+"228",255,"passive","grazing exclusion","grazing exclusion","plants","herbaceous plant diversity",1
+"229",255,"passive","grazing exclusion","grazing exclusion","plants","wood plant diversity",1
+"230",256,"passive","soil","mycorrhizal","soil","mycorrhizal fungi common species",2
+"231",256,"passive","soil","mycorrhizal","soil","mycorrhizal fungi richness",2
+"232",256,"passive","soil","mycorrhizal","soil","mycorrhizal fungi spore density",2
+"233",263,"passive","vegetation","facilitation","habitat","electrical conductivity",2
+"234",263,"passive","vegetation","facilitation","habitat","nebkha height",1
+"235",263,"passive","vegetation","facilitation","habitat","nebkha lenght",1
+"236",263,"passive","vegetation","facilitation","habitat","nebkha width",1
+"237",263,"passive","vegetation","facilitation","habitat","organic matter",2
+"238",263,"passive","vegetation","facilitation","habitat","plant abundance",2
+"239",263,"passive","vegetation","facilitation","habitat","plant richness",2
+"240",263,"passive","vegetation","facilitation","habitat","potassium",1
+"241",263,"passive","vegetation","facilitation","habitat","sand",2
+"242",263,"passive","vegetation","facilitation","habitat","silt and clay",2
+"243",263,"passive","vegetation","facilitation","habitat","sodium",2
+"244",263,"passive","vegetation","facilitation","habitat","total N",2
+"245",264,"active","vegetation","seeding, gypsum and organic mulch","habitat","infiltration depth",3
+"246",264,"active","vegetation","seeding, gypsum and organic mulch","habitat","Tripteris seedlings",3
+"247",264,"active","vegetation","seeding, gypsum and organic mulch","habitat","Tripteris surviving plants",3
