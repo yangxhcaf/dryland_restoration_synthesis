@@ -130,6 +130,13 @@ data <- data_all %>%
 #totable3 <- data %>% group_by(study.ID, paradigm, intervention, technique, outcome,measured.factor) %>% count()
 #write.csv(totable3,"totable3.csv")
 
+
+#mean, standard deviation and standard error por spatial grain size of active and passive restoration strategies in drylands 
+tapply(data$spatial.grain,data$paradigm,mean)
+tapply(data$spatial.grain,data$paradigm,sd)
+
+tapply(data$spatial.grain,data$paradigm, function(x)sqrt(var(x)/length(x)))
+
 ```
 
 ### Step 4. Summarize  
